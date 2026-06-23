@@ -2,6 +2,7 @@ import {
   createInitialState,
   getStarCount,
   questions,
+  submitCorrectAnswer,
   submitAnswer
 } from "./game.mjs";
 
@@ -31,7 +32,8 @@ let state = createInitialState();
 let locked = false;
 let currentAudio = null;
 let autoAdvanceTimer = null;
-let hintsVisible = true;
+let retryTimer = null;
+let hintsVisible = false;
 
 function showScreen(screen) {
   els.startScreen.classList.toggle("hidden", screen !== "start");
@@ -43,6 +45,7 @@ function startLevel() {
   state = createInitialState();
   locked = false;
   clearAutoAdvance();
+  clearRetryTimer();
   showScreen("quiz");
   renderQuestion();
   speakCurrentSentence();
@@ -52,6 +55,13 @@ function clearAutoAdvance() {
   if (autoAdvanceTimer) {
     window.clearTimeout(autoAdvanceTimer);
     autoAdvanceTimer = null;
+  }
+}
+
+function clearRetryTimer() {
+  if (retryTimer) {
+    window.clearTimeout(retryTimer);
+    retryTimer = null;
   }
 }
 
@@ -67,6 +77,7 @@ function renderQuestion() {
   const progress = (state.currentIndex / questions.length) * 100;
 
   clearAutoAdvance();
+  clearRetryTimer();
   locked = false;
   els.scoreText.textContent = String(state.score);
   els.progressBar.style.width = `${progress}%`;
@@ -103,7 +114,6 @@ function handleChoice(selectedIndex) {
   if (locked) return;
 
   const question = questions[state.currentIndex];
-  const wasLastQuestion = state.currentIndex === questions.length - 1;
   const isCorrect = selectedIndex === question.correctIndex;
   const cards = [...els.choices.querySelectorAll(".choice-card")];
 
@@ -117,29 +127,40 @@ function handleChoice(selectedIndex) {
   els.feedback.className = `feedback ${isCorrect ? "good" : "bad"}`;
   els.feedback.textContent = isCorrect
     ? "Great job! You're doing awesome!"
-    : `Try again next time. The right picture is: ${question.choices[question.correctIndex].label}`;
-
-  state = submitAnswer(state, selectedIndex);
-  els.scoreText.textContent = String(state.score);
-  els.progressBar.style.width = `${(state.currentIndex / questions.length) * 100}%`;
+    : "Try again. Listen carefully and choose one more time.";
 
   if (isCorrect) {
+    state = submitCorrectAnswer(state, selectedIndex);
+    els.scoreText.textContent = String(state.score);
+    els.progressBar.style.width = `${(state.currentIndex / questions.length) * 100}%`;
     els.nextBtn.classList.add("hidden");
     autoAdvanceTimer = window.setTimeout(() => {
       autoAdvanceTimer = null;
       nextQuestion();
     }, 850);
   } else {
-    els.nextBtn.classList.remove("hidden");
+    els.nextBtn.classList.add("hidden");
+    retryTimer = window.setTimeout(resetCurrentQuestionAttempt, 1500);
+  }
+}
+
+function resetCurrentQuestionAttempt() {
+  retryTimer = null;
+  locked = false;
+
+  for (const card of els.choices.querySelectorAll(".choice-card")) {
+    card.disabled = false;
+    card.classList.remove("correct", "incorrect");
   }
 
-  if (wasLastQuestion && !isCorrect) {
-    els.nextBtn.querySelector("span:first-child").textContent = "Finish";
-  }
+  els.feedback.className = "feedback quiet";
+  els.feedback.textContent = "Listen again and choose the matching picture.";
+  speakCurrentSentence();
 }
 
 function nextQuestion() {
   clearAutoAdvance();
+  clearRetryTimer();
   if (state.currentIndex >= questions.length) {
     showResult();
     return;
@@ -201,6 +222,7 @@ function speakCurrentSentence() {
 els.startBtn.addEventListener("click", startLevel);
 els.backBtn.addEventListener("click", () => {
   clearAutoAdvance();
+  clearRetryTimer();
   showScreen("start");
 });
 els.hintToggleBtn.addEventListener("click", () => setHintsVisible(!hintsVisible));

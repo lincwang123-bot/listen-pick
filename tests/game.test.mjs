@@ -5,6 +5,7 @@ import {
   createInitialState,
   getStarCount,
   questions,
+  submitCorrectAnswer,
   submitAnswer
 } from "../src/game.mjs";
 
@@ -52,6 +53,18 @@ test("submitAnswer records incorrect answers without increasing score", () => {
   assert.equal(nextState.score, 0);
   assert.equal(nextState.currentIndex, 1);
   assert.equal(nextState.answers[0].isCorrect, false);
+});
+
+test("submitCorrectAnswer only advances for the correct choice", () => {
+  const state = createInitialState();
+  const wrongIndex = questions[0].correctIndex === 0 ? 1 : 0;
+  const afterWrong = submitCorrectAnswer(state, wrongIndex);
+
+  assert.equal(afterWrong, state);
+
+  const afterCorrect = submitCorrectAnswer(state, questions[0].correctIndex);
+  assert.equal(afterCorrect.currentIndex, 1);
+  assert.equal(afterCorrect.score, 1);
 });
 
 test("getStarCount maps final score to result stars", () => {

@@ -165,6 +165,16 @@ export function submitAnswer(state, selectedIndex) {
   };
 }
 
+export function submitCorrectAnswer(state, selectedIndex) {
+  const question = questions[state.currentIndex];
+
+  if (!question || selectedIndex !== question.correctIndex) {
+    return state;
+  }
+
+  return submitAnswer(state, selectedIndex);
+}
+
 export function getStarCount(score) {
   if (score >= 13) return 3;
   if (score >= 10) return 2;
