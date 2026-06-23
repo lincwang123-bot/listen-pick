@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Listen & Pick</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="app" class="app-shell">
+      <section id="startScreen" class="screen start-screen">
+        <div class="brand-row">
+          <span class="brand-mark">LP</span>
+          <span>Listen & Pick</span>
+        </div>
+        <div class="start-copy">
+          <h1>听句子，选图片</h1>
+          <p>Level 1 · 15 个生活英语短句</p>
+        </div>
+        <div class="preview-strip" aria-hidden="true">
+          <span>reading</span>
+          <span>running</span>
+          <span>cooking</span>
+        </div>
+        <button id="startBtn" class="primary-button" type="button">开始闯关</button>
+        <p class="credit-link">
+          Demo illustrations generated for this prototype
+        </p>
+      </section>
+
+      <section id="quizScreen" class="screen quiz-screen hidden" aria-live="polite">
+        <div class="game-board">
+          <header class="game-topbar">
+            <button id="backBtn" class="round-button" type="button" aria-label="返回首页">
+              <span aria-hidden="true">‹</span>
+            </button>
+            <div class="level-pill"><span aria-hidden="true">★</span> Level 1</div>
+            <button id="hintToggleBtn" class="hint-toggle" type="button" aria-pressed="true">英文提示：开</button>
+            <div class="top-progress" aria-label="答题进度">
+              <span id="progressDot" class="progress-dot"></span>
+              <span id="questionCounter" class="question-counter">1 / 15</span>
+              <div id="progressBar" class="progress-bar"></div>
+            </div>
+            <div class="star-score"><span aria-hidden="true">★</span> <span id="scoreText">0</span></div>
+          </header>
+
+          <section class="listen-panel">
+            <h1>Listen to the sentence. Which picture matches?</h1>
+            <button id="replayBtn" class="replay-button" type="button" aria-label="播放英文短句">
+              <span class="speaker-icon" aria-hidden="true">
+                <span></span>
+              </span>
+            </button>
+            <p id="sentenceText" class="sentence-text"></p>
+          </section>
+
+          <section id="choices" class="choices" aria-label="选择对应图片"></section>
+
+          <footer class="game-footer">
+            <section id="feedback" class="feedback quiet">
+              <span>Tap the audio button to hear the sentence.</span>
+            </section>
+
+            <button id="nextBtn" class="continue-button hidden" type="button">
+              <span>Continue</span>
+              <span aria-hidden="true">›</span>
+            </button>
+          </footer>
+        </div>
+      </section>
+
+      <section id="resultScreen" class="screen result-screen hidden">
+        <div class="result-medal" aria-hidden="true">★</div>
+        <p class="level-label">Level 1 完成</p>
+        <h1 id="resultTitle">太棒了！</h1>
+        <p id="resultScore" class="result-score"></p>
+        <div id="resultStars" class="result-stars" aria-label="星级"></div>
+        <div class="result-actions">
+          <button id="retryBtn" class="primary-button" type="button">再玩一次</button>
+          <button id="homeBtn" class="secondary-button" type="button">回到首页</button>
+        </div>
+        <p class="credit-link">
+          Demo illustrations generated for this prototype
+        </p>
+      </section>
+    </main>
+
+    <script type="module" src="src/app.mjs"></script>
+  </body>
+</html>
