@@ -165,14 +165,24 @@ export function submitAnswer(state, selectedIndex) {
   };
 }
 
-export function submitCorrectAnswer(state, selectedIndex) {
+export function submitCorrectAnswer(state, selectedIndex, options = {}) {
   const question = questions[state.currentIndex];
+  const { awardPoint = true } = options;
 
   if (!question || selectedIndex !== question.correctIndex) {
     return state;
   }
 
-  return submitAnswer(state, selectedIndex);
+  const nextState = submitAnswer(state, selectedIndex);
+
+  if (awardPoint) {
+    return nextState;
+  }
+
+  return {
+    ...nextState,
+    score: state.score
+  };
 }
 
 export function getStarCount(score) {

@@ -67,6 +67,19 @@ test("submitCorrectAnswer only advances for the correct choice", () => {
   assert.equal(afterCorrect.score, 1);
 });
 
+test("submitCorrectAnswer can advance without awarding a retry point", () => {
+  const state = createInitialState();
+  const afterRetryCorrect = submitCorrectAnswer(
+    state,
+    questions[0].correctIndex,
+    { awardPoint: false }
+  );
+
+  assert.equal(afterRetryCorrect.currentIndex, 1);
+  assert.equal(afterRetryCorrect.score, 0);
+  assert.equal(afterRetryCorrect.answers[0].isCorrect, true);
+});
+
 test("getStarCount maps final score to result stars", () => {
   assert.equal(getStarCount(15), 3);
   assert.equal(getStarCount(12), 2);

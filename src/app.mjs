@@ -34,6 +34,7 @@ let currentAudio = null;
 let autoAdvanceTimer = null;
 let retryTimer = null;
 let hintsVisible = false;
+let missedQuestionIndexes = new Set();
 
 function showScreen(screen) {
   els.startScreen.classList.toggle("hidden", screen !== "start");
@@ -44,6 +45,7 @@ function showScreen(screen) {
 function startLevel() {
   state = createInitialState();
   locked = false;
+  missedQuestionIndexes = new Set();
   clearAutoAdvance();
   clearRetryTimer();
   showScreen("quiz");
@@ -130,7 +132,10 @@ function handleChoice(selectedIndex) {
     : "Try again. Listen carefully and choose one more time.";
 
   if (isCorrect) {
-    state = submitCorrectAnswer(state, selectedIndex);
+    const questionIndex = state.currentIndex;
+    state = submitCorrectAnswer(state, selectedIndex, {
+      awardPoint: !missedQuestionIndexes.has(questionIndex)
+    });
     els.scoreText.textContent = String(state.score);
     els.progressBar.style.width = `${(state.currentIndex / questions.length) * 100}%`;
     els.nextBtn.classList.add("hidden");
@@ -139,6 +144,7 @@ function handleChoice(selectedIndex) {
       nextQuestion();
     }, 850);
   } else {
+    missedQuestionIndexes.add(state.currentIndex);
     els.nextBtn.classList.add("hidden");
     retryTimer = window.setTimeout(resetCurrentQuestionAttempt, 1500);
   }
