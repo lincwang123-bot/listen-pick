@@ -1,5 +1,25 @@
+# macOS
 .DS_Store
+
+# dependencies and local toolchains
 node_modules/
+.venv*/
+
+# secrets and local configuration
 .env
 .env.*
+
+# logs and temporary build output
 *.log
+tmp/
+
+# generated bulk media assets kept outside normal Git history
+assets/course/
+assets/textbook/
+
+# one-off design/video experiments and browser profiles
+social-card-*/
+xhs-*/
+.chrome-profile/
+output/
+frames/

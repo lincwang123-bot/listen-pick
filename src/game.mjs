@@ -1,3 +1,7 @@
+import { courseLevels } from "./course/levels-002-030.generated.mjs";
+import { availableTextbookLevels } from "./course/textbook-playable.generated.mjs?v=stage2-v100";
+import { textbookLevels } from "./course/textbook-levels-001-100.generated.mjs?v=stage2-v100";
+
 const levelQuestions = [
   {
     sentence: "The girl is reading.",
@@ -121,18 +125,219 @@ const levelQuestions = [
   }
 ];
 
-export const questions = levelQuestions.map((question, questionIndex) => ({
+function normalizeLevelOneQuestion(question, questionIndex) {
+  const audio = `assets/audio/q${String(questionIndex + 1).padStart(2, "0")}.m4a`;
+  return {
   ...question,
-  audio: `assets/audio/q${String(questionIndex + 1).padStart(2, "0")}.m4a`,
+  audio,
+  audioByVoice: createVoiceAudioPaths(audio),
   choices: question.choices.map((choice) => ({
     ...choice,
     image: `assets/scenes/${choice.scene}.png`,
     alt: choice.label
   }))
+  };
+}
+
+function normalizeCourseQuestion(question, questionIndex) {
+  const correctIndex = questionIndex % 2;
+  const choices = [
+    {
+      label: question.sentence,
+      image: toOptimizedImagePath(question.correctImage),
+      alt: question.sentence,
+      visual: question.theme
+    },
+    {
+      label: question.wrongSentence,
+      image: toOptimizedImagePath(question.wrongImage),
+      alt: question.wrongSentence,
+      visual: question.theme
+    }
+  ];
+
+  if (correctIndex === 1) choices.reverse();
+
+  return {
+    sentence: question.sentence,
+    correctIndex,
+    audio: question.audioFile,
+    audioByVoice: createVoiceAudioPaths(question.audioFile),
+    choices
+  };
+}
+
+function normalizeTextbookQuestion(question, questionIndex) {
+  const correctIndex = questionIndex % 2;
+  const choices = [
+    {
+      label: question.sentence,
+      image: toOptimizedImagePath(question.correctImage),
+      alt: question.sentence,
+      visual: "textbook"
+    },
+    {
+      label: question.wrongSentence,
+      image: toOptimizedImagePath(question.wrongImage),
+      alt: question.wrongSentence,
+      visual: "textbook"
+    }
+  ];
+
+  if (correctIndex === 1) choices.reverse();
+
+  return {
+    sentence: question.sentence,
+    correctIndex,
+    audio: question.audioFile,
+    audioByVoice: createVoiceAudioPaths(question.audioFile),
+    choices
+  };
+}
+
+function createVoiceAudioPaths(audioPath) {
+  return {
+    female: toVoiceAudioPath(audioPath, "female"),
+    male: toVoiceAudioPath(audioPath, "male")
+  };
+}
+
+function toOptimizedImagePath(imagePath) {
+  if (
+    imagePath.startsWith("assets/textbook/images/") ||
+    imagePath.startsWith("assets/course/images/")
+  ) {
+    return imagePath.replace(/\.png$/i, ".webp");
+  }
+
+  return imagePath;
+}
+
+function toVoiceAudioPath(audioPath, voice) {
+  if (audioPath.startsWith("assets/textbook/audio/")) {
+    return audioPath.replace("assets/textbook/audio/", `assets/textbook/audio-${voice}/`);
+  }
+
+  if (audioPath.startsWith("assets/course/audio/")) {
+    return audioPath.replace("assets/course/audio/", `assets/course/audio-${voice}/`);
+  }
+
+  if (audioPath.startsWith("assets/audio/")) {
+    return audioPath.replace("assets/audio/", `assets/audio-${voice}/`);
+  }
+
+  return audioPath;
+}
+
+const levelOne = {
+  level: 1,
+  title: "Level 1",
+  questions: levelQuestions.map(normalizeLevelOneQuestion)
+};
+
+const generatedPlayableLevels = courseLevels.slice(0, 4).map((level) => ({
+  level: level.level,
+  title: level.title,
+  questions: level.questions.map(normalizeCourseQuestion)
 }));
 
-export function createInitialState() {
+const textbookPlayableLevels = availableTextbookLevels.map((level) => ({
+  level: level.level,
+  title: level.title,
+  questions: level.questions.map(normalizeTextbookQuestion)
+}));
+
+function mergePlayableLevels(primaryLevels, fallbackLevels) {
+  const merged = new Map();
+  for (const level of fallbackLevels) merged.set(level.level, level);
+  for (const level of primaryLevels) merged.set(level.level, level);
+  return [...merged.values()].sort((a, b) => a.level - b.level);
+}
+
+export const playableLevels = mergePlayableLevels(textbookPlayableLevels, [
+  levelOne,
+  ...generatedPlayableLevels
+]);
+export const questions = playableLevels[0].questions;
+
+const levelPreviewWords = new Map([
+  [1, ["girl", "boy", "baby"]],
+  [2, ["teacher", "student", "school"]],
+  [3, ["running", "walking", "jumping"]],
+  [4, ["reading", "writing", "drawing"]],
+  [5, ["eating", "drinking", "washing"]],
+  [6, ["red", "blue", "yellow"]],
+  [7, ["green", "black", "white"]],
+  [8, ["circle", "square", "star"]],
+  [9, ["ball", "car", "kite"]],
+  [10, ["colors", "shapes", "toys"]],
+  [11, ["one", "two", "three"]],
+  [12, ["four", "five", "apples"]],
+  [13, ["books", "cups", "boxes"]],
+  [14, ["dogs", "cats", "birds"]],
+  [15, ["counting", "animals", "objects"]],
+  [16, ["cat", "dog", "rabbit"]],
+  [17, ["bird", "fish", "duck"]],
+  [18, ["horse", "cow", "sheep"]],
+  [19, ["lion", "elephant", "panda"]],
+  [20, ["animals", "colors", "numbers"]],
+  [21, ["mother", "father", "parents"]],
+  [22, ["sister", "brother", "baby"]],
+  [23, ["grandma", "grandpa", "family"]],
+  [24, ["home", "parents", "children"]],
+  [25, ["family", "photo", "home"]],
+  [26, ["on", "in", "under"]],
+  [27, ["behind", "beside", "between"]],
+  [28, ["rooms", "furniture", "home"]],
+  [29, ["park", "tree", "basket"]],
+  [30, ["position", "colors", "objects"]],
+  [31, ["pencil", "ruler", "eraser"]],
+  [32, ["teacher", "student", "board"]],
+  [33, ["wake", "breakfast", "school"]],
+  [34, ["wash", "brush", "dress"]],
+  [35, ["classroom", "lunch", "home"]],
+  [36, ["apple", "banana", "grapes"]],
+  [37, ["rice", "noodles", "milk"]],
+  [38, ["eating", "drinking", "chopsticks"]],
+  [39, ["plate", "bowl", "cup"]],
+  [40, ["food", "family", "lunch"]],
+  [41, ["eyes", "ears", "hands"]],
+  [42, ["shirt", "trousers", "shoes"]],
+  [43, ["dress", "coat", "boots"]],
+  [44, ["sunny", "rainy", "snowy"]],
+  [45, ["umbrella", "raincoat", "snow"]],
+  [46, ["slide", "swing", "sandbox"]],
+  [47, ["football", "basketball", "swimming"]],
+  [48, ["car", "bus", "train"]],
+  [49, ["library", "park", "zoo"]],
+  [50, ["apples", "bicycle", "bus"]]
+]);
+
+for (const level of textbookLevels) {
+  if (Array.isArray(level.previewWords) && level.previewWords.length === 3) {
+    levelPreviewWords.set(level.level, level.previewWords);
+  }
+}
+
+export function getQuestionsForLevel(levelNumber = 1) {
+  return (
+    playableLevels.find((level) => level.level === Number(levelNumber)) ??
+    levelOne
+  ).questions;
+}
+
+export function getPreviewWordsForLevel(levelNumber = 1) {
+  return levelPreviewWords.get(Number(levelNumber)) ?? levelPreviewWords.get(1);
+}
+
+export function getNextPlayableLevel(levelNumber = 1) {
+  const currentIndex = playableLevels.findIndex((level) => level.level === Number(levelNumber));
+  return currentIndex === -1 ? null : playableLevels[currentIndex + 1]?.level ?? null;
+}
+
+export function createInitialState(level = 1) {
   return {
+    level,
     currentIndex: 0,
     score: 0,
     answers: [],
@@ -141,7 +346,8 @@ export function createInitialState() {
 }
 
 export function submitAnswer(state, selectedIndex) {
-  const question = questions[state.currentIndex];
+  const levelQuestions = getQuestionsForLevel(state.level);
+  const question = levelQuestions[state.currentIndex];
 
   if (!question) {
     return state;
@@ -166,7 +372,8 @@ export function submitAnswer(state, selectedIndex) {
 }
 
 export function submitCorrectAnswer(state, selectedIndex, options = {}) {
-  const question = questions[state.currentIndex];
+  const levelQuestions = getQuestionsForLevel(state.level);
+  const question = levelQuestions[state.currentIndex];
   const { awardPoint = true } = options;
 
   if (!question || selectedIndex !== question.correctIndex) {

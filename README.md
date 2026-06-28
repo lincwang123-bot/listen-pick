@@ -1,21 +1,49 @@
-# Listen & Pick English Demo
+# Listen & Pick
 
-A static browser prototype for a children's English listening game. Each level plays a short English sentence and asks the child to pick the matching picture from two choices.
+[中文说明](README.zh-CN.md)
 
-## Current Features
+Listen & Pick is a source-available, non-commercial prototype for a children's English listening game.
 
-- One playable level with 15 questions
-- Two picture choices per question
-- Local sentence audio files for clearer pronunciation
-- Correct answers auto-advance to the next question
-- Incorrect answers show feedback and require Continue
-- Toggle to show or hide English hints under pictures
-- Result screen with score and star rating
-- iPad mini friendly layout
+Children hear one short English sentence, see two pictures, and choose the picture that matches the meaning. The learning goal is:
+
+```text
+hear English -> form a picture -> understand the sentence
+```
+
+It is designed for Chinese children ages 6-10 who are starting English listening.
+
+## License
+
+This project is released under the PolyForm Noncommercial License 1.0.0.
+
+Commercial use is not allowed without prior written permission from the project owner. This means you may not sell, host, bundle, white-label, train a paid product from, or otherwise use this project for a commercial service unless you have separate permission.
+
+Because non-commercial restrictions are not compatible with the Open Source Definition, this repository should be described as source-available for non-commercial use, not OSI open source.
+
+See:
+
+- `LICENSE`
+- `NOTICE.md`
+- `docs/OPEN_SOURCE.md`
+
+## Features
+
+- 100 playable levels, 15 questions per level
+- Two picture choices per sentence
+- Local audio files for clearer pronunciation
+- Male and female voice selection, defaulting to male voice
+- Adjustable speech speed
+- English hint toggle and Chinese hint toggle
+- Result screen with score-based Chinese encouragement
+- Child nickname stored locally in the browser for on-screen encouragement
+- Level picker grouped by learning blocks instead of one long list
+- Asset preloading for the current level and nearby levels
+- Static deployment friendly for a VPS, GitHub Pages, Nginx, or Caddy
 
 ## Run Locally
 
 ```bash
+npm install
 npm start
 ```
 
@@ -31,38 +59,64 @@ http://127.0.0.1:4173/index.html
 npm test
 ```
 
-## Project Structure
+## Course Data
 
-```text
-.
-├── assets/
-│   ├── audio/          # Local m4a sentence audio
-│   ├── scenes/         # Scene illustrations used by questions
-│   └── scene-sprite.png
-├── docs/
-│   ├── screenshots/    # QA screenshots
-│   └── superpowers/    # Design and implementation notes
-├── scripts/
-│   └── generate-audio-assets.mjs
-├── src/
-│   ├── app.mjs         # Browser UI and interaction flow
-│   └── game.mjs        # Question data and scoring logic
-├── tests/
-│   └── game.test.mjs
-├── index.html
-├── styles.css
-└── package.json
+The current browser build uses generated curriculum modules in `src/course/`.
+
+Helpful commands:
+
+```bash
+npm run validate:course
+npm run generate:textbook-playable
+npm run generate:webp-images
 ```
+
+Audio generation commands are kept in `package.json`. Large local TTS environments and temporary generation output are intentionally ignored by Git.
+
+## Media Assets
+
+The project has two kinds of assets:
+
+- Small runtime assets that can be committed when needed
+- Large generated illustration/audio batches that are better kept in release packages, Git LFS, object storage, or on the deployment server
+
+For public source sharing, do not commit local browser profiles, temporary generated images, TTS model folders, or one-off social-card/video experiments.
+
+## Privacy Notes
+
+This prototype does not require WeChat login or a backend account system. A child's nickname is stored in the browser with local storage and is used only for on-screen encouragement.
+
+If analytics are added later, avoid collecting children's real names, voice recordings, or unnecessary personal data.
 
 ## Deployment
 
-This is a static site. It can be deployed to GitHub Pages, Nginx, Caddy, or any VPS static file host by serving the project root.
+This is a static site. The project root can be served directly by any static file host.
+
+Example production path:
+
+```text
+https://linc.wang/listen-pick/
+```
+
+Keep the same file structure on the server so existing asset paths continue to work.
 
 ## Mini Program Migration Path
 
-The current data and assets can be moved into a WeChat Mini Program structure later:
+The current data and assets can later be moved into a WeChat Mini Program:
 
-- `src/game.mjs` -> `data/questions.js`
-- `assets/audio` -> `miniprogram/assets/audio`
-- `assets/scenes` -> `miniprogram/assets/scenes`
-- `index.html` / `styles.css` / `src/app.mjs` -> Mini Program pages and components
+- `src/course/` -> Mini Program data modules
+- `assets/audio/` and generated course audio -> Mini Program or CDN assets
+- `assets/course/` and generated images -> Mini Program or CDN assets
+- `index.html`, `styles.css`, `src/app.mjs` -> pages, components, and WXSS/WXML logic
+
+## Public Repository Checklist
+
+Before publishing, run:
+
+```bash
+npm test
+rg -n --hidden --glob '!node_modules/**' --glob '!.git/**' --glob '!tmp/**' --glob '!.venv*/**' "api[_-]?key|secret|token|password|PRIVATE KEY|/Users/"
+git status --short
+```
+
+Review `docs/OPEN_SOURCE.md` for the recommended public package shape.

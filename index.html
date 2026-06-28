@@ -4,38 +4,139 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Listen & Pick</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css?v=perf-audio-webp-v3">
   </head>
   <body>
     <main id="app" class="app-shell">
-      <section id="startScreen" class="screen start-screen">
-        <div class="brand-row">
-          <span class="brand-mark">LP</span>
-          <span>Listen & Pick</span>
+      <section id="loginScreen" class="screen login-screen">
+        <div class="login-card">
+          <section class="login-story" aria-label="Listen and Pick 登录介绍">
+            <div class="brand-row">
+              <span class="brand-mark">LP</span>
+              <span>Listen & Pick</span>
+            </div>
+            <div class="login-copy">
+              <h1>每天 15 分钟，听懂一个英语小世界</h1>
+              <p>听句子，选图片，让孩子先在脑中形成画面，再理解英文意思。</p>
+            </div>
+            <div class="login-preview" aria-hidden="true">
+              <div class="login-preview-audio">
+                <span></span>
+                <strong>Listen</strong>
+              </div>
+              <div class="login-preview-images">
+                <img src="assets/textbook/images/level-001/q002-correct.png" alt="">
+                <img src="assets/textbook/images/level-001/q002-wrong.png" alt="">
+              </div>
+            </div>
+          </section>
+
+          <section class="login-panel" aria-label="登录">
+            <p class="login-eyebrow">家长入口</p>
+            <h2>先体验，开始学习</h2>
+            <p class="login-note">学习进度、语音偏好和关卡记录先保存在当前设备。</p>
+            <button id="wechatLoginBtn" class="primary-button login-main-button" type="button">开始学习</button>
+            <button id="guestLoginBtn" class="secondary-button login-secondary-button" type="button">先体验一下</button>
+            <p class="login-policy">继续使用即表示家长已同意儿童学习数据用于本产品的学习记录。</p>
+          </section>
         </div>
-        <div class="start-copy">
-          <h1>听句子，选图片</h1>
-          <p>Level 1 · 15 个生活英语短句</p>
-        </div>
-        <div class="preview-strip" aria-hidden="true">
-          <span>reading</span>
-          <span>running</span>
-          <span>cooking</span>
-        </div>
-        <button id="startBtn" class="primary-button" type="button">开始闯关</button>
-        <p class="credit-link">
-          Demo illustrations generated for this prototype
-        </p>
       </section>
 
-      <section id="quizScreen" class="screen quiz-screen hidden" aria-live="polite">
+      <section id="profileScreen" class="screen profile-screen hidden">
+        <div class="profile-card">
+          <section class="profile-story" aria-label="小朋友资料">
+            <div class="brand-row">
+              <span class="brand-mark">LP</span>
+              <span>Listen & Pick</span>
+            </div>
+            <div class="profile-copy">
+              <h1>先认识一下今天的小小学习者</h1>
+              <p>填入小名或名字，完成关卡后会收到专属中文鼓励。</p>
+            </div>
+          </section>
+
+          <form id="childNameForm" class="profile-panel" aria-label="填写小朋友名字">
+            <label class="profile-label" for="childNameInput">小朋友的小名或名字</label>
+            <input id="childNameInput" class="profile-input" type="text" maxlength="12" autocomplete="given-name" placeholder="例如：小满">
+            <p id="childNameError" class="profile-error" aria-live="polite"></p>
+            <button id="saveChildNameBtn" class="primary-button profile-main-button" type="submit">保存并开始</button>
+            <button id="skipChildNameBtn" class="secondary-button profile-secondary-button" type="button">先用“宝贝”体验</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="startScreen" class="screen start-screen">
+        <div class="start-layout">
+          <section class="start-hero-panel" aria-label="Listen and Pick 首页">
+            <div class="brand-row">
+              <span class="brand-mark">LP</span>
+              <span>Listen & Pick</span>
+            </div>
+            <div class="start-copy">
+              <h1>听句子，选图片</h1>
+              <p>前一百关 · 每关 15 个生活英语短句</p>
+            </div>
+            <div class="start-demo-card" aria-hidden="true">
+              <div class="demo-audio-pill">
+                <span class="demo-speaker-dot"></span>
+                <span>Listen</span>
+              </div>
+              <div class="demo-choice-pair">
+                <img src="assets/textbook/images/level-001/q001-correct.png" alt="">
+                <img src="assets/textbook/images/level-001/q001-wrong.png" alt="">
+              </div>
+            </div>
+            <div id="previewStrip" class="preview-strip" aria-hidden="true">
+              <span>reading</span>
+              <span>running</span>
+              <span>cooking</span>
+            </div>
+            <button id="startBtn" class="primary-button" type="button">开始闯关</button>
+            <p class="credit-link">
+              Demo illustrations generated for this prototype
+            </p>
+          </section>
+
+          <section class="level-dock" aria-label="选择关卡">
+            <div class="level-dock-head">
+              <div>
+                <p>选择学习进度</p>
+                <h2>关卡入口</h2>
+              </div>
+              <span id="selectedLevelBadge" class="selected-level-badge">Level 1</span>
+            </div>
+            <div id="levelSelect" class="level-select" aria-label="选择关卡"></div>
+          </section>
+        </div>
+      </section>
+
+      <section id="quizScreen" class="screen quiz-screen hidden hide-choice-hints hide-chinese-hints" aria-live="polite">
         <div class="game-board">
           <header class="game-topbar">
             <button id="backBtn" class="round-button" type="button" aria-label="返回首页">
               <span aria-hidden="true">‹</span>
             </button>
-            <div class="level-pill"><span aria-hidden="true">★</span> Level 1</div>
-            <button id="hintToggleBtn" class="hint-toggle" type="button" aria-pressed="true">英文提示：开</button>
+            <div id="levelPill" class="level-pill"><span aria-hidden="true">★</span> Level 1</div>
+            <div class="topbar-controls" aria-label="学习辅助设置">
+              <button id="hintToggleBtn" class="hint-toggle" type="button" aria-pressed="false">英文提示：关</button>
+              <button id="chineseHintToggleBtn" class="hint-toggle" type="button" aria-pressed="false">中文提示：关</button>
+              <label class="speed-control voice-control" for="voiceSelect">
+                <span>声音</span>
+                <select id="voiceSelect" class="speed-select">
+                  <option value="female">女声</option>
+                  <option value="male" selected>男声</option>
+                </select>
+              </label>
+              <label class="speed-control" for="speechRateSelect">
+                <span>语速</span>
+                <select id="speechRateSelect" class="speed-select">
+                  <option value="0.72">慢速</option>
+                  <option value="0.85" selected>标准</option>
+                  <option value="1">正常</option>
+                </select>
+              </label>
+            </div>
             <div class="top-progress" aria-label="答题进度">
               <span id="progressDot" class="progress-dot"></span>
               <span id="questionCounter" class="question-counter">1 / 15</span>
@@ -61,6 +162,15 @@
               <span>Tap the audio button to hear the sentence.</span>
             </section>
 
+            <section id="followReadPanel" class="follow-read-panel hidden" aria-live="polite">
+              <p id="followReadSentence" class="follow-read-sentence"></p>
+              <div class="follow-read-actions">
+                <button id="followReadRecordBtn" class="follow-read-button" type="button">开始跟读</button>
+                <button id="followReadPlayBtn" class="follow-read-button" type="button" disabled>回放</button>
+              </div>
+              <p id="followReadStatus" class="follow-read-status"></p>
+            </section>
+
             <button id="nextBtn" class="continue-button hidden" type="button">
               <span>Continue</span>
               <span aria-hidden="true">›</span>
@@ -71,13 +181,14 @@
 
       <section id="resultScreen" class="screen result-screen hidden">
         <div class="result-medal" aria-hidden="true">★</div>
-        <p class="level-label">Level 1 完成</p>
+        <p id="resultLevelLabel" class="level-label">Level 1 完成</p>
         <h1 id="resultTitle">太棒了！</h1>
         <p id="resultScore" class="result-score"></p>
         <div id="resultStars" class="result-stars" aria-label="星级"></div>
         <div class="result-actions">
           <button id="retryBtn" class="primary-button" type="button">再玩一次</button>
           <button id="homeBtn" class="secondary-button" type="button">回到首页</button>
+          <button id="nextLevelBtn" class="secondary-button" type="button">下一关</button>
         </div>
         <p class="credit-link">
           Demo illustrations generated for this prototype
@@ -85,6 +196,6 @@
       </section>
     </main>
 
-    <script type="module" src="src/app.mjs"></script>
+    <script type="module" src="src/app.mjs?v=count-art-v1"></script>
   </body>
 </html>

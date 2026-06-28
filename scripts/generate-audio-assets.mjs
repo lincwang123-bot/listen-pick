@@ -9,6 +9,7 @@ import { questions } from "../src/game.mjs";
 const run = promisify(execFile);
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const outputDir = resolve(root, "assets/audio");
+const speechRate = "105";
 
 await mkdir(outputDir, { recursive: true });
 
@@ -21,7 +22,7 @@ for (const [index, question] of questions.entries()) {
     "-v",
     "Samantha",
     "-r",
-    "128",
+    speechRate,
     "-o",
     tempAiff,
     question.sentence
@@ -41,4 +42,4 @@ for (const [index, question] of questions.entries()) {
   await rm(tempAiff, { force: true });
 }
 
-console.log(`Generated ${questions.length} sentence audio files in ${outputDir}`);
+console.log(`Generated ${questions.length} sentence audio files in ${outputDir} at rate ${speechRate}`);

@@ -8,6 +8,7 @@ This project is a static prototype for an English listening picture-choice game.
 - `styles.css`: Visual system, responsive layout, and iPad mini adaptation.
 - `src/game.mjs`: Question data, image/audio paths, scoring, and star rules.
 - `src/app.mjs`: Screen rendering, answer handling, hint toggle, audio playback, and result flow.
+- `src/course/levels-002-030.generated.mjs`: Generated curriculum data for Levels 2-30.
 
 ## Assets
 
@@ -18,6 +19,8 @@ This project is a static prototype for an English listening picture-choice game.
 ## Scripts
 
 - `scripts/generate-audio-assets.mjs`: Regenerates local sentence audio from the question text using macOS `say`.
+- `scripts/generate-course-levels.mjs`: Generates the first curriculum data batch.
+- `scripts/validate-course.mjs`: Checks curriculum structure, age fit, banned terms, sentence length, and duplicates.
 
 ## Tests
 

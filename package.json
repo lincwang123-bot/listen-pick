@@ -1,11 +1,36 @@
 {
   "name": "english-listen-pick-demo",
   "version": "0.1.0",
+  "description": "A source-available non-commercial children's English listening game prototype.",
   "private": true,
+  "license": "SEE LICENSE IN LICENSE",
   "type": "module",
   "scripts": {
-    "start": "python3 -m http.server 4173",
+    "start": "node scripts/serve-no-cache.mjs 4173",
+    "generate:curriculum-map": "node scripts/generate-curriculum-map.mjs",
+    "generate:curriculum-sentences": "node scripts/generate-curriculum-sentences.mjs",
+    "generate:curriculum-prd": "node scripts/generate-curriculum-prd.mjs",
+    "generate:textbook-levels": "node scripts/generate-textbook-levels.mjs",
+    "generate:textbook-stage2": "node scripts/generate-textbook-stage2.mjs",
+    "generate:textbook-stage3-6-md": "node scripts/generate-textbook-stage3-6-md.mjs",
+    "generate:textbook-audio": "node scripts/generate-textbook-audio.mjs",
+    "generate:textbook-playable": "node scripts/generate-textbook-playable-index.mjs",
+    "crop:textbook-sheet": "node scripts/crop-textbook-contact-sheet.mjs",
+    "generate:count-level-assets": "node scripts/generate-count-level-assets.mjs",
+    "generate:course": "node scripts/generate-course-levels.mjs",
+    "generate:playable-assets": "node scripts/generate-playable-level-assets.mjs",
+    "generate:playable-audio": "node scripts/generate-playable-audio.mjs",
+    "generate:melotts-audio": "node scripts/generate-melotts-audio.mjs",
+    "generate:system-voice-audio": "node scripts/generate-system-voice-audio.mjs",
+    "generate:edge-tts-audio": "node scripts/generate-edge-tts-audio.mjs",
+    "generate:result-praise-audio": "node scripts/generate-result-praise-audio.mjs",
+    "generate:webp-images": "node scripts/generate-webp-images.mjs",
+    "split:image-pairs": "node scripts/split-image-pairs.mjs",
     "generate:audio": "node scripts/generate-audio-assets.mjs",
+    "validate:course": "node scripts/validate-course.mjs",
     "test": "node --test"
+  },
+  "devDependencies": {
+    "pngjs": "^7.0.0"
   }
 }
