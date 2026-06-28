@@ -5,6 +5,7 @@ const exactHints = new Map([
   ["a dog is sleeping", "一只狗正在睡觉。"],
   ["the cat is on the chair", "猫在椅子上。"],
   ["the cat is under the table", "猫在桌子下面。"],
+  ["the baby is sitting", "宝宝坐着。"],
   ["the baby is sleeping", "宝宝正在睡觉。"],
   ["the baby is laughing", "宝宝正在笑。"],
   ["the teacher is singing", "老师正在唱歌。"],
@@ -897,7 +898,9 @@ function translatePredicate(subject, predicate) {
 
   const words = predicate.split(" ");
   if (colors.has(words[0]) || adjectives.has(words[0])) {
-    const description = translateWords(words[0]);
+    const description = colors.has(words[0])
+      ? `${colors.get(words[0])}的`
+      : translateWords(words[0]);
     const rest = words.slice(1).join(" ");
     const restPrep = findLeadingPhrase(rest, prepositions);
     if (restPrep && locationPrepositions.has(restPrep)) {

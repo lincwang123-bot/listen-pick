@@ -29,8 +29,8 @@ Cells:
 12. distractor for Q06: The boy is a child.
 13. correct for Q07: The boy is a child.
 14. distractor for Q07: The baby is a child.
-15. correct for Q08: The baby is very small.
-16. distractor for Q08: The girl is very small.
+15. correct for Q08: The baby is sitting.
+16. distractor for Q08: The baby is sleeping.
 17. correct for Q09: The man has a beard.
 18. distractor for Q09: The man has a hat.
 19. correct for Q10: The woman has glasses.
@@ -731,8 +731,8 @@ Cells:
 24. distractor for Q12: The brown dog has a blue ball.
 25. correct for Q13: The white rabbit has long ears.
 26. distractor for Q13: The white rabbit has short ears.
-27. correct for Q14: The green turtle is very small.
-28. distractor for Q14: The orange turtle is very small.
+27. correct for Q14: The turtle is green.
+28. distractor for Q14: The turtle is orange.
 29. correct for Q15: The hamster is in a little box.
 30. distractor for Q15: The hamster is on a little box.
 

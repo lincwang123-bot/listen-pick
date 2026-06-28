@@ -167,18 +167,19 @@ function normalizeCourseQuestion(question, questionIndex) {
   };
 }
 
-function normalizeTextbookQuestion(question, questionIndex, levelQuestions = []) {
+function normalizeTextbookQuestion(question, questionIndex) {
   const correctIndex = questionIndex % 2;
   const correctChoice = createTextbookChoice(
     question.sentence,
     question.correctImage,
     question.theme
   );
-  const distractorChoices = createTextbookDistractorChoices(
-    question,
-    questionIndex,
-    levelQuestions
+  const wrongChoice = createTextbookChoice(
+    question.wrongSentence,
+    question.wrongImage,
+    question.theme
   );
+  const distractorChoices = [wrongChoice];
   const choices = [correctChoice, distractorChoices[0]];
 
   if (correctIndex === 1) choices.reverse();
@@ -201,137 +202,6 @@ function createTextbookChoice(label, imagePath, theme) {
     alt: label,
     visual: theme ?? "textbook"
   };
-}
-
-function createTextbookDistractorChoices(question, questionIndex, levelQuestions = []) {
-  const distractors = [];
-  const seen = new Set();
-  const targetLabel = question.sentence;
-  const questionsInLevel = Array.isArray(levelQuestions) ? levelQuestions : [];
-
-  addUniqueDistractor(
-    distractors,
-    seen,
-    createTextbookChoice(question.wrongSentence, question.wrongImage, question.theme),
-    targetLabel
-  );
-
-  const candidates = questionsInLevel
-    .flatMap((candidateQuestion, sourceIndex) => {
-      if (sourceIndex === questionIndex) return [];
-      return [
-        {
-          sourceIndex,
-          order: 0,
-          choice: createTextbookChoice(
-            candidateQuestion.wrongSentence,
-            candidateQuestion.wrongImage,
-            candidateQuestion.theme
-          )
-        },
-        {
-          sourceIndex,
-          order: 1,
-          choice: createTextbookChoice(
-            candidateQuestion.sentence,
-            candidateQuestion.correctImage,
-            candidateQuestion.theme
-          )
-        }
-      ];
-    })
-    .sort((a, b) => {
-      const scoreDifference =
-        scoreDistractorCandidate(targetLabel, b.choice.label) -
-        scoreDistractorCandidate(targetLabel, a.choice.label);
-      if (scoreDifference !== 0) return scoreDifference;
-
-      const distanceDifference =
-        getQuestionDistance(questionIndex, a.sourceIndex, questionsInLevel.length) -
-        getQuestionDistance(questionIndex, b.sourceIndex, questionsInLevel.length);
-      if (distanceDifference !== 0) return distanceDifference;
-
-      return a.order - b.order;
-    });
-
-  for (const candidate of candidates) {
-    addUniqueDistractor(distractors, seen, candidate.choice, targetLabel);
-    if (distractors.length >= 3) break;
-  }
-
-  return distractors;
-}
-
-function scoreDistractorCandidate(targetLabel, candidateLabel) {
-  const targetTokens = new Set(tokenizeSentence(targetLabel));
-  const targetContentTokens = new Set([...targetTokens].filter(isMeaningfulToken));
-  const candidateTokens = tokenizeSentence(candidateLabel);
-
-  return candidateTokens.reduce((score, token) => {
-    if (!targetTokens.has(token)) return score;
-    return score + (targetContentTokens.has(token) ? 10 : 1);
-  }, 0);
-}
-
-function tokenizeSentence(text) {
-  return String(text)
-    .toLowerCase()
-    .replace(/[^a-z0-9\s]/g, " ")
-    .split(/\s+/)
-    .map(normalizeToken)
-    .filter(Boolean);
-}
-
-function normalizeToken(token) {
-  if (token.length > 3 && token.endsWith("s")) {
-    return token.slice(0, -1);
-  }
-
-  return token;
-}
-
-function isMeaningfulToken(token) {
-  return !LOW_VALUE_TOKENS.has(token);
-}
-
-const LOW_VALUE_TOKENS = new Set([
-  "a",
-  "an",
-  "the",
-  "is",
-  "are",
-  "am",
-  "this",
-  "that",
-  "there",
-  "my",
-  "his",
-  "her",
-  "their",
-  "for",
-  "to",
-  "of",
-  "with",
-  "at",
-  "by",
-  "after",
-  "before"
-]);
-
-function getQuestionDistance(currentIndex, candidateIndex, questionCount) {
-  const forwardDistance = (candidateIndex - currentIndex + questionCount) % questionCount;
-  const backwardDistance = (currentIndex - candidateIndex + questionCount) % questionCount;
-  return Math.min(forwardDistance, backwardDistance);
-}
-
-function addUniqueDistractor(distractors, seen, choice, targetLabel) {
-  if (!choice?.label || !choice?.image || choice.label === targetLabel) return;
-
-  const key = choice.label;
-  if (seen.has(key)) return;
-
-  seen.add(key);
-  distractors.push(choice);
 }
 
 function createVoiceAudioPaths(audioPath) {
@@ -383,9 +253,7 @@ const generatedPlayableLevels = courseLevels.slice(0, 4).map((level) => ({
 const textbookPlayableLevels = availableTextbookLevels.map((level) => ({
   level: level.level,
   title: level.title,
-  questions: level.questions.map((question, questionIndex) =>
-    normalizeTextbookQuestion(question, questionIndex, level.questions)
-  )
+  questions: level.questions.map(normalizeTextbookQuestion)
 }));
 
 function mergePlayableLevels(primaryLevels, fallbackLevels) {

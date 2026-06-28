@@ -85,8 +85,8 @@ export const availableTextbookLevels = [
       },
       {
         "id": "L001-Q008",
-        "sentence": "The baby is very small.",
-        "wrongSentence": "The girl is very small.",
+        "sentence": "The baby is sitting.",
+        "wrongSentence": "The baby is sleeping.",
         "audioFile": "assets/textbook/audio/level-001/q008.m4a",
         "correctImage": "assets/textbook/images/level-001/q008-correct.png",
         "wrongImage": "assets/textbook/images/level-001/q008-wrong.png",
@@ -2716,8 +2716,8 @@ export const availableTextbookLevels = [
       },
       {
         "id": "L016-Q014",
-        "sentence": "The green turtle is very small.",
-        "wrongSentence": "The orange turtle is very small.",
+        "sentence": "The turtle is green.",
+        "wrongSentence": "The turtle is orange.",
         "audioFile": "assets/textbook/audio/level-016/q014.m4a",
         "correctImage": "assets/textbook/images/level-016/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-016/q014-wrong.png",

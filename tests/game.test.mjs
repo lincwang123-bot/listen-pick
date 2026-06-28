@@ -61,30 +61,22 @@ test("textbook playable levels are available with complete question assets", () 
   }
 });
 
-test("first 100 levels expose configured distractor pools without preloading the whole pool", () => {
+test("first 100 levels use each question's dedicated wrong image by default", () => {
   for (const level of playableLevels) {
     assert.ok(level.level >= 1 && level.level <= 100, `Unexpected playable level ${level.level}`);
     const levelQuestions = getQuestionsForLevel(level.level);
 
     for (const question of levelQuestions) {
-      assert.ok(
-        question.distractorChoices.length >= 3,
-        `Level ${level.level} ${question.sentence}`
-      );
-      assert.ok(
-        question.distractorChoices.every((choice) => choice.label !== question.sentence),
-        `Distractor repeats target sentence in Level ${level.level}: ${question.sentence}`
-      );
+      assert.equal(question.distractorChoices.length, 1, `Level ${level.level} ${question.sentence}`);
+      const [distractor] = question.distractorChoices;
+      assert.notEqual(distractor.label, question.sentence);
+      assert.match(question.correctChoice.image, /^assets\/textbook\/images\/level-\d{3}\/q\d{3}-correct\.webp$/);
       assert.equal(
-        new Set(question.distractorChoices.map((choice) => choice.label)).size,
-        question.distractorChoices.length,
-        `Duplicate distractor labels in Level ${level.level}: ${question.sentence}`
+        distractor.image,
+        question.correctChoice.image.replace("-correct.webp", "-wrong.webp")
       );
-      for (const choice of question.distractorChoices) {
-        assert.match(choice.image, /^assets\/textbook\/images\/level-\d{3}\/.+\.webp$/);
-        assert.ok(existsSync(resolve(choice.image)), choice.image);
-        assert.ok(choice.alt.length > 6);
-      }
+      assert.ok(existsSync(resolve(distractor.image)), distractor.image);
+      assert.ok(distractor.alt.length > 6);
 
       const sessionQuestion = createQuestionSessionFromQuestions([question], {
         rng: createSequenceRng([0.9, 0.1])
@@ -92,6 +84,19 @@ test("first 100 levels expose configured distractor pools without preloading the
       assert.equal(sessionQuestion.choices.length, 2);
     }
   }
+});
+
+test("Level 1 question 8 uses a unique baby sleeping distractor", () => {
+  const question = getQuestionsForLevel(1)[7];
+
+  assert.equal(question.sentence, "The baby is sitting.");
+  assert.equal(question.correctChoice.image, "assets/textbook/images/level-001/q008-correct.webp");
+  assert.deepEqual(question.distractorChoices.map((choice) => choice.label), [
+    "The baby is sleeping."
+  ]);
+  assert.deepEqual(question.distractorChoices.map((choice) => choice.image), [
+    "assets/textbook/images/level-001/q008-wrong.webp"
+  ]);
 });
 
 test("homepage preview words change by selected level", () => {

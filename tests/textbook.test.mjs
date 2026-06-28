@@ -86,6 +86,7 @@ test("textbook sentences avoid unsafe or misleading child-facing scenes", () => 
 
 test("textbook English uses natural sentence patterns for children", () => {
   const unnaturalPatterns = [
+    /\bvery small\b/i,
     /\bholding rope\b/i,
     /\blike lunch together\b/i,
     /\blike snacks together\b/i,
@@ -125,4 +126,15 @@ test("textbook English uses natural sentence patterns for children", () => {
   }
 
   assert.deepEqual(hits, []);
+});
+
+test("Level 1 question 8 uses a clear action contrast instead of vague size wording", () => {
+  const level = textbookLevels.find((item) => item.level === 1);
+  const question = level.questions[7];
+
+  assert.equal(question.id, "L001-Q008");
+  assert.equal(question.sentence, "The baby is sitting.");
+  assert.equal(question.wrongSentence, "The baby is sleeping.");
+  assert.equal(question.correctImage, "assets/textbook/images/level-001/q008-correct.png");
+  assert.equal(question.wrongImage, "assets/textbook/images/level-001/q008-wrong.png");
 });

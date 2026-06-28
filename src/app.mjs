@@ -8,8 +8,8 @@ import {
   playableLevels,
   submitCorrectAnswer,
   submitAnswer
-} from "./game.mjs?v=distractor-pool-v1";
-import { toChineseHint } from "./hints.mjs?v=zh-hints-v2";
+} from "./game.mjs?v=semantic-fix-v1";
+import { toChineseHint } from "./hints.mjs?v=zh-hints-v3";
 import { createLevelPacks, findPackForLevel, getPackStart } from "./level-groups.mjs?v=pack-picker-v1";
 import {
   clearFollowReadPrompt,
@@ -105,7 +105,7 @@ let recordingPlayback = null;
 let missedQuestionIndexes = new Set();
 let pendingLevelSelectTimer = null;
 const CHILD_NAME_STORAGE_KEY = "listenPickChildName";
-const assetVersion = "count-art-v1";
+const assetVersion = "semantic-fix-v1";
 const resultAudioVersion = "result-praise-v1";
 const assetPreloader = createAssetPreloader({ maxConcurrent: 4 });
 const PRELOAD_CURRENT_WINDOW_COUNT = 4;
