@@ -326,6 +326,79 @@ export function getQuestionsForLevel(levelNumber = 1) {
   ).questions;
 }
 
+function toSafeRandom(rng) {
+  const value = typeof rng === "function" ? Number(rng()) : Math.random();
+  if (!Number.isFinite(value)) return 0;
+  return Math.min(0.999999, Math.max(0, value));
+}
+
+function shuffleItems(items, rng) {
+  const shuffled = [...items];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(toSafeRandom(rng) * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+  return shuffled;
+}
+
+function cloneChoice(choice) {
+  return { ...(choice ?? {}) };
+}
+
+function getCorrectChoice(question) {
+  return cloneChoice(question.correctChoice ?? question.choices?.[question.correctIndex]);
+}
+
+function getDistractorChoices(question) {
+  if (Array.isArray(question.distractorChoices) && question.distractorChoices.length > 0) {
+    return question.distractorChoices.map(cloneChoice);
+  }
+
+  return (question.choices ?? [])
+    .filter((choice, index) => index !== question.correctIndex && choice)
+    .map(cloneChoice);
+}
+
+function pickDistractor(question, rng) {
+  const distractors = getDistractorChoices(question);
+  if (distractors.length <= 1) return distractors[0];
+  return distractors[Math.floor(toSafeRandom(rng) * distractors.length)];
+}
+
+function createSessionQuestion(question, rng) {
+  const correctChoice = getCorrectChoice(question);
+  const distractorChoice = pickDistractorChoice(question, rng);
+  const correctFirst = toSafeRandom(rng) < 0.5;
+  const choices = correctFirst
+    ? [correctChoice, distractorChoice]
+    : [distractorChoice, correctChoice];
+
+  return {
+    ...question,
+    correctChoice,
+    distractorChoices: getDistractorChoices(question),
+    choices,
+    correctIndex: correctFirst ? 0 : 1
+  };
+}
+
+function pickDistractorChoice(question, rng) {
+  return pickDistractor(question, rng) ?? cloneChoice(question.choices?.[question.correctIndex === 0 ? 1 : 0]);
+}
+
+export function createQuestionSessionFromQuestions(levelQuestions, options = {}) {
+  const { mode = "learn", rng = Math.random } = options;
+  const orderedQuestions = mode === "review"
+    ? shuffleItems(levelQuestions ?? [], rng)
+    : [...(levelQuestions ?? [])];
+
+  return orderedQuestions.map((question) => createSessionQuestion(question, rng));
+}
+
+export function createQuestionSession(levelNumber = 1, options = {}) {
+  return createQuestionSessionFromQuestions(getQuestionsForLevel(levelNumber), options);
+}
+
 export function getPreviewWordsForLevel(levelNumber = 1) {
   return levelPreviewWords.get(Number(levelNumber)) ?? levelPreviewWords.get(1);
 }
@@ -345,8 +418,8 @@ export function createInitialState(level = 1) {
   };
 }
 
-export function submitAnswer(state, selectedIndex) {
-  const levelQuestions = getQuestionsForLevel(state.level);
+export function submitAnswer(state, selectedIndex, options = {}) {
+  const levelQuestions = options.questions ?? getQuestionsForLevel(state.level);
   const question = levelQuestions[state.currentIndex];
 
   if (!question) {
@@ -372,7 +445,7 @@ export function submitAnswer(state, selectedIndex) {
 }
 
 export function submitCorrectAnswer(state, selectedIndex, options = {}) {
-  const levelQuestions = getQuestionsForLevel(state.level);
+  const levelQuestions = options.questions ?? getQuestionsForLevel(state.level);
   const question = levelQuestions[state.currentIndex];
   const { awardPoint = true } = options;
 
@@ -380,7 +453,7 @@ export function submitCorrectAnswer(state, selectedIndex, options = {}) {
     return state;
   }
 
-  const nextState = submitAnswer(state, selectedIndex);
+  const nextState = submitAnswer(state, selectedIndex, { questions: levelQuestions });
 
   if (awardPoint) {
     return nextState;

@@ -432,6 +432,42 @@ button {
   box-shadow: 0 8px 18px rgba(31, 74, 117, 0.08);
 }
 
+.mode-toggle {
+  width: min(100%, 300px);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding: 5px;
+  border: 2px solid #d7ecfb;
+  border-radius: 999px;
+  background: #f5fbff;
+}
+
+.mode-button {
+  min-height: 44px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #61748b;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.mode-button.active {
+  background: var(--blue);
+  color: white;
+  box-shadow: 0 8px 18px rgba(28, 130, 217, 0.22);
+}
+
+.mode-note {
+  margin: -4px 0 0;
+  color: #6d7e91;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
 .start-hero-panel .primary-button {
   width: min(100%, 260px);
   align-self: center;
@@ -1402,6 +1438,8 @@ button {
   .start-hero-panel .brand-row,
   .start-copy,
   .preview-strip,
+  .mode-toggle,
+  .mode-note,
   .start-hero-panel .credit-link {
     grid-column: 1;
   }

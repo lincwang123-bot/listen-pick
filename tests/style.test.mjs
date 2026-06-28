@@ -45,7 +45,7 @@ test("optional follow-read controls have responsive layout hooks", () => {
 });
 
 test("question counter stays on one line inside the progress pill", () => {
-  assert.match(index, /styles\.css\?v=perf-audio-webp-v3/);
+  assert.match(index, /styles\.css\?v=session-random-v1/);
 
   const topProgress = ruleBody(".top-progress");
   assert.match(topProgress, /grid-row:\s*2;/);
@@ -104,6 +104,19 @@ test("start screen primary button is centered in the hero panel", () => {
   assert.match(startPrimaryButton, /width:\s*min\(100%,\s*260px\);/);
   assert.match(startPrimaryButton, /align-self:\s*center;/);
   assert.match(startPrimaryButton, /justify-self:\s*center;/);
+});
+
+test("start screen mode switch is compact and touch friendly", () => {
+  assert.match(index, /class="mode-toggle"/);
+  assert.match(index, /data-play-mode="learn"/);
+  assert.match(index, /data-play-mode="review"/);
+
+  const modeToggle = ruleBody(".mode-toggle");
+  assert.match(modeToggle, /grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\);/);
+
+  const modeButton = ruleBody(".mode-button");
+  assert.match(modeButton, /min-height:\s*44px;/);
+  assert.match(modeButton, /border-radius:\s*999px;/);
 });
 
 test("topbar controls have relaxed spacing without a follow-read chip", () => {

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Listen & Pick</title>
     <link rel="icon" href="data:,">
-    <link rel="stylesheet" href="styles.css?v=perf-audio-webp-v3">
+    <link rel="stylesheet" href="styles.css?v=session-random-v1">
   </head>
   <body>
     <main id="app" class="app-shell">
@@ -92,6 +92,11 @@
               <span>running</span>
               <span>cooking</span>
             </div>
+            <div class="mode-toggle" role="group" aria-label="选择练习模式">
+              <button class="mode-button active" type="button" data-play-mode="learn" aria-pressed="true">学习</button>
+              <button class="mode-button" type="button" data-play-mode="review" aria-pressed="false">复习</button>
+            </div>
+            <p id="playModeNote" class="mode-note">学习模式：题目顺序按课程推进，左右图片随机。</p>
             <button id="startBtn" class="primary-button" type="button">开始闯关</button>
             <p class="credit-link">
               Demo illustrations generated for this prototype
@@ -196,6 +201,6 @@
       </section>
     </main>
 
-    <script type="module" src="src/app.mjs?v=count-art-v1"></script>
+    <script type="module" src="src/app.mjs?v=session-random-v1"></script>
   </body>
 </html>

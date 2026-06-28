@@ -1,4 +1,5 @@
 import {
+  createQuestionSession,
   createInitialState,
   getNextPlayableLevel,
   getPreviewWordsForLevel,
@@ -7,7 +8,7 @@ import {
   playableLevels,
   submitCorrectAnswer,
   submitAnswer
-} from "./game.mjs?v=perf-webp-v1";
+} from "./game.mjs?v=session-random-v1";
 import { toChineseHint } from "./hints.mjs?v=zh-hints-v2";
 import { createLevelPacks, findPackForLevel, getPackStart } from "./level-groups.mjs?v=pack-picker-v1";
 import {
@@ -42,6 +43,8 @@ const els = {
   levelSelect: document.querySelector("#levelSelect"),
   selectedLevelBadge: document.querySelector("#selectedLevelBadge"),
   startBtn: document.querySelector("#startBtn"),
+  playModeButtons: document.querySelectorAll("[data-play-mode]"),
+  playModeNote: document.querySelector("#playModeNote"),
   backBtn: document.querySelector("#backBtn"),
   levelPill: document.querySelector("#levelPill"),
   hintToggleBtn: document.querySelector("#hintToggleBtn"),
@@ -91,6 +94,7 @@ let hintsVisible = false;
 let chineseHintsVisible = false;
 let speechRate = 0.85;
 let audioVoice = "male";
+let playMode = "learn";
 let followReadState = createFollowReadState();
 let followReadQuestion = null;
 let mediaRecorder = null;
@@ -270,7 +274,7 @@ function startLevel() {
   markPerformance("startLevelAt", { firstAudioUrl: "", firstAudioDelayMs: null });
   clearPendingLevelSelect();
   clearFollowReadInteraction();
-  currentQuestions = getQuestionsForLevel(selectedLevel);
+  currentQuestions = createQuestionSession(selectedLevel, { mode: playMode });
   state = createInitialState(selectedLevel);
   locked = false;
   missedQuestionIndexes = new Set();
@@ -279,6 +283,20 @@ function startLevel() {
   showScreen("quiz");
   renderQuestion();
   speakCurrentSentence();
+}
+
+function setPlayMode(nextMode) {
+  playMode = nextMode === "review" ? "review" : "learn";
+  for (const button of els.playModeButtons ?? []) {
+    const isActive = button.dataset.playMode === playMode;
+    button.classList.toggle("active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  }
+  if (els.playModeNote) {
+    els.playModeNote.textContent = playMode === "review"
+      ? "复习模式：题目顺序随机，左右图片随机。"
+      : "学习模式：题目顺序按课程推进，左右图片随机。";
+  }
 }
 
 function clearAutoAdvance() {
@@ -430,7 +448,8 @@ function handleChoice(selectedIndex) {
     const questionIndex = state.currentIndex;
     const completedQuestion = question;
     state = submitCorrectAnswer(state, selectedIndex, {
-      awardPoint: !missedQuestionIndexes.has(questionIndex)
+      awardPoint: !missedQuestionIndexes.has(questionIndex),
+      questions: currentQuestions
     });
     if (els.scoreText) els.scoreText.textContent = String(state.score);
     if (els.progressBar) els.progressBar.style.width = `${(state.currentIndex / currentQuestions.length) * 100}%`;
@@ -898,6 +917,9 @@ bindControl(els.guestLoginBtn, "click", enterAppFromLogin);
 bindControl(els.childNameForm, "submit", submitChildName);
 bindControl(els.skipChildNameBtn, "click", skipChildName);
 bindControl(els.startBtn, "click", startLevel);
+for (const button of els.playModeButtons ?? []) {
+  bindControl(button, "click", () => setPlayMode(button.dataset.playMode));
+}
 bindControl(els.backBtn, "click", () => {
   clearAutoAdvance();
   clearRetryTimer();
@@ -930,5 +952,6 @@ bindControl(els.nextLevelBtn, "click", () => {
 });
 
 renderLevelSelect();
+setPlayMode(playMode);
 preloadLevelStart(selectedLevel);
 showScreen("login");

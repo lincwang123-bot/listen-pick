@@ -5,6 +5,8 @@ import { resolve } from "node:path";
 
 import {
   playableLevels,
+  createQuestionSession,
+  createQuestionSessionFromQuestions,
   createInitialState,
   getNextPlayableLevel,
   getPreviewWordsForLevel,
@@ -14,6 +16,11 @@ import {
   submitCorrectAnswer,
   submitAnswer
 } from "../src/game.mjs";
+
+function createSequenceRng(values) {
+  let index = 0;
+  return () => values[index++ % values.length];
+}
 
 test("level contains exactly 15 two-choice questions", () => {
   assert.equal(questions.length, 15);
@@ -80,6 +87,104 @@ test("getNextPlayableLevel returns the next available level", () => {
   assert.equal(getNextPlayableLevel(99), 100);
   assert.equal(getNextPlayableLevel(100), null);
   assert.equal(getNextPlayableLevel(999), null);
+});
+
+test("learning sessions keep curriculum order but randomize answer side once per attempt", () => {
+  const sourceQuestions = [
+    {
+      sentence: "First sentence.",
+      correctIndex: 0,
+      choices: [
+        { label: "First correct", image: "correct-1.png", alt: "First correct" },
+        { label: "First wrong", image: "wrong-1.png", alt: "First wrong" }
+      ]
+    },
+    {
+      sentence: "Second sentence.",
+      correctIndex: 1,
+      choices: [
+        { label: "Second wrong", image: "wrong-2.png", alt: "Second wrong" },
+        { label: "Second correct", image: "correct-2.png", alt: "Second correct" }
+      ]
+    }
+  ];
+
+  const session = createQuestionSessionFromQuestions(sourceQuestions, {
+    mode: "learn",
+    rng: createSequenceRng([0.8, 0.2])
+  });
+
+  assert.deepEqual(session.map((question) => question.sentence), [
+    "First sentence.",
+    "Second sentence."
+  ]);
+  assert.equal(session[0].correctIndex, 1);
+  assert.equal(session[0].choices[1].label, "First correct");
+  assert.equal(session[1].correctIndex, 0);
+  assert.equal(session[1].choices[0].label, "Second correct");
+});
+
+test("review sessions shuffle question order without adding preload-only choices", () => {
+  const sourceQuestions = Array.from({ length: 5 }, (_, index) => ({
+    sentence: `Sentence ${index + 1}.`,
+    correctIndex: 0,
+    choices: [
+      { label: `Correct ${index + 1}`, image: `correct-${index + 1}.png`, alt: `Correct ${index + 1}` },
+      { label: `Wrong ${index + 1}`, image: `wrong-${index + 1}.png`, alt: `Wrong ${index + 1}` }
+    ]
+  }));
+
+  const session = createQuestionSessionFromQuestions(sourceQuestions, {
+    mode: "review",
+    rng: createSequenceRng([0.9, 0.1, 0.7, 0.2, 0.6, 0.4, 0.8, 0.3, 0.5])
+  });
+
+  assert.notDeepEqual(
+    session.map((question) => question.sentence),
+    sourceQuestions.map((question) => question.sentence)
+  );
+  assert.ok(session.every((question) => question.choices.length === 2));
+});
+
+test("session questions pick one distractor from a distractor pool", () => {
+  const session = createQuestionSessionFromQuestions(
+    [
+      {
+        sentence: "The ball is red.",
+        correctIndex: 0,
+        choices: [
+          { label: "The ball is red.", image: "red-ball.png", alt: "red ball" },
+          { label: "The ball is blue.", image: "blue-ball.png", alt: "blue ball" }
+        ],
+        distractorChoices: [
+          { label: "The ball is blue.", image: "blue-ball.png", alt: "blue ball" },
+          { label: "The ball is yellow.", image: "yellow-ball.png", alt: "yellow ball" },
+          { label: "The ball is green.", image: "green-ball.png", alt: "green ball" }
+        ]
+      }
+    ],
+    {
+      rng: createSequenceRng([0.8, 0.8])
+    }
+  );
+
+  assert.equal(session[0].choices.length, 2);
+  assert.equal(session[0].correctIndex, 1);
+  assert.deepEqual(
+    session[0].choices.map((choice) => choice.image),
+    ["green-ball.png", "red-ball.png"]
+  );
+});
+
+test("session answer scoring uses randomized session choices", () => {
+  const [question] = createQuestionSession(1, { rng: createSequenceRng([0.8]) });
+  const state = createInitialState(1);
+  const nextState = submitCorrectAnswer(state, question.correctIndex, {
+    questions: [question]
+  });
+
+  assert.equal(nextState.currentIndex, 1);
+  assert.equal(nextState.score, 1);
 });
 
 test("each answer choice has a local illustration asset", () => {

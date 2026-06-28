@@ -22,7 +22,7 @@ test("app warms current and next level assets through the asset preloader", () =
 });
 
 test("index points to the preload-aware app module version", () => {
-  assert.ok(indexSource.includes('src="src/app.mjs?v=count-art-v1"'));
+  assert.ok(indexSource.includes('src="src/app.mjs?v=session-random-v1"'));
 });
 
 test("app starts from login then asks for a child name before the level picker", () => {
@@ -92,6 +92,15 @@ test("sentence audio defaults to standard speed instead of slow speed", () => {
   assert.ok(indexSource.includes('<option value="0.72">慢速</option>'));
   assert.ok(appSource.includes("let speechRate = 0.85"));
   assert.ok(appSource.includes("Number.isFinite(parsedRate) ? parsedRate : 0.85"));
+});
+
+test("start screen exposes learn and review modes without changing preload window size", () => {
+  assert.ok(indexSource.includes('data-play-mode="learn"'));
+  assert.ok(indexSource.includes('data-play-mode="review"'));
+  assert.ok(appSource.includes("createQuestionSession(selectedLevel"));
+  assert.ok(appSource.includes("mode: playMode"));
+  assert.ok(appSource.includes("questions: currentQuestions"));
+  assert.ok(appSource.includes("const PRELOAD_CURRENT_WINDOW_COUNT = 4"));
 });
 
 test("follow-read entry is removed from the learning controls", () => {
