@@ -59,6 +59,14 @@ npm start
 http://127.0.0.1:4173/index.html
 ```
 
+公开源码仓库没有包含体积很大的教材媒体目录。干净克隆后可以启动页面外壳，但如果要完整离线试玩 Level 1-100，需要额外把生成好的素材包放到：
+
+```text
+assets/textbook/
+```
+
+如果没有这个目录，当前可玩教材关卡会缺少题目插图和英文音频，素材完整性测试也会失败。
+
 ## 测试
 
 ```bash
@@ -78,6 +86,18 @@ npm run generate:webp-images
 ```
 
 音频生成相关命令保留在 `package.json` 中。大型本地 TTS 环境和临时生成文件不会进入 Git。
+
+完整本地试玩需要准备这些生成素材：
+
+```text
+assets/textbook/images/
+assets/textbook/audio/
+assets/textbook/audio-male/
+assets/textbook/audio-female/
+assets/textbook/contact-sheets/
+```
+
+这些素材可以通过 GitHub Release、Git LFS、CDN、对象存储或私有部署包单独分发。
 
 ## 素材说明
 

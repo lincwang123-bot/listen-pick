@@ -53,6 +53,14 @@ Then open:
 http://127.0.0.1:4173/index.html
 ```
 
+The source repository does not include the large generated textbook media folder. A clean clone can start the app shell, but complete local play for Levels 1-100 requires the generated media package to be copied into:
+
+```text
+assets/textbook/
+```
+
+Without that folder, the browser will show missing question images/audio for the current playable textbook levels, and the asset completeness tests will fail.
+
 ## Test
 
 ```bash
@@ -72,6 +80,18 @@ npm run generate:webp-images
 ```
 
 Audio generation commands are kept in `package.json`. Large local TTS environments and temporary generation output are intentionally ignored by Git.
+
+For a fully playable local build, provide these generated assets:
+
+```text
+assets/textbook/images/
+assets/textbook/audio/
+assets/textbook/audio-male/
+assets/textbook/audio-female/
+assets/textbook/contact-sheets/
+```
+
+These assets can be distributed separately as a release asset, Git LFS package, CDN folder, or private deployment bundle.
 
 ## Media Assets
 
