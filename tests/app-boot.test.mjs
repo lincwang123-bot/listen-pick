@@ -22,7 +22,7 @@ test("app warms current and next level assets through the asset preloader", () =
 });
 
 test("index points to the preload-aware app module version", () => {
-  assert.ok(indexSource.includes('src="src/app.mjs?v=session-random-v1"'));
+  assert.ok(indexSource.includes('src="src/app.mjs?v=distractor-pool-v1"'));
 });
 
 test("app starts from login then asks for a child name before the level picker", () => {

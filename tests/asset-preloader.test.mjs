@@ -88,6 +88,32 @@ test("collectQuestionAssets can preload a selected voice audio url", () => {
   );
 });
 
+test("collectQuestionAssets ignores extra distractor pool images until a session selects one", () => {
+  const questionWithPool = {
+    ...sampleQuestions[0],
+    distractorChoices: [
+      { image: "assets/textbook/images/level-001/q002-wrong.png" },
+      { image: "assets/textbook/images/level-001/q003-wrong.png" },
+      { image: "assets/textbook/images/level-001/q004-wrong.png" }
+    ]
+  };
+
+  assert.deepEqual(collectQuestionAssets(questionWithPool, { assetVersion: "pool-v1" }), [
+    {
+      kind: "audio",
+      url: "assets/textbook/audio/level-001/q001.m4a?v=pool-v1"
+    },
+    {
+      kind: "image",
+      url: "assets/textbook/images/level-001/q001-correct.png?v=pool-v1"
+    },
+    {
+      kind: "image",
+      url: "assets/textbook/images/level-001/q001-wrong.png?v=pool-v1"
+    }
+  ]);
+});
+
 test("preloader warms a question window once with injected loaders", async () => {
   const calls = [];
   const preloader = createAssetPreloader({

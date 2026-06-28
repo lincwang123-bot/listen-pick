@@ -8,7 +8,7 @@ import {
   playableLevels,
   submitCorrectAnswer,
   submitAnswer
-} from "./game.mjs?v=session-random-v1";
+} from "./game.mjs?v=distractor-pool-v1";
 import { toChineseHint } from "./hints.mjs?v=zh-hints-v2";
 import { createLevelPacks, findPackForLevel, getPackStart } from "./level-groups.mjs?v=pack-picker-v1";
 import {
