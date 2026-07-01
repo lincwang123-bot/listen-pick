@@ -1,6 +1,6 @@
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
-import { textbookLevels } from "../src/course/textbook-levels-001-100.generated.mjs";
+import { textbookLevels } from "../src/course/textbook-levels-001-300.generated.mjs";
 
 const outputPath = "src/course/textbook-playable.generated.mjs";
 

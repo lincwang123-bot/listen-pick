@@ -2,120 +2,42 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { textbookLevels as existingTextbookLevels } from "../src/course/textbook-levels-001-100.generated.mjs";
+
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
-const outputPath = resolve(root, "docs/child-english-listening-levels-101-300.md");
+const outputJsonPath = resolve(root, "docs/child-english-listening-levels-101-300.json");
+const outputMdPath = resolve(root, "docs/child-english-listening-levels-101-300.md");
+const outputDataPath = resolve(root, "src/course/textbook-levels-101-300.generated.mjs");
+const outputCombinedDataPath = resolve(root, "src/course/textbook-levels-001-300.generated.mjs");
+const outputPromptPath = resolve(root, "docs/textbook-contact-sheet-prompts-101-300.md");
+const QUESTIONS_PER_LEVEL = 15;
+const CONTACT_SHEET_COLUMNS = 6;
+const CONTACT_SHEET_ROWS = 5;
+const PROMPT_SHEET_COLUMNS = 5;
+const PROMPT_SHEET_ROWS = 2;
+const PROMPT_SHEET_SIZE = PROMPT_SHEET_COLUMNS * PROMPT_SHEET_ROWS;
+const IMAGE_STYLE = [
+  "polished children's picture book illustration",
+  "same finished illustration quality as the Level 1-100 production images",
+  "soft pastel colors",
+  "clean white background",
+  "simple composition",
+  "centered subject",
+  "warm lighting",
+  "rounded cartoon character design",
+  "clean outlines",
+  "full-body or clearly framed subject",
+  "no cropped limbs",
+  "not a simplified vector placeholder",
+  "no stick-figure or geometric icon style",
+  "no text",
+  "no watermark",
+  "not realistic photo",
+  "no complex scene"
+].join(", ");
 
-const reviewTypesByQuestion = [
-  "old", "old", "old", "old", "old", "old",
-  "new", "new", "new", "new", "new", "new",
-  "variation", "variation", "variation"
-];
-
-const stageConfigs = [
-  {
-    start: 101,
-    end: 130,
-    title: "动作强化阶段",
-    goal: "人物 + 正在发生的动作",
-    pattern: /^The [A-Za-z ]+ is [a-z]+ing\.$/,
-    sentences: () => cross(
-      peopleSubjects,
-      actionOnlyVerbs,
-      (subject, action) => `The ${subject} is ${action}.`
-    )
-  },
-  {
-    start: 131,
-    end: 160,
-    title: "动作 + 物品",
-    goal: "人物 + 动作 + 一个具体物品",
-    pattern: /^The [A-Za-z ]+ is [a-z]+ing .+\.$/,
-    sentences: () => cross(
-      objectActionSubjects,
-      objectActionTemplates,
-      (subject, template) => template(subject)
-    )
-  },
-  {
-    start: 161,
-    end: 190,
-    title: "位置关系",
-    goal: "一个主体 + 一个位置关系 + 一个参照物",
-    pattern: /^The [A-Za-z ]+ is (on|in|under|behind|next to) the [a-z ]+\.$/,
-    sentences: () => relationSentences()
-  },
-  {
-    start: 191,
-    end: 220,
-    title: "数量 + 物品",
-    goal: "There are + 数量 + 复数物品",
-    pattern: /^There are (two|three|four|five|six|seven|eight|nine|ten) [a-z ]+s\.$/,
-    sentences: () => cross(
-      numbers,
-      pluralObjects,
-      (number, object) => `There are ${number} ${object}.`
-    )
-  },
-  {
-    start: 221,
-    end: 250,
-    title: "颜色 + 物品",
-    goal: "一个物品 + 一个颜色属性",
-    pattern: /^The [A-Za-z ]+ is (red|blue|yellow|green|black|white|pink|orange|purple|brown)\.$/,
-    sentences: () => cross(
-      colorObjects,
-      colors,
-      (object, color) => `The ${object} is ${color}.`
-    )
-  },
-  {
-    start: 251,
-    end: 280,
-    title: "家庭 + 动作",
-    goal: "家庭成员 + 正在发生的动作",
-    pattern: /^My [a-z ]+ is [a-z]+ing\.$/,
-    sentences: () => cross(
-      familySubjects,
-      familyActionVerbs,
-      (subject, action) => `My ${subject} is ${action}.`
-    )
-  },
-  {
-    start: 281,
-    end: 300,
-    title: "综合场景",
-    goal: "人物 + 一个动作 + 一个物品 + 一个场景",
-    pattern: /^The [A-Za-z ]+ is [a-z]+ing .+ (in|at|on) the [a-z ]+\.$/,
-    sentences: () => cross(
-      sceneSubjects,
-      sceneActionObjectTemplates,
-      (subject, template) => template(subject)
-    )
-  }
-];
-
-const peopleSubjects = [
-  "girl",
-  "boy",
-  "child",
-  "student",
-  "teacher",
-  "mother",
-  "father",
-  "sister",
-  "brother",
-  "friend",
-  "classmate",
-  "grandma",
-  "grandpa",
-  "aunt",
-  "uncle",
-  "woman",
-  "man",
-  "cousin"
-];
-
-const actionOnlyVerbs = [
+const people = ["boy", "girl", "child"];
+const actions = [
   "running",
   "walking",
   "jumping",
@@ -126,503 +48,454 @@ const actionOnlyVerbs = [
   "eating",
   "drinking",
   "sleeping",
-  "swimming",
-  "singing",
-  "clapping",
   "sitting",
   "standing",
-  "smiling",
-  "waving",
-  "laughing",
-  "stretching",
-  "resting",
-  "waiting",
-  "playing",
-  "hopping",
-  "marching",
-  "painting"
-];
-
-const objectActionSubjects = [
-  { text: "girl", possessive: "her" },
-  { text: "boy", possessive: "his" },
-  { text: "child", possessive: "both" },
-  { text: "student", possessive: "both" },
-  { text: "teacher", possessive: "both" },
-  { text: "friend", possessive: "both" },
-  { text: "classmate", possessive: "both" },
-  { text: "sister", possessive: "her" },
-  { text: "brother", possessive: "his" },
-  { text: "mother", possessive: "her" },
-  { text: "father", possessive: "his" },
-  { text: "grandma", possessive: "her" },
-  { text: "grandpa", possessive: "his" },
-  { text: "woman", possessive: "her" },
-  { text: "man", possessive: "his" }
-];
-
-const objectActionTemplates = [
-  (subject) => `The ${subject.text} is reading a book.`,
-  (subject) => `The ${subject.text} is writing a word.`,
-  (subject) => `The ${subject.text} is drawing a flower.`,
-  (subject) => `The ${subject.text} is eating an apple.`,
-  (subject) => `The ${subject.text} is drinking water.`,
-  (subject) => `The ${subject.text} is holding a pencil.`,
-  (subject) => `The ${subject.text} is opening a book.`,
-  (subject) => `The ${subject.text} is closing a box.`,
-  (subject) => `The ${subject.text} is kicking a ball.`,
-  (subject) => `The ${subject.text} is throwing a ball.`,
-  (subject) => `The ${subject.text} is catching a ball.`,
-  (subject) => `The ${subject.text} is flying a kite.`,
-  (subject) => `The ${subject.text} is carrying a bag.`,
-  (subject) => `The ${subject.text} is packing a schoolbag.`,
-  (subject) => `The ${subject.text} is washing ${bodyObject(subject, "hands")}.`,
-  (subject) => `The ${subject.text} is playing with a ball.`,
-  (subject) => `The ${subject.text} is playing with blocks.`,
-  (subject) => `The ${subject.text} is looking at a picture.`,
-  (subject) => `The ${subject.text} is pointing to the board.`,
-  (subject) => `The ${subject.text} is touching ${bodyObject(subject, "nose")}.`,
-  (subject) => `The ${subject.text} is wearing a hat.`,
-  (subject) => `The ${subject.text} is folding a towel.`,
-  (subject) => `The ${subject.text} is using a spoon.`,
-  (subject) => `The ${subject.text} is cleaning a table.`,
-  (subject) => `The ${subject.text} is moving a toy car.`,
-  (subject) => `The ${subject.text} is pulling a toy train.`,
-  (subject) => `The ${subject.text} is building a tower.`,
-  (subject) => `The ${subject.text} is making a bed.`,
-  (subject) => `The ${subject.text} is watering a plant.`,
-  (subject) => `The ${subject.text} is feeding a cat.`
-];
-
-const positionSubjects = [
-  "cat",
-  "dog",
-  "bird",
-  "rabbit",
-  "duck",
-  "fish",
-  "ball",
-  "book",
-  "bag",
-  "toy car",
-  "teddy bear",
-  "robot",
-  "pencil",
-  "cup",
-  "bottle",
-  "apple",
-  "kite",
-  "hat"
-];
-
-const prepositions = ["on", "in", "under", "behind", "next to"];
-
-const positionObjects = [
-  "table",
-  "chair",
-  "box",
-  "bed",
-  "sofa",
-  "schoolbag",
-  "shelf",
-  "tree",
-  "desk",
-  "bench"
-];
-
-const numbers = ["two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
-
-const pluralObjects = [
-  "apples",
-  "bananas",
-  "oranges",
-  "pears",
-  "books",
-  "pencils",
-  "erasers",
-  "rulers",
-  "balls",
-  "blocks",
-  "cars",
-  "trains",
-  "kites",
-  "cups",
-  "bottles",
-  "chairs",
-  "tables",
-  "bags",
-  "boxes",
-  "hats",
-  "caps",
-  "shoes",
-  "socks",
-  "shirts",
-  "coats",
-  "stars",
-  "circles",
-  "squares",
-  "triangles",
-  "flowers",
-  "trees",
-  "birds",
-  "cats",
-  "dogs",
-  "rabbits",
-  "ducks",
-  "turtles",
-  "spoons",
-  "forks",
-  "plates",
-  "bowls",
-  "toys",
-  "robots",
-  "towels",
-  "combs",
-  "brushes",
-  "pictures",
-  "notebooks",
-  "lunch boxes",
-  "storybooks"
-];
-
-const colorObjects = [
-  "apple",
-  "banana",
-  "orange",
-  "pear",
-  "ball",
-  "book",
-  "pencil",
-  "eraser",
-  "ruler",
-  "schoolbag",
-  "chair",
-  "table",
-  "box",
-  "cup",
-  "bottle",
-  "hat",
-  "cap",
-  "shirt",
-  "coat",
-  "dress",
-  "skirt",
-  "shoe",
-  "sock",
-  "kite",
-  "car",
-  "train",
-  "bus",
-  "toy",
-  "robot",
-  "block",
-  "star",
-  "circle",
-  "square",
-  "triangle",
-  "flower",
-  "leaf",
-  "bird",
-  "fish",
-  "rabbit",
-  "duck",
-  "plate",
-  "bowl",
-  "spoon",
-  "towel",
-  "comb"
-];
-
-const colors = ["red", "blue", "yellow", "green", "black", "white", "pink", "orange", "purple", "brown"];
-
-const familySubjects = [
-  "mother",
-  "father",
-  "sister",
-  "brother",
-  "grandma",
-  "grandpa",
-  "aunt",
-  "uncle",
-  "cousin",
-  "older sister",
-  "older brother",
-  "little sister",
-  "little brother",
-  "grandmother",
-  "grandfather"
-];
-
-const familyActionVerbs = [
-  "running",
-  "walking",
-  "jumping",
-  "dancing",
-  "reading",
-  "writing",
-  "drawing",
-  "eating",
-  "drinking",
-  "sleeping",
-  "swimming",
   "singing",
   "clapping",
-  "sitting",
-  "standing",
-  "smiling",
   "waving",
+  "smiling",
   "laughing",
-  "stretching",
-  "resting",
-  "waiting",
-  "playing",
-  "hopping",
-  "marching",
   "painting",
-  "counting",
-  "cooking",
-  "cleaning",
-  "gardening",
-  "exercising"
+  "swimming",
+  "playing"
+];
+const objectPairs = [
+  ["reading", "a book", "a card"],
+  ["drawing", "a flower", "a house"],
+  ["eating", "an apple", "a banana"],
+  ["drinking", "water", "milk"],
+  ["holding", "a ball", "a toy"],
+  ["holding", "a toy", "a ball"],
+  ["opening", "a box", "a book"],
+  ["closing", "a book", "a box"],
+  ["kicking", "a ball", "a beanbag"],
+  ["carrying", "a bag", "a basket"],
+  ["flying", "a kite", "a paper plane"],
+  ["folding", "a towel", "a shirt"],
+  ["using", "a spoon", "a cup"],
+  ["cleaning", "a table", "a desk"],
+  ["watering", "a plant", "a flower"]
+];
+const positionSubjects = ["ball", "book", "toy", "apple", "bag", "hat"];
+const positionPlaces = ["box", "bag"];
+const prepositions = ["in", "on", "under", "behind", "next to"];
+const countObjects = [
+  ["balls", "ball"],
+  ["books", "book"],
+  ["toys", "toy"],
+  ["apples", "apple"],
+  ["bags", "bag"],
+  ["hats", "hat"]
+];
+const numbers = ["two", "three", "four", "five", "six"];
+const colorObjects = ["ball", "book", "toy", "bag", "hat", "cup"];
+const colors = ["red", "blue", "yellow", "green", "black", "white", "pink", "orange"];
+const familyMembers = ["mother", "father", "sister", "brother"];
+const familyActions = ["cooking", "reading", "eating", "drinking", "walking", "sitting", "standing", "singing", "smiling", "waving"];
+const childFamilyActions = ["reading", "eating", "drinking", "walking", "sitting", "standing", "singing", "smiling", "waving", "clapping"];
+const scenes = ["at school", "at home", "in the park"];
+const sceneActions = ["running", "walking", "reading", "drawing", "eating", "drinking", "playing", "sitting", "standing", "singing"];
+const integratedObjects = [
+  ["reading", "a book", "a card"],
+  ["drawing", "a flower", "a house"],
+  ["eating", "an apple", "a banana"],
+  ["holding", "a ball", "a toy"],
+  ["playing with", "a toy", "a ball"]
 ];
 
-const sceneSubjects = [
-  { text: "girl", possessive: "her" },
-  { text: "boy", possessive: "his" },
-  { text: "child", possessive: "both" },
-  { text: "student", possessive: "both" },
-  { text: "friend", possessive: "both" },
-  { text: "classmate", possessive: "both" },
-  { text: "sister", possessive: "her" },
-  { text: "brother", possessive: "his" },
-  { text: "teacher", possessive: "both" },
-  { text: "cousin", possessive: "both" }
+const stages = [
+  { start: 101, end: 130, title: "动作认知", build: buildActionQuestions },
+  { start: 131, end: 160, title: "物品结构", build: buildObjectQuestions },
+  { start: 161, end: 190, title: "位置关系", build: buildPositionQuestions },
+  { start: 191, end: 220, title: "数量理解", build: buildNumberQuestions },
+  { start: 221, end: 250, title: "颜色理解", build: buildColorQuestions },
+  { start: 251, end: 280, title: "家庭系统", build: buildFamilyQuestions },
+  { start: 281, end: 300, title: "综合理解", build: buildIntegratedQuestions }
 ];
 
-const scenePlaces = [
-  "in the park",
-  "in the classroom",
-  "in the kitchen",
-  "in the garden",
-  "on the playground",
-  "in the library",
-  "in the bedroom",
-  "in the living room",
-  "in the bathroom",
-  "at the zoo"
-];
-
-const sceneActionObjects = [
-  "reading a book",
-  "drawing a picture",
-  "holding a pencil",
-  "eating an apple",
-  "drinking water",
-  "playing with a ball",
-  "flying a kite",
-  "carrying a bag",
-  "opening a book",
-  "closing a box",
-  "using a spoon",
-  "building a tower",
-  "throwing a ball",
-  "catching a ball",
-  "kicking a football",
-  "wearing a hat",
-  "folding a towel",
-  "cleaning a table",
-  "watering a plant",
-  "feeding a rabbit",
-  "looking at a picture",
-  "pointing to a flower",
-  "touching a toy",
-  "packing a schoolbag",
-  "holding a cup",
-  "choosing a book",
-  "making a sandcastle",
-  "moving a toy car",
-  "pulling a toy train",
-  "counting stars"
-];
-
-const sceneActionObjectTemplates = sceneActionObjects.map((actionObject, index) => {
-  const place = scenePlaces[index % scenePlaces.length];
-  return (subject) => `The ${subject.text} is ${actionObject} ${place}.`;
-});
-
-const bannedPatterns = [
-  /\boffice\b/i,
-  /\bmeeting\b/i,
-  /\bmanager\b/i,
-  /\bsalary\b/i,
-  /\binvestment\b/i,
-  /\bbusiness\b/i,
-  /\bbank\b/i,
-  /\bloan\b/i,
-  /\bstock\b/i,
-  /\bpassport\b/i,
-  /\bhotel\b/i,
-  /\bdream\b/i,
-  /\bsuccess\b/i,
-  /\bfreedom\b/i,
-  /\bculture\b/i,
-  /\bhistory\b/i,
-  /\bfuture\b/i,
-  /\bfriendship\b/i,
-  /\bopinion\b/i,
-  /\bidea\b/i,
-  /\bknowledge\b/i,
-  /\banxious\b/i,
-  /\bembarrassed\b/i,
-  /\bjealous\b/i,
-  /\bregretful\b/i,
-  /\bdepressed\b/i,
-  /\bfighting\b/i,
-  /\bpushing\b/i,
-  /\bunder the seesaw\b/i,
-  /\bslide in the classroom\b/i
-];
-
-const levels = buildLevels();
-validateLevels(levels);
-await mkdir(dirname(outputPath), { recursive: true });
-await writeFile(outputPath, renderMarkdown(levels), "utf8");
-console.log(`Generated ${levels.length} levels and ${levels.length * 15} sentences at ${outputPath}`);
-
-function buildLevels() {
-  const levels = [];
-
-  for (const stage of stageConfigs) {
-    const requiredCount = (stage.end - stage.start + 1) * 15;
-    const sentences = unique(stage.sentences()).slice(0, requiredCount);
-    if (sentences.length < requiredCount) {
-      throw new Error(`${stage.title} needs ${requiredCount} sentences, got ${sentences.length}`);
+const questionCounters = new Map();
+const levels = [];
+for (const stage of stages) {
+  for (let level = stage.start; level <= stage.end; level += 1) {
+    const questions = stage.build(level);
+    if (questions.length !== QUESTIONS_PER_LEVEL) {
+      throw new Error(`Level ${level} has ${questions.length} questions.`);
     }
+    levels.push({ level, title: stage.title, questions });
+  }
+}
 
-    let sentenceIndex = 0;
-    for (let level = stage.start; level <= stage.end; level += 1) {
-      levels.push({
-        level,
-        title: stage.title,
-        goal: stage.goal,
-        stage,
-        sentences: Array.from({ length: 15 }, (_, questionIndex) => ({
-          text: sentences[sentenceIndex++],
-          reviewType: reviewTypesByQuestion[questionIndex]
-        }))
+await mkdir(dirname(outputJsonPath), { recursive: true });
+await mkdir(dirname(outputDataPath), { recursive: true });
+await writeFile(outputJsonPath, `${JSON.stringify({ levels }, null, 2)}\n`, "utf8");
+await writeFile(outputMdPath, renderMarkdown(levels), "utf8");
+await writeTextbookDataFiles(levels);
+await writeContactSheetManifests(levels);
+await writeFile(outputPromptPath, renderContactSheetPrompts(levels), "utf8");
+
+console.log(`Generated ${levels.length} levels and ${levels.length * QUESTIONS_PER_LEVEL} questions.`);
+console.log(outputJsonPath);
+console.log(outputMdPath);
+console.log(outputDataPath);
+console.log(outputCombinedDataPath);
+console.log(outputPromptPath);
+
+function buildActionQuestions(level) {
+  const offset = level - 101;
+  const activeActions = windowed(actions, offset * 2, 5);
+  return people.flatMap((person) =>
+    activeActions.map((action, index) => {
+      const wrongAction = activeActions[(index + 1) % activeActions.length];
+      return makeQuestion(level, personAction(person, action), personAction(person, wrongAction), "action");
+    })
+  );
+}
+
+function buildObjectQuestions(level) {
+  const offset = level - 131;
+  const activePairs = windowed(objectPairs, offset * 2, 5);
+  return people.flatMap((person) =>
+    activePairs.map(([action, object, wrongObject]) =>
+      makeQuestion(level, personObject(person, action, object), personObject(person, action, wrongObject), "object")
+    )
+  );
+}
+
+function buildPositionQuestions(level) {
+  const offset = level - 161;
+  const place = positionPlaces[offset % positionPlaces.length];
+  const subjects = windowedWithout(positionSubjects, offset, 3, place);
+  return subjects.flatMap((subject) =>
+    prepositions.map((prep, index) => {
+      const wrongPrep = prepositions[(index + 1) % prepositions.length];
+      return makeQuestion(level, positionSentence(subject, prep, place), positionSentence(subject, wrongPrep, place), "position");
+    })
+  );
+}
+
+function buildNumberQuestions(level) {
+  const offset = level - 191;
+  const objects = windowed(countObjects, offset, 3);
+  return objects.flatMap(([plural]) =>
+    numbers.map((number, index) => {
+      const wrongNumber = numbers[(index + 1) % numbers.length];
+      return makeQuestion(level, numberSentence(number, plural), numberSentence(wrongNumber, plural), "number");
+    })
+  );
+}
+
+function buildColorQuestions(level) {
+  const offset = level - 221;
+  const objects = windowed(colorObjects, offset, 3);
+  const activeColors = windowed(colors, offset, 5);
+  return objects.flatMap((object) =>
+    activeColors.map((color, index) => {
+      const wrongColor = activeColors[(index + 1) % activeColors.length];
+      return makeQuestion(level, colorSentence(object, color), colorSentence(object, wrongColor), "color");
+    })
+  );
+}
+
+function buildFamilyQuestions(level) {
+  const offset = level - 251;
+  const members = windowed(familyMembers, offset, 3);
+  return members.flatMap((member) =>
+    windowed(familyActionPool(member), offset, 5).map((action, index, activeActions) => {
+      const wrongAction = activeActions[(index + 1) % activeActions.length];
+      return makeQuestion(level, familySentence(member, action), familySentence(member, wrongAction), "action");
+    })
+  );
+}
+
+function buildIntegratedQuestions(level) {
+  const offset = level - 281;
+  const mode = offset % 2;
+
+  if (mode === 0) {
+    const activeActions = windowed(sceneActions, offset, 5);
+    return people.flatMap((person) =>
+      activeActions.map((action, index) => {
+        const scene = scenes[index % scenes.length];
+        const wrongScene = scenes[(index + 1) % scenes.length];
+        return makeQuestion(level, personScene(person, action, scene), personScene(person, action, wrongScene), "scene");
+      })
+    );
+  }
+
+  const activePairs = windowed(integratedObjects, offset, 5);
+  return people.flatMap((person) =>
+    activePairs.map(([action, object, wrongObject]) =>
+      makeQuestion(level, personObject(person, action, object), personObject(person, action, wrongObject), "object")
+    )
+  );
+}
+
+function makeQuestion(level, sentence, wrongSentence, contrast) {
+  const questionNumber = nextQuestionNumber(level);
+  const id = `level${level}_q${String(questionNumber).padStart(2, "0")}`;
+  const correctImage = `assets/textbook/images/level-${String(level).padStart(3, "0")}/q${String(questionNumber).padStart(3, "0")}-correct.png`;
+  const wrongImage = `assets/textbook/images/level-${String(level).padStart(3, "0")}/q${String(questionNumber).padStart(3, "0")}-wrong.png`;
+
+  return {
+    id,
+    level,
+    sentence,
+    wrongSentence,
+    concept: contrast,
+    difficulty: getDifficultyForLevel(level),
+    contrast,
+    correctImagePrompt: imagePrompt(sentence),
+    wrongImagePrompt: imagePrompt(wrongSentence),
+    options: [
+      { image: correctImage, isCorrect: true },
+      { image: wrongImage, isCorrect: false }
+    ]
+  };
+}
+
+function getDifficultyForLevel(level) {
+  if (level <= 130) return 1;
+  if (level <= 160) return 2;
+  if (level <= 220) return 3;
+  if (level <= 280) return 4;
+  return 5;
+}
+
+function nextQuestionNumber(level) {
+  const next = (questionCounters.get(level) ?? 0) + 1;
+  questionCounters.set(level, next);
+  return next;
+}
+
+function imagePrompt(sentence) {
+  return `${IMAGE_STYLE}. Scene: ${sentence}`;
+}
+
+function personAction(person, action) {
+  return `The ${person} is ${action}.`;
+}
+
+function personObject(person, action, object) {
+  return `The ${person} is ${action} ${object}.`;
+}
+
+function positionSentence(subject, prep, place) {
+  return `The ${subject} is ${prep} the ${place}.`;
+}
+
+function numberSentence(number, object) {
+  return `There are ${number} ${object}.`;
+}
+
+function colorSentence(object, color) {
+  return `The ${object} is ${color}.`;
+}
+
+function familySentence(member, action) {
+  return `My ${member} is ${action}.`;
+}
+
+function personScene(person, action, scene) {
+  return `The ${person} is ${action} ${scene}.`;
+}
+
+function windowed(items, offset, count) {
+  return Array.from({ length: count }, (_, index) => items[(offset + index) % items.length]);
+}
+
+function familyActionPool(member) {
+  return ["sister", "brother"].includes(member) ? childFamilyActions : familyActions;
+}
+
+function windowedWithout(items, offset, count, blockedItem) {
+  const result = [];
+  let index = 0;
+
+  while (result.length < count && index < items.length * 2) {
+    const item = items[(offset + index) % items.length];
+    if (item !== blockedItem && !result.includes(item)) {
+      result.push(item);
+    }
+    index += 1;
+  }
+
+  if (result.length !== count) {
+    throw new Error(`Unable to build ${count} unique items without ${blockedItem}.`);
+  }
+
+  return result;
+}
+
+async function writeTextbookDataFiles(items) {
+  const stageLevels = items.map(toTextbookLevel);
+  const combinedLevels = [...existingTextbookLevels, ...stageLevels];
+
+  await writeFile(
+    outputDataPath,
+    `// Generated by scripts/generate-textbook-stage3-6-md.mjs.\n` +
+      `// Do not edit by hand.\n\n` +
+      `export const textbookLevels = ${JSON.stringify(stageLevels, null, 2)};\n`,
+    "utf8"
+  );
+
+  await writeFile(
+    outputCombinedDataPath,
+    `// Generated by scripts/generate-textbook-stage3-6-md.mjs.\n` +
+      `// Do not edit by hand.\n\n` +
+      `export const textbookLevels = ${JSON.stringify(combinedLevels, null, 2)};\n`,
+    "utf8"
+  );
+}
+
+function toTextbookLevel(level) {
+  const title = `Level ${level.level}：${level.title}`;
+  return {
+    level: level.level,
+    title,
+    previewWords: getPreviewWords(level),
+    questions: level.questions.map((question, index) => {
+      const questionNumber = index + 1;
+      return {
+        id: `L${pad(level.level)}-Q${pad(questionNumber)}`,
+        sentence: question.sentence,
+        wrongSentence: question.wrongSentence,
+        audioFile: `assets/textbook/audio/level-${pad(level.level)}/q${pad(questionNumber)}.m4a`,
+        correctImage: `assets/textbook/images/level-${pad(level.level)}/q${pad(questionNumber)}-correct.png`,
+        wrongImage: `assets/textbook/images/level-${pad(level.level)}/q${pad(questionNumber)}-wrong.png`,
+        contactSheet: `assets/textbook/contact-sheets/level-${pad(level.level)}.png`,
+        theme: title,
+        concept: question.concept,
+        difficulty: question.difficulty,
+        correctImagePrompt: question.correctImagePrompt,
+        wrongImagePrompt: question.wrongImagePrompt,
+        source: "child-english-listening-levels-101-300.json"
+      };
+    })
+  };
+}
+
+function getPreviewWords(level) {
+  const words = [];
+  const ignored = new Set(["the", "is", "are", "a", "an", "my", "with", "in", "on", "under", "behind", "next", "to", "at", "there"]);
+
+  for (const question of level.questions) {
+    const parts = question.sentence
+      .replace(/[.]/g, "")
+      .split(/\s+/)
+      .map((word) => word.toLowerCase())
+      .filter((word) => !ignored.has(word));
+
+    for (const part of parts) {
+      if (!words.includes(part)) words.push(part);
+      if (words.length === 3) return words;
+    }
+  }
+
+  return ["listen", "pick", "review"];
+}
+
+async function writeContactSheetManifests(items) {
+  for (const level of items.map(toTextbookLevel)) {
+    const manifestPath = resolve(root, `assets/textbook/contact-sheets/level-${pad(level.level)}.manifest.json`);
+    const cells = [];
+
+    for (const [index, question] of level.questions.entries()) {
+      cells.push({
+        cell: index * 2 + 1,
+        question: index + 1,
+        role: "correct",
+        sentence: question.sentence,
+        prompt: question.correctImagePrompt,
+        output: question.correctImage
+      });
+      cells.push({
+        cell: index * 2 + 2,
+        question: index + 1,
+        role: "wrong",
+        sentence: question.wrongSentence,
+        prompt: question.wrongImagePrompt,
+        output: question.wrongImage
       });
     }
-  }
 
-  return levels;
-}
-
-function validateLevels(levels) {
-  if (levels.length !== 200) throw new Error(`Expected 200 levels, got ${levels.length}`);
-  const allSentences = [];
-
-  for (const level of levels) {
-    if (level.sentences.length !== 15) throw new Error(`Level ${level.level} does not have 15 sentences`);
-    for (const sentence of level.sentences) {
-      if (!level.stage.pattern.test(sentence.text)) {
-        throw new Error(`Pattern mismatch in Level ${level.level}: ${sentence.text}`);
-      }
-      if (bannedPatterns.some((pattern) => pattern.test(sentence.text))) {
-        throw new Error(`Banned content in Level ${level.level}: ${sentence.text}`);
-      }
-      allSentences.push(sentence.text);
-    }
-  }
-
-  const duplicate = findDuplicate(allSentences);
-  if (duplicate) throw new Error(`Duplicate sentence: ${duplicate}`);
-
-  for (let start = 101; start <= 300; start += 10) {
-    const block = levels.filter((level) => level.level >= start && level.level < start + 10);
-    const counts = { old: 0, new: 0, variation: 0 };
-    for (const level of block) {
-      for (const sentence of level.sentences) counts[sentence.reviewType] += 1;
-    }
-    if (counts.old !== 60 || counts.new !== 60 || counts.variation !== 30) {
-      throw new Error(`Review mix failed for Level ${start}-${start + 9}: ${JSON.stringify(counts)}`);
-    }
+    await mkdir(dirname(manifestPath), { recursive: true });
+    await writeFile(
+      manifestPath,
+      `${JSON.stringify({
+        level: level.level,
+        title: level.title,
+        layout: {
+          columns: CONTACT_SHEET_COLUMNS,
+          rows: CONTACT_SHEET_ROWS
+        },
+        sheet: `assets/textbook/contact-sheets/level-${pad(level.level)}.png`,
+        cells
+      }, null, 2)}\n`,
+      "utf8"
+    );
   }
 }
 
-function renderMarkdown(levels) {
+function renderContactSheetPrompts(items) {
+  return items.map((level) => {
+    const cells = level.questions.flatMap((question, index) => [
+      `${index * 2 + 1}. ${question.sentence}`,
+      `${index * 2 + 2}. ${question.wrongSentence}`
+    ]);
+    const parts = [];
+
+    for (let start = 0; start < cells.length; start += PROMPT_SHEET_SIZE) {
+      const partNumber = start / PROMPT_SHEET_SIZE + 1;
+      const partCells = cells.slice(start, start + PROMPT_SHEET_SIZE);
+      const startCell = start + 1;
+      const endCell = start + partCells.length;
+
+      parts.push([
+        `### Part ${partNumber}｜cells ${startCell}-${endCell}`,
+        "",
+        `Create one contact sheet with ${PROMPT_SHEET_COLUMNS} columns and ${PROMPT_SHEET_ROWS} rows, exactly ${partCells.length} separate panels.`,
+        "Panel order must be left to right, top to bottom. Each panel is one independent illustration. Keep clear white gutters between panels for cropping.",
+        "Style for every panel: polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject.",
+        "Quality gate: do not use simplified vector placeholders, stick-figure drawings, geometric icon scenes, rough SVG mockups, cropped limbs, distorted hands, text, labels, numbers, captions, logos, or watermarks.",
+        "Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.",
+        "",
+        "Panels:",
+        ...partCells
+      ].join("\n"));
+    }
+
+    return [
+      `## Level ${level.level} - ${level.title}`,
+      "",
+      "Generate this level as three smaller contact sheets. Smaller sheets reduce panel drift and make cropping more reliable than one 30-panel image.",
+      "",
+      ...parts,
+      ""
+    ].join("\n");
+  }).join("\n\n");
+}
+
+function pad(number, size = 3) {
+  return String(number).padStart(size, "0");
+}
+
+function renderMarkdown(items) {
   const lines = [
-    "# 儿童英语听句选图教材｜Level 101-300",
+    "# 儿童英语听句选图教材｜Level 101-300｜结构化生产版",
     "",
-    "> Generated from deterministic sentence templates and vocabulary pools. No random sentence drafting.",
-    "",
-    "## 生成规则",
-    "",
-    "- Level 101-130：动作强化，`The X is V-ing.`",
-    "- Level 131-160：动作 + 物品，`The X is V-ing object.`",
-    "- Level 161-190：位置关系，`The X is prep Y.`",
-    "- Level 191-220：数量 + 物品，`There are number objects.`",
-    "- Level 221-250：颜色 + 物品，`The X is color.`",
-    "- Level 251-280：家庭 + 动作，`My family member is V-ing.`",
-    "- Level 281-300：综合场景，`The X is V-ing object in/at/on the scene.`",
-    "- 每 10 关内部按 40% 旧句式、40% 新组合、20% 轻微变化分配。",
+    "> JSON 数据包含 sentence、wrongSentence、correctImagePrompt、wrongImagePrompt 和 options。课程句子固定，选项展示由运行时随机。",
     ""
   ];
 
-  for (const level of levels) {
-    lines.push(`## Level ${pad(level.level)}｜${level.title}`);
+  for (const level of items) {
+    lines.push(`## Level ${level.level}`);
     lines.push("");
-    lines.push(`> ${level.goal}`);
-    lines.push("");
-    for (const [index, sentence] of level.sentences.entries()) {
-      lines.push(`${pad(level.level)}-${String(index + 1).padStart(2, "0")}. ${sentence.text}`);
+    for (const [index, question] of level.questions.entries()) {
+      lines.push(`${String(index + 1).padStart(2, "0")}. 学习句：${question.sentence}`);
+      lines.push(`    干扰图：${question.wrongSentence}`);
     }
     lines.push("");
   }
 
-  return `${lines.join("\n").trim()}\n`;
-}
-
-function relationSentences() {
-  const sentences = [];
-  for (const subject of positionSubjects) {
-    for (const prep of prepositions) {
-      for (const object of positionObjects) {
-        if (subject === object) continue;
-        sentences.push(`The ${subject} is ${prep} the ${object}.`);
-      }
-    }
-  }
-  return sentences;
-}
-
-function cross(leftItems, rightItems, render) {
-  const sentences = [];
-  for (const left of leftItems) {
-    for (const right of rightItems) {
-      sentences.push(render(left, right));
-    }
-  }
-  return sentences;
-}
-
-function bodyObject(subject, bodyPart) {
-  if (subject.possessive === "both") return bodyPart === "nose" ? "a nose" : `both ${bodyPart}`;
-  return `${subject.possessive} ${bodyPart}`;
-}
-
-function unique(items) {
-  return [...new Set(items)];
-}
-
-function findDuplicate(items) {
-  const seen = new Set();
-  for (const item of items) {
-    if (seen.has(item)) return item;
-    seen.add(item);
-  }
-  return "";
-}
-
-function pad(level) {
-  return String(level).padStart(3, "0");
+  return `${lines.join("\n")}\n`;
 }

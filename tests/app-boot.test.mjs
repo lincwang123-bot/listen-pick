@@ -22,7 +22,7 @@ test("app warms current and next level assets through the asset preloader", () =
 });
 
 test("index points to the preload-aware app module version", () => {
-  assert.ok(indexSource.includes('src="src/app.mjs?v=semantic-fix-v1"'));
+  assert.ok(indexSource.includes('src="src/app.mjs?v=stage3-assets-v5"'));
 });
 
 test("app starts from login then asks for a child name before the level picker", () => {
@@ -66,7 +66,7 @@ test("generated Chinese result praise audio exists for every possible score", ()
 });
 
 test("app points to the refreshed Chinese hint module version", () => {
-  assert.ok(appSource.includes("hints.mjs?v=zh-hints-v3"));
+  assert.ok(appSource.includes("hints.mjs?v=zh-hints-v5"));
 });
 
 test("app exposes a selectable voice control for generated audio", () => {
@@ -85,6 +85,16 @@ test("sentence audio defaults to male voice and preloads the next prompt after a
     appSource,
     /state = submitCorrectAnswer[\s\S]*?preloadCurrentLevelWindow\(\);[\s\S]*?scheduleCorrectAutoAdvance\(\);/
   );
+});
+
+test("app inserts due wrong reviews without advancing the main level progress", () => {
+  assert.ok(appSource.includes("getActiveQuestion(state, currentQuestions)"));
+  assert.ok(appSource.includes("listenPickCrossLevelWrongReviews"));
+  assert.ok(appSource.includes("persistCrossLevelWrongReviews(question, state.currentIndex)"));
+  assert.ok(appSource.includes("completeCrossLevelWrongReview(question.crossReviewId)"));
+  assert.ok(appSource.includes("recordWrongAttempt(state, selectedIndex"));
+  assert.ok(appSource.includes("completeDueWrongReview(state)"));
+  assert.ok(appSource.includes("? `复习 ${state.currentIndex + 1} / ${currentQuestions.length}`"));
 });
 
 test("sentence audio defaults to standard speed instead of slow speed", () => {

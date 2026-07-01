@@ -27,11 +27,11 @@ test("textbook source is parsed into Level 1 through 100 with 15 questions each"
   }
 });
 
-test("available textbook levels include Level 1 through 100 with complete assets", () => {
-  assert.equal(availableTextbookLevels.length, 100);
+test("available textbook levels include levels with complete assets", () => {
+  assert.equal(availableTextbookLevels.length, 300);
   assert.deepEqual(
     availableTextbookLevels.map((level) => level.level),
-    Array.from({ length: 100 }, (_, index) => index + 1)
+    Array.from({ length: 300 }, (_, index) => index + 1)
   );
 
   for (const level of availableTextbookLevels) {
@@ -49,6 +49,18 @@ test("textbook sentences avoid unsafe or misleading child-facing scenes", () => 
     /slide in the classroom/i,
     /slide beside the classroom board/i,
     /pushing on the slide/i,
+    /swing under the table/i,
+    /book on the playground slide/i,
+    /shoes on the library shelf/i,
+    /clouds inside the school/i,
+    /garden on the board/i,
+    /children in the lunch box/i,
+    /bus inside the classroom/i,
+    /book in the sink/i,
+    /blanket in the lunch box/i,
+    /students under a table/i,
+    /pillow on the board/i,
+    /socks in the bowl/i,
     /children are pushing on the swing/i,
     /under the seesaw/i,
     /sleeping in the sandbox/i,
@@ -137,4 +149,40 @@ test("Level 1 question 8 uses a clear action contrast instead of vague size word
   assert.equal(question.wrongSentence, "The baby is sleeping.");
   assert.equal(question.correctImage, "assets/textbook/images/level-001/q008-correct.png");
   assert.equal(question.wrongImage, "assets/textbook/images/level-001/q008-wrong.png");
+});
+
+test("static schoolbag action questions use visually distinct distractors", () => {
+  const level63 = textbookLevels.find((item) => item.level === 63);
+  const level76 = textbookLevels.find((item) => item.level === 76);
+
+  assert.equal(level63.questions[9].sentence, "The boy is putting a book in the bag.");
+  assert.equal(level63.questions[9].wrongSentence, "The boy is putting a bottle in the bag.");
+  assert.equal(level63.questions[9].wrongImage, "assets/textbook/images/level-063/q010-wrong.png");
+
+  assert.equal(level76.questions[8].sentence, "The girl is putting a bottle in the bag.");
+  assert.equal(level76.questions[8].wrongSentence, "The girl is putting a spoon in a bowl.");
+  assert.equal(level76.questions[8].wrongImage, "assets/textbook/images/level-076/q009-wrong.png");
+});
+
+test("textbook apple color sentences use natural child-facing colors", () => {
+  const unnaturalAppleColors = /\bapple is (blue|black|white|pink|orange)\b/i;
+  const hits = [];
+
+  for (const level of availableTextbookLevels) {
+    for (const question of level.questions) {
+      for (const field of ["sentence", "wrongSentence"]) {
+        const text = question[field];
+        if (unnaturalAppleColors.test(text)) {
+          hits.push({
+            level: level.level,
+            id: question.id,
+            field,
+            text
+          });
+        }
+      }
+    }
+  }
+
+  assert.deepEqual(hits, []);
 });

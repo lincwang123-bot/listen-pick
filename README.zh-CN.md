@@ -2,7 +2,7 @@
 
 [English README](README.md)
 
-Listen & Pick 是一个面向儿童英语启蒙的听力闯关原型项目，采用“源码可查看、禁止商用”的非商业授权方式发布。
+Listen & Pick 是一个面向儿童英语启蒙的“听力选图”学习系统原型，采用“源码可查看、禁止商用”的非商业授权方式发布。
 
 孩子会听到一句简短英文，页面展示两张图片，然后根据听到的意思选择匹配的图片。核心训练目标是：
 
@@ -10,7 +10,13 @@ Listen & Pick 是一个面向儿童英语启蒙的听力闯关原型项目，采
 听到英文 -> 脑中形成画面 -> 理解句子意思
 ```
 
-项目主要面向 6-10 岁、英语零基础到小学启蒙阶段的中国儿童。
+项目主要面向 6-10 岁、英语零基础到小学启蒙阶段的中国儿童。当前产品形态是网页版 Demo，后续可迁移为微信小程序。
+
+线上 Demo：
+
+```text
+https://linc.wang/listen-pick/
+```
 
 ## 授权说明
 
@@ -32,18 +38,22 @@ Listen & Pick 是一个面向儿童英语启蒙的听力闯关原型项目，采
 - `NOTICE.md`
 - `docs/OPEN_SOURCE.md`
 
-## 当前功能
+## 当前状态
 
-- 已支持前 100 关，每关 15 题
+- 已支持 1-300 关，每关 15 题
+- 关卡选择按 25 关学习区间分组展示
 - 每题播放一句英文，并展示两张图片供选择
+- 每次答题会随机左右图片顺序，避免记固定位置
 - 使用本地音频文件，发音更清楚
 - 支持男声和女声选择，默认男声
 - 支持语速调整
 - 支持英文提示开关和中文提示开关
+- 中文提示开启后显示在英文提示下方
+- 已加入错题复习调度逻辑，复习位置为 `+3 / +10 / +25`
+- 最终成绩按首次作答正确数计算，反复重选不会虚高
 - 结算页会根据分数显示不同中文鼓励
 - 可输入孩子小名，小名仅用于屏幕文字鼓励
-- 关卡选择按学习区间分组，避免一长列关卡
-- 当前关卡和相邻关卡资源预加载，提升体验
+- 当前关卡和后续关卡资源预加载，提升体验
 - 适合静态部署到 VPS、GitHub Pages、Nginx、Caddy 等环境
 
 ## 本地运行
@@ -59,13 +69,13 @@ npm start
 http://127.0.0.1:4173/index.html
 ```
 
-公开源码仓库没有包含体积很大的教材媒体目录。干净克隆后可以启动页面外壳，但如果要完整离线试玩 Level 1-100，需要额外把生成好的素材包放到：
+公开源码仓库没有包含体积很大的教材媒体目录。干净克隆后可以启动页面外壳，但如果要完整离线试玩 Level 1-300，需要额外把生成好的素材包放到：
 
 ```text
 assets/textbook/
 ```
 
-如果没有这个目录，当前可玩教材关卡会缺少题目插图和英文音频，素材完整性测试也会失败。
+如果没有这个目录，当前可玩教材关卡会缺少题目插图和英文音频，依赖本地素材的完整性检查也会失败。
 
 ## 测试
 
@@ -82,7 +92,8 @@ npm test
 ```bash
 npm run validate:course
 npm run generate:textbook-playable
-npm run generate:webp-images
+npm run audit:textbook-images
+npm run optimize:textbook-images
 ```
 
 音频生成相关命令保留在 `package.json` 中。大型本地 TTS 环境和临时生成文件不会进入 Git。
@@ -98,6 +109,15 @@ assets/textbook/contact-sheets/
 ```
 
 这些素材可以通过 GitHub Release、Git LFS、CDN、对象存储或私有部署包单独分发。
+
+运行时 WebP 图片路径约定为：
+
+```text
+assets/textbook/images/level-XXX/qYYY-correct.webp
+assets/textbook/images/level-XXX/qYYY-wrong.webp
+```
+
+近期 WebP 优化目标为 `640x480`，用于减小网页版 Demo 和未来小程序资源包体积。
 
 ## 素材说明
 
@@ -125,6 +145,15 @@ https://linc.wang/listen-pick/
 ```
 
 部署时保持文件结构不变，避免破坏已有图片、音频和脚本路径。
+
+当前 VPS 部署通常把代码/数据和生成素材分开同步：
+
+```bash
+rsync -az index.html src linc-vps:/opt/linc/sites/localpilot/listen-pick/
+rsync -az --include='*/' --include='*.webp' --exclude='*' assets/textbook/images/ linc-vps:/opt/linc/sites/localpilot/listen-pick/assets/textbook/images/
+```
+
+不要直接全量同步 `assets/textbook/images/`，因为本地 PNG 母版体积很大。
 
 ## 小程序迁移方向
 

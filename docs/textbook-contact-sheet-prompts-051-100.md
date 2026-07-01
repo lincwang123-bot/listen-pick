@@ -586,7 +586,7 @@ Cells:
 17. correct for Q09: The girl is erasing a line.
 18. distractor for Q09: The girl is drawing a line.
 19. correct for Q10: The boy is putting a book in the bag.
-20. distractor for Q10: The boy is taking a book out of the bag.
+20. distractor for Q10: The boy is putting a bottle in the bag.
 21. correct for Q11: The child is passing a ruler.
 22. distractor for Q11: The child is holding a ruler.
 23. correct for Q12: The teacher is giving out notebooks.
@@ -1182,7 +1182,7 @@ Cells:
 15. correct for Q08: The child is packing a schoolbag.
 16. distractor for Q08: The child is emptying a schoolbag.
 17. correct for Q09: The girl is putting a bottle in the bag.
-18. distractor for Q09: The girl is taking a bottle out of the bag.
+18. distractor for Q09: The girl is putting a spoon in a bowl.
 19. correct for Q10: The boy is eating breakfast.
 20. distractor for Q10: The boy is eating dinner.
 21. correct for Q11: The child is drinking milk.
@@ -1490,7 +1490,7 @@ Cells:
 01. correct for Q01: There is a slide in the playground.
 02. distractor for Q01: There is a swing in the playground.
 03. correct for Q02: There is a swing beside the tree.
-04. distractor for Q02: There is a swing under the table.
+04. distractor for Q02: There is a swing beside the bench.
 05. correct for Q03: There are two children on the seesaw.
 06. distractor for Q03: There are two children beside the seesaw.
 07. correct for Q04: There are three balls in the basket.
@@ -1500,23 +1500,23 @@ Cells:
 11. correct for Q06: There are students in a line.
 12. distractor for Q06: There are students in a circle.
 13. correct for Q07: There is a book on the library table.
-14. distractor for Q07: There is a book on the playground slide.
+14. distractor for Q07: There is a book on the classroom table.
 15. correct for Q08: There are many books on the library shelf.
-16. distractor for Q08: There are many shoes on the library shelf.
+16. distractor for Q08: There are many books on the library table.
 17. correct for Q09: There is a water bottle on the bench.
 18. distractor for Q09: There is a water bottle under the bench.
 19. correct for Q10: There are two friends under the tree.
-20. distractor for Q10: There are two friends on the tree.
+20. distractor for Q10: There are two friends beside the tree.
 21. correct for Q11: There is a red kite in the sky.
 22. distractor for Q11: There is a red kite on the ground.
 23. correct for Q12: There are clouds above the school.
-24. distractor for Q12: There are clouds inside the school.
+24. distractor for Q12: There are clouds above the park.
 25. correct for Q13: There is a small garden by the classroom.
-26. distractor for Q13: There is a small garden on the board.
+26. distractor for Q13: There is a small garden by the school gate.
 27. correct for Q14: There are children near the sandbox.
-28. distractor for Q14: There are children in the lunch box.
+28. distractor for Q14: There are children near the slide.
 29. correct for Q15: There is a bus outside the school.
-30. distractor for Q15: There is a bus inside the classroom.
+30. distractor for Q15: There is a bus outside the park.
 
 Quality target: similar clarity to polished kindergarten English picture-card illustrations; every scene should be understandable at small size.
 
@@ -1546,7 +1546,7 @@ Cells:
 11. correct for Q06: There are three apples in the bowl.
 12. distractor for Q06: There are three apples under the bowl.
 13. correct for Q07: There is a book on the sofa.
-14. distractor for Q07: There is a book in the sink.
+14. distractor for Q07: There is a book on the table.
 15. correct for Q08: There is a toy car in the box.
 16. distractor for Q08: There is a toy car under the box.
 17. correct for Q09: There are two jackets on the hooks.
@@ -1556,7 +1556,7 @@ Cells:
 21. correct for Q11: There are four spoons in the drawer.
 22. distractor for Q11: There are four spoons on the bed.
 23. correct for Q12: There is a blanket on the chair.
-24. distractor for Q12: There is a blanket in the lunch box.
+24. distractor for Q12: There is a blanket on the bed.
 25. correct for Q13: There is a bottle in the schoolbag.
 26. distractor for Q13: There is a bottle on the schoolbag.
 27. correct for Q14: There are two towels on the shelf.
@@ -1598,11 +1598,11 @@ Cells:
 17. correct for Q09: There is a teacher in the classroom.
 18. distractor for Q09: There is a teacher in the bedroom.
 19. correct for Q10: There are students in a line.
-20. distractor for Q10: There are students under a table.
+20. distractor for Q10: There are students in a circle.
 21. correct for Q11: There is a pillow on the bed.
-22. distractor for Q11: There is a pillow on the board.
+22. distractor for Q11: There is a pillow on the sofa.
 23. correct for Q12: There are socks in the drawer.
-24. distractor for Q12: There are socks in the bowl.
+24. distractor for Q12: There are socks on the bed.
 25. correct for Q13: There is a bottle beside the schoolbag.
 26. distractor for Q13: There is a bottle inside the schoolbag.
 27. correct for Q14: There are crayons in the box.

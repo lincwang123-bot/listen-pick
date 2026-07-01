@@ -2,7 +2,7 @@
 
 [中文说明](README.zh-CN.md)
 
-Listen & Pick is a source-available, non-commercial prototype for a children's English listening game.
+Listen & Pick is a source-available, non-commercial prototype for a children's English listening and picture-selection learning system.
 
 Children hear one short English sentence, see two pictures, and choose the picture that matches the meaning. The learning goal is:
 
@@ -10,7 +10,13 @@ Children hear one short English sentence, see two pictures, and choose the pictu
 hear English -> form a picture -> understand the sentence
 ```
 
-It is designed for Chinese children ages 6-10 who are starting English listening.
+It is designed for Chinese children ages 6-10 who are starting English listening. The current product is a static web demo, with a future migration path toward a WeChat Mini Program.
+
+Live demo:
+
+```text
+https://linc.wang/listen-pick/
+```
 
 ## License
 
@@ -26,18 +32,22 @@ See:
 - `NOTICE.md`
 - `docs/OPEN_SOURCE.md`
 
-## Features
+## Current Status
 
-- 100 playable levels, 15 questions per level
+- 300 playable textbook-style levels, 15 questions per level
+- Level picker grouped into 25-level learning blocks
 - Two picture choices per sentence
+- Randomized left/right picture order for each question session
 - Local audio files for clearer pronunciation
 - Male and female voice selection, defaulting to male voice
 - Adjustable speech speed
 - English hint toggle and Chinese hint toggle
+- Chinese hint text shown under the English hint when enabled
+- Wrong-answer review scheduling with `+3 / +10 / +25` review positions
+- Score based on first-attempt correctness, so repeated retries do not inflate the result
 - Result screen with score-based Chinese encouragement
 - Child nickname stored locally in the browser for on-screen encouragement
-- Level picker grouped by learning blocks instead of one long list
-- Asset preloading for the current level and nearby levels
+- Asset preloading for the current level and upcoming levels
 - Static deployment friendly for a VPS, GitHub Pages, Nginx, or Caddy
 
 ## Run Locally
@@ -53,13 +63,13 @@ Then open:
 http://127.0.0.1:4173/index.html
 ```
 
-The source repository does not include the large generated textbook media folder. A clean clone can start the app shell, but complete local play for Levels 1-100 requires the generated media package to be copied into:
+The source repository does not include the large generated textbook media folder. A clean clone can start the app shell, but complete local play for Levels 1-300 requires the generated media package to be copied into:
 
 ```text
 assets/textbook/
 ```
 
-Without that folder, the browser will show missing question images/audio for the current playable textbook levels, and the asset completeness tests will fail.
+Without that folder, the browser will show missing question images/audio for the playable textbook levels, and asset-completeness checks that depend on local media will fail.
 
 ## Test
 
@@ -76,7 +86,8 @@ Helpful commands:
 ```bash
 npm run validate:course
 npm run generate:textbook-playable
-npm run generate:webp-images
+npm run audit:textbook-images
+npm run optimize:textbook-images
 ```
 
 Audio generation commands are kept in `package.json`. Large local TTS environments and temporary generation output are intentionally ignored by Git.
@@ -92,6 +103,15 @@ assets/textbook/contact-sheets/
 ```
 
 These assets can be distributed separately as a release asset, Git LFS package, CDN folder, or private deployment bundle.
+
+Runtime WebP images are expected to use paths like:
+
+```text
+assets/textbook/images/level-XXX/qYYY-correct.webp
+assets/textbook/images/level-XXX/qYYY-wrong.webp
+```
+
+Recent image optimization targets `640x480` WebP output to keep the web demo and future Mini Program package lighter.
 
 ## Media Assets
 
@@ -119,6 +139,15 @@ https://linc.wang/listen-pick/
 ```
 
 Keep the same file structure on the server so existing asset paths continue to work.
+
+For the current VPS deployment, code/data and generated media are usually synced separately:
+
+```bash
+rsync -az index.html src linc-vps:/opt/linc/sites/localpilot/listen-pick/
+rsync -az --include='*/' --include='*.webp' --exclude='*' assets/textbook/images/ linc-vps:/opt/linc/sites/localpilot/listen-pick/assets/textbook/images/
+```
+
+Avoid syncing the entire `assets/textbook/images/` directory blindly because local PNG masters are intentionally large.
 
 ## Mini Program Migration Path
 

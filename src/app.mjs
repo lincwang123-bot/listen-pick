@@ -1,15 +1,17 @@
 import {
+  completeDueWrongReview,
   createQuestionSession,
   createInitialState,
+  getActiveQuestion,
   getNextPlayableLevel,
   getPreviewWordsForLevel,
   getQuestionsForLevel,
   getStarCount,
   playableLevels,
-  submitCorrectAnswer,
-  submitAnswer
-} from "./game.mjs?v=semantic-fix-v1";
-import { toChineseHint } from "./hints.mjs?v=zh-hints-v3";
+  recordWrongAttempt,
+  submitCorrectAnswer
+} from "./game.mjs?v=stage3-assets-v5";
+import { toChineseHint } from "./hints.mjs?v=zh-hints-v5";
 import { createLevelPacks, findPackForLevel, getPackStart } from "./level-groups.mjs?v=pack-picker-v1";
 import {
   clearFollowReadPrompt,
@@ -105,13 +107,16 @@ let recordingPlayback = null;
 let missedQuestionIndexes = new Set();
 let pendingLevelSelectTimer = null;
 const CHILD_NAME_STORAGE_KEY = "listenPickChildName";
-const assetVersion = "semantic-fix-v1";
+const CROSS_LEVEL_WRONG_STORAGE_KEY = "listenPickCrossLevelWrongReviews";
+const assetVersion = "stage3-assets-v5";
 const resultAudioVersion = "result-praise-v1";
 const assetPreloader = createAssetPreloader({ maxConcurrent: 4 });
 const PRELOAD_CURRENT_WINDOW_COUNT = 4;
 const PRELOAD_NEXT_LEVEL_COUNT = 5;
 const PRELOAD_NEXT_LEVEL_START_INDEX = 9;
 const CORRECT_AUTO_ADVANCE_FRAME_COUNT = 4;
+const QUESTIONS_PER_LEVEL = 15;
+const WRONG_REVIEW_OFFSETS = [3, 10, 25];
 let childName = loadChildName();
 
 function preloadLevelStart(levelNumber, count = PRELOAD_CURRENT_WINDOW_COUNT) {
@@ -182,6 +187,78 @@ function saveChildName(nextName) {
   } catch {
     // Local storage can be unavailable in strict privacy modes; the current session still keeps the name.
   }
+}
+
+function getGlobalQuestionIndex(levelNumber, questionIndex) {
+  return (Number(levelNumber) - 1) * QUESTIONS_PER_LEVEL + Number(questionIndex);
+}
+
+function loadCrossLevelWrongReviews() {
+  try {
+    const raw = window.localStorage?.getItem(CROSS_LEVEL_WRONG_STORAGE_KEY);
+    const parsed = raw ? JSON.parse(raw) : [];
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveCrossLevelWrongReviews(reviews) {
+  try {
+    window.localStorage?.setItem(CROSS_LEVEL_WRONG_STORAGE_KEY, JSON.stringify(reviews ?? []));
+  } catch {
+    // Review scheduling still works inside the current level if localStorage is blocked.
+  }
+}
+
+function persistCrossLevelWrongReviews(question, questionIndex) {
+  const sourceGlobalIndex = getGlobalQuestionIndex(selectedLevel, questionIndex);
+  const levelEndGlobalIndex = getGlobalQuestionIndex(selectedLevel, currentQuestions.length - 1);
+  const crossLevelOffsets = WRONG_REVIEW_OFFSETS.filter((offset) =>
+    sourceGlobalIndex + offset > levelEndGlobalIndex
+  );
+
+  if (crossLevelOffsets.length === 0) return;
+
+  const storedReviews = loadCrossLevelWrongReviews();
+  const reviewBaseId = `level-${selectedLevel}-q-${questionIndex}-t-${state.startedAt}`;
+  const nextReviews = [
+    ...storedReviews,
+    ...crossLevelOffsets.map((offset) => ({
+      reviewId: `${reviewBaseId}-plus-${offset}`,
+      dueGlobalIndex: sourceGlobalIndex + offset,
+      sourceLevel: selectedLevel,
+      sourceQuestionIndex: questionIndex,
+      sentence: question.sentence,
+      question: {
+        ...question,
+        crossReviewId: `${reviewBaseId}-plus-${offset}`,
+        sourceLevel: selectedLevel,
+        sourceQuestionIndex: questionIndex,
+        choices: question.choices?.map((choice) => ({ ...choice }))
+      }
+    }))
+  ];
+
+  saveCrossLevelWrongReviews(nextReviews);
+}
+
+function getDueCrossLevelWrongReview() {
+  const dueGlobalIndex = getGlobalQuestionIndex(selectedLevel, state.currentIndex);
+  return loadCrossLevelWrongReviews()
+    .find((review) => review.dueGlobalIndex === dueGlobalIndex) ?? null;
+}
+
+function completeCrossLevelWrongReview(reviewId) {
+  if (!reviewId) return;
+
+  saveCrossLevelWrongReviews(
+    loadCrossLevelWrongReviews().filter((review) => review.reviewId !== reviewId)
+  );
+}
+
+function getCurrentDisplayQuestion() {
+  return getDueCrossLevelWrongReview()?.question ?? getActiveQuestion(state, currentQuestions);
 }
 
 function syncChildNameForm() {
@@ -373,7 +450,8 @@ function setAudioVoice(nextVoice) {
 }
 
 function renderQuestion() {
-  const question = currentQuestions[state.currentIndex];
+  const question = getCurrentDisplayQuestion();
+  const isReviewQuestion = Boolean(question?.reviewId || question?.crossReviewId);
   const progress = (state.currentIndex / currentQuestions.length) * 100;
 
   clearAutoAdvance();
@@ -382,7 +460,11 @@ function renderQuestion() {
   locked = false;
   if (els.scoreText) els.scoreText.textContent = String(state.score);
   if (els.progressBar) els.progressBar.style.width = `${progress}%`;
-  if (els.questionCounter) els.questionCounter.textContent = `${state.currentIndex + 1} / ${currentQuestions.length}`;
+  if (els.questionCounter) {
+    els.questionCounter.textContent = isReviewQuestion
+      ? `复习 ${state.currentIndex + 1} / ${currentQuestions.length}`
+      : `${state.currentIndex + 1} / ${currentQuestions.length}`;
+  }
   if (els.levelPill) els.levelPill.innerHTML = `<span aria-hidden="true">★</span> Level ${selectedLevel}`;
   if (els.sentenceText) els.sentenceText.textContent = "Tap the audio button to hear the sentence.";
   if (els.feedback) {
@@ -398,7 +480,7 @@ function renderQuestion() {
   setChineseHintsVisible(chineseHintsVisible);
 
   els.choices?.replaceChildren(
-    ...question.choices.map((choice, index) => createChoiceCard(choice, index))
+    ...(question?.choices ?? []).map((choice, index) => createChoiceCard(choice, index))
   );
   preloadCurrentLevelWindow();
 }
@@ -426,7 +508,11 @@ function createChoiceCard(choice, index) {
 function handleChoice(selectedIndex) {
   if (locked) return;
 
-  const question = currentQuestions[state.currentIndex];
+  const question = getCurrentDisplayQuestion();
+  const isLocalReviewQuestion = Boolean(question?.reviewId);
+  const isCrossLevelReviewQuestion = Boolean(question?.crossReviewId);
+  const isReviewQuestion = isLocalReviewQuestion || isCrossLevelReviewQuestion;
+  if (!question) return;
   const isCorrect = selectedIndex === question.correctIndex;
   const cards = [...(els.choices?.querySelectorAll(".choice-card") ?? [])];
 
@@ -445,28 +531,43 @@ function handleChoice(selectedIndex) {
   }
 
   if (isCorrect) {
-    const questionIndex = state.currentIndex;
-    const completedQuestion = question;
-    state = submitCorrectAnswer(state, selectedIndex, {
-      awardPoint: !missedQuestionIndexes.has(questionIndex),
-      questions: currentQuestions
-    });
-    if (els.scoreText) els.scoreText.textContent = String(state.score);
-    if (els.progressBar) els.progressBar.style.width = `${(state.currentIndex / currentQuestions.length) * 100}%`;
-    preloadCurrentLevelWindow();
-    followReadQuestion = completedQuestion;
-    followReadState = prepareFollowReadPrompt(followReadState, completedQuestion.sentence);
-    renderFollowReadPanel();
-
-    if (shouldPauseAutoAdvance(followReadState)) {
-      if (els.sentenceText) els.sentenceText.textContent = completedQuestion.sentence;
-      els.nextBtn?.classList.remove("hidden");
-    } else {
+    if (isReviewQuestion) {
+      if (isCrossLevelReviewQuestion) {
+        completeCrossLevelWrongReview(question.crossReviewId);
+      } else {
+        state = completeDueWrongReview(state);
+      }
+      if (els.scoreText) els.scoreText.textContent = String(state.score);
       els.nextBtn?.classList.add("hidden");
       scheduleCorrectAutoAdvance();
+    } else {
+      const questionIndex = state.currentIndex;
+      const completedQuestion = question;
+      state = submitCorrectAnswer(state, selectedIndex, {
+        awardPoint: !missedQuestionIndexes.has(questionIndex),
+        questions: currentQuestions
+      });
+      if (els.scoreText) els.scoreText.textContent = String(state.score);
+      if (els.progressBar) els.progressBar.style.width = `${(state.currentIndex / currentQuestions.length) * 100}%`;
+      preloadCurrentLevelWindow();
+      followReadQuestion = completedQuestion;
+      followReadState = prepareFollowReadPrompt(followReadState, completedQuestion.sentence);
+      renderFollowReadPanel();
+
+      if (shouldPauseAutoAdvance(followReadState)) {
+        if (els.sentenceText) els.sentenceText.textContent = completedQuestion.sentence;
+        els.nextBtn?.classList.remove("hidden");
+      } else {
+        els.nextBtn?.classList.add("hidden");
+        scheduleCorrectAutoAdvance();
+      }
     }
   } else {
-    missedQuestionIndexes.add(state.currentIndex);
+    if (!isCrossLevelReviewQuestion && (isLocalReviewQuestion || !missedQuestionIndexes.has(state.currentIndex))) {
+      state = recordWrongAttempt(state, selectedIndex, { questions: currentQuestions });
+      if (!isLocalReviewQuestion) persistCrossLevelWrongReviews(question, state.currentIndex);
+    }
+    if (!isReviewQuestion) missedQuestionIndexes.add(state.currentIndex);
     els.nextBtn?.classList.add("hidden");
     retryTimer = window.setTimeout(resetCurrentQuestionAttempt, 1500);
   }
@@ -619,7 +720,7 @@ function speakCurrentSentence() {
     return;
   }
 
-  const question = currentQuestions[state.currentIndex];
+  const question = getCurrentDisplayQuestion();
   if (question) {
     speak(question.sentence);
   }

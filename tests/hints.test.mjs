@@ -38,7 +38,19 @@ test("Chinese hints use natural child-facing wording for common action phrases",
     ["The baby is sitting.", "宝宝坐着。"],
     ["The baby is sleeping.", "宝宝正在睡觉。"],
     ["The turtle is green.", "乌龟是绿色的。"],
-    ["The turtle is orange.", "乌龟是橙色的。"]
+    ["The turtle is orange.", "乌龟是橙色的。"],
+    ["The girl is making the bed.", "女孩正在整理床铺。"],
+    ["The child is making the bed.", "孩子正在整理床铺。"],
+    ["The girl is jumping on the bed.", "女孩正在床上跳。"],
+    ["The child is sleeping in the bed.", "孩子正在床上睡觉。"],
+    ["The boy is putting on a shirt.", "男孩正在穿衬衫。"],
+    ["The boy is taking off a shirt.", "男孩正在脱衬衫。"],
+    ["The child is packing a schoolbag.", "孩子正在整理书包。"],
+    ["The child is emptying a schoolbag.", "孩子正在把书包里的东西拿出来。"],
+    ["The boy is putting a bottle in the bag.", "男孩正在把水瓶放进书包里。"],
+    ["The girl is putting a spoon in a bowl.", "女孩正在把勺子放进碗里。"],
+    ["The girl is putting a bottle in the bag.", "女孩正在把水瓶放进书包里。"],
+    ["The girl is taking a bottle out of the bag.", "女孩正在从书包里拿出水瓶。"]
   ]);
 
   for (const [sentence, expected] of examples) {
@@ -97,7 +109,7 @@ function collectDuplicateHints(levels) {
 
 function collectHintArtifacts(levels) {
   const artifacts = [];
-  const artifactPattern = /画画(?:猫|狗|房子|图片|太阳|队伍|页面|星星|一个)|读书书|喝水水|吃东西(?:苹果|米饭|面条|早餐|午餐|晚餐|点心|水果|水煮蛋|杯子)|看在|指在|正在(?:睡觉|坐着|写字|读书|画|吃|喝|看).+在|有长的|有短的/;
+  const artifactPattern = /画画(?:猫|狗|房子|图片|太阳|队伍|页面|星星|一个)|读书书|喝水水|吃东西(?:苹果|米饭|面条|早餐|午餐|晚餐|点心|水果|水煮蛋|杯子)|看在|指在|正在(?:睡觉|坐着|写字|读书|画|吃|喝|看).+在|有长的|有短的|弄床|放在衬衫上|跳在床上|床里睡觉|倒空一个书包|收拾一个书包/;
 
   for (const level of levels) {
     for (const [questionIndex, question] of level.questions.entries()) {

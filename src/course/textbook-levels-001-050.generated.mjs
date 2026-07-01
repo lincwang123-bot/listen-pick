@@ -6049,7 +6049,7 @@ export const textbookLevels = [
       {
         "id": "L036-Q006",
         "sentence": "The apple is red.",
-        "wrongSentence": "The apple is blue.",
+        "wrongSentence": "The apple is green.",
         "audioFile": "assets/textbook/audio/level-036/q006.m4a",
         "correctImage": "assets/textbook/images/level-036/q006-correct.png",
         "wrongImage": "assets/textbook/images/level-036/q006-wrong.png",

@@ -8,11 +8,15 @@ import {
   createQuestionSession,
   createQuestionSessionFromQuestions,
   createInitialState,
+  completeDueWrongReview,
+  getActiveQuestion,
+  getDueWrongReviewQuestions,
   getNextPlayableLevel,
   getPreviewWordsForLevel,
   getQuestionsForLevel,
   getStarCount,
   questions,
+  recordWrongAttempt,
   submitCorrectAnswer,
   submitAnswer
 } from "../src/game.mjs";
@@ -32,10 +36,10 @@ test("level contains exactly 15 two-choice questions", () => {
 });
 
 test("textbook playable levels are available with complete question assets", () => {
-  assert.equal(playableLevels.length, 100);
+  assert.equal(playableLevels.length, 300);
   assert.deepEqual(
-    playableLevels.map((level) => level.level),
-    Array.from({ length: 100 }, (_, index) => index + 1)
+    playableLevels.slice(0, 300).map((level) => level.level),
+    Array.from({ length: 300 }, (_, index) => index + 1)
   );
 
   for (const level of playableLevels) {
@@ -63,7 +67,7 @@ test("textbook playable levels are available with complete question assets", () 
 
 test("first 100 levels use each question's dedicated wrong image by default", () => {
   for (const level of playableLevels) {
-    assert.ok(level.level >= 1 && level.level <= 100, `Unexpected playable level ${level.level}`);
+    if (level.level > 100) continue;
     const levelQuestions = getQuestionsForLevel(level.level);
 
     for (const question of levelQuestions) {
@@ -123,7 +127,10 @@ test("getNextPlayableLevel returns the next available level", () => {
   assert.equal(getNextPlayableLevel(49), 50);
   assert.equal(getNextPlayableLevel(50), 51);
   assert.equal(getNextPlayableLevel(99), 100);
-  assert.equal(getNextPlayableLevel(100), null);
+  assert.equal(getNextPlayableLevel(100), 101);
+  assert.equal(getNextPlayableLevel(101), 102);
+  assert.equal(getNextPlayableLevel(299), 300);
+  assert.equal(getNextPlayableLevel(300), null);
   assert.equal(getNextPlayableLevel(999), null);
 });
 
@@ -214,6 +221,32 @@ test("session questions pick one distractor from a distractor pool", () => {
   );
 });
 
+test("session answer sides are shuffled without allowing three identical correct sides in a row", () => {
+  const sourceQuestions = Array.from({ length: 8 }, (_, index) => ({
+    sentence: `Sentence ${index + 1}.`,
+    correctIndex: 0,
+    choices: [
+      { label: `Correct ${index + 1}`, image: `correct-${index + 1}.png`, alt: `Correct ${index + 1}` },
+      { label: `Wrong ${index + 1}`, image: `wrong-${index + 1}.png`, alt: `Wrong ${index + 1}` }
+    ]
+  }));
+
+  const session = createQuestionSessionFromQuestions(sourceQuestions, {
+    rng: () => 0.1
+  });
+
+  for (let index = 2; index < session.length; index += 1) {
+    assert.notDeepEqual(
+      [
+        session[index - 2].correctIndex,
+        session[index - 1].correctIndex,
+        session[index].correctIndex
+      ],
+      [0, 0, 0]
+    );
+  }
+});
+
 test("session answer scoring uses randomized session choices", () => {
   const [question] = createQuestionSession(1, { rng: createSequenceRng([0.8]) });
   const state = createInitialState(1);
@@ -263,6 +296,47 @@ test("submitAnswer records incorrect answers without increasing score", () => {
   assert.equal(nextState.score, 0);
   assert.equal(nextState.currentIndex, 1);
   assert.equal(nextState.answers[0].isCorrect, false);
+});
+
+test("submitAnswer records wrongList and schedules +3 +10 +25 reviews", () => {
+  const state = createInitialState();
+  const wrongIndex = questions[0].correctIndex === 0 ? 1 : 0;
+  const nextState = submitAnswer(state, wrongIndex);
+
+  assert.equal(nextState.wrongList.length, 1);
+  assert.equal(nextState.wrongList[0].questionIndex, 0);
+  assert.equal(nextState.wrongList[0].sentence, questions[0].sentence);
+  assert.deepEqual(nextState.wrongList[0].reviewAt, [3, 10, 25]);
+  assert.deepEqual(
+    nextState.scheduledReviews.map((review) => review.dueIndex),
+    [3, 10, 25]
+  );
+
+  assert.deepEqual(getDueWrongReviewQuestions({ ...nextState, currentIndex: 3 }), [
+    nextState.wrongList[0].question
+  ]);
+});
+
+test("wrong reviews are inserted at due progress without advancing the original level", () => {
+  const state = createInitialState();
+  const wrongIndex = questions[0].correctIndex === 0 ? 1 : 0;
+  const afterWrong = recordWrongAttempt(state, wrongIndex, { questions });
+
+  assert.equal(afterWrong.currentIndex, 0);
+  assert.equal(afterWrong.score, 0);
+  assert.equal(afterWrong.wrongList.length, 1);
+  assert.deepEqual(
+    afterWrong.scheduledReviews.map((review) => review.dueIndex),
+    [3, 10, 25]
+  );
+
+  const dueState = { ...afterWrong, currentIndex: 3 };
+  assert.equal(getActiveQuestion(dueState, questions).sentence, questions[0].sentence);
+
+  const afterReview = completeDueWrongReview(dueState);
+  assert.equal(afterReview.currentIndex, 3);
+  assert.equal(getDueWrongReviewQuestions(afterReview).length, 0);
+  assert.equal(getActiveQuestion(afterReview, questions).sentence, questions[3].sentence);
 });
 
 test("submitCorrectAnswer only advances for the correct choice", () => {

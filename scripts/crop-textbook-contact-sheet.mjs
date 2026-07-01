@@ -106,14 +106,14 @@ function detectGridRuns(source, axis, expectedParts) {
   return runs;
 }
 
-async function cropSheet(level, sheetPath, insetRatio = 0.04) {
+async function cropSheet(level, sheetPath, insetRatio = 0.04, options = {}) {
   const levelId = pad(level);
   const manifestPath = `assets/textbook/contact-sheets/level-${levelId}.manifest.json`;
   const manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
   const source = await readPng(sheetPath);
   const { columns, rows } = manifest.layout;
-  const detectedColumns = detectGridRuns(source, "x", columns);
-  const detectedRows = detectGridRuns(source, "y", rows);
+  const detectedColumns = options.fixedGrid ? null : detectGridRuns(source, "x", columns);
+  const detectedRows = options.fixedGrid ? null : detectGridRuns(source, "y", rows);
 
   await mkdir(dirname(manifest.sheet), { recursive: true });
   copyFileSync(sheetPath, manifest.sheet);
@@ -165,7 +165,9 @@ function normalizeInsets(value) {
   throw new Error(`Invalid inset value: ${value}`);
 }
 
-const [, , levelArg, sheetPath, insetArg] = process.argv;
+const [, , levelArg, sheetPath, ...restArgs] = process.argv;
+const fixedGrid = restArgs.includes("--fixed-grid");
+const insetArg = restArgs.find((arg) => arg !== "--fixed-grid");
 const level = Number(levelArg);
 
 if (!level || !sheetPath) {
@@ -173,4 +175,4 @@ if (!level || !sheetPath) {
   process.exit(1);
 }
 
-await cropSheet(level, sheetPath, insetArg ?? 0);
+await cropSheet(level, sheetPath, insetArg ?? 0, { fixedGrid });

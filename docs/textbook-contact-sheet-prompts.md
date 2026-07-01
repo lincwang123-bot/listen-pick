@@ -1636,7 +1636,7 @@ Cells:
 09. correct for Q05: These are grapes.
 10. distractor for Q05: These are bananas.
 11. correct for Q06: The apple is red.
-12. distractor for Q06: The apple is blue.
+12. distractor for Q06: The apple is green.
 13. correct for Q07: The banana is yellow.
 14. distractor for Q07: The banana is green.
 15. correct for Q08: The orange is round.

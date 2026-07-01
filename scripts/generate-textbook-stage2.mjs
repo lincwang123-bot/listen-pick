@@ -266,7 +266,7 @@ The students are opening their books. || The students are closing their books.
 The students are sitting at desks. || The students are standing by desks.
 The child is sharpening a pencil. || The child is holding a pencil.
 The girl is erasing a line. || The girl is drawing a line.
-The boy is putting a book in the bag. || The boy is taking a book out of the bag.
+The boy is putting a book in the bag. || The boy is putting a bottle in the bag.
 The child is passing a ruler. || The child is holding a ruler.
 The teacher is giving out notebooks. || The teacher is collecting notebooks.
 The students are listening to the teacher. || The students are looking out the window.
@@ -486,7 +486,7 @@ The girl is combing her hair. || The girl is washing her hands.
 The boy is putting on a shirt. || The boy is taking off a shirt.
 The child is putting on shoes. || The child is taking off shoes.
 The child is packing a schoolbag. || The child is emptying a schoolbag.
-The girl is putting a bottle in the bag. || The girl is taking a bottle out of the bag.
+The girl is putting a bottle in the bag. || The girl is putting a spoon in a bowl.
 The boy is eating breakfast. || The boy is eating dinner.
 The child is drinking milk. || The child is pouring milk.
 The child is waiting by the door. || The child is sitting on the bed.
@@ -598,20 +598,20 @@ There are five children in line. || There are five children in a circle.
 `),
   makeLevel(83, "There is / are：校园场景", ["playground", "library", "line"], `
 There is a slide in the playground. || There is a swing in the playground.
-There is a swing beside the tree. || There is a swing under the table.
+There is a swing beside the tree. || There is a swing beside the bench.
 There are two children on the seesaw. || There are two children beside the seesaw.
 There are three balls in the basket. || There are three balls under the basket.
 There is a teacher by the gate. || There is a teacher by the lunch table.
 There are students in a line. || There are students in a circle.
-There is a book on the library table. || There is a book on the playground slide.
-There are many books on the library shelf. || There are many shoes on the library shelf.
+There is a book on the library table. || There is a book on the classroom table.
+There are many books on the library shelf. || There are many books on the library table.
 There is a water bottle on the bench. || There is a water bottle under the bench.
-There are two friends under the tree. || There are two friends on the tree.
+There are two friends under the tree. || There are two friends beside the tree.
 There is a red kite in the sky. || There is a red kite on the ground.
-There are clouds above the school. || There are clouds inside the school.
-There is a small garden by the classroom. || There is a small garden on the board.
-There are children near the sandbox. || There are children in the lunch box.
-There is a bus outside the school. || There is a bus inside the classroom.
+There are clouds above the school. || There are clouds above the park.
+There is a small garden by the classroom. || There is a small garden by the school gate.
+There are children near the sandbox. || There are children near the slide.
+There is a bus outside the school. || There is a bus outside the park.
 `),
   makeLevel(84, "There is / are：家庭物品", ["home", "bed", "table"], `
 There is a cup on the table. || There is a cup under the table.
@@ -620,12 +620,12 @@ There is a towel by the sink. || There is a towel by the sofa.
 There is a toothbrush in the cup. || There is a toothbrush in the bowl.
 There are two shoes by the door. || There are two shoes on the bed.
 There are three apples in the bowl. || There are three apples under the bowl.
-There is a book on the sofa. || There is a book in the sink.
+There is a book on the sofa. || There is a book on the table.
 There is a toy car in the box. || There is a toy car under the box.
 There are two jackets on the hooks. || There are two jackets on the floor.
 There is a lamp beside the bed. || There is a lamp under the bed.
 There are four spoons in the drawer. || There are four spoons on the bed.
-There is a blanket on the chair. || There is a blanket in the lunch box.
+There is a blanket on the chair. || There is a blanket on the bed.
 There is a bottle in the schoolbag. || There is a bottle on the schoolbag.
 There are two towels on the shelf. || There are two towels under the shelf.
 There is a family picture on the wall. || There is a family picture on the floor.
@@ -640,9 +640,9 @@ There are four children in the playground. || There are four children in the kit
 There is a towel by the sink. || There is a towel by the bed.
 There are two apples in the lunch box. || There are two apples on the lunch box.
 There is a teacher in the classroom. || There is a teacher in the bedroom.
-There are students in a line. || There are students under a table.
-There is a pillow on the bed. || There is a pillow on the board.
-There are socks in the drawer. || There are socks in the bowl.
+There are students in a line. || There are students in a circle.
+There is a pillow on the bed. || There is a pillow on the sofa.
+There are socks in the drawer. || There are socks on the bed.
 There is a bottle beside the schoolbag. || There is a bottle inside the schoolbag.
 There are crayons in the box. || There are crayons under the box.
 There is a happy child at the desk. || There is a tired child at the desk.

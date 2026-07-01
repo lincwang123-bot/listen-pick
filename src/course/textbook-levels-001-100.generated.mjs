@@ -6049,7 +6049,7 @@ export const textbookLevels = [
       {
         "id": "L036-Q006",
         "sentence": "The apple is red.",
-        "wrongSentence": "The apple is blue.",
+        "wrongSentence": "The apple is green.",
         "audioFile": "assets/textbook/audio/level-036/q006.m4a",
         "correctImage": "assets/textbook/images/level-036/q006-correct.png",
         "wrongImage": "assets/textbook/images/level-036/q006-wrong.png",
@@ -10775,7 +10775,7 @@ export const textbookLevels = [
       {
         "id": "L063-Q010",
         "sentence": "The boy is putting a book in the bag.",
-        "wrongSentence": "The boy is taking a book out of the bag.",
+        "wrongSentence": "The boy is putting a bottle in the bag.",
         "audioFile": "assets/textbook/audio/level-063/q010.m4a",
         "correctImage": "assets/textbook/images/level-063/q010-correct.png",
         "wrongImage": "assets/textbook/images/level-063/q010-wrong.png",
@@ -13052,7 +13052,7 @@ export const textbookLevels = [
       {
         "id": "L076-Q009",
         "sentence": "The girl is putting a bottle in the bag.",
-        "wrongSentence": "The girl is taking a bottle out of the bag.",
+        "wrongSentence": "The girl is putting a spoon in a bowl.",
         "audioFile": "assets/textbook/audio/level-076/q009.m4a",
         "correctImage": "assets/textbook/images/level-076/q009-correct.png",
         "wrongImage": "assets/textbook/images/level-076/q009-wrong.png",
@@ -14207,7 +14207,7 @@ export const textbookLevels = [
       {
         "id": "L083-Q002",
         "sentence": "There is a swing beside the tree.",
-        "wrongSentence": "There is a swing under the table.",
+        "wrongSentence": "There is a swing beside the bench.",
         "audioFile": "assets/textbook/audio/level-083/q002.m4a",
         "correctImage": "assets/textbook/images/level-083/q002-correct.png",
         "wrongImage": "assets/textbook/images/level-083/q002-wrong.png",
@@ -14262,7 +14262,7 @@ export const textbookLevels = [
       {
         "id": "L083-Q007",
         "sentence": "There is a book on the library table.",
-        "wrongSentence": "There is a book on the playground slide.",
+        "wrongSentence": "There is a book on the classroom table.",
         "audioFile": "assets/textbook/audio/level-083/q007.m4a",
         "correctImage": "assets/textbook/images/level-083/q007-correct.png",
         "wrongImage": "assets/textbook/images/level-083/q007-wrong.png",
@@ -14273,7 +14273,7 @@ export const textbookLevels = [
       {
         "id": "L083-Q008",
         "sentence": "There are many books on the library shelf.",
-        "wrongSentence": "There are many shoes on the library shelf.",
+        "wrongSentence": "There are many books on the library table.",
         "audioFile": "assets/textbook/audio/level-083/q008.m4a",
         "correctImage": "assets/textbook/images/level-083/q008-correct.png",
         "wrongImage": "assets/textbook/images/level-083/q008-wrong.png",
@@ -14295,7 +14295,7 @@ export const textbookLevels = [
       {
         "id": "L083-Q010",
         "sentence": "There are two friends under the tree.",
-        "wrongSentence": "There are two friends on the tree.",
+        "wrongSentence": "There are two friends beside the tree.",
         "audioFile": "assets/textbook/audio/level-083/q010.m4a",
         "correctImage": "assets/textbook/images/level-083/q010-correct.png",
         "wrongImage": "assets/textbook/images/level-083/q010-wrong.png",
@@ -14317,7 +14317,7 @@ export const textbookLevels = [
       {
         "id": "L083-Q012",
         "sentence": "There are clouds above the school.",
-        "wrongSentence": "There are clouds inside the school.",
+        "wrongSentence": "There are clouds above the park.",
         "audioFile": "assets/textbook/audio/level-083/q012.m4a",
         "correctImage": "assets/textbook/images/level-083/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-083/q012-wrong.png",
@@ -14328,7 +14328,7 @@ export const textbookLevels = [
       {
         "id": "L083-Q013",
         "sentence": "There is a small garden by the classroom.",
-        "wrongSentence": "There is a small garden on the board.",
+        "wrongSentence": "There is a small garden by the school gate.",
         "audioFile": "assets/textbook/audio/level-083/q013.m4a",
         "correctImage": "assets/textbook/images/level-083/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-083/q013-wrong.png",
@@ -14339,7 +14339,7 @@ export const textbookLevels = [
       {
         "id": "L083-Q014",
         "sentence": "There are children near the sandbox.",
-        "wrongSentence": "There are children in the lunch box.",
+        "wrongSentence": "There are children near the slide.",
         "audioFile": "assets/textbook/audio/level-083/q014.m4a",
         "correctImage": "assets/textbook/images/level-083/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-083/q014-wrong.png",
@@ -14350,7 +14350,7 @@ export const textbookLevels = [
       {
         "id": "L083-Q015",
         "sentence": "There is a bus outside the school.",
-        "wrongSentence": "There is a bus inside the classroom.",
+        "wrongSentence": "There is a bus outside the park.",
         "audioFile": "assets/textbook/audio/level-083/q015.m4a",
         "correctImage": "assets/textbook/images/level-083/q015-correct.png",
         "wrongImage": "assets/textbook/images/level-083/q015-wrong.png",
@@ -14438,7 +14438,7 @@ export const textbookLevels = [
       {
         "id": "L084-Q007",
         "sentence": "There is a book on the sofa.",
-        "wrongSentence": "There is a book in the sink.",
+        "wrongSentence": "There is a book on the table.",
         "audioFile": "assets/textbook/audio/level-084/q007.m4a",
         "correctImage": "assets/textbook/images/level-084/q007-correct.png",
         "wrongImage": "assets/textbook/images/level-084/q007-wrong.png",
@@ -14493,7 +14493,7 @@ export const textbookLevels = [
       {
         "id": "L084-Q012",
         "sentence": "There is a blanket on the chair.",
-        "wrongSentence": "There is a blanket in the lunch box.",
+        "wrongSentence": "There is a blanket on the bed.",
         "audioFile": "assets/textbook/audio/level-084/q012.m4a",
         "correctImage": "assets/textbook/images/level-084/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-084/q012-wrong.png",
@@ -14647,7 +14647,7 @@ export const textbookLevels = [
       {
         "id": "L085-Q010",
         "sentence": "There are students in a line.",
-        "wrongSentence": "There are students under a table.",
+        "wrongSentence": "There are students in a circle.",
         "audioFile": "assets/textbook/audio/level-085/q010.m4a",
         "correctImage": "assets/textbook/images/level-085/q010-correct.png",
         "wrongImage": "assets/textbook/images/level-085/q010-wrong.png",
@@ -14658,7 +14658,7 @@ export const textbookLevels = [
       {
         "id": "L085-Q011",
         "sentence": "There is a pillow on the bed.",
-        "wrongSentence": "There is a pillow on the board.",
+        "wrongSentence": "There is a pillow on the sofa.",
         "audioFile": "assets/textbook/audio/level-085/q011.m4a",
         "correctImage": "assets/textbook/images/level-085/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-085/q011-wrong.png",
@@ -14669,7 +14669,7 @@ export const textbookLevels = [
       {
         "id": "L085-Q012",
         "sentence": "There are socks in the drawer.",
-        "wrongSentence": "There are socks in the bowl.",
+        "wrongSentence": "There are socks on the bed.",
         "audioFile": "assets/textbook/audio/level-085/q012.m4a",
         "correctImage": "assets/textbook/images/level-085/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-085/q012-wrong.png",

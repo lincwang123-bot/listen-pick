@@ -1,6 +1,6 @@
 import { courseLevels } from "./course/levels-002-030.generated.mjs";
-import { availableTextbookLevels } from "./course/textbook-playable.generated.mjs?v=stage2-v100";
-import { textbookLevels } from "./course/textbook-levels-001-100.generated.mjs?v=stage2-v100";
+import { availableTextbookLevels } from "./course/textbook-playable.generated.mjs?v=stage3-assets-v5";
+import { textbookLevels } from "./course/textbook-levels-001-300.generated.mjs?v=stage3-assets-v5";
 
 const levelQuestions = [
   {
@@ -374,10 +374,18 @@ function pickDistractor(question, rng) {
   return distractors[Math.floor(toSafeRandom(rng) * distractors.length)];
 }
 
-function createSessionQuestion(question, rng) {
+function chooseCorrectFirst(rng, correctSideHistory) {
+  const previousTwo = correctSideHistory.slice(-2);
+  if (previousTwo.length === 2 && previousTwo[0] === previousTwo[1]) {
+    return previousTwo[0] !== 0;
+  }
+
+  return toSafeRandom(rng) < 0.5;
+}
+
+function createSessionQuestion(question, rng, correctFirst) {
   const correctChoice = getCorrectChoice(question);
   const distractorChoice = pickDistractorChoice(question, rng);
-  const correctFirst = toSafeRandom(rng) < 0.5;
   const choices = correctFirst
     ? [correctChoice, distractorChoice]
     : [distractorChoice, correctChoice];
@@ -400,8 +408,14 @@ export function createQuestionSessionFromQuestions(levelQuestions, options = {})
   const orderedQuestions = mode === "review"
     ? shuffleItems(levelQuestions ?? [], rng)
     : [...(levelQuestions ?? [])];
+  const correctSideHistory = [];
 
-  return orderedQuestions.map((question) => createSessionQuestion(question, rng));
+  return orderedQuestions.map((question) => {
+    const correctFirst = chooseCorrectFirst(rng, correctSideHistory);
+    const sessionQuestion = createSessionQuestion(question, rng, correctFirst);
+    correctSideHistory.push(sessionQuestion.correctIndex);
+    return sessionQuestion;
+  });
 }
 
 export function createQuestionSession(levelNumber = 1, options = {}) {
@@ -423,9 +437,13 @@ export function createInitialState(level = 1) {
     currentIndex: 0,
     score: 0,
     answers: [],
+    wrongList: [],
+    scheduledReviews: [],
     startedAt: Date.now()
   };
 }
+
+const WRONG_REVIEW_OFFSETS = [3, 10, 25];
 
 export function submitAnswer(state, selectedIndex, options = {}) {
   const levelQuestions = options.questions ?? getQuestionsForLevel(state.level);
@@ -436,6 +454,9 @@ export function submitAnswer(state, selectedIndex, options = {}) {
   }
 
   const isCorrect = selectedIndex === question.correctIndex;
+  const wrongReview = isCorrect
+    ? null
+    : createWrongReviewEntry(state, state.currentIndex, question, selectedIndex);
 
   return {
     ...state,
@@ -449,7 +470,115 @@ export function submitAnswer(state, selectedIndex, options = {}) {
         correctIndex: question.correctIndex,
         isCorrect
       }
-    ]
+    ],
+    wrongList: wrongReview
+      ? [...(state.wrongList ?? []), wrongReview]
+      : [...(state.wrongList ?? [])],
+    scheduledReviews: wrongReview
+      ? [
+          ...(state.scheduledReviews ?? []),
+          ...wrongReview.reviewAt.map((dueIndex) => ({
+            reviewId: wrongReview.reviewId,
+            dueIndex,
+            questionIndex: wrongReview.questionIndex,
+            sentence: wrongReview.sentence,
+            question: wrongReview.question
+          }))
+        ]
+      : [...(state.scheduledReviews ?? [])]
+  };
+}
+
+export function recordWrongAttempt(state, selectedIndex, options = {}) {
+  const levelQuestions = options.questions ?? getQuestionsForLevel(state.level);
+  const question = getActiveQuestion(state, levelQuestions);
+
+  if (!question) {
+    return state;
+  }
+
+  const isWrongReview = Boolean(question.reviewId);
+  const questionIndex = isWrongReview ? question.sourceQuestionIndex : state.currentIndex;
+  const wrongReview = isWrongReview
+    ? null
+    : createWrongReviewEntry(state, questionIndex, question, selectedIndex);
+
+  return {
+    ...state,
+    answers: [
+      ...state.answers,
+      {
+        questionIndex,
+        selectedIndex,
+        correctIndex: question.correctIndex,
+        isCorrect: false,
+        isReview: isWrongReview
+      }
+    ],
+    wrongList: wrongReview
+      ? [...(state.wrongList ?? []), wrongReview]
+      : [...(state.wrongList ?? [])],
+    scheduledReviews: wrongReview
+      ? [
+          ...(state.scheduledReviews ?? []),
+          ...wrongReview.reviewAt.map((dueIndex) => ({
+            reviewId: wrongReview.reviewId,
+            dueIndex,
+            questionIndex: wrongReview.questionIndex,
+            sentence: wrongReview.sentence,
+            question: wrongReview.question
+          }))
+        ]
+      : [...(state.scheduledReviews ?? [])]
+  };
+}
+
+function createWrongReviewEntry(state, questionIndex, question, selectedIndex) {
+  const reviewId = `wrong-${questionIndex}-${(state.wrongList?.length ?? 0) + 1}`;
+  return {
+    reviewId,
+    questionIndex,
+    sentence: question.sentence,
+    selectedIndex,
+    correctIndex: question.correctIndex,
+    reviewAt: WRONG_REVIEW_OFFSETS.map((offset) => questionIndex + offset),
+    question: {
+      ...question,
+      reviewId,
+      sourceQuestionIndex: questionIndex,
+      choices: question.choices?.map(cloneChoice)
+    }
+  };
+}
+
+export function getDueWrongReviewQuestions(state) {
+  return (state.scheduledReviews ?? [])
+    .filter((review) => review.dueIndex === state.currentIndex)
+    .map((review) => review.question);
+}
+
+export function getActiveQuestion(state, levelQuestions = getQuestionsForLevel(state.level)) {
+  return getDueWrongReviewQuestions(state)[0] ?? levelQuestions[state.currentIndex];
+}
+
+export function completeDueWrongReview(state) {
+  const dueReview = (state.scheduledReviews ?? [])
+    .find((review) => review.dueIndex === state.currentIndex);
+
+  if (!dueReview) {
+    return state;
+  }
+
+  let removed = false;
+  return {
+    ...state,
+    scheduledReviews: (state.scheduledReviews ?? []).filter((review) => {
+      if (!removed && review.dueIndex === dueReview.dueIndex && review.reviewId === dueReview.reviewId) {
+        removed = true;
+        return false;
+      }
+      return true;
+    })
   };
 }
 
