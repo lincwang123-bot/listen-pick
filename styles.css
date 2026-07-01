@@ -983,6 +983,7 @@ button {
   border-radius: 8px;
   padding: 12px;
   cursor: pointer;
+  touch-action: manipulation;
   background: var(--surface);
   box-shadow: 0 12px 24px rgba(22, 77, 126, 0.12);
   transition: transform 160ms ease, border 160ms ease, box-shadow 160ms ease;
@@ -1021,6 +1022,10 @@ button {
   object-fit: contain;
   object-position: center;
   border-radius: 8px;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
 }
 
 .choice-copy {

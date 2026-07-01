@@ -97,6 +97,24 @@ test("app inserts due wrong reviews without advancing the main level progress", 
   assert.ok(appSource.includes("? `复习 ${state.currentIndex + 1} / ${currentQuestions.length}`"));
 });
 
+test("learn mode displays the course question instead of scheduled review items", () => {
+  assert.match(
+    appSource,
+    /if \(playMode === "learn"\) return currentQuestions\[state\.currentIndex\];/
+  );
+});
+
+test("review sentence audio uses the displayed review question asset", () => {
+  assert.match(
+    appSource,
+    /const question = getCurrentDisplayQuestion\(\);[\s\S]*?speak\(question\.sentence, question\);/
+  );
+});
+
+test("choice images do not expose native drag or preview gestures", () => {
+  assert.ok(appSource.includes('draggable="false"'));
+});
+
 test("sentence audio defaults to standard speed instead of slow speed", () => {
   assert.ok(indexSource.includes('<option value="0.85" selected>标准</option>'));
   assert.ok(indexSource.includes('<option value="0.72">慢速</option>'));

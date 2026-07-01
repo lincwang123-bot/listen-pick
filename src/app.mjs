@@ -10,7 +10,7 @@ import {
   playableLevels,
   recordWrongAttempt,
   submitCorrectAnswer
-} from "./game.mjs?v=stage3-assets-v5";
+} from "./game.mjs?v=stage3-assets-v6";
 import { toChineseHint } from "./hints.mjs?v=zh-hints-v5";
 import { createLevelPacks, findPackForLevel, getPackStart } from "./level-groups.mjs?v=pack-picker-v1";
 import {
@@ -108,7 +108,7 @@ let missedQuestionIndexes = new Set();
 let pendingLevelSelectTimer = null;
 const CHILD_NAME_STORAGE_KEY = "listenPickChildName";
 const CROSS_LEVEL_WRONG_STORAGE_KEY = "listenPickCrossLevelWrongReviews";
-const assetVersion = "stage3-assets-v5";
+const assetVersion = "stage3-assets-v6";
 const resultAudioVersion = "result-praise-v1";
 const assetPreloader = createAssetPreloader({ maxConcurrent: 4 });
 const PRELOAD_CURRENT_WINDOW_COUNT = 4;
@@ -258,6 +258,7 @@ function completeCrossLevelWrongReview(reviewId) {
 }
 
 function getCurrentDisplayQuestion() {
+  if (playMode === "learn") return currentQuestions[state.currentIndex];
   return getDueCrossLevelWrongReview()?.question ?? getActiveQuestion(state, currentQuestions);
 }
 
@@ -494,7 +495,7 @@ function createChoiceCard(choice, index) {
   button.setAttribute("aria-label", `选择图片 ${index === 0 ? "A" : "B"}`);
   button.innerHTML = `
     <div class="choice-art visual-${choice.visual}">
-      <img class="scene-image" src="${imageUrl}" alt="${choice.alt}" decoding="async" fetchpriority="high">
+      <img class="scene-image" src="${imageUrl}" alt="${choice.alt}" decoding="async" fetchpriority="high" draggable="false">
     </div>
     <div class="choice-copy">
       <p class="choice-title">${choice.label}</p>
@@ -722,7 +723,7 @@ function speakCurrentSentence() {
 
   const question = getCurrentDisplayQuestion();
   if (question) {
-    speak(question.sentence);
+    speak(question.sentence, question);
   }
 }
 

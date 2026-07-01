@@ -50,6 +50,14 @@ See:
 - Asset preloading for the current level and upcoming levels
 - Static deployment friendly for a VPS, GitHub Pages, Nginx, or Caddy
 
+Recent maintenance:
+
+- Fixed learning mode so it always opens the selected course content instead of scheduled review content
+- Fixed review audio so it follows the review question currently shown on screen
+- Disabled native mobile image drag/preview gestures so tapping a picture selects the answer
+- Replaced the Level 13 count-picture runtime assets and bumped the cache version to `stage3-assets-v6`
+- Latest verification: `npm test` passes 98 tests; textbook image audit checks 4,500 pairs with 0 missing assets
+
 ## Run Locally
 
 ```bash

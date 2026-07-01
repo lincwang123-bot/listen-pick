@@ -22,6 +22,17 @@ test("choice illustrations use one fixed frame ratio across viewports", () => {
   assert.doesNotMatch(mobileChoiceArtMatch[1], /aspect-ratio:\s*14\s*\/\s*9;/);
 });
 
+test("choice images let the card handle mobile taps", () => {
+  const choiceCard = ruleBody(".choice-card");
+  assert.match(choiceCard, /touch-action:\s*manipulation;/);
+
+  const sceneImage = ruleBody(".scene-image");
+  assert.match(sceneImage, /pointer-events:\s*none;/);
+  assert.match(sceneImage, /user-select:\s*none;/);
+  assert.match(sceneImage, /-webkit-user-drag:\s*none;/);
+  assert.match(sceneImage, /-webkit-touch-callout:\s*none;/);
+});
+
 test("level picker number buttons stay inside day cards in landscape", () => {
   const dayLevels = ruleBody(".day-levels");
   assert.match(dayLevels, /repeat\(auto-fit,\s*minmax\(40px,\s*1fr\)\)/);
