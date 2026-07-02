@@ -1,52 +1,21 @@
 # Textbook Image Duplicate Audit
 
-Generated: 2026-07-01T15:41:14.852Z
+Generated: 2026-07-02T11:01:48.072Z
 
 ## Summary
 
 - Total question pairs checked: 4500
 - Missing image pairs: 0
-- Suspicious pairs: 79
-- Severity counts: ok: 4421, visual_review: 13, very_high: 20, high: 25, semantic_review: 21
+- Suspicious pairs: 39
+- Severity counts: ok: 4461, high: 14, visual_review: 4, semantic_review: 21
 
 ## Suspicious Pairs
 
 | Severity | Level | Question | MSE | dHash | aHash | Sentence | Wrong | Note |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- | --- |
-| very_high | 14 | 7 | 0.000255 | 3 | 0 | There are seven stars. | There are eight stars. |  |
-| very_high | 12 | 10 | 0.0004 | 0 | 0 | There are four stars. | There are five stars. |  |
-| very_high | 15 | 5 | 0.000405 | 3 | 3 | There are nine stars. | There are ten stars. |  |
-| very_high | 14 | 9 | 0.000457 | 3 | 0 | There are seven hearts. | There are eight hearts. |  |
-| very_high | 12 | 8 | 0.000498 | 1 | 0 | There are four cups. | There are five cups. |  |
-| very_high | 12 | 4 | 0.00098 | 1 | 0 | There are four balls. | There are five balls. |  |
-| very_high | 15 | 7 | 0.001476 | 0 | 0 | I see one red car. | I see one blue car. |  |
-| very_high | 12 | 6 | 0.00148 | 1 | 0 | There are four books. | There are five books. |  |
-| very_high | 12 | 2 | 0.001497 | 1 | 0 | There are four apples. | There are five apples. |  |
-| very_high | 12 | 13 | 0.001631 | 0 | 0 | There are three yellow kites. | There are three green kites. |  |
-| very_high | 15 | 15 | 0.001682 | 0 | 0 | I see ten pink hearts. | I see ten red hearts. |  |
-| very_high | 15 | 9 | 0.001695 | 0 | 0 | I see three yellow cups. | I see three green cups. |  |
-| very_high | 12 | 14 | 0.00195 | 0 | 0 | There are four green circles. | There are four orange circles. |  |
-| very_high | 12 | 9 | 0.00222 | 7 | 5 | There are three stars. | There are four stars. |  |
-| very_high | 15 | 10 | 0.002224 | 0 | 0 | I see four green kites. | I see four orange kites. |  |
-| very_high | 14 | 1 | 0.002432 | 3 | 0 | There are seven apples. | There are eight apples. |  |
-| very_high | 14 | 3 | 0.00267 | 3 | 0 | There are seven balls. | There are eight balls. |  |
-| very_high | 12 | 7 | 0.003129 | 7 | 5 | There are three cups. | There are four cups. |  |
-| very_high | 15 | 1 | 0.003306 | 5 | 2 | There are nine apples. | There are ten apples. |  |
-| very_high | 14 | 15 | 0.003412 | 3 | 0 | There are seven children. | There are eight children. |  |
-| high | 14 | 5 | 0.003555 | 3 | 2 | There are seven books. | There are eight books. |  |
-| high | 15 | 11 | 0.003815 | 0 | 0 | I see five orange fish. | I see five purple fish. |  |
-| high | 14 | 13 | 0.003859 | 2 | 0 | There are seven yellow boxes. | There are seven green boxes. |  |
-| high | 12 | 15 | 0.004098 | 4 | 5 | There are three children. | There are four children. |  |
-| high | 15 | 8 | 0.00417 | 0 | 0 | I see two blue books. | I see two yellow books. |  |
-| high | 15 | 3 | 0.004264 | 3 | 1 | There are nine balls. | There are ten balls. |  |
-| high | 15 | 12 | 0.004314 | 0 | 0 | I see six purple bags. | I see six black bags. |  |
 | high | 30 | 15 | 0.004417 | 8 | 0 | The purple kite is above the tree. | The black kite is above the tree. |  |
-| high | 12 | 11 | 0.004519 | 0 | 0 | I see three red cars. | I see three blue cars. |  |
-| high | 14 | 14 | 0.004619 | 2 | 0 | There are eight green bags. | There are eight orange bags. |  |
 | high | 100 | 9 | 0.004701 | 10 | 7 | The towel is wet by the sink. | The towel is dry by the sink. |  |
-| high | 12 | 12 | 0.004815 | 1 | 0 | I see four blue bags. | I see four yellow bags. |  |
 | high | 30 | 5 | 0.005174 | 7 | 4 | The brown dog is behind the sofa. | The pink dog is behind the sofa. |  |
-| high | 12 | 3 | 0.005718 | 6 | 5 | There are three balls. | There are four balls. |  |
 | high | 29 | 7 | 0.005828 | 13 | 1 | The apple is between two cups. | The apple is between three cups. |  |
 | high | 95 | 6 | 0.006 | 15 | 4 | The towel is wet by the sink. | The towel is dry by the sink. |  |
 | high | 59 | 15 | 0.006244 | 6 | 0 | The child is choosing a white cap. | The child is choosing an orange cap. |  |
@@ -58,19 +27,10 @@ Generated: 2026-07-01T15:41:14.852Z
 | high | 53 | 13 | 0.007072 | 11 | 9 | The baby is sitting with bare feet. | The baby is sitting with shoes. |  |
 | high | 42 | 8 | 0.007388 | 12 | 24 | These are socks. | These are shoes. |  |
 | high | 31 | 6 | 0.007459 | 18 | 0 | The pencil is yellow. | The pencil is green. |  |
-| visual_review | 14 | 11 | 0.007967 | 0 | 0 | I see seven red kites. | I see seven blue kites. |  |
 | visual_review | 30 | 12 | 0.008341 | 6 | 1 | The green frog is on a rock. | The orange frog is on a rock. |  |
 | visual_review | 43 | 8 | 0.008359 | 6 | 2 | The woman is carrying a purple bag. | The woman is carrying a black bag. |  |
-| visual_review | 15 | 6 | 0.009666 | 3 | 4 | There are ten circles. | There is one circle. |  |
-| visual_review | 15 | 4 | 0.009714 | 3 | 4 | There are ten balls. | There is one ball. |  |
-| visual_review | 12 | 5 | 0.009742 | 6 | 5 | There are three books. | There are four books. |  |
-| visual_review | 15 | 14 | 0.009949 | 8 | 4 | I see eight white birds. | I see eight brown birds. |  |
 | visual_review | 88 | 12 | 0.01034 | 8 | 2 | The girl likes a red apple. | The girl likes a green apple. |  |
-| visual_review | 12 | 1 | 0.010562 | 6 | 5 | There are three apples. | There are four apples. |  |
-| visual_review | 14 | 12 | 0.010679 | 2 | 0 | I see eight blue cups. | I see eight yellow cups. |  |
 | visual_review | 50 | 6 | 0.011106 | 9 | 1 | The sister is wearing a pink dress. | The sister is wearing a red dress. |  |
-| visual_review | 14 | 10 | 0.011358 | 6 | 5 | There are eight squares. | There are nine squares. |  |
-| visual_review | 14 | 4 | 0.01173 | 6 | 6 | There are eight balls. | There are nine balls. |  |
 | semantic_review | 79 | 8 | 0.011125 | 16 | 5 | The girl is taking off her shoes at home. | The girl is putting on her shoes at home. | putting-on/taking-off clothing can be visually ambiguous |
 | semantic_review | 74 | 2 | 0.02004 | 23 | 7 | The girl is putting a spoon in a bowl. | The girl is taking a spoon out of a bowl. | static in/out action may be visually identical |
 | semantic_review | 60 | 3 | 0.027571 | 13 | 5 | The child is putting on red shoes. | The child is taking off red shoes. | putting-on/taking-off clothing can be visually ambiguous |
