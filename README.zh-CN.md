@@ -54,6 +54,7 @@ https://linc.wang/listen-pick/
 - 结算页会根据分数显示不同中文鼓励
 - 可输入孩子小名，小名仅用于屏幕文字鼓励
 - 当前关卡和后续关卡资源预加载，提升体验
+- 已加入匿名使用统计信标，可按匿名访客 ID 去重查看用户数和当前活跃用户数
 - 适合静态部署到 VPS、GitHub Pages、Nginx、Caddy 等环境
 
 近期维护：
@@ -61,8 +62,10 @@ https://linc.wang/listen-pick/
 - 修复“选择学习后仍进入复习内容”的问题，学习模式始终展示所选课程题目
 - 修复复习模式语音绑定问题，播放的音频会跟随当前展示的复习题
 - 禁用移动端图片原生拖拽/预览手势，点击图片会由答题卡片接管
-- 替换第 12、13、14、15 关数量题运行时图片，并将缓存版本提升到 `stage3-assets-v7`
-- 最新验证：`npm test` 通过 98 项测试；教材图片审计检查 4500 对图片，缺图为 0
+- 修复 `watering`、`painting`、`building`、`lowering` 等动作漏译问题；第 151 关浇水题中文提示已改为自然中文
+- 新增 `/listen-pick/__analytics/visit` 匿名访问信标，Nginx 日志可按 `vid` 去重统计
+- 将缓存版本提升到 `stage3-assets-v8 / zh-hints-v6`
+- 最新验证：`npm test` 通过 100 项测试；进行时中文提示全量审计漏动作数为 0
 
 ## 本地运行
 
@@ -140,7 +143,7 @@ assets/textbook/images/level-XXX/qYYY-wrong.webp
 
 当前原型不要求微信登录，也没有后台账号系统。孩子的小名只保存在浏览器本地，用于屏幕上的中文鼓励。
 
-如果后续增加访问统计或用户分析，建议不要采集孩子真实姓名、语音录音或其他不必要的个人信息。
+线上 Demo 会向 `/listen-pick/__analytics/visit` 发送匿名随机访客 ID、随机会话 ID、事件类型和页面路径。它不会发送孩子小名、语音录音、答题内容、分数或账号数据。VPS 会把这些信标写入 `/var/log/nginx/listen-pick-analytics.access.log`；总用户数按 `vid` 去重统计，当前使用人数按最近几分钟的 heartbeat 去重估算。
 
 ## 部署
 

@@ -22,7 +22,11 @@ test("app warms current and next level assets through the asset preloader", () =
 });
 
 test("index points to the preload-aware app module version", () => {
-  assert.ok(indexSource.includes('src="src/app.mjs?v=stage3-assets-v5"'));
+  assert.ok(indexSource.includes('src="src/app.mjs?v=stage3-assets-v8"'));
+});
+
+test("index loads the privacy-preserving analytics beacon", () => {
+  assert.ok(indexSource.includes('src="src/analytics.mjs?v=privacy-analytics-v1"'));
 });
 
 test("app starts from login then asks for a child name before the level picker", () => {
@@ -66,7 +70,7 @@ test("generated Chinese result praise audio exists for every possible score", ()
 });
 
 test("app points to the refreshed Chinese hint module version", () => {
-  assert.ok(appSource.includes("hints.mjs?v=zh-hints-v5"));
+  assert.ok(appSource.includes("hints.mjs?v=zh-hints-v6"));
 });
 
 test("app exposes a selectable voice control for generated audio", () => {

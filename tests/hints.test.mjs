@@ -50,12 +50,24 @@ test("Chinese hints use natural child-facing wording for common action phrases",
     ["The boy is putting a bottle in the bag.", "男孩正在把水瓶放进书包里。"],
     ["The girl is putting a spoon in a bowl.", "女孩正在把勺子放进碗里。"],
     ["The girl is putting a bottle in the bag.", "女孩正在把水瓶放进书包里。"],
-    ["The girl is taking a bottle out of the bag.", "女孩正在从书包里拿出水瓶。"]
+    ["The girl is taking a bottle out of the bag.", "女孩正在从书包里拿出水瓶。"],
+    ["The boy is watering a plant.", "男孩正在给植物浇水。"],
+    ["The boy is watering a flower.", "男孩正在给花浇水。"],
+    ["The girl is painting.", "女孩正在画画。"],
+    ["The children are building a sandcastle.", "孩子们正在搭建一个沙堡。"],
+    ["The girl is lowering both hands.", "女孩正在放下两只手。"],
+    ["The boy is flying a paper plane.", "男孩正在放一架纸飞机。"]
   ]);
 
   for (const [sentence, expected] of examples) {
     assert.equal(toChineseHint(sentence), expected, sentence);
   }
+});
+
+test("present-progressive playable hints keep an explicit action", () => {
+  const missingActions = collectPresentProgressiveHintsWithoutActions(playableLevels);
+
+  assert.deepEqual(missingActions, []);
 });
 
 test("all playable Chinese hints avoid known machine-translation artifacts", () => {
@@ -129,4 +141,33 @@ function collectHintArtifacts(levels) {
   }
 
   return artifacts;
+}
+
+function collectPresentProgressiveHintsWithoutActions(levels) {
+  const missingActions = [];
+  const presentProgressivePattern = /\b(?:is|are)\s+([a-z]+ing)\b/i;
+  const actionPattern = /正在|正|喜欢|在|给|把|用|穿|戴|拿|放|读|写|画|吃|喝|看|睡|坐|站|跑|走|跳|唱|洗|刷|踢|开|关|指|举|牵|整理|收拾|浇|笑|游|玩|做|购物|帮助|分享|等待|进入|离开|爬|扔|擦|系|挂|扣|拉|搭建/;
+
+  for (const level of levels) {
+    for (const [questionIndex, question] of level.questions.entries()) {
+      for (const [choiceIndex, choice] of question.choices.entries()) {
+        const match = choice.label.match(presentProgressivePattern);
+        if (!match) continue;
+
+        const hint = toChineseHint(choice.label);
+        if (actionPattern.test(hint)) continue;
+
+        missingActions.push({
+          level: level.level,
+          question: questionIndex + 1,
+          choice: choiceIndex + 1,
+          verb: match[1],
+          label: choice.label,
+          hint
+        });
+      }
+    }
+  }
+
+  return missingActions;
 }

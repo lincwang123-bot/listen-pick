@@ -1,6 +1,6 @@
 # Listen & Pick 项目交接说明
 
-更新时间：2026-07-01
+更新时间：2026-07-06
 项目路径：本地工作区根目录
 线上地址：`https://linc.wang/listen-pick/`
 
@@ -20,14 +20,17 @@
 - VPS SSH：`ssh linc-vps`
 - VPS 静态目录：`/opt/linc/sites/localpilot/listen-pick/`
 - 当前缓存版本：
-  - `stage3-assets-v7`
-  - `zh-hints-v5`
+  - `stage3-assets-v8`
+  - `zh-hints-v6`
 - 最近验证：
-  - `npm test` 通过，`98/98`
+  - `npm test` 通过，`100/100`
   - 300 关专项校验通过：4500 道题、22500 个运行时文件，错误数 0
   - 图片审计检查 4500 对题图，缺图 0，可疑项 39，`very_high` 0
-  - 线上应加载 `src/app.mjs?v=stage3-assets-v7`
-  - 线上 `app.mjs` 已确认加载 `hints.mjs?v=zh-hints-v5`
+  - 进行时中文提示全量审计漏动作数 0
+  - 线上应加载 `src/app.mjs?v=stage3-assets-v8`
+  - 线上 `app.mjs` 应加载 `hints.mjs?v=zh-hints-v6`
+  - 匿名统计 endpoint：`/listen-pick/__analytics/visit`
+  - 匿名统计日志：`/var/log/nginx/listen-pick-analytics.access.log`
 
 ## 3. 已实现功能
 
@@ -48,6 +51,7 @@
 - 已加入错题复习调度逻辑，核心思路为 `+3 / +10 / +25`。
 - 已做当前关和后续资源预加载，优化打开下一题/下一关体验。
 - 已支持“接着上次学习”的本地进度思路。
+- 已加入匿名使用统计信标，用 `vid` 去重统计唯一访客，用 heartbeat 估算当前活跃人数。
 
 ## 4. 关键文件
 
@@ -155,6 +159,9 @@ rsync -az --include='*/' --include='*.webp' --exclude='*' assets/textbook/images
 - 修复复习模式语音和图片不匹配的问题，播放语音会绑定当前展示的复习题。
 - 修复部分手机浏览器点击图片变成放大/预览的问题，图片点击现在由答题卡片接管。
 - 替换第 12、13、14、15 关数量题运行时图片，并将缓存版本提升到 `stage3-assets-v7`。
+- 修复 `watering`、`painting`、`building`、`lowering` 等动作中文提示漏译问题；第 151 关浇水题现在显示“男孩正在给植物浇水 / 男孩正在给花浇水”。
+- 新增进行时中文提示全量测试，避免后续新增关卡再次出现“男孩植物”这类漏动作残句。
+- 新增匿名统计信标和 Nginx 单独统计日志，当前缓存版本提升到 `stage3-assets-v8 / zh-hints-v6`。
 
 ## 9. 审计报告
 
@@ -183,11 +190,13 @@ docs/textbook-image-duplicate-audit.json
 - GitHub 推送和 README 重写曾被提出，但最后用户切换到“写交接文件”，所以还没有继续完成这一项。
 - 当前工作区有大量未提交改动，提交前一定要先检查 `git status` 和具体 diff，不要回退任何已有改动。
 - 如果继续开源，需要明确许可策略：用户不希望别人直接商用这套内容。
+- 访问统计为匿名前端信标，不是账号系统；如果清除浏览器数据或换设备，会生成新的匿名 `vid`。
+- 查看当前使用人数可在 VPS 上按最近 heartbeat 去重 `/var/log/nginx/listen-pick-analytics.access.log`。
 
 ## 11. 给下一个对话的接手提示
 
 可以直接复制下面这段给新的 Codex 对话：
 
 ```text
-请继续维护这个项目。先阅读 HANDOFF.md、README.md、README.zh-CN.md、package.json、src/app.mjs、src/game.mjs、src/hints.mjs。不要回退未提交改动。当前线上版本是 stage3-assets-v7 / zh-hints-v5，线上地址是 https://linc.wang/listen-pick/。项目是儿童英语听力选图学习系统，核心要求是英文语法、中文语义、插图逻辑必须严格正确，不能伤害儿童认知。优先处理图片/中文/英文不一致问题，然后再考虑 GitHub 推送、README 重写和小程序迁移。
+请继续维护这个项目。先阅读 HANDOFF.md、README.md、README.zh-CN.md、package.json、src/app.mjs、src/game.mjs、src/hints.mjs。不要回退未提交改动。当前线上版本是 stage3-assets-v8 / zh-hints-v6，线上地址是 https://linc.wang/listen-pick/。项目是儿童英语听力选图学习系统，核心要求是英文语法、中文语义、插图逻辑必须严格正确，不能伤害儿童认知。优先处理图片/中文/英文不一致问题，然后再考虑 GitHub 推送、README 重写和小程序迁移。
 ```

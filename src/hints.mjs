@@ -321,6 +321,7 @@ const actions = new Map([
   ["reading", "读书"],
   ["writing", "写字"],
   ["drawing", "画画"],
+  ["building", "搭建"],
   ["eating", "吃东西"],
   ["drinking", "喝水"],
   ["sleeping", "睡觉"],
@@ -329,6 +330,7 @@ const actions = new Map([
   ["standing", "站着"],
   ["singing", "唱歌"],
   ["laughing", "笑"],
+  ["lowering", "放下"],
   ["washing", "洗"],
   ["brushing", "刷"],
   ["touching", "摸"],
@@ -369,6 +371,7 @@ const actions = new Map([
   ["climbing", "爬"],
   ["playing", "玩"],
   ["looking", "看"],
+  ["painting", "画画"],
   ["smiling", "微笑"]
 ]);
 
@@ -621,6 +624,7 @@ for (const [word, translation] of [
   ["paper", "纸"],
   ["pear", "梨"],
   ["pears", "梨"],
+  ["paper plane", "纸飞机"],
   ["picture", "图片"],
   ["pictures", "图片"],
   ["piece", "块"],
@@ -830,6 +834,7 @@ for (const [phrase, translation] of [
   ["waking", "醒来"],
   ["waking up", "起床"],
   ["watching", "看"],
+  ["watering", "浇水"],
   ["wiping", "擦"]
 ]) {
   actions.set(phrase, translation);
@@ -997,6 +1002,10 @@ function translateActionObject(actionPhrase, objectText) {
 
   if (actionPhrase === "brushing" && normalized === "teeth") return "牙";
   if (actionPhrase === "combing" && normalized === "hair") return "头发";
+  if (actionPhrase === "lowering" && ["both hands", "two hands"].includes(normalized)) return "两只手";
+  if (actionPhrase === "watering" && ["plant", "flower"].includes(normalized)) {
+    return `${nouns.get(normalized) ?? ""}浇水`;
+  }
   if (["washing", "drying"].includes(actionPhrase) && ["hands", "feet", "face", "hair", "shoes"].includes(normalized)) {
     return nouns.get(normalized) ?? "";
   }
@@ -1030,6 +1039,7 @@ function cleanComplementText(text) {
 
 function bareActionPhrase(actionPhrase) {
   const phrases = {
+    building: "搭建",
     drawing: "画画",
     reading: "读书",
     writing: "写字",
@@ -1043,7 +1053,8 @@ function bareActionPhrase(actionPhrase) {
     washing: "洗手",
     drying: "擦干",
     looking: "看",
-    pointing: "指"
+    pointing: "指",
+    watering: "浇水"
   };
 
   return phrases[actionPhrase] ?? actions.get(actionPhrase) ?? "";
@@ -1051,6 +1062,7 @@ function bareActionPhrase(actionPhrase) {
 
 function transitiveActionPhrase(actionPhrase) {
   const phrases = {
+    building: "搭建",
     drawing: "画",
     reading: "读",
     writing: "写",
@@ -1063,7 +1075,8 @@ function transitiveActionPhrase(actionPhrase) {
     washing: "洗",
     drying: "擦干",
     looking: "看",
-    pointing: "指着"
+    pointing: "指着",
+    watering: "给"
   };
 
   return phrases[actionPhrase] ?? actions.get(actionPhrase) ?? "";
@@ -1275,6 +1288,7 @@ function measureWord(noun) {
   if (["shoes", "socks", "boots", "slippers", "trousers"].includes(noun)) return "双";
   if (["shoe", "sock"].includes(stripped)) return "只";
   if (["car", "bus", "train", "bike", "bicycle"].includes(stripped)) return "辆";
+  if (["plane"].includes(stripped) || noun === "paper plane") return "架";
   if (["hat", "cap"].includes(stripped)) return "顶";
   if (["pencil", "crayon"].includes(stripped)) return "支";
   if (["umbrella", "ruler", "toothbrush", "spoon", "fork"].includes(stripped)) return "把";

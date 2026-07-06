@@ -48,6 +48,7 @@ See:
 - Result screen with score-based Chinese encouragement
 - Child nickname stored locally in the browser for on-screen encouragement
 - Asset preloading for the current level and upcoming levels
+- Privacy-preserving anonymous usage beacons for unique visitor and active-user counts
 - Static deployment friendly for a VPS, GitHub Pages, Nginx, or Caddy
 
 Recent maintenance:
@@ -55,8 +56,10 @@ Recent maintenance:
 - Fixed learning mode so it always opens the selected course content instead of scheduled review content
 - Fixed review audio so it follows the review question currently shown on screen
 - Disabled native mobile image drag/preview gestures so tapping a picture selects the answer
-- Replaced the Level 12, 13, 14, and 15 count-picture runtime assets and bumped the cache version to `stage3-assets-v7`
-- Latest verification: `npm test` passes 98 tests; textbook image audit checks 4,500 pairs with 0 missing assets
+- Fixed missing Chinese action hints for `watering`, `painting`, `building`, and `lowering`; Level 151 now shows natural Chinese hints for plant/flower watering
+- Added anonymous visitor beacons at `/listen-pick/__analytics/visit`; the Nginx access log can be deduplicated by `vid`
+- Bumped the cache version to `stage3-assets-v8 / zh-hints-v6`
+- Latest verification: `npm test` passes 100 tests; present-progressive Chinese hint audit reports 0 missing actions
 
 ## Run Locally
 
@@ -134,7 +137,7 @@ For public source sharing, do not commit local browser profiles, temporary gener
 
 This prototype does not require WeChat login or a backend account system. A child's nickname is stored in the browser with local storage and is used only for on-screen encouragement.
 
-If analytics are added later, avoid collecting children's real names, voice recordings, or unnecessary personal data.
+The deployed demo sends an anonymous random visitor id, a random session id, event type, and page path to `/listen-pick/__analytics/visit`. It does not send a child's nickname, voice recordings, answers, scores, or account data. The VPS writes those beacons to `/var/log/nginx/listen-pick-analytics.access.log`; unique users are counted by deduplicating `vid`, and active users are estimated from recent heartbeat events.
 
 ## Deployment
 
