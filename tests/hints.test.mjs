@@ -56,7 +56,9 @@ test("Chinese hints use natural child-facing wording for common action phrases",
     ["The girl is painting.", "女孩正在画画。"],
     ["The children are building a sandcastle.", "孩子们正在搭建一个沙堡。"],
     ["The girl is lowering both hands.", "女孩正在放下两只手。"],
-    ["The boy is flying a paper plane.", "男孩正在放一架纸飞机。"]
+    ["The boy is flying a paper plane.", "男孩正在放一架纸飞机。"],
+    ["The wind is moving the trees.", "风正在吹动树。"],
+    ["The trees are still.", "树没有晃动。"]
   ]);
 
   for (const [sentence, expected] of examples) {

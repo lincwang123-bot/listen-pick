@@ -58,7 +58,7 @@ Recent maintenance:
 - Disabled native mobile image drag/preview gestures so tapping a picture selects the answer
 - Fixed missing Chinese action hints for `watering`, `painting`, `building`, and `lowering`; Level 151 now shows natural Chinese hints for plant/flower watering
 - Added anonymous visitor beacons at `/listen-pick/__analytics/visit`; the Nginx access log can be deduplicated by `vid`
-- Bumped the cache version to `stage3-assets-v8 / zh-hints-v6`
+- Bumped the cache version to `stage3-assets-v9 / zh-hints-v7`
 - Latest verification: `npm test` passes 100 tests; present-progressive Chinese hint audit reports 0 missing actions
 
 ## Run Locally

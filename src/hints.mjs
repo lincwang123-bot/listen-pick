@@ -111,7 +111,9 @@ const exactHints = new Map([
   ["the boy is raising one foot with a glove", "男孩举起一只戴着手套的脚。"],
   ["the children are eating lunch together", "孩子们正在一起吃午饭。"],
   ["the children are eating breakfast together", "孩子们正在一起吃早餐。"],
-  ["the child is washing feet after school", "孩子正在放学后洗脚。"]
+  ["the child is washing feet after school", "孩子正在放学后洗脚。"],
+  ["the wind is moving the trees", "风正在吹动树。"],
+  ["the trees are still", "树没有晃动。"]
 ]);
 
 const numbers = new Map([

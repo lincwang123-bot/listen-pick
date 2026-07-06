@@ -64,7 +64,7 @@ https://linc.wang/listen-pick/
 - 禁用移动端图片原生拖拽/预览手势，点击图片会由答题卡片接管
 - 修复 `watering`、`painting`、`building`、`lowering` 等动作漏译问题；第 151 关浇水题中文提示已改为自然中文
 - 新增 `/listen-pick/__analytics/visit` 匿名访问信标，Nginx 日志可按 `vid` 去重统计
-- 将缓存版本提升到 `stage3-assets-v8 / zh-hints-v6`
+- 将缓存版本提升到 `stage3-assets-v9 / zh-hints-v7`
 - 最新验证：`npm test` 通过 100 项测试；进行时中文提示全量审计漏动作数为 0
 
 ## 本地运行
