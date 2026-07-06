@@ -17,6 +17,29 @@ const sampleWidth = 48;
 const sampleHeight = 36;
 
 const imageCache = new Map();
+const motionClarifiedPairs = new Set([
+  "33-4",
+  "33-5",
+  "33-12",
+  "34-14",
+  "43-6",
+  "43-15",
+  "58-1",
+  "58-2",
+  "58-3",
+  "58-4",
+  "58-5",
+  "58-6",
+  "58-7",
+  "60-3",
+  "74-2",
+  "74-3",
+  "76-6",
+  "76-7",
+  "79-8",
+  "93-7",
+  "96-6"
+]);
 
 await mkdir(reportDir, { recursive: true });
 
@@ -50,7 +73,8 @@ for (const level of availableTextbookLevels) {
     const aHashDistance = hamming(correct.aHash, wrong.aHash);
     const exactSame = correct.sha256 === wrong.sha256;
     const semanticRisk = getSemanticRisk(question.sentence, question.wrongSentence);
-    const severity = classifyRisk({ exactSame, mse, dHashDistance, aHashDistance, semanticRisk });
+    const motionClarified = motionClarifiedPairs.has(`${level.level}-${questionIndex + 1}`);
+    const severity = classifyRisk({ exactSame, mse, dHashDistance, aHashDistance, semanticRisk, motionClarified });
 
     records.push({
       level: level.level,
@@ -202,11 +226,11 @@ function hamming(left, right) {
   return distance + Math.abs(left.length - right.length);
 }
 
-function classifyRisk({ exactSame, mse, dHashDistance, aHashDistance, semanticRisk }) {
+function classifyRisk({ exactSame, mse, dHashDistance, aHashDistance, semanticRisk, motionClarified }) {
   if (exactSame) return "exact";
   if (mse <= 0.0035 && dHashDistance <= 8) return "very_high";
   if (mse <= 0.0075 && (dHashDistance <= 12 || aHashDistance <= 10)) return "high";
-  if (semanticRisk) return "semantic_review";
+  if (semanticRisk && !motionClarified) return "semantic_review";
   if (mse <= 0.012 && dHashDistance <= 10 && aHashDistance <= 12) return "visual_review";
   return "ok";
 }

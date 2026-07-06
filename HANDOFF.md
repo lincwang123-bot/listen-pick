@@ -20,14 +20,14 @@
 - VPS SSH：`ssh linc-vps`
 - VPS 静态目录：`/opt/linc/sites/localpilot/listen-pick/`
 - 当前缓存版本：
-  - `stage3-assets-v9`
+  - `stage3-assets-v10`
   - `zh-hints-v7`
 - 最近验证：
   - `npm test` 通过，`100/100`
   - 300 关专项校验通过：4500 道题、22500 个运行时文件，错误数 0
   - 图片审计检查 4500 对题图，缺图 0，可疑项 39，`very_high` 0
   - 进行时中文提示全量审计漏动作数 0
-  - 线上应加载 `src/app.mjs?v=stage3-assets-v9`
+  - 线上应加载 `src/app.mjs?v=stage3-assets-v10`
   - 线上 `app.mjs` 应加载 `hints.mjs?v=zh-hints-v7`
   - 匿名统计 endpoint：`/listen-pick/__analytics/visit`
   - 匿名统计日志：`/var/log/nginx/listen-pick-analytics.access.log`
@@ -161,7 +161,8 @@ rsync -az --include='*/' --include='*.webp' --exclude='*' assets/textbook/images
 - 替换第 12、13、14、15 关数量题运行时图片，并将缓存版本提升到 `stage3-assets-v7`。
 - 修复 `watering`、`painting`、`building`、`lowering` 等动作中文提示漏译问题；第 151 关浇水题现在显示“男孩正在给植物浇水 / 男孩正在给花浇水”。
 - 新增进行时中文提示全量测试，避免后续新增关卡再次出现“男孩植物”这类漏动作残句。
-- 新增匿名统计信标和 Nginx 单独统计日志，当前缓存版本提升到 `stage3-assets-v9 / zh-hints-v7`。
+- 为 21 组“穿上/脱下、放入/拿出”语义模糊图增加蓝色动作方向箭头，脚本为 `npm run clarify:semantic-images`，原图备份在 `tmp/image-backups/semantic-clarity-20260706`。
+- 新增匿名统计信标和 Nginx 单独统计日志，当前缓存版本提升到 `stage3-assets-v10 / zh-hints-v7`。
 
 ## 9. 审计报告
 
@@ -172,11 +173,11 @@ docs/textbook-image-duplicate-audit.md
 docs/textbook-image-duplicate-audit.json
 ```
 
-最近一次审计检查了 4500 组题目图片，没有发现缺图；可疑项 39，`very_high` 0。第 12、13、14、15 关数量题已替换，不再出现在高风险可疑项中。仍有一些 `semantic_review` 可疑项，很多属于“穿/脱、放入/拿出、相似动作”的视觉歧义，需要后续人工逐项确认或重新生图。
+最近一次审计检查了 4500 组题目图片，没有发现缺图；可疑项 18，`very_high` 0，`semantic_review` 0。第 12、13、14、15 关数量题已替换；21 组“穿/脱、放入/拿出”动作方向图已增加蓝色动作箭头。剩余 18 项主要是颜色、数量、湿干、物体类别等视觉相近题，需要后续按教学严谨度继续抽查。
 
 ## 10. 当前风险与待办
 
-- 1-100 关仍需继续抽查图片、英文、中文是否完全一致，特别是数量、位置、动作方向；低复杂度候选里 Level 9 仍值得优先复核，另有动作方向类 `semantic_review` 需要人工判断。
+- 1-100 关仍需继续抽查图片、英文、中文是否完全一致，特别是颜色、数量、湿干、位置等剩余视觉相似项；低复杂度候选里 Level 9 仍值得优先复核。
 - 101-300 关虽然已经生成，但必须坚持教育启蒙严谨标准，任何语法不自然、中文生硬、图片歧义都要修。
 - 图片生成规则必须保持前 100 关同等品质：
   - 儿童绘本风
@@ -198,5 +199,5 @@ docs/textbook-image-duplicate-audit.json
 可以直接复制下面这段给新的 Codex 对话：
 
 ```text
-请继续维护这个项目。先阅读 HANDOFF.md、README.md、README.zh-CN.md、package.json、src/app.mjs、src/game.mjs、src/hints.mjs。不要回退未提交改动。当前线上版本是 stage3-assets-v9 / zh-hints-v7，线上地址是 https://linc.wang/listen-pick/。项目是儿童英语听力选图学习系统，核心要求是英文语法、中文语义、插图逻辑必须严格正确，不能伤害儿童认知。优先处理图片/中文/英文不一致问题，然后再考虑 GitHub 推送、README 重写和小程序迁移。
+请继续维护这个项目。先阅读 HANDOFF.md、README.md、README.zh-CN.md、package.json、src/app.mjs、src/game.mjs、src/hints.mjs。不要回退未提交改动。当前线上版本是 stage3-assets-v10 / zh-hints-v7，线上地址是 https://linc.wang/listen-pick/。项目是儿童英语听力选图学习系统，核心要求是英文语法、中文语义、插图逻辑必须严格正确，不能伤害儿童认知。优先处理图片/中文/英文不一致问题，然后再考虑 GitHub 推送、README 重写和小程序迁移。
 ```

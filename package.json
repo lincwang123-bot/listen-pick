@@ -30,6 +30,7 @@
     "generate:edge-tts-audio": "node scripts/generate-edge-tts-audio.mjs",
     "generate:result-praise-audio": "node scripts/generate-result-praise-audio.mjs",
     "generate:webp-images": "node scripts/generate-webp-images.mjs",
+    "clarify:semantic-images": "node scripts/clarify-semantic-review-images.mjs",
     "split:image-pairs": "node scripts/split-image-pairs.mjs",
     "generate:audio": "node scripts/generate-audio-assets.mjs",
     "audit:textbook-images": "node scripts/audit-textbook-image-duplicates.mjs",
