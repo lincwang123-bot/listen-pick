@@ -1829,7 +1829,7 @@ export const textbookLevels = [
       {
         "id": "L011-Q011",
         "sentence": "I see one red kite.",
-        "wrongSentence": "I see one blue kite.",
+        "wrongSentence": "I see two red kites.",
         "audioFile": "assets/textbook/audio/level-011/q011.m4a",
         "correctImage": "assets/textbook/images/level-011/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-011/q011-wrong.png",
@@ -1840,7 +1840,7 @@ export const textbookLevels = [
       {
         "id": "L011-Q012",
         "sentence": "I see two blue kites.",
-        "wrongSentence": "I see two yellow kites.",
+        "wrongSentence": "I see one blue kite.",
         "audioFile": "assets/textbook/audio/level-011/q012.m4a",
         "correctImage": "assets/textbook/images/level-011/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-011/q012-wrong.png",
@@ -1851,7 +1851,7 @@ export const textbookLevels = [
       {
         "id": "L011-Q013",
         "sentence": "There is one yellow star.",
-        "wrongSentence": "There is one green star.",
+        "wrongSentence": "There are two yellow stars.",
         "audioFile": "assets/textbook/audio/level-011/q013.m4a",
         "correctImage": "assets/textbook/images/level-011/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-011/q013-wrong.png",
@@ -1862,7 +1862,7 @@ export const textbookLevels = [
       {
         "id": "L011-Q014",
         "sentence": "There are two green stars.",
-        "wrongSentence": "There are two orange stars.",
+        "wrongSentence": "There is one green star.",
         "audioFile": "assets/textbook/audio/level-011/q014.m4a",
         "correctImage": "assets/textbook/images/level-011/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-011/q014-wrong.png",
@@ -2000,7 +2000,7 @@ export const textbookLevels = [
       {
         "id": "L012-Q011",
         "sentence": "I see three red cars.",
-        "wrongSentence": "I see three blue cars.",
+        "wrongSentence": "I see four red cars.",
         "audioFile": "assets/textbook/audio/level-012/q011.m4a",
         "correctImage": "assets/textbook/images/level-012/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-012/q011-wrong.png",
@@ -2011,7 +2011,7 @@ export const textbookLevels = [
       {
         "id": "L012-Q012",
         "sentence": "I see four blue bags.",
-        "wrongSentence": "I see four yellow bags.",
+        "wrongSentence": "I see three blue bags.",
         "audioFile": "assets/textbook/audio/level-012/q012.m4a",
         "correctImage": "assets/textbook/images/level-012/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-012/q012-wrong.png",
@@ -2022,7 +2022,7 @@ export const textbookLevels = [
       {
         "id": "L012-Q013",
         "sentence": "There are three yellow kites.",
-        "wrongSentence": "There are three green kites.",
+        "wrongSentence": "There are four yellow kites.",
         "audioFile": "assets/textbook/audio/level-012/q013.m4a",
         "correctImage": "assets/textbook/images/level-012/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-012/q013-wrong.png",
@@ -2033,7 +2033,7 @@ export const textbookLevels = [
       {
         "id": "L012-Q014",
         "sentence": "There are four green circles.",
-        "wrongSentence": "There are four orange circles.",
+        "wrongSentence": "There are three green circles.",
         "audioFile": "assets/textbook/audio/level-012/q014.m4a",
         "correctImage": "assets/textbook/images/level-012/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-012/q014-wrong.png",
@@ -2171,7 +2171,7 @@ export const textbookLevels = [
       {
         "id": "L013-Q011",
         "sentence": "I see five red hearts.",
-        "wrongSentence": "I see five blue hearts.",
+        "wrongSentence": "I see six red hearts.",
         "audioFile": "assets/textbook/audio/level-013/q011.m4a",
         "correctImage": "assets/textbook/images/level-013/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-013/q011-wrong.png",
@@ -2182,7 +2182,7 @@ export const textbookLevels = [
       {
         "id": "L013-Q012",
         "sentence": "I see six blue squares.",
-        "wrongSentence": "I see six yellow squares.",
+        "wrongSentence": "I see five blue squares.",
         "audioFile": "assets/textbook/audio/level-013/q012.m4a",
         "correctImage": "assets/textbook/images/level-013/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-013/q012-wrong.png",
@@ -2193,7 +2193,7 @@ export const textbookLevels = [
       {
         "id": "L013-Q013",
         "sentence": "There are five yellow kites.",
-        "wrongSentence": "There are five green kites.",
+        "wrongSentence": "There are six yellow kites.",
         "audioFile": "assets/textbook/audio/level-013/q013.m4a",
         "correctImage": "assets/textbook/images/level-013/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-013/q013-wrong.png",
@@ -2204,7 +2204,7 @@ export const textbookLevels = [
       {
         "id": "L013-Q014",
         "sentence": "There are six green boxes.",
-        "wrongSentence": "There are six orange boxes.",
+        "wrongSentence": "There are five green boxes.",
         "audioFile": "assets/textbook/audio/level-013/q014.m4a",
         "correctImage": "assets/textbook/images/level-013/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-013/q014-wrong.png",
@@ -2342,7 +2342,7 @@ export const textbookLevels = [
       {
         "id": "L014-Q011",
         "sentence": "I see seven red kites.",
-        "wrongSentence": "I see seven blue kites.",
+        "wrongSentence": "I see eight red kites.",
         "audioFile": "assets/textbook/audio/level-014/q011.m4a",
         "correctImage": "assets/textbook/images/level-014/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-014/q011-wrong.png",
@@ -2353,7 +2353,7 @@ export const textbookLevels = [
       {
         "id": "L014-Q012",
         "sentence": "I see eight blue cups.",
-        "wrongSentence": "I see eight yellow cups.",
+        "wrongSentence": "I see seven blue cups.",
         "audioFile": "assets/textbook/audio/level-014/q012.m4a",
         "correctImage": "assets/textbook/images/level-014/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-014/q012-wrong.png",
@@ -2364,7 +2364,7 @@ export const textbookLevels = [
       {
         "id": "L014-Q013",
         "sentence": "There are seven yellow boxes.",
-        "wrongSentence": "There are seven green boxes.",
+        "wrongSentence": "There are eight yellow boxes.",
         "audioFile": "assets/textbook/audio/level-014/q013.m4a",
         "correctImage": "assets/textbook/images/level-014/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-014/q013-wrong.png",
@@ -2375,7 +2375,7 @@ export const textbookLevels = [
       {
         "id": "L014-Q014",
         "sentence": "There are eight green bags.",
-        "wrongSentence": "There are eight orange bags.",
+        "wrongSentence": "There are seven green bags.",
         "audioFile": "assets/textbook/audio/level-014/q014.m4a",
         "correctImage": "assets/textbook/images/level-014/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-014/q014-wrong.png",
@@ -2469,7 +2469,7 @@ export const textbookLevels = [
       {
         "id": "L015-Q007",
         "sentence": "I see one red car.",
-        "wrongSentence": "I see one blue car.",
+        "wrongSentence": "I see two red cars.",
         "audioFile": "assets/textbook/audio/level-015/q007.m4a",
         "correctImage": "assets/textbook/images/level-015/q007-correct.png",
         "wrongImage": "assets/textbook/images/level-015/q007-wrong.png",
@@ -2480,7 +2480,7 @@ export const textbookLevels = [
       {
         "id": "L015-Q008",
         "sentence": "I see two blue books.",
-        "wrongSentence": "I see two yellow books.",
+        "wrongSentence": "I see three blue books.",
         "audioFile": "assets/textbook/audio/level-015/q008.m4a",
         "correctImage": "assets/textbook/images/level-015/q008-correct.png",
         "wrongImage": "assets/textbook/images/level-015/q008-wrong.png",
@@ -2491,7 +2491,7 @@ export const textbookLevels = [
       {
         "id": "L015-Q009",
         "sentence": "I see three yellow cups.",
-        "wrongSentence": "I see three green cups.",
+        "wrongSentence": "I see four yellow cups.",
         "audioFile": "assets/textbook/audio/level-015/q009.m4a",
         "correctImage": "assets/textbook/images/level-015/q009-correct.png",
         "wrongImage": "assets/textbook/images/level-015/q009-wrong.png",
@@ -2502,7 +2502,7 @@ export const textbookLevels = [
       {
         "id": "L015-Q010",
         "sentence": "I see four green kites.",
-        "wrongSentence": "I see four orange kites.",
+        "wrongSentence": "I see five green kites.",
         "audioFile": "assets/textbook/audio/level-015/q010.m4a",
         "correctImage": "assets/textbook/images/level-015/q010-correct.png",
         "wrongImage": "assets/textbook/images/level-015/q010-wrong.png",
@@ -2513,7 +2513,7 @@ export const textbookLevels = [
       {
         "id": "L015-Q011",
         "sentence": "I see five orange fish.",
-        "wrongSentence": "I see five purple fish.",
+        "wrongSentence": "I see six orange fish.",
         "audioFile": "assets/textbook/audio/level-015/q011.m4a",
         "correctImage": "assets/textbook/images/level-015/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-015/q011-wrong.png",
@@ -2524,7 +2524,7 @@ export const textbookLevels = [
       {
         "id": "L015-Q012",
         "sentence": "I see six purple bags.",
-        "wrongSentence": "I see six black bags.",
+        "wrongSentence": "I see seven purple bags.",
         "audioFile": "assets/textbook/audio/level-015/q012.m4a",
         "correctImage": "assets/textbook/images/level-015/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-015/q012-wrong.png",
@@ -2535,7 +2535,7 @@ export const textbookLevels = [
       {
         "id": "L015-Q013",
         "sentence": "I see seven black hats.",
-        "wrongSentence": "I see seven white hats.",
+        "wrongSentence": "I see eight black hats.",
         "audioFile": "assets/textbook/audio/level-015/q013.m4a",
         "correctImage": "assets/textbook/images/level-015/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-015/q013-wrong.png",
@@ -2546,7 +2546,7 @@ export const textbookLevels = [
       {
         "id": "L015-Q014",
         "sentence": "I see eight white birds.",
-        "wrongSentence": "I see eight brown birds.",
+        "wrongSentence": "I see nine white birds.",
         "audioFile": "assets/textbook/audio/level-015/q014.m4a",
         "correctImage": "assets/textbook/images/level-015/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-015/q014-wrong.png",
@@ -2557,7 +2557,7 @@ export const textbookLevels = [
       {
         "id": "L015-Q015",
         "sentence": "I see ten pink hearts.",
-        "wrongSentence": "I see ten red hearts.",
+        "wrongSentence": "I see nine pink hearts.",
         "audioFile": "assets/textbook/audio/level-015/q015.m4a",
         "correctImage": "assets/textbook/images/level-015/q015-correct.png",
         "wrongImage": "assets/textbook/images/level-015/q015-wrong.png",

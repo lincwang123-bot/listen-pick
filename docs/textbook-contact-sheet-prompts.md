@@ -496,13 +496,13 @@ Cells:
 19. correct for Q10: There are two cats.
 20. distractor for Q10: There are three cats.
 21. correct for Q11: I see one red kite.
-22. distractor for Q11: I see one blue kite.
+22. distractor for Q11: I see two red kites.
 23. correct for Q12: I see two blue kites.
-24. distractor for Q12: I see two yellow kites.
+24. distractor for Q12: I see one blue kite.
 25. correct for Q13: There is one yellow star.
-26. distractor for Q13: There is one green star.
+26. distractor for Q13: There are two yellow stars.
 27. correct for Q14: There are two green stars.
-28. distractor for Q14: There are two orange stars.
+28. distractor for Q14: There is one green star.
 29. correct for Q15: There are two children.
 30. distractor for Q15: There are three children.
 
@@ -542,13 +542,13 @@ Cells:
 19. correct for Q10: There are four stars.
 20. distractor for Q10: There are five stars.
 21. correct for Q11: I see three red cars.
-22. distractor for Q11: I see three blue cars.
+22. distractor for Q11: I see four red cars.
 23. correct for Q12: I see four blue bags.
-24. distractor for Q12: I see four yellow bags.
+24. distractor for Q12: I see three blue bags.
 25. correct for Q13: There are three yellow kites.
-26. distractor for Q13: There are three green kites.
+26. distractor for Q13: There are four yellow kites.
 27. correct for Q14: There are four green circles.
-28. distractor for Q14: There are four orange circles.
+28. distractor for Q14: There are three green circles.
 29. correct for Q15: There are three children.
 30. distractor for Q15: There are four children.
 
@@ -588,13 +588,13 @@ Cells:
 19. correct for Q10: There are six circles.
 20. distractor for Q10: There are seven circles.
 21. correct for Q11: I see five red hearts.
-22. distractor for Q11: I see five blue hearts.
+22. distractor for Q11: I see six red hearts.
 23. correct for Q12: I see six blue squares.
-24. distractor for Q12: I see six yellow squares.
+24. distractor for Q12: I see five blue squares.
 25. correct for Q13: There are five yellow kites.
-26. distractor for Q13: There are five green kites.
+26. distractor for Q13: There are six yellow kites.
 27. correct for Q14: There are six green boxes.
-28. distractor for Q14: There are six orange boxes.
+28. distractor for Q14: There are five green boxes.
 29. correct for Q15: There are five children.
 30. distractor for Q15: There are six children.
 
@@ -634,13 +634,13 @@ Cells:
 19. correct for Q10: There are eight squares.
 20. distractor for Q10: There are nine squares.
 21. correct for Q11: I see seven red kites.
-22. distractor for Q11: I see seven blue kites.
+22. distractor for Q11: I see eight red kites.
 23. correct for Q12: I see eight blue cups.
-24. distractor for Q12: I see eight yellow cups.
+24. distractor for Q12: I see seven blue cups.
 25. correct for Q13: There are seven yellow boxes.
-26. distractor for Q13: There are seven green boxes.
+26. distractor for Q13: There are eight yellow boxes.
 27. correct for Q14: There are eight green bags.
-28. distractor for Q14: There are eight orange bags.
+28. distractor for Q14: There are seven green bags.
 29. correct for Q15: There are seven children.
 30. distractor for Q15: There are eight children.
 
@@ -672,23 +672,23 @@ Cells:
 11. correct for Q06: There are ten circles.
 12. distractor for Q06: There is one circle.
 13. correct for Q07: I see one red car.
-14. distractor for Q07: I see one blue car.
+14. distractor for Q07: I see two red cars.
 15. correct for Q08: I see two blue books.
-16. distractor for Q08: I see two yellow books.
+16. distractor for Q08: I see three blue books.
 17. correct for Q09: I see three yellow cups.
-18. distractor for Q09: I see three green cups.
+18. distractor for Q09: I see four yellow cups.
 19. correct for Q10: I see four green kites.
-20. distractor for Q10: I see four orange kites.
+20. distractor for Q10: I see five green kites.
 21. correct for Q11: I see five orange fish.
-22. distractor for Q11: I see five purple fish.
+22. distractor for Q11: I see six orange fish.
 23. correct for Q12: I see six purple bags.
-24. distractor for Q12: I see six black bags.
+24. distractor for Q12: I see seven purple bags.
 25. correct for Q13: I see seven black hats.
-26. distractor for Q13: I see seven white hats.
+26. distractor for Q13: I see eight black hats.
 27. correct for Q14: I see eight white birds.
-28. distractor for Q14: I see eight brown birds.
+28. distractor for Q14: I see nine white birds.
 29. correct for Q15: I see ten pink hearts.
-30. distractor for Q15: I see ten red hearts.
+30. distractor for Q15: I see nine pink hearts.
 
 Quality target: similar clarity to polished kindergarten English picture-card illustrations; every scene should be understandable at small size.
 

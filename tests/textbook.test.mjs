@@ -186,3 +186,50 @@ test("textbook apple color sentences use natural child-facing colors", () => {
 
   assert.deepEqual(hits, []);
 });
+
+test("basic number levels use count-changing distractors", () => {
+  const basicNumberLevels = new Set([11, 12, 13, 14, 15]);
+  const numberWords = new Set([
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven",
+    "eight",
+    "nine",
+    "ten"
+  ]);
+  const hits = [];
+
+  function extractNumbers(sentence) {
+    return sentence
+      .toLowerCase()
+      .replace(/[.?!]/g, "")
+      .split(/\s+/)
+      .filter((word) => numberWords.has(word));
+  }
+
+  for (const level of availableTextbookLevels) {
+    if (!basicNumberLevels.has(level.level)) continue;
+
+    for (const question of level.questions) {
+      const correctNumbers = extractNumbers(question.sentence);
+      const wrongNumbers = extractNumbers(question.wrongSentence);
+      if (
+        correctNumbers.length === wrongNumbers.length &&
+        correctNumbers.every((word, index) => word === wrongNumbers[index])
+      ) {
+        hits.push({
+          level: level.level,
+          id: question.id,
+          sentence: question.sentence,
+          wrongSentence: question.wrongSentence
+        });
+      }
+    }
+  }
+
+  assert.deepEqual(hits, []);
+});
