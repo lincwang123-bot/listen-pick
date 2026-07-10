@@ -1,0 +1,10 @@
+{
+  "q015-correct.webp": {
+    "count": 5,
+    "sha256": "4892a84002cd30ce1eba10e789a2f5bd1a3d61927beea83f20f5ef160ad72021"
+  },
+  "q015-wrong.webp": {
+    "count": 6,
+    "sha256": "1ca269e033ac5c39116bb9353a9a404d4004058f721bbbbcd8c7ff0e0deda54b"
+  }
+}
