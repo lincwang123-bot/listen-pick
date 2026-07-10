@@ -22,7 +22,7 @@ test("app warms current and next level assets through the asset preloader", () =
 });
 
 test("index points to the preload-aware app module version", () => {
-  assert.ok(indexSource.includes('src="src/app.mjs?v=stage3-assets-v12"'));
+  assert.ok(indexSource.includes('src="src/app.mjs?v=stage3-assets-v13"'));
 });
 
 test("index loads the privacy-preserving analytics beacon", () => {
