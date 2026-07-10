@@ -26,6 +26,7 @@ test("Chinese hints keep the two choices distinct in every playable question", (
 
 test("Chinese hints use natural child-facing wording for common action phrases", () => {
   const examples = new Map([
+    ["This is a horse.", "这是一匹马。"],
     ["The girl is drawing a cat.", "女孩正在画一只猫。"],
     ["The boy is reading a book.", "男孩正在读一本书。"],
     ["The boy is drinking water.", "男孩正在喝水。"],

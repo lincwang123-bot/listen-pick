@@ -1,6 +1,6 @@
 # Listen & Pick 项目交接说明
 
-更新时间：2026-07-09
+更新时间：2026-07-10
 项目路径：本地工作区根目录
 线上地址：`https://linc.wang/listen-pick/`
 
@@ -20,15 +20,15 @@
 - VPS SSH：`ssh linc-vps`
 - VPS 静态目录：`/opt/linc/sites/localpilot/listen-pick/`
 - 当前缓存版本：
-  - `stage3-assets-v13`
-  - `zh-hints-v7`
+  - `stage3-assets-v14`
+  - `zh-hints-v8`
 - 最近验证：
-  - `npm test` 通过，`102/102`
+  - `npm test` 通过，`103/103`
   - 300 关专项路径校验通过：每关 15 题、每题音频/正确图/错误图题号路径一致，错误数 0
   - 图片审计检查 4500 对题图，缺图 0，可疑项 39，`very_high` 0
   - 进行时中文提示全量审计漏动作数 0
-  - 线上应加载 `src/app.mjs?v=stage3-assets-v13`
-  - 线上 `app.mjs` 应加载 `hints.mjs?v=zh-hints-v7`
+  - 线上应加载 `src/app.mjs?v=stage3-assets-v14`
+  - 线上 `app.mjs` 应加载 `hints.mjs?v=zh-hints-v8`
   - 匿名统计 endpoint：`/listen-pick/__analytics/visit`
   - 匿名统计日志：`/var/log/nginx/listen-pick-analytics.access.log`
 
@@ -167,6 +167,7 @@ rsync -az --include='*/' --include='*.webp' --exclude='*' assets/textbook/images
 - 新增 `AGENTS.md` 项目宗旨：本项目是儿童英语启蒙教程，图片、音频、中英文必须严谨，不能出错；修改课程内容前后都要校验题号、图像、音频和提示文本。
 - 修复第 16 关宠物与小动物题图错位：Q11 黑猫白尾、Q12 棕狗红球、Q13 白兔长耳重新成对对齐；Q13 干扰图改为更明确的短耳白兔，并重新生成运行时 WebP。
 - 重新生成第 18 关默认/男声/女声音频，修复农场动物题里小猪、小羊、小马等听力文件可能错配的问题；当前缓存版本提升到 `stage3-assets-v13 / zh-hints-v7`。
+- 重做第 18 关 Q2-Q4 的马/羊、羊/猪、猪/鸡六张单动物配图并重建本关总览图；新增对应关系回归测试，并把 horse 的中文量词由“只”修正为“匹”；当前缓存版本提升到 `stage3-assets-v14 / zh-hints-v8`。
 
 ## 9. 审计报告
 
@@ -203,5 +204,5 @@ docs/textbook-image-duplicate-audit.json
 可以直接复制下面这段给新的 Codex 对话：
 
 ```text
-请继续维护这个项目。先阅读 HANDOFF.md、AGENTS.md、README.md、README.zh-CN.md、package.json、src/app.mjs、src/game.mjs、src/hints.mjs。不要回退未提交改动。当前线上版本是 stage3-assets-v13 / zh-hints-v7，线上地址是 https://linc.wang/listen-pick/。项目是儿童英语听力选图学习系统，核心要求是英文语法、中文语义、插图逻辑、音频内容必须严格正确，不能伤害儿童认知。优先处理图片/中文/英文/音频不一致问题，然后再考虑 GitHub 推送、README 重写和小程序迁移。
+请继续维护这个项目。先阅读 HANDOFF.md、AGENTS.md、README.md、README.zh-CN.md、package.json、src/app.mjs、src/game.mjs、src/hints.mjs。不要回退未提交改动。当前线上版本是 stage3-assets-v14 / zh-hints-v8，线上地址是 https://linc.wang/listen-pick/。项目是儿童英语听力选图学习系统，核心要求是英文语法、中文语义、插图逻辑、音频内容必须严格正确，不能伤害儿童认知。优先处理图片/中文/英文/音频不一致问题，然后再考虑 GitHub 推送、README 重写和小程序迁移。
 ```

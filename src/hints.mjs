@@ -1284,7 +1284,8 @@ function stripPlural(word) {
 
 function measureWord(noun) {
   const stripped = stripPlural(noun);
-  if (["cat", "dog", "bird", "duck", "rabbit", "fish", "horse", "cow", "sheep", "lion", "elephant", "panda", "frog", "swan", "pig", "chicken", "monkey", "giraffe", "hamster", "turtle"].includes(stripped)) return "只";
+  if (stripped === "horse") return "匹";
+  if (["cat", "dog", "bird", "duck", "rabbit", "fish", "cow", "sheep", "lion", "elephant", "panda", "frog", "swan", "pig", "chicken", "monkey", "giraffe", "hamster", "turtle"].includes(stripped)) return "只";
   if (["book", "notebook"].includes(stripped)) return "本";
   if (["shirt", "dress", "coat", "jacket", "sweater", "skirt"].includes(stripped)) return "件";
   if (["shoes", "socks", "boots", "slippers", "trousers"].includes(noun)) return "双";

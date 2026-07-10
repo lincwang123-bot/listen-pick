@@ -103,6 +103,43 @@ test("Level 1 question 8 uses a unique baby sleeping distractor", () => {
   ]);
 });
 
+test("Level 18 farm-animal introductions keep each sentence bound to its own image", () => {
+  const questions = getQuestionsForLevel(18).slice(1, 4);
+
+  assert.deepEqual(
+    questions.map((question) => ({
+      sentence: question.sentence,
+      correctLabel: question.correctChoice.label,
+      correctImage: question.correctChoice.image,
+      wrongLabel: question.distractorChoices[0].label,
+      wrongImage: question.distractorChoices[0].image
+    })),
+    [
+      {
+        sentence: "This is a horse.",
+        correctLabel: "This is a horse.",
+        correctImage: "assets/textbook/images/level-018/q002-correct.webp",
+        wrongLabel: "This is a sheep.",
+        wrongImage: "assets/textbook/images/level-018/q002-wrong.webp"
+      },
+      {
+        sentence: "This is a sheep.",
+        correctLabel: "This is a sheep.",
+        correctImage: "assets/textbook/images/level-018/q003-correct.webp",
+        wrongLabel: "This is a pig.",
+        wrongImage: "assets/textbook/images/level-018/q003-wrong.webp"
+      },
+      {
+        sentence: "This is a pig.",
+        correctLabel: "This is a pig.",
+        correctImage: "assets/textbook/images/level-018/q004-correct.webp",
+        wrongLabel: "This is a chicken.",
+        wrongImage: "assets/textbook/images/level-018/q004-wrong.webp"
+      }
+    ]
+  );
+});
+
 test("homepage preview words change by selected level", () => {
   assert.deepEqual(getPreviewWordsForLevel(1), ["girl", "boy", "baby"]);
   assert.deepEqual(getPreviewWordsForLevel(36), ["apple", "banana", "grapes"]);
