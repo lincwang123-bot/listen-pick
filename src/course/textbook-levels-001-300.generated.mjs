@@ -3754,7 +3754,7 @@ export const textbookLevels = [
       {
         "id": "L022-Q015",
         "sentence": "The two babies are twins.",
-        "wrongSentence": "The three babies are twins.",
+        "wrongSentence": "The three babies are triplets.",
         "audioFile": "assets/textbook/audio/level-022/q015.m4a",
         "correctImage": "assets/textbook/images/level-022/q015-correct.png",
         "wrongImage": "assets/textbook/images/level-022/q015-wrong.png",

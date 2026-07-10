@@ -20,15 +20,15 @@
 - VPS SSH：`ssh linc-vps`
 - VPS 静态目录：`/opt/linc/sites/localpilot/listen-pick/`
 - 当前缓存版本：
-  - `stage3-assets-v16`
-  - `zh-hints-v9`
+  - `stage3-assets-v17`
+  - `zh-hints-v10`
 - 最近验证：
-  - `npm test` 通过，`106/106`
+  - `npm test` 通过，`108/108`
   - 300 关专项路径校验通过：每关 15 题、每题音频/正确图/错误图题号路径一致，错误数 0
   - 图片审计检查 4500 对题图，缺图 0，可疑项 39，`very_high` 0
   - 进行时中文提示全量审计漏动作数 0
-  - 线上应加载 `src/app.mjs?v=stage3-assets-v16`
-  - 线上 `app.mjs` 应加载 `hints.mjs?v=zh-hints-v9`
+  - 线上应加载 `src/app.mjs?v=stage3-assets-v17`
+  - 线上 `app.mjs` 应加载 `hints.mjs?v=zh-hints-v10`
   - 匿名统计 endpoint：`/listen-pick/__analytics/visit`
   - 匿名统计日志：`/var/log/nginx/listen-pick-analytics.access.log`
 
@@ -170,6 +170,7 @@ rsync -az --include='*/' --include='*.webp' --exclude='*' assets/textbook/images
 - 重做第 18 关 Q2-Q4 的马/羊、羊/猪、猪/鸡六张单动物配图并重建本关总览图；新增对应关系回归测试，并把 horse 的中文量词由“只”修正为“匹”；当前缓存版本提升到 `stage3-assets-v14 / zh-hints-v8`。
 - 重做第 18 关 Q15 母鸡数量题：正确图明确显示 5 只，干扰图明确显示 6 只；两图均无遮挡、无裁切，并用人工复核后的 SHA-256 回归测试锁定；当前缓存版本提升到 `stage3-assets-v15 / zh-hints-v8`。
 - 全量核查 300 关中 623 道含数字题，逐张复核 336 张去重关联图片；修复第 18 关 Q14 小猪图、第 22 关 Q8 兄弟数量、第 29 关 Q7 三个杯子，并修正第 52、93 关两处不自然干扰句；当前缓存版本提升到 `stage3-assets-v16 / zh-hints-v9`。
+- 修复第 22 关 Q9-Q13 家庭关系图片错位：宝宝弟弟、小妹妹、婴儿妹妹、姐姐、兄弟组和姐妹组均重新绑定到对应句子；Q15 的三个宝宝改为 `triplets / 三胞胎`；当前缓存版本提升到 `stage3-assets-v17 / zh-hints-v10`。
 
 ## 9. 审计报告
 
@@ -206,5 +207,5 @@ docs/textbook-image-duplicate-audit.json
 可以直接复制下面这段给新的 Codex 对话：
 
 ```text
-请继续维护这个项目。先阅读 HANDOFF.md、AGENTS.md、README.md、README.zh-CN.md、package.json、src/app.mjs、src/game.mjs、src/hints.mjs。不要回退未提交改动。当前线上版本是 stage3-assets-v16 / zh-hints-v9，线上地址是 https://linc.wang/listen-pick/。项目是儿童英语听力选图学习系统，核心要求是英文语法、中文语义、插图逻辑、音频内容必须严格正确，不能伤害儿童认知。优先处理图片/中文/英文/音频不一致问题，然后再考虑 GitHub 推送、README 重写和小程序迁移。
+请继续维护这个项目。先阅读 HANDOFF.md、AGENTS.md、README.md、README.zh-CN.md、package.json、src/app.mjs、src/game.mjs、src/hints.mjs。不要回退未提交改动。当前线上版本是 stage3-assets-v17 / zh-hints-v10，线上地址是 https://linc.wang/listen-pick/。项目是儿童英语听力选图学习系统，核心要求是英文语法、中文语义、插图逻辑、音频内容必须严格正确，不能伤害儿童认知。优先处理图片/中文/英文/音频不一致问题，然后再考虑 GitHub 推送、README 重写和小程序迁移。
 ```

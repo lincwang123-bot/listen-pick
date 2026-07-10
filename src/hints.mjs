@@ -5,6 +5,7 @@ const exactHints = new Map([
   ["a dog is sleeping", "一只狗正在睡觉。"],
   ["the baby is kicking both feet", "宝宝正在踢动双脚。"],
   ["the baby is holding a sock in one hand", "宝宝一只手里拿着一只袜子。"],
+  ["the three babies are triplets", "三个宝宝是三胞胎。"],
   ["the cat is on the chair", "猫在椅子上。"],
   ["the cat is under the table", "猫在桌子下面。"],
   ["the baby is sitting", "宝宝坐着。"],

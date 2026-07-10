@@ -1010,7 +1010,7 @@ Cells:
 27. correct for Q14: We are brother and sister.
 28. distractor for Q14: We are brother and brother.
 29. correct for Q15: The two babies are twins.
-30. distractor for Q15: The three babies are twins.
+30. distractor for Q15: The three babies are triplets.
 
 Quality target: similar clarity to polished kindergarten English picture-card illustrations; every scene should be understandable at small size.
 

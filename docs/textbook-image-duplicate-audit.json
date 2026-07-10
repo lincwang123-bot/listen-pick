@@ -5924,7 +5924,7 @@
       "aHashDistance": 23,
       "semanticRisk": "",
       "sentence": "The two babies are twins.",
-      "wrongSentence": "The three babies are twins.",
+      "wrongSentence": "The three babies are triplets.",
       "correctImage": "assets/textbook/images/level-022/q015-correct.png",
       "wrongImage": "assets/textbook/images/level-022/q015-wrong.png",
       "correctSize": "840x630",
