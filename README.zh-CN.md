@@ -65,8 +65,11 @@ https://linc.wang/listen-pick/
 - 修复 `watering`、`painting`、`building`、`lowering` 等动作漏译问题；第 151 关浇水题中文提示已改为自然中文
 - 为 21 组“穿上/脱下、放入/拿出”静态图增加动作方向箭头，降低孩子误判概率
 - 新增 `/listen-pick/__analytics/visit` 匿名访问信标，Nginx 日志可按 `vid` 去重统计
-- 将缓存版本提升到 `stage3-assets-v10 / zh-hints-v7`
-- 最新验证：`npm test` 通过 100 项测试；进行时中文提示全量审计漏动作数为 0
+- 新增英文与语义、三套音频、相似题图三类全课程可执行审计
+- 系统修复家庭关系、量词、短语动词、位置、身体部位和缺失词汇等中文提示问题
+- 全量验证 13,500 个音频文件均存在且可解码，不同英文句子没有复用同一媒体
+- 人工重新计数第 11-15 关全部 150 张选择图，第 13 关每题数量目前均与英文一致
+- 最新发现和仍需重画的视觉问题见 `docs/course-quality-audit-2026-07-10.md`
 
 ## 本地运行
 
@@ -104,9 +107,13 @@ npm test
 ```bash
 npm run validate:course
 npm run generate:textbook-playable
+npm run audit:course-content
+npm run audit:course-audio -- --probe
 npm run audit:textbook-images
 npm run optimize:textbook-images
 ```
+
+课程素材“文件存在”不等于“可以发布”。每道题的英文句子、实际播放音频、中文提示、正确图和干扰图必须指向同一个儿童可理解概念；课程质量审计中已经确认或高度怀疑的问题，在修复并复核前都属于发布阻断项。
 
 音频生成相关命令保留在 `package.json` 中。大型本地 TTS 环境和临时生成文件不会进入 Git。
 

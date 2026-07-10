@@ -3743,7 +3743,7 @@ export const availableTextbookLevels = [
       {
         "id": "L022-Q014",
         "sentence": "We are brother and sister.",
-        "wrongSentence": "We are brother and brother.",
+        "wrongSentence": "We are two brothers.",
         "audioFile": "assets/textbook/audio/level-022/q014.m4a",
         "correctImage": "assets/textbook/images/level-022/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-022/q014-wrong.png",

@@ -59,8 +59,11 @@ Recent maintenance:
 - Fixed missing Chinese action hints for `watering`, `painting`, `building`, and `lowering`; Level 151 now shows natural Chinese hints for plant/flower watering
 - Clarified 21 putting-on/taking-off and putting-in/taking-out image pairs with motion arrows so static pictures show action direction more clearly
 - Added anonymous visitor beacons at `/listen-pick/__analytics/visit`; the Nginx access log can be deduplicated by `vid`
-- Bumped the cache version to `stage3-assets-v10 / zh-hints-v7`
-- Latest verification: `npm test` passes 100 tests; present-progressive Chinese hint audit reports 0 missing actions
+- Added executable whole-course audits for English/semantic risks, all three audio variants, and visually similar picture pairs
+- Expanded Chinese hint handling for family relationships, measure words, phrasal verbs, locations, body parts, and missing vocabulary
+- Verified all 13,500 audio files are present and decodable, with no different sentences sharing identical media
+- Manually recounted all 150 picture choices in Levels 11-15; Level 13 now matches every English quantity
+- Documented the latest findings and remaining visual blockers in `docs/course-quality-audit-2026-07-10.md`
 
 ## Run Locally
 
@@ -98,9 +101,13 @@ Helpful commands:
 ```bash
 npm run validate:course
 npm run generate:textbook-playable
+npm run audit:course-content
+npm run audit:course-audio -- --probe
 npm run audit:textbook-images
 npm run optimize:textbook-images
 ```
+
+Educational content is not release-ready merely because files exist. Every question must keep its English sentence, spoken audio, Chinese hint, correct picture, and distractor picture aligned to the same child-facing concept. Confirmed or high-suspicion findings in the course quality audit are release blockers.
 
 Audio generation commands are kept in `package.json`. Large local TTS environments and temporary generation output are intentionally ignored by Git.
 

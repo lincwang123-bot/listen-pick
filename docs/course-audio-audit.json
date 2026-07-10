@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-07-10T16:48:43.852Z",
+  "probed": false,
+  "summary": {
+    "questions": 4500,
+    "expectedFiles": 13500,
+    "readableFiles": 13500,
+    "uniqueMedia": 5088,
+    "findings": 0,
+    "errors": 0
+  },
+  "findings": []
+}

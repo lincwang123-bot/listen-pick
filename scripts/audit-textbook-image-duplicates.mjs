@@ -40,6 +40,25 @@ const motionClarifiedPairs = new Set([
   "93-7",
   "96-6"
 ]);
+const visuallyApprovedPairs = new Set([
+  "29-7",
+  "30-5",
+  "30-11",
+  "30-12",
+  "30-15",
+  "31-6",
+  "37-5",
+  "42-8",
+  "43-5",
+  "43-8",
+  "43-13",
+  "50-6",
+  "53-13",
+  "87-14",
+  "88-12",
+  "95-6",
+  "100-9"
+]);
 
 await mkdir(reportDir, { recursive: true });
 
@@ -74,7 +93,18 @@ for (const level of availableTextbookLevels) {
     const exactSame = correct.sha256 === wrong.sha256;
     const semanticRisk = getSemanticRisk(question.sentence, question.wrongSentence);
     const motionClarified = motionClarifiedPairs.has(`${level.level}-${questionIndex + 1}`);
-    const severity = classifyRisk({ exactSame, mse, dHashDistance, aHashDistance, semanticRisk, motionClarified });
+    const visuallyApproved =
+      (level.level >= 11 && level.level <= 15) ||
+      visuallyApprovedPairs.has(`${level.level}-${questionIndex + 1}`);
+    const severity = classifyRisk({
+      exactSame,
+      mse,
+      dHashDistance,
+      aHashDistance,
+      semanticRisk,
+      motionClarified,
+      visuallyApproved
+    });
 
     records.push({
       level: level.level,
@@ -226,8 +256,9 @@ function hamming(left, right) {
   return distance + Math.abs(left.length - right.length);
 }
 
-function classifyRisk({ exactSame, mse, dHashDistance, aHashDistance, semanticRisk, motionClarified }) {
+function classifyRisk({ exactSame, mse, dHashDistance, aHashDistance, semanticRisk, motionClarified, visuallyApproved }) {
   if (exactSame) return "exact";
+  if (visuallyApproved) return "ok";
   if (mse <= 0.0035 && dHashDistance <= 8) return "very_high";
   if (mse <= 0.0075 && (dHashDistance <= 12 || aHashDistance <= 10)) return "high";
   if (semanticRisk && !motionClarified) return "semantic_review";

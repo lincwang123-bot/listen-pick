@@ -149,7 +149,7 @@ function collectHintArtifacts(levels) {
 function collectPresentProgressiveHintsWithoutActions(levels) {
   const missingActions = [];
   const presentProgressivePattern = /\b(?:is|are)\s+([a-z]+ing)\b/i;
-  const actionPattern = /正在|正|喜欢|在|给|把|用|穿|戴|拿|放|读|写|画|吃|喝|看|睡|坐|站|跑|走|跳|唱|洗|刷|踢|开|关|指|举|牵|整理|收拾|浇|笑|游|玩|做|购物|帮助|分享|等待|进入|离开|爬|扔|擦|系|挂|扣|拉|搭建/;
+  const actionPattern = /正在|正|喜欢|在|给|把|用|穿|戴|拿|放|读|写|画|吃|喝|看|睡|坐|站|跑|走|跳|唱|洗|刷|踢|开|关|指|举|牵|整理|收拾|浇|笑|游|玩|做|弄|购物|帮助|分享|等待|进入|离开|爬|扔|擦|系|挂|扣|拉|搭建|露出来/;
 
   for (const level of levels) {
     for (const [questionIndex, question] of level.questions.entries()) {

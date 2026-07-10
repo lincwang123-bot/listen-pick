@@ -34,6 +34,8 @@
     "split:image-pairs": "node scripts/split-image-pairs.mjs",
     "generate:audio": "node scripts/generate-audio-assets.mjs",
     "audit:textbook-images": "node scripts/audit-textbook-image-duplicates.mjs",
+    "audit:course-content": "node scripts/audit-course-content.mjs",
+    "audit:course-audio": "node scripts/audit-course-audio.mjs",
     "validate:course": "node scripts/validate-course.mjs",
     "test": "node --test"
   },

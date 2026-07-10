@@ -217,6 +217,7 @@ const nouns = new Map([
   ["balls", "球"],
   ["toy", "玩具"],
   ["toys", "玩具"],
+  ["toy box", "玩具盒"],
   ["cup", "杯子"],
   ["cups", "杯子"],
   ["box", "盒子"],
@@ -356,7 +357,7 @@ const actions = new Map([
   ["waving", "挥手"],
   ["putting", "放"],
   ["taking", "拿"],
-  ["folding", "折叠"],
+  ["folding", "叠"],
   ["packing", "收拾"],
   ["choosing", "选择"],
   ["zipping", "拉拉链"],
@@ -503,12 +504,14 @@ for (const [word, translation] of [
   ["teddy bear", "泰迪熊"],
   ["beard", "胡子"],
   ["bedroom", "卧室"],
+  ["beanbag", "豆袋"],
   ["bench", "长椅"],
   ["bin", "垃圾桶"],
   ["boat", "船"],
   ["boiled egg", "水煮蛋"],
   ["bottles", "水瓶"],
   ["bowl", "碗"],
+  ["blanket", "毯子"],
   ["brothers", "兄弟"],
   ["brush", "刷子"],
   ["bucket", "桶"],
@@ -516,6 +519,7 @@ for (const [word, translation] of [
   ["bunch", "一串"],
   ["butter", "黄油"],
   ["cake", "蛋糕"],
+  ["card", "卡片"],
   ["cards", "卡片"],
   ["cars", "小汽车"],
   ["case", "盒子"],
@@ -589,6 +593,7 @@ for (const [word, translation] of [
   ["hair", "头发"],
   ["hamster", "仓鼠"],
   ["hand", "手"],
+  ["hand cream", "护手霜"],
   ["hands", "手"],
   ["hats", "帽子"],
   ["head", "头"],
@@ -627,6 +632,7 @@ for (const [word, translation] of [
   ["page", "页面"],
   ["pajamas", "睡衣"],
   ["paper", "纸"],
+  ["pen", "围栏"],
   ["pear", "梨"],
   ["pears", "梨"],
   ["paper plane", "纸飞机"],
@@ -652,6 +658,7 @@ for (const [word, translation] of [
   ["restaurant", "餐厅"],
   ["robot", "机器人"],
   ["rock", "石头"],
+  ["road", "道路"],
   ["room", "房间"],
   ["rope", "绳子"],
   ["row", "一排"],
@@ -675,6 +682,7 @@ for (const [word, translation] of [
   ["shuttlecock", "羽毛球"],
   ["siblings", "兄弟姐妹"],
   ["sisters", "姐妹"],
+  ["sky", "天空"],
   ["slice", "片"],
   ["snack", "点心"],
   ["snacks", "点心"],
@@ -858,6 +866,8 @@ export function toChineseHint(sentence) {
   const normalized = normalizeSentence(sentence);
   if (!normalized) return "";
   if (exactHints.has(normalized)) return exactHints.get(normalized);
+  const specialHint = translateSpecialHint(normalized);
+  if (specialHint) return specialHint;
 
   let match = normalized.match(/^this is (?:a|an) (.+)$/);
   if (match) return `这是${translateNounPhrase(match[1], { forceOne: true })}。`;
@@ -893,6 +903,463 @@ export function toChineseHint(sentence) {
   if (match) return `天气是${translateWords(match[1])}。`;
 
   return cleanChineseHint(`${translateWords(normalized)}。`);
+}
+
+function translateSpecialHint(normalized) {
+  const familyRoles = {
+    mother: "妈妈",
+    father: "爸爸",
+    sister: "姐姐",
+    brother: "哥哥",
+    grandma: "奶奶",
+    grandpa: "爷爷",
+    grandmother: "奶奶",
+    grandfather: "爷爷",
+    parents: "父母",
+    grandparents: "爷爷奶奶",
+    granddaughter: "孙女",
+    grandson: "孙子",
+    children: "孩子们",
+    grandchildren: "孙辈"
+  };
+  const people = { woman: "女人", man: "男人" };
+  const subjectNames = {
+    baby: "宝宝",
+    boy: "男孩",
+    girl: "女孩",
+    child: "孩子",
+    children: "孩子们",
+    student: "学生",
+    students: "学生们",
+    classmates: "同学们",
+    family: "一家人",
+    mother: "妈妈"
+  };
+
+  let match = normalized.match(/^this is my (mother|father|sister|brother|grandma|grandpa|family|class)$/);
+  if (match?.[1] === "family") return "这是我的家人。";
+  if (match?.[1] === "class") return "这是我的班级。";
+  if (match) return `这是我的${familyRoles[match[1]]}。`;
+
+  match = normalized.match(/^this is my (friend|teacher|classmate)$/);
+  if (match) return `这是我的${nouns.get(match[1])}。`;
+
+  const weatherHints = new Map([
+    ["it is sunny", "天气晴朗。"],
+    ["it is raining", "正在下雨。"],
+    ["it is snowing", "正在下雪。"],
+    ["it is windy", "正在刮风。"],
+    ["it is cloudy", "天气多云。"]
+  ]);
+  if (weatherHints.has(normalized)) return weatherHints.get(normalized);
+
+  if (normalized === "everyone is in the family picture") return "所有人都在全家福里。";
+  if (normalized === "everyone is around the table") return "所有人都围在桌子旁。";
+  if (normalized === "the table is low") return "桌子很矮。";
+  if (normalized === "the chair is far from the desk") return "椅子离课桌很远。";
+
+  match = normalized.match(/^the (toy box|lunch box) has (.+) inside$/);
+  if (match) return `${nouns.get(match[1])}里有${translateNounPhrase(match[2])}。`;
+
+  match = normalized.match(/^the (boy|girl|child|woman) has (?:a )?kite (?:in the wind|on the ground)$/);
+  if (match) {
+    const place = normalized.endsWith("in the wind") ? "风中放风筝" : "把风筝放在地上";
+    return `${translateSubject(match[1])}正在${place}。`;
+  }
+
+  match = normalized.match(/^the (boy|girl|child|woman) has (?:an )?umbrella (?:in the rain|in the sunshine)$/);
+  if (match) {
+    const place = normalized.endsWith("in the rain") ? "正在雨中撑着伞" : "在阳光下撑着伞";
+    return `${translateSubject(match[1])}${place}。`;
+  }
+
+  match = normalized.match(/^the (boy|girl|child|woman) has sunglasses in the (sun|shade)$/);
+  if (match) return `${translateSubject(match[1])}在${match[2] === "sun" ? "阳光下" : "阴凉处"}戴着太阳镜。`;
+
+  match = normalized.match(/^the (child|boy|girl) has a bandage on the (knee|hand)$/);
+  if (match) return `${translateSubject(match[1])}的${nouns.get(match[2])}上贴着创可贴。`;
+
+  match = normalized.match(/^the (boy|girl|child|baby) has a (cap|scarf) (on|around) (?:his|her|its|their) (head|neck|knee)$/);
+  if (match) {
+    const subject = translateSubject(match[1]);
+    const bodyPart = nouns.get(match[4]);
+    const item = match[2] === "cap" ? "一顶帽子" : "围巾";
+    const verb = match[2] === "cap" ? (match[4] === "knee" ? "放着" : "戴着") : "围着";
+    return `${subject}的${bodyPart}上${verb}${item}。`;
+  }
+
+  match = normalized.match(/^the (boy|girl|child|baby) has a (.+?) cap (on (?:his|her|its|their) head|in (?:his|her|its|their) hand)$/);
+  if (match) {
+    const cap = `${colors.get(match[2]) ?? ""}帽子`;
+    return match[3].startsWith("on")
+      ? `${translateSubject(match[1])}头上戴着一顶${cap}。`
+      : `${translateSubject(match[1])}手里拿着一顶${cap}。`;
+  }
+
+  match = normalized.match(/^the (baby|child) has socks on both (feet|hands)$/);
+  if (match) return `${translateSubject(match[1])}的双${match[2] === "feet" ? "脚" : "手"}穿着袜子。`;
+
+  match = normalized.match(/^the (father|mother) is filling a bowl with rice$/);
+  if (match) return `${translateSubject(match[1])}正在往碗里盛米饭。`;
+
+  match = normalized.match(/^the (.+?) is walking with (?:a )?(.+)$/);
+  if (match) return `${translateSubject(match[1])}正和${translateNounPhrase(match[2])}一起走路。`;
+
+  match = normalized.match(/^the (baby|child|friends) (?:is|are) sitting with (bare feet|shoes|a rope)$/);
+  if (match) {
+    const state = { "bare feet": "光脚", shoes: "穿着鞋", "a rope": "拿着绳子" }[match[2]];
+    return `${translateSubject(match[1])}${state}坐着。`;
+  }
+
+  match = normalized.match(/^the (child|baby) is smiling with (clean teeth|dirty hands)$/);
+  if (match) {
+    const state = match[2] === "clean teeth" ? "露出干净的牙齿" : "双手很脏";
+    return `${translateSubject(match[1])}微笑时${state}。`;
+  }
+
+  match = normalized.match(/^the (baby|child) is playing with toes$/);
+  if (match) return `${translateSubject(match[1])}正在玩自己的脚趾。`;
+
+  match = normalized.match(/^the (girl|boy|child) is with (?:her|his|their) (friend|classmate)$/);
+  if (match) return `${translateSubject(match[1])}和${translateSubject(match[2])}在一起。`;
+
+  match = normalized.match(/^the (boy|girl|child) is building with (?:a |the )?(friend|classmate)$/);
+  if (match) return `${translateSubject(match[1])}正和${translateSubject(match[2])}一起搭东西。`;
+
+  match = normalized.match(/^the (girl|boy|child) is helping with (?:a )?(schoolbag|shoes|towel|homework)$/);
+  if (match) {
+    const action = { schoolbag: "整理书包", shoes: "穿鞋", towel: "拿毛巾", homework: "做作业" }[match[2]];
+    return `${translateSubject(match[1])}正在帮忙${action}。`;
+  }
+
+  match = normalized.match(/^the (father|mother) is helping with (shoes|a towel|homework)$/);
+  if (match) {
+    const action = { shoes: "穿鞋", "a towel": "拿毛巾", homework: "做作业" }[match[2]];
+    return `${translateSubject(match[1])}正在帮忙${action}。`;
+  }
+
+  match = normalized.match(/^the (girl|boy|child) is helping (?:a )?classmate with (shoes|books|a bag|a cup)$/);
+  if (match) {
+    const action = { shoes: "穿鞋", books: "拿书", "a bag": "拿书包", "a cup": "拿杯子" }[match[2]];
+    return `${translateSubject(match[1])}正在帮助同学${action}。`;
+  }
+
+  match = normalized.match(/^the (children|friends) are taking turns with (?:a )?scooter$/);
+  if (match) return `${translateSubject(match[1])}正在轮流玩滑板车。`;
+
+  match = normalized.match(/^the (child|girl|boy) is (going|walking) home with (?:a )?(parent|teacher)$/);
+  if (match) return `${translateSubject(match[1])}正和${translateSubject(match[3])}一起回家。`;
+
+  match = normalized.match(/^the (child|girl|boy) is (going|walking) home$/);
+  if (match) return `${translateSubject(match[1])}正在${match[2] === "walking" ? "步行" : ""}回家。`;
+
+  match = normalized.match(/^the (child|boy|girl) is (happy|sad) with (?:a )?toy$/);
+  if (match) return `${translateSubject(match[1])}拿着玩具，感到${match[2] === "happy" ? "开心" : "难过"}。`;
+
+  match = normalized.match(/^the bag is (heavy|light) with (one |many )?books?$/);
+  if (match) return `书包里装着${match[2] === "one " ? "一本书" : "很多书"}，所以很${match[1] === "heavy" ? "重" : "轻"}。`;
+
+  match = normalized.match(/^the (girl|boy|child) is sharing (.+) with (?:a )?(friend|classmate)$/);
+  if (match) return `${translateSubject(match[1])}正在和${translateSubject(match[3])}分享${translateNounPhrase(match[2], { forceOne: hasSingularArticle(match[2]) })}。`;
+
+  match = normalized.match(/^the mother is cooking with the child$/);
+  if (match) return "妈妈正在和孩子一起做饭。";
+
+  match = normalized.match(/^the (family|class) has dinner at the table$/);
+  if (match) return `${translateSubject(match[1])}正在桌边吃晚饭。`;
+
+  match = normalized.match(/^the (girl|boy|baby|child) has a (bunch of grapes|slice of watermelon)$/);
+  if (match) return `${translateSubject(match[1])}有${match[2] === "bunch of grapes" ? "一串葡萄" : "一片西瓜"}。`;
+
+  match = normalized.match(/^the (girl|boy|child|baby) is (putting on|taking off) (.+?) at home$/);
+  if (match) {
+    const verb = clothingVerb(match[2], match[3]);
+    return `${translateSubject(match[1])}正在家里${verb}${translateNounPhrase(match[3])}。`;
+  }
+
+  match = normalized.match(/^the (girl|boy|child|baby) is (putting on|taking off) (.+)$/);
+  if (match) {
+    const verb = clothingVerb(match[2], match[3]);
+    return `${translateSubject(match[1])}正在${verb}${translateNounPhrase(match[3])}。`;
+  }
+
+  match = normalized.match(/^the (girl|boy|child|baby) is taking (.+) out of (?:a|the) (bag|bowl|schoolbag)$/);
+  if (match) return `${translateSubject(match[1])}正在从${translateNounPhrase(match[3])}里拿出${translateNounPhrase(match[2], { forceOne: hasSingularArticle(match[2]) })}。`;
+
+  match = normalized.match(/^the (student|teacher|child|classmates) (?:is|are) putting away (?:a|the) (schoolbag|books|chairs)$/);
+  if (match) return `${translateSubject(match[1])}正在收好${translateNounPhrase(match[2])}。`;
+
+  match = normalized.match(/^the children are taking turns on the (slide|swing)$/);
+  if (match) return `孩子们正在轮流玩${nouns.get(match[1])}。`;
+
+  if (normalized === "the classmates are making a paper chain") return "同学们正在制作一条纸链。";
+
+  match = normalized.match(/^(?:two )?(friends|classmates) are making (?:their|the) table messy$/);
+  if (match) return `${translateSubject(match[1])}正在把桌子弄乱。`;
+
+  match = normalized.match(/^the classmates are pulling (chairs|books) out$/);
+  if (match) return `同学们正在把${translateNounPhrase(match[1])}拿出来。`;
+
+  if (normalized === "the boy is giving a notebook back") return "男孩正在归还一本笔记本。";
+  if (normalized === "the family is coming home in the evening") return "一家人晚上正在回家。";
+  if (normalized === "the class is making a mess after lunch") return "全班午饭后弄得一团糟。";
+  if (normalized === "the class is walking back to the classroom") return "全班正在走回教室。";
+
+  match = normalized.match(/^the (woman|man|child|girl|boy) is getting off the train$/);
+  if (match) return `${translateSubject(match[1])}正在下火车。`;
+
+  if (normalized === "the child is ready after washing") return "孩子洗好后准备就绪。";
+
+  match = normalized.match(/^the children are ready in (coats|pajamas)$/);
+  if (match) return `孩子们穿好${match[1] === "coats" ? "外套" : "睡衣"}，准备好了。`;
+
+  match = normalized.match(/^the (boy|girl|child) is putting (?:the|a) (bag|schoolbag) (on|under) (?:a|the) (chair|bed|table)$/);
+  if (match) {
+    const location = `${translateNounPhrase(match[4])}${match[3] === "on" ? "上" : "下面"}`;
+    return `${translateSubject(match[1])}正在把书包放在${location}。`;
+  }
+
+  match = normalized.match(/^the schoolbag is ready by the door$/);
+  if (match) return "书包已经准备好，放在门旁边。";
+
+  match = normalized.match(/^the clothes are ready (on|in) (?:the )?(bed|sink)$/);
+  if (match) return `衣服已经准备好，放在${translateNounPhrase(match[2])}${match[1] === "on" ? "上" : "里"}。`;
+
+  match = normalized.match(/^these are my (parents|grandparents|sisters|brothers)$/);
+  if (match) {
+    const role = { parents: "父母", grandparents: "爷爷奶奶", sisters: "姐妹", brothers: "兄弟" }[match[1]];
+    return `这些是我的${role}。`;
+  }
+
+  match = normalized.match(/^(she|he) is my (?:(older|younger|little) )?(sister|brother|mother|father|grandma|grandpa|grandmother|grandfather)$/);
+  if (match) {
+    const pronoun = match[1] === "she" ? "她" : "他";
+    return `${pronoun}是我的${naturalFamilyRole(match[3], match[2])}。`;
+  }
+
+  match = normalized.match(/^(?:the|this) (older )?(woman|man|girl|boy|baby) is my (?:(little|older|younger) )?(mother|father|sister|brother|grandma|grandpa)$/);
+  if (match) {
+    const subject = match[1]
+      ? `这位年长的${people[match[2]]}`
+      : match[2] === "woman" || match[2] === "man"
+        ? `这个${people[match[2]]}`
+        : subjectNames[match[2]];
+    const role = match[2] === "baby" && !match[3]
+      ? naturalFamilyRole(match[4], "little")
+      : naturalFamilyRole(match[4], match[3]);
+    return `${subject}是我的${role}。`;
+  }
+
+  match = normalized.match(/^(?:the )?(baby girl|baby boy|girl|boy|baby) is with (?:his|her) (mother|father|grandmother|grandfather)$/);
+  if (match) {
+    const person = { "baby girl": "女宝宝", "baby boy": "男宝宝", girl: "女孩", boy: "男孩", baby: "宝宝" }[match[1]];
+    return `${person}和${familyRoles[match[2]]}在一起。`;
+  }
+
+  match = normalized.match(/^(?:the )?(girl|boy|baby) has (?:a )?(baby|older|younger) (sister|brother)$/);
+  if (match) return `${subjectNames[match[1]]}有一个${naturalFamilyRole(match[3], match[2] === "baby" ? "little" : match[2])}。`;
+
+  match = normalized.match(/^my (grandma|grandpa) is (beside|above) my (mother|father)$/);
+  if (match) return `我的${familyRoles[match[1]]}在我的${familyRoles[match[3]]}${match[2] === "beside" ? "旁边" : "上方"}。`;
+
+  match = normalized.match(/^the (grandparents|parents) are with their (granddaughter|grandson|children|grandchildren)$/);
+  if (match) return `${familyRoles[match[1]]}和他们的${familyRoles[match[2]]}在一起。`;
+
+  match = normalized.match(/^the (mother|grandma|girl) and (father|grandpa|boy) are (parents|grandparents|children|siblings|friends)$/);
+  if (match) {
+    const left = familyRoles[match[1]] ?? subjectNames[match[1]];
+    const right = familyRoles[match[2]] ?? subjectNames[match[2]];
+    const relation = { parents: "父母", grandparents: "祖父母", children: "孩子", siblings: "兄弟姐妹", friends: "朋友" }[match[3]];
+    return `${left}和${right}是${relation}。`;
+  }
+
+  match = normalized.match(/^my (mother|father) is (?:a )?(woman|man)$/);
+  if (match) return `我的${familyRoles[match[1]]}是${people[match[2]]}。`;
+
+  match = normalized.match(/^i have (one|two|three) (sister|sisters|brother|brothers)$/);
+  if (match) {
+    const singularRole = naturalFamilyRole(stripPlural(match[2]));
+    const pluralRole = match[2].startsWith("sister") ? "姐妹" : "兄弟";
+    return `我有${numbers.get(match[1])}个${match[1] === "one" ? singularRole : pluralRole}。`;
+  }
+
+  if (normalized === "we are brother and sister") return "我们是兄妹。";
+  if (normalized === "we are two brothers") return "我们是两兄弟。";
+  if (normalized === "the two babies are twins") return "两个宝宝是双胞胎。";
+  if (normalized === "the three babies are triplets") return "三个宝宝是三胞胎。";
+  if (normalized === "the grandma and grandpa are grandparents") return "奶奶和爷爷是祖父母。";
+
+  const demonstratives = new Map([
+    ["soap", "这是肥皂。"],
+    ["toothpaste", "这是牙膏。"],
+    ["hand cream", "这是护手霜。"],
+    ["an orange", "这是一个橙子。"]
+  ]);
+  match = normalized.match(/^this is (.+)$/);
+  if (match && demonstratives.has(match[1])) return demonstratives.get(match[1]);
+
+  match = normalized.match(/^this is a (bowl|glass|piece) of (.+)$/);
+  if (match) {
+    const measure = match[1] === "bowl" ? "碗" : match[1] === "glass" ? "杯" : "片";
+    return `这是一${measure}${translateNounPhrase(match[2])}。`;
+  }
+
+  match = normalized.match(/^(?:the )?(duck|bird|plane) is flying(?: (.+))?$/);
+  if (match) {
+    const location = match[2] === "in the sky" ? "天空中" : "";
+    return `${translateSubject(match[1])}正在${location}飞翔。`;
+  }
+
+  match = normalized.match(/^(?:the )?(.+?) (?:is|are) (sitting|sleeping|standing) (together|apart)$/);
+  if (match) {
+    if (match[2] === "sitting" && match[3] === "together") return `${translateSubject(match[1])}正坐在一起。`;
+    if (match[2] === "sleeping" && match[3] === "together") return `${translateSubject(match[1])}正在一起睡觉。`;
+    if (match[2] === "standing" && match[3] === "apart") return `${translateSubject(match[1])}分开站着。`;
+  }
+
+  match = normalized.match(/^(?:the )?(.+?) is (putting on|taking off) (.+)$/);
+  if (match) return `${translateSubject(match[1])}正在${clothingVerb(match[2], match[3])}${translateNounPhrase(match[3])}。`;
+
+  match = normalized.match(/^(?:the )?(.+?) is getting out of bed$/);
+  if (match) return `${translateSubject(match[1])}正在下床。`;
+
+  match = normalized.match(/^(?:the )?(.+?) is taking a shower$/);
+  if (match) return `${translateSubject(match[1])}正在洗澡。`;
+
+  match = normalized.match(/^(?:the )?(.+?) is (writing|drawing) with (?:a )?(.+)$/);
+  if (match) return `${translateSubject(match[1])}正在用${translateNounPhrase(match[3])}${match[2] === "writing" ? "写字" : "画画"}。`;
+
+  match = normalized.match(/^(?:the )?(.+?) (?:is|are) ready for (school|class|the lesson|the next lesson|reading|lunch|bed|sleep)$/);
+  if (match) {
+    const purpose = { school: "上学", class: "上课", "the lesson": "上课", "the next lesson": "开始下一节课", reading: "读书", lunch: "吃午饭", bed: "睡觉", sleep: "睡觉" }[match[2]];
+    return `${translateSubject(match[1])}准备好${purpose}了。`;
+  }
+
+  match = normalized.match(/^(?:the )?(.+?) is (resting|running|reading|sleeping) after school$/);
+  if (match) return `${translateSubject(match[1])}正在放学后${actions.get(match[2])}。`;
+
+  match = normalized.match(/^the (girl|boy|child) is (walking|jumping) home after school$/);
+  if (match) return `${translateSubject(match[1])}放学后正${match[2] === "walking" ? "步行" : "跳着"}回家。`;
+
+  if (normalized === "the family is sitting together after school") return "一家人放学后坐在一起。";
+
+  match = normalized.match(/^the (girl|boy|child|baby) is playing table tennis$/);
+  if (match) return `${translateSubject(match[1])}正在打乒乓球。`;
+
+  match = normalized.match(/^the (girl|boy|child|baby) is skipping rope$/);
+  if (match) return `${translateSubject(match[1])}正在跳绳。`;
+
+  match = normalized.match(/^the children are (running|walking) a race$/);
+  if (match) return `孩子们正在进行${match[1] === "running" ? "赛跑" : "步行比赛"}。`;
+
+  match = normalized.match(/^the (girl|boy|child) is (standing|running) at the finish line$/);
+  if (match) return `${translateSubject(match[1])}正${match[2] === "standing" ? "站在" : "跑到"}终点线旁。`;
+
+  match = normalized.match(/^the (girl|boy|child) is (drawing|erasing) a line$/);
+  if (match) return `${translateSubject(match[1])}正在${match[2] === "drawing" ? "画" : "擦掉"}一条线。`;
+
+  match = normalized.match(/^the (classmates|children|students|girl) (?:is|are) (walking|waiting|sitting|pushing) in (?:a )?line$/);
+  if (match) {
+    const action = { walking: "排队走路", waiting: "排队等待", sitting: "排成一排坐着", pushing: "在队伍里推挤" }[match[2]];
+    return `${translateSubject(match[1])}正在${action}。`;
+  }
+
+  if (normalized === "the classmates are running out of line") return "同学们正在跑出队伍。";
+  if (normalized === "there are five children in line") return "有五个孩子在排队。";
+  if (normalized === "there are students in a line") return "有学生在排队。";
+
+  match = normalized.match(/^(?:the )?(.+?) (?:is|are) (running|walking|playing) (at home|at school|in the park)$/);
+  if (match) {
+    const place = { "at home": "家里", "at school": "学校里", "in the park": "公园里" }[match[3]];
+    const action = { running: "跑步", walking: "走路", playing: "玩" }[match[2]];
+    return `${translateSubject(match[1])}正在${place}${action}。`;
+  }
+
+  match = normalized.match(/^(?:the )?(.+?) (?:is|are) (running|walking|playing) (in|on|beside|by|at) (.+)$/);
+  if (match) {
+    const action = { running: "跑步", walking: "走路", playing: "玩" }[match[2]];
+    const object = match[4] === "the finish line" ? "终点线" : translateNounPhrase(match[4]);
+    const location = match[3] === "in"
+      ? `${object}里`
+      : match[3] === "on"
+        ? `${object}上`
+        : `${object}旁边`;
+    return `${translateSubject(match[1])}正在${location}${action}。`;
+  }
+
+  match = normalized.match(/^(?:the )?(.+?) is reading with (?:the )?(.+)$/);
+  if (match) return `${translateSubject(match[1])}正和${translateSubject(match[2])}一起读书。`;
+
+  match = normalized.match(/^(?:the )?(.+?) is (turning on|turning off) (?:a|the) lamp$/);
+  if (match) return `${translateSubject(match[1])}正在${match[2] === "turning on" ? "开灯" : "关灯"}。`;
+
+  if (normalized === "the ruler is sticking out of the bag") return "尺子从书包里露出来。";
+  if (normalized === "the classmates are putting books away") return "同学们正在收好书。";
+  if (normalized === "the family is leaving home in the morning") return "一家人早上正在离开家。";
+  if (normalized === "the child is playing table tennis") return "孩子正在打乒乓球。";
+  if (normalized === "the child is skipping rope") return "孩子正在跳绳。";
+  if (normalized === "the child is riding in a car") return "孩子正坐在汽车里。";
+  if (normalized === "the child is getting off the train") return "孩子正在下火车。";
+  if (normalized === "the child is drawing a line") return "孩子正在画一条线。";
+  if (normalized === "the girl is cutting the line") return "女孩正在插队。";
+  if (normalized === "the classmates are walking in a line") return "同学们正在排队走路。";
+
+  match = normalized.match(/^the (baby|child) has socks on both feet$/);
+  if (match) return `${translateSubject(match[1])}的双脚穿着袜子。`;
+
+  match = normalized.match(/^the (boy|girl|child) is raising one hand without a glove$/);
+  if (match) return `${translateSubject(match[1])}正举起一只没有戴手套的手。`;
+
+  match = normalized.match(/^(?:the )?(.+?) is giving (.+?) to (?:a |the )?(.+)$/);
+  if (match) return `${translateSubject(match[1])}正在给${translateSubject(match[3])}${translateNounPhrase(match[2])}。`;
+
+  match = normalized.match(/^(?:the )?(.+?) is taking (.+?) from (?:a |the )?(.+)$/);
+  if (match) {
+    const source = translateNounPhrase(match[3]);
+    const sourceSlot = /^(?:friend|student|classmate)$/.test(match[3]) ? `${source}那里` : `${source}上`;
+    return `${translateSubject(match[1])}正在从${sourceSlot}拿${translateNounPhrase(match[2], { forceOne: hasSingularArticle(match[2]) })}。`;
+  }
+
+  match = normalized.match(/^the (boy|girl|child) is (carrying|dropping) books for a classmate$/);
+  if (match) return match[2] === "carrying"
+    ? `${translateSubject(match[1])}正在帮同学拿书。`
+    : `${translateSubject(match[1])}把替同学拿的书掉在了地上。`;
+
+  match = normalized.match(/^(?:the )?(.+?) likes (apple|orange) juice$/);
+  if (match) return `${translateSubject(match[1])}喜欢${match[2] === "apple" ? "苹果汁" : "橙汁"}。`;
+
+  match = normalized.match(/^(?:the )?(.+?) likes (drawing|playing|building) (.+)$/);
+  if (match) {
+    const action = { drawing: "画", playing: "玩", building: "搭" }[match[2]];
+    return `${translateSubject(match[1])}喜欢${action}${translateNounPhrase(match[3])}。`;
+  }
+
+  if (normalized === "there is bread and milk on the table") return "桌子上有面包和牛奶。";
+  if (normalized === "the car is on the road") return "小汽车在路上。";
+  if (normalized === "the girl has sunglasses on her face") return "女孩脸上戴着太阳镜。";
+  if (normalized === "the child has a bandage on the knee") return "孩子的膝盖上贴着创可贴。";
+
+  return null;
+}
+
+function naturalFamilyRole(role, modifier) {
+  if (role === "sister") return modifier === "younger" || modifier === "little" ? "妹妹" : "姐姐";
+  if (role === "brother") return modifier === "younger" || modifier === "little" ? "弟弟" : "哥哥";
+  return {
+    mother: "妈妈",
+    father: "爸爸",
+    grandma: "奶奶",
+    grandpa: "爷爷",
+    grandmother: "奶奶",
+    grandfather: "爷爷"
+  }[role] ?? role;
+}
+
+function clothingVerb(action, itemText) {
+  const item = itemText.replace(/\b(?:his|her|its|their|my)\b/g, "").trim();
+  const headwear = /\b(?:hat|cap)\b/.test(item);
+  if (action === "putting on") return headwear ? "戴上" : "穿上";
+  return headwear ? "摘下" : "脱下";
 }
 
 function normalizeSentence(sentence) {
@@ -1094,7 +1561,7 @@ function translateLookingAction(rest) {
     const target = rest.slice(prep.length).trim();
     const location = splitNounAndLocation(target);
     if (location) {
-      return `正在${translateActionLocation(location.prep, location.objectText)}看${translateNounPhrase(location.nounText, {
+      return `正${translateActionLocation(location.prep, location.objectText)}看${translateNounPhrase(location.nounText, {
         forceOne: hasSingularArticle(location.nounText)
       })}`;
     }
@@ -1102,7 +1569,7 @@ function translateLookingAction(rest) {
   }
 
   if (prep && locationPrepositions.has(prep)) {
-    return `正在${translateActionLocation(prep, rest.slice(prep.length).trim())}看`;
+    return `正${translateActionLocation(prep, rest.slice(prep.length).trim())}看`;
   }
 
   return `正在看${translateNounPhrase(rest, { forceOne: hasSingularArticle(rest) })}`;
@@ -1173,12 +1640,18 @@ function translateComplement(text, options = {}) {
 }
 
 function translateSubject(text) {
-  return translateNounPhrase(text)
-    .replace(/^一[个只本件双条辆顶把杯盒颗张]/, "")
-    .replace(/^两[个只本件双条辆顶把杯盒颗张支]/, "两");
+  return translateNounPhrase(text);
 }
 
 function translateNounPhrase(text, options = {}) {
+  if (/\sand\s/.test(text)) {
+    return text
+      .split(/\s+and\s+/)
+      .map((part) => translateNounPhrase(part, { forceOne: hasSingularArticle(part) }))
+      .join("和");
+  }
+
+  const pairOf = /\ba pair of\b/.test(text);
   const cleaned = text
     .replace(/^(?:a|an|the)\s+/, "")
     .replace(/\ba pair of\b/g, "")
@@ -1191,8 +1664,9 @@ function translateNounPhrase(text, options = {}) {
   const color = words.find((word) => colors.has(word));
   const adjective = words.find((word) => adjectives.has(word));
   const noun = findTrailingPhrase(cleaned, nouns) ?? words.at(-1) ?? cleaned;
-  const nounZh = nouns.get(noun) ?? nouns.get(stripPlural(noun)) ?? "";
-  const measure = count ? measureWord(noun) : "";
+  const rawNounZh = nouns.get(noun) ?? nouns.get(stripPlural(noun)) ?? "";
+  const nounZh = count ? rawNounZh.replace(/们$/, "") : rawNounZh;
+  const measure = count ? measureWord(noun, { pairOf }) : "";
   const colorZh = color ? `${colors.get(color)}的` : "";
   const adjectiveZh = adjective && adjective !== color ? adjectives.get(adjective) : "";
 
@@ -1279,27 +1753,39 @@ function escapeRegExp(text) {
 }
 
 function stripPlural(word) {
+  const irregular = {
+    children: "child",
+    feet: "foot",
+    eyes: "eye",
+    shoes: "shoe",
+    toes: "toe"
+  };
+  if (irregular[word]) return irregular[word];
+  if (word.endsWith("ss")) return word;
   if (word.endsWith("ies")) return `${word.slice(0, -3)}y`;
   if (word.endsWith("es")) return word.slice(0, -2);
   if (word.endsWith("s")) return word.slice(0, -1);
   return word;
 }
 
-function measureWord(noun) {
+function measureWord(noun, { pairOf = false } = {}) {
   const stripped = stripPlural(noun);
   if (stripped === "horse") return "匹";
   if (["cat", "dog", "bird", "duck", "rabbit", "fish", "cow", "sheep", "lion", "elephant", "panda", "frog", "swan", "pig", "chicken", "monkey", "giraffe", "hamster", "turtle"].includes(stripped)) return "只";
   if (["book", "notebook"].includes(stripped)) return "本";
   if (["shirt", "dress", "coat", "jacket", "sweater", "skirt"].includes(stripped)) return "件";
-  if (["shoes", "socks", "boots", "slippers", "trousers"].includes(noun)) return "双";
-  if (["shoe", "sock"].includes(stripped)) return "只";
+  if (["short", "trouser"].includes(stripped)) return "条";
+  if (["shoe", "sock", "boot", "slipper"].includes(stripped)) return pairOf ? "双" : "只";
   if (["car", "bus", "train", "bike", "bicycle"].includes(stripped)) return "辆";
   if (["plane"].includes(stripped) || noun === "paper plane") return "架";
   if (["hat", "cap"].includes(stripped)) return "顶";
   if (["pencil", "crayon"].includes(stripped)) return "支";
   if (["umbrella", "ruler", "toothbrush", "spoon", "fork"].includes(stripped)) return "把";
-  if (["box"].includes(stripped)) return "盒";
-  if (["picture", "page", "paper"].includes(stripped)) return "张";
+  if (["box"].includes(stripped)) return "个";
+  if (["picture", "page", "paper", "note", "card"].includes(stripped)) return "张";
+  if (["house"].includes(stripped)) return "座";
+  if (["blanket"].includes(stripped)) return "条";
+  if (["hand", "foot", "eye", "ear", "toe"].includes(stripped)) return "只";
   if (["star"].includes(stripped)) return "颗";
   if (["apple", "banana", "ball", "circle", "square", "triangle", "heart", "cup", "bottle"].includes(stripped)) return "个";
   return "个";

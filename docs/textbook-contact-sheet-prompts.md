@@ -1008,7 +1008,7 @@ Cells:
 25. correct for Q13: These are my brothers.
 26. distractor for Q13: These are my sisters.
 27. correct for Q14: We are brother and sister.
-28. distractor for Q14: We are brother and brother.
+28. distractor for Q14: We are two brothers.
 29. correct for Q15: The two babies are twins.
 30. distractor for Q15: The three babies are triplets.
 

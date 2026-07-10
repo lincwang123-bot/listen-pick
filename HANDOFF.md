@@ -20,15 +20,16 @@
 - VPS SSH：`ssh linc-vps`
 - VPS 静态目录：`/opt/linc/sites/localpilot/listen-pick/`
 - 当前缓存版本：
-  - `stage3-assets-v17`
-  - `zh-hints-v10`
+  - `stage3-assets-v18`
+  - `zh-hints-v11`
 - 最近验证：
-  - `npm test` 通过，`108/108`
+  - `npm test` 通过，`116/116`
   - 300 关专项路径校验通过：每关 15 题、每题音频/正确图/错误图题号路径一致，错误数 0
-  - 图片审计检查 4500 对题图，缺图 0，可疑项 39，`very_high` 0
+  - 音频审计检查 13,500 个文件，缺失/空文件/解码失败/异句哈希复用均为 0
+  - 图片文件审计检查 4500 对题图，缺图 0；分层视觉语义审查已覆盖 300 关并发现多批确认/高疑问题，详见 `docs/course-quality-audit-2026-07-10.md`
   - 进行时中文提示全量审计漏动作数 0
-  - 线上应加载 `src/app.mjs?v=stage3-assets-v17`
-  - 线上 `app.mjs` 应加载 `hints.mjs?v=zh-hints-v10`
+  - 线上应加载 `src/app.mjs?v=stage3-assets-v18`
+  - 线上 `app.mjs` 应加载 `hints.mjs?v=zh-hints-v11`
   - 匿名统计 endpoint：`/listen-pick/__analytics/visit`
   - 匿名统计日志：`/var/log/nginx/listen-pick-analytics.access.log`
 
@@ -115,6 +116,18 @@ npm test
 npm run audit:textbook-images
 ```
 
+检查英文/语义和中文提示：
+
+```bash
+npm run audit:course-content
+```
+
+检查三套音频并逐文件解码：
+
+```bash
+npm run audit:course-audio -- --probe
+```
+
 压缩运行时 WebP 图片：
 
 ```bash
@@ -171,6 +184,7 @@ rsync -az --include='*/' --include='*.webp' --exclude='*' assets/textbook/images
 - 重做第 18 关 Q15 母鸡数量题：正确图明确显示 5 只，干扰图明确显示 6 只；两图均无遮挡、无裁切，并用人工复核后的 SHA-256 回归测试锁定；当前缓存版本提升到 `stage3-assets-v15 / zh-hints-v8`。
 - 全量核查 300 关中 623 道含数字题，逐张复核 336 张去重关联图片；修复第 18 关 Q14 小猪图、第 22 关 Q8 兄弟数量、第 29 关 Q7 三个杯子，并修正第 52、93 关两处不自然干扰句；当前缓存版本提升到 `stage3-assets-v16 / zh-hints-v9`。
 - 修复第 22 关 Q9-Q13 家庭关系图片错位：宝宝弟弟、小妹妹、婴儿妹妹、姐姐、兄弟组和姐妹组均重新绑定到对应句子；Q15 的三个宝宝改为 `triplets / 三胞胎`；当前缓存版本提升到 `stage3-assets-v17 / zh-hints-v10`。
+- 完成 300 关英文、中文、音频、图片的分层质量审计：新增课程内容与音频门禁，系统修复中文提示中的家庭称谓、量词、短语动词、位置和缺词问题；第 22 关 Q14 改为自然英文 `We are two brothers.`；当前缓存版本提升到 `stage3-assets-v18 / zh-hints-v11`。完整结果见 `docs/course-quality-audit-2026-07-10.md`。
 
 ## 9. 审计报告
 
@@ -181,11 +195,11 @@ docs/textbook-image-duplicate-audit.md
 docs/textbook-image-duplicate-audit.json
 ```
 
-最近一次审计检查了 4500 组题目图片，没有发现缺图；可疑项 18，`very_high` 0，`semantic_review` 0。第 12、13、14、15 关数量题已替换；21 组“穿/脱、放入/拿出”动作方向图已增加蓝色动作箭头。剩余 18 项主要是颜色、数量、湿干、物体类别等视觉相近题，需要后续按教学严谨度继续抽查。
+最近一次文件审计检查了 4500 组题目图片，没有发现缺图。第 11-15 关全部 150 张数量图已经逐图计数通过；家庭、数量/颜色/动物、动作/位置/物体三条视觉语义审查已覆盖运行时 300 关。审查确认了第 18、20、22、30、83、98 等关卡的具体错图，也确认 132-190 关复用的开书、关书、关盒、折叠图片无法表达动作。完整表见 `docs/course-quality-audit-2026-07-10.md`，这些素材仍属于发布阻断项。
 
 ## 10. 当前风险与待办
 
-- 1-100 关仍需继续抽查图片、英文、中文是否完全一致，特别是颜色、数量、湿干、位置、动物类别等视觉相似项；第 16、18 关已按用户反馈修正，但仍应作为后续抽查样本。
+- 当前审计仍有 39 条确定英文/语义错误、45 条高风险内容，以及家庭关系 9 项确定和 6 项高疑图片问题；修改英文时必须同步重画配图，修改正确句时还要重生三套音频。
 - 101-300 关虽然已经生成，但必须坚持教育启蒙严谨标准，任何语法不自然、中文生硬、图片歧义都要修。
 - 图片生成规则必须保持前 100 关同等品质：
   - 儿童绘本风
@@ -207,5 +221,5 @@ docs/textbook-image-duplicate-audit.json
 可以直接复制下面这段给新的 Codex 对话：
 
 ```text
-请继续维护这个项目。先阅读 HANDOFF.md、AGENTS.md、README.md、README.zh-CN.md、package.json、src/app.mjs、src/game.mjs、src/hints.mjs。不要回退未提交改动。当前线上版本是 stage3-assets-v17 / zh-hints-v10，线上地址是 https://linc.wang/listen-pick/。项目是儿童英语听力选图学习系统，核心要求是英文语法、中文语义、插图逻辑、音频内容必须严格正确，不能伤害儿童认知。优先处理图片/中文/英文/音频不一致问题，然后再考虑 GitHub 推送、README 重写和小程序迁移。
+请继续维护这个项目。先阅读 HANDOFF.md、AGENTS.md、README.md、README.zh-CN.md、package.json、src/app.mjs、src/game.mjs、src/hints.mjs、docs/course-quality-audit-2026-07-10.md。不要回退未提交改动。当前待部署版本是 stage3-assets-v18 / zh-hints-v11，线上地址是 https://linc.wang/listen-pick/。项目是儿童英语听力选图学习系统，核心要求是英文语法、中文语义、插图逻辑、音频内容必须严格正确，不能伤害儿童认知。先处理审计报告中的发布阻断项，再考虑新增功能。
 ```

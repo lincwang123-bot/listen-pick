@@ -211,6 +211,7 @@ function makeWrongSentence(sentence) {
     ["The children are building a sandcastle.", "The children are knocking down a sandcastle."],
     ["The mother and father are parents.", "The girl and boy are children."],
     ["The girl and boy are siblings.", "The girl and boy are friends."],
+    ["We are brother and sister.", "We are two brothers."],
     ["The two babies are twins.", "The three babies are triplets."],
     ["The child is riding a scooter.", "The child is walking beside a scooter."],
     ["The friends are playing together.", "The friends are reading together."],

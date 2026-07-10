@@ -23,6 +23,11 @@ test("Level 22 family distractor uses the correct word for three babies", () => 
   assert.equal(toChineseHint(question(22, 15).wrongSentence), "三个宝宝是三胞胎。");
 });
 
+test("Level 22 two-brother distractor uses natural plural English", () => {
+  assert.equal(question(22, 14).wrongSentence, "We are two brothers.");
+  assert.equal(toChineseHint(question(22, 14).wrongSentence), "我们是两兄弟。");
+});
+
 test("Level 22 questions 9 through 13 keep their manually reviewed family images", async () => {
   const approvedHashes = new Map([
     [question(22, 9).correctImage, "0d742f60cebfb74fe5418e2ac090c8eb4a207c3526b3b9e8418e55f817b50c8e"],
