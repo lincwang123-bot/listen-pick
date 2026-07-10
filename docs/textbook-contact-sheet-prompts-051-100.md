@@ -78,7 +78,7 @@ Cells:
 15. correct for Q08: The child is drying both hands.
 16. distractor for Q08: The child is washing both hands.
 17. correct for Q09: The baby is waving one hand.
-18. distractor for Q09: The baby is waving two feet.
+18. distractor for Q09: The baby is kicking both feet.
 19. correct for Q10: The child is standing on one foot.
 20. distractor for Q10: The child is standing on two feet.
 21. correct for Q11: The girl is touching her head.
@@ -1968,7 +1968,7 @@ Cells:
 19. correct for Q10: The child is folding a coat with both hands.
 20. distractor for Q10: The child is kicking a coat with both feet.
 21. correct for Q11: The baby is pulling a sock from one foot.
-22. distractor for Q11: The baby is pulling a sock from one hand.
+22. distractor for Q11: The baby is holding a sock in one hand.
 23. correct for Q12: The girl is looking at shoes in the mirror.
 24. distractor for Q12: The girl is looking at a toothbrush in the mirror.
 25. correct for Q13: The boy is raising one hand with a glove.

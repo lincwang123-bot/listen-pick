@@ -278,7 +278,7 @@ export const stageTwoTextbookLevels = [
       {
         "id": "L052-Q009",
         "sentence": "The baby is waving one hand.",
-        "wrongSentence": "The baby is waving two feet.",
+        "wrongSentence": "The baby is kicking both feet.",
         "audioFile": "assets/textbook/audio/level-052/q009.m4a",
         "correctImage": "assets/textbook/images/level-052/q009-correct.png",
         "wrongImage": "assets/textbook/images/level-052/q009-wrong.png",
@@ -7516,7 +7516,7 @@ export const stageTwoTextbookLevels = [
       {
         "id": "L093-Q011",
         "sentence": "The baby is pulling a sock from one foot.",
-        "wrongSentence": "The baby is pulling a sock from one hand.",
+        "wrongSentence": "The baby is holding a sock in one hand.",
         "audioFile": "assets/textbook/audio/level-093/q011.m4a",
         "correctImage": "assets/textbook/images/level-093/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-093/q011-wrong.png",

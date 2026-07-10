@@ -10,8 +10,8 @@ import {
   playableLevels,
   recordWrongAttempt,
   submitCorrectAnswer
-} from "./game.mjs?v=stage3-assets-v15";
-import { toChineseHint } from "./hints.mjs?v=zh-hints-v8";
+} from "./game.mjs?v=stage3-assets-v16";
+import { toChineseHint } from "./hints.mjs?v=zh-hints-v9";
 import { createLevelPacks, findPackForLevel, getPackStart } from "./level-groups.mjs?v=pack-picker-v1";
 import {
   clearFollowReadPrompt,
@@ -108,7 +108,7 @@ let missedQuestionIndexes = new Set();
 let pendingLevelSelectTimer = null;
 const CHILD_NAME_STORAGE_KEY = "listenPickChildName";
 const CROSS_LEVEL_WRONG_STORAGE_KEY = "listenPickCrossLevelWrongReviews";
-const assetVersion = "stage3-assets-v15";
+const assetVersion = "stage3-assets-v16";
 const resultAudioVersion = "result-praise-v1";
 const assetPreloader = createAssetPreloader({ maxConcurrent: 4 });
 const PRELOAD_CURRENT_WINDOW_COUNT = 4;

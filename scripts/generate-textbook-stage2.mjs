@@ -78,7 +78,7 @@ The child is pointing to a nose. || The child is pointing to a mouth.
 The girl is brushing her hair. || The girl is brushing her teeth.
 The boy is washing his face. || The boy is washing his hands.
 The child is drying both hands. || The child is washing both hands.
-The baby is waving one hand. || The baby is waving two feet.
+The baby is waving one hand. || The baby is kicking both feet.
 The child is standing on one foot. || The child is standing on two feet.
 The girl is touching her head. || The girl is touching her toes.
 The boy is touching his knee. || The boy is touching his shoulder.
@@ -777,7 +777,7 @@ The child is taking off wet shoes. || The child is putting on wet shoes.
 The girl is combing her hair before wearing a dress. || The girl is brushing her teeth before wearing a dress.
 The boy is wearing a clean shirt. || The boy is wearing a dirty shirt.
 The child is folding a coat with both hands. || The child is kicking a coat with both feet.
-The baby is pulling a sock from one foot. || The baby is pulling a sock from one hand.
+The baby is pulling a sock from one foot. || The baby is holding a sock in one hand.
 The girl is looking at shoes in the mirror. || The girl is looking at a toothbrush in the mirror.
 The boy is raising one hand with a glove. || The boy is raising one hand without a glove.
 The child is putting a jacket on a chair. || The child is putting a jacket in a bowl.
