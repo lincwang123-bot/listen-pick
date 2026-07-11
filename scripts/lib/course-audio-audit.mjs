@@ -4,7 +4,7 @@ import { resolve } from "node:path";
 
 const voices = ["default", "male", "female"];
 
-export async function auditCourseAudio(levels, { rootDir, probe }) {
+export async function auditCourseAudio(levels, { rootDir, probe, expectedDefaultVoice = null }) {
   const findings = [];
   const mediaRecords = [];
 
@@ -50,6 +50,28 @@ export async function auditCourseAudio(levels, { rootDir, probe }) {
     const group = byHash.get(record.hash) ?? [];
     group.push(record);
     byHash.set(record.hash, group);
+  }
+
+  if (expectedDefaultVoice) {
+    const byQuestionAndVoice = new Map(
+      mediaRecords.map((record) => [`${record.id}:${record.voice}`, record])
+    );
+    for (const level of levels) {
+      for (const question of level.questions) {
+        const defaultRecord = byQuestionAndVoice.get(`${question.id}:default`);
+        const selectedRecord = byQuestionAndVoice.get(`${question.id}:${expectedDefaultVoice}`);
+        if (defaultRecord && selectedRecord && defaultRecord.hash !== selectedRecord.hash) {
+          findings.push({
+            id: question.id,
+            sentence: question.sentence,
+            rule: "default-voice-mismatch",
+            severity: "error",
+            expectedDefaultVoice,
+            files: [defaultRecord.file, selectedRecord.file]
+          });
+        }
+      }
+    }
   }
 
   for (const [hash, records] of byHash) {

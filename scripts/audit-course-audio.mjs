@@ -6,6 +6,7 @@ import { promisify } from "node:util";
 
 import { availableTextbookLevels } from "../src/course/textbook-playable.generated.mjs";
 import { auditCourseAudio } from "./lib/course-audio-audit.mjs";
+import { COURSE_AUDIO_VOICE_PROFILES } from "./lib/course-audio-voice-profile.mjs";
 
 const run = promisify(execFile);
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
@@ -14,7 +15,8 @@ const shouldProbe = process.argv.includes("--probe");
 
 const report = await auditCourseAudio(availableTextbookLevels, {
   rootDir: root,
-  probe: shouldProbe ? probeAudio : null
+  probe: shouldProbe ? probeAudio : null,
+  expectedDefaultVoice: COURSE_AUDIO_VOICE_PROFILES.unified.defaultVoice
 });
 
 const output = {

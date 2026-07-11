@@ -6,6 +6,7 @@ import { promisify } from "node:util";
 import { execFile, spawn } from "node:child_process";
 
 import { getQuestionsForLevel } from "../src/game.mjs";
+import { isCourseQualityAudioTarget } from "./lib/course-audio-voice-profile.mjs";
 
 const run = promisify(execFile);
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
@@ -16,6 +17,7 @@ const secondNumberArg = args.filter((arg) => /^\d+$/.test(arg))[1];
 const startLevel = Number(firstNumberArg ?? 1);
 const endLevel = Number(secondNumberArg ?? firstNumberArg ?? 1);
 const force = args.includes("--force");
+const qualityFixesOnly = args.includes("--quality-fixes");
 const requestedVoices = (readOption("--voices") ?? readOption("--voice") ?? "female")
   .split(",")
   .map((voice) => voice.trim())
@@ -65,6 +67,7 @@ const jobs = [];
 for (let level = startLevel; level <= endLevel; level += 1) {
   const questions = getQuestionsForLevel(level);
   for (const [index, question] of questions.entries()) {
+    if (qualityFixesOnly && !isCourseQualityAudioTarget(question)) continue;
     for (const voice of requestedVoices) {
       const finalM4a = resolve(root, question.audioByVoice?.[voice] ?? toVoiceAudioPath(question.audio, voice));
       if (!force && existsSync(finalM4a)) {

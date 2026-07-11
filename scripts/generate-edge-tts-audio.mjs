@@ -6,6 +6,7 @@ import { promisify } from "node:util";
 import { execFile } from "node:child_process";
 
 import { getQuestionsForLevel } from "../src/game.mjs";
+import { isCourseQualityAudioTarget } from "./lib/course-audio-voice-profile.mjs";
 
 const run = promisify(execFile);
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
@@ -21,6 +22,7 @@ const rate = readOption("--rate") ?? "+0%";
 const pitch = readOption("--pitch") ?? "+0Hz";
 const volume = readOption("--volume") ?? "+0%";
 const force = args.includes("--force");
+const qualityFixesOnly = args.includes("--quality-fixes");
 const concurrency = Number(readOption("--concurrency") ?? 2);
 const keepMedia = args.includes("--keep-media");
 const edgeTtsBin = resolve(root, ".venv-edge-tts/bin/edge-tts");
@@ -47,6 +49,7 @@ const jobs = [];
 for (let level = startLevel; level <= endLevel; level += 1) {
   const questions = getQuestionsForLevel(level);
   for (const [index, question] of questions.entries()) {
+    if (qualityFixesOnly && !isCourseQualityAudioTarget(question)) continue;
     const outputM4a = resolve(root, question.audioByVoice?.[targetVoice] ?? toVoiceAudioPath(question.audio, targetVoice));
     if (!force && existsSync(outputM4a)) continue;
 

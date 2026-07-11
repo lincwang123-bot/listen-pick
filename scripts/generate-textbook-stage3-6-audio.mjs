@@ -7,7 +7,11 @@ import { promisify } from "node:util";
 import { execFile } from "node:child_process";
 
 import { textbookLevels } from "../src/course/textbook-levels-001-300.generated.mjs";
-import { COURSE_CONTENT_OVERRIDES } from "./lib/course-content-overrides.mjs";
+import {
+  COURSE_AUDIO_VOICE_PROFILES,
+  isCourseQualityAudioTarget,
+  isDefaultCourseVoice
+} from "./lib/course-audio-voice-profile.mjs";
 
 const run = promisify(execFile);
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
@@ -22,6 +26,8 @@ const requestedVoices = (readOption("--voices") ?? "female,male")
   .map((voice) => voice.trim())
   .filter(Boolean);
 const force = args.includes("--force");
+const overwrite = force || args.includes("--overwrite");
+const forceSynthesis = force || args.includes("--force-synthesis");
 const concurrency = Number(readOption("--concurrency") ?? 3);
 const rate = readOption("--rate") ?? "-8%";
 const pitch = readOption("--pitch") ?? "+0Hz";
@@ -33,8 +39,8 @@ const workDir = resolve(root, "tmp/stage3-edge-tts-audio");
 const cacheDir = resolve(root, "tmp/stage3-edge-tts-cache");
 
 const voiceConfig = {
-  female: readOption("--female-voice") ?? "en-US-JennyNeural",
-  male: readOption("--male-voice") ?? "en-US-GuyNeural"
+  female: readOption("--female-voice") ?? COURSE_AUDIO_VOICE_PROFILES.unified.female.voice,
+  male: readOption("--male-voice") ?? COURSE_AUDIO_VOICE_PROFILES.unified.male.voice
 };
 
 if (!existsSync(edgeTtsBin)) {
@@ -61,10 +67,10 @@ const synthJobsByKey = new Map();
 
 for (const level of levels) {
   for (const question of level.questions) {
-    if (qualityFixesOnly && !needsQualityFixAudio(question)) continue;
+    if (qualityFixesOnly && !isCourseQualityAudioTarget(question)) continue;
     for (const voice of requestedVoices) {
       const finalM4a = resolve(root, toVoiceAudioPath(question.audioFile, voice));
-      if (!force && existsSync(finalM4a)) continue;
+      if (!overwrite && existsSync(finalM4a)) continue;
 
       const key = makeCacheKey(question.sentence, voice, voiceConfig[voice], rate, pitch, volume);
       const cacheM4a = resolve(cacheDir, voice, `${key}.m4a`);
@@ -74,11 +80,11 @@ for (const level of levels) {
         text: question.sentence,
         voice,
         finalM4a,
-        baseM4a: voice === "female" ? resolve(root, question.audioFile) : null,
+        baseM4a: isDefaultCourseVoice(voice) ? resolve(root, question.audioFile) : null,
         cacheM4a
       });
 
-      if (!synthJobsByKey.has(key) && (force || !existsSync(cacheM4a))) {
+      if (!synthJobsByKey.has(key) && (forceSynthesis || !existsSync(cacheM4a))) {
         synthJobsByKey.set(key, {
           text: question.sentence,
           voice,
@@ -168,11 +174,6 @@ function makeCacheKey(text, voice, edgeVoice, rateValue, pitchValue, volumeValue
     .update(JSON.stringify({ text, voice, edgeVoice, rateValue, pitchValue, volumeValue }))
     .digest("hex")
     .slice(0, 20);
-}
-
-function needsQualityFixAudio(question) {
-  if (COURSE_CONTENT_OVERRIDES.get(question.id)?.sentence) return true;
-  return / is holding (?:an open (?:book|box)|a kite|a closed (?:book|box)|a folded (?:towel|shirt))\.$/.test(question.sentence);
 }
 
 async function runQueue(items, maxConcurrent, worker) {

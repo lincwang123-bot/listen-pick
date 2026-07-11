@@ -65,6 +65,7 @@ Recent maintenance:
 - Manually recounted all 150 picture choices in Levels 11-15; Level 13 now matches every English quantity
 - Repaired every confirmed/high-risk item from the 300-level content review with 163 targeted image replacements, sentence/audio regeneration, and style-matched illustrations
 - Revalidated 4,500 questions: content findings `0`, image findings `0`, and audio findings `0`; the remediation record is in `docs/course-quality-audit-2026-07-10.md`
+- Unified all course audio to Andrew for the male/default voice and Jenny for the female voice, while preserving the existing speed controls
 
 ## Run Locally
 

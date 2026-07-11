@@ -6,6 +6,7 @@ import { promisify } from "node:util";
 import { execFile } from "node:child_process";
 
 import { textbookLevels } from "../src/course/textbook-levels-001-100.generated.mjs";
+import { isCourseQualityAudioTarget } from "./lib/course-audio-voice-profile.mjs";
 
 const run = promisify(execFile);
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
@@ -16,7 +17,7 @@ const convertTimeoutMs = 10000;
 function parseRange() {
   const args = process.argv.slice(2);
   const force = args.includes("--force");
-  const rangeArgs = args.filter((arg) => arg !== "--force");
+  const rangeArgs = args.filter((arg) => /^\d+$/.test(arg));
   const [startArg, endArg] = rangeArgs;
   const start = startArg ? Number(startArg) : 1;
   const end = endArg ? Number(endArg) : 100;
@@ -68,6 +69,7 @@ async function createAudio(sentence, relativeOutputPath) {
 }
 
 const { force, start, end } = parseRange();
+const qualityFixesOnly = process.argv.includes("--quality-fixes");
 let generated = 0;
 let skipped = 0;
 
@@ -75,6 +77,7 @@ for (const level of textbookLevels) {
   if (level.level < start || level.level > end) continue;
 
   for (const question of level.questions) {
+    if (qualityFixesOnly && !isCourseQualityAudioTarget(question)) continue;
     if (!force && existsSync(resolve(root, question.audioFile))) {
       skipped += 1;
       continue;

@@ -7,7 +7,8 @@ All confirmed and high-risk findings recorded below have now been remediated. Th
 - English/Chinese content: 4,500 questions and 9,000 choices checked, findings `0`, errors `0`.
 - Pictures: 4,500 correct/wrong pairs checked, missing `0`, suspicious `0`.
 - Audio: 13,500 expected files, 13,500 readable files, findings `0`, errors `0`.
-- Automated suite: 121 tests passed.
+- Automated suite: 124 tests passed.
+- Course voices: default/male `en-US-AndrewNeural`; female `en-US-JennyNeural`; speed controls unchanged.
 - Visual repairs: 163 targeted assets covered; generated replacements use the existing flat, warm children's picture-book style references.
 - Static scenes that could not prove an ongoing action now use literal visible-state wording, with matching prompts and regenerated audio.
 

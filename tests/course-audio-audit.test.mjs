@@ -65,3 +65,25 @@ test("audio audit allows byte-identical files for the same sentence", async () =
 
   assert.deepEqual(report.findings, []);
 });
+
+test("audio audit enforces that default files match the selected male voice", async () => {
+  const root = await fixtureRoot();
+  const oneQuestion = [{
+    level: 1,
+    questions: [
+      { id: "L001-Q001", sentence: "A cat is sleeping.", audioFile: "assets/textbook/audio/level-001/q001.m4a" }
+    ]
+  }];
+
+  await writeAudio(root, "assets/textbook/audio/level-001/q001.m4a", Buffer.from("old default"));
+  await writeAudio(root, "assets/textbook/audio-male/level-001/q001.m4a", Buffer.from("andrew"));
+  await writeAudio(root, "assets/textbook/audio-female/level-001/q001.m4a", Buffer.from("jenny"));
+
+  const report = await auditCourseAudio(oneQuestion, {
+    rootDir: root,
+    probe: async () => ({ duration: 1.2 }),
+    expectedDefaultVoice: "male"
+  });
+
+  assert.ok(report.findings.some((finding) => finding.rule === "default-voice-mismatch"));
+});

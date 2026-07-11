@@ -20,15 +20,15 @@
 - VPS SSH：`ssh linc-vps`
 - VPS 静态目录：`/opt/linc/sites/localpilot/listen-pick/`
 - 当前缓存版本：
-  - `stage3-assets-v19`
+  - `stage3-assets-v20`
   - `zh-hints-v12`
 - 最近验证：
-  - `npm test` 通过，`121/121`
+  - `npm test` 通过，`124/124`
   - 300 关专项路径校验通过：每关 15 题、每题音频/正确图/错误图题号路径一致，错误数 0
   - 音频审计检查 13,500 个文件，缺失/空文件/解码失败/异句哈希复用均为 0
   - 图片文件审计检查 4500 对题图，缺图 0、可疑项 0
   - 进行时中文提示全量审计漏动作数 0
-  - 线上应加载 `src/app.mjs?v=stage3-assets-v19`
+  - 线上应加载 `src/app.mjs?v=stage3-assets-v20`
   - 线上 `app.mjs` 应加载 `hints.mjs?v=zh-hints-v12`
   - 匿名统计 endpoint：`/listen-pick/__analytics/visit`
   - 匿名统计日志：`/var/log/nginx/listen-pick-analytics.access.log`
@@ -187,7 +187,8 @@ rsync -az --include='*/' --include='*.webp' --exclude='*' assets/textbook/images
 - 完成 300 关英文、中文、音频、图片的分层质量审计：新增课程内容与音频门禁，系统修复中文提示中的家庭称谓、量词、短语动词、位置和缺词问题；第 22 关 Q14 改为自然英文 `We are two brothers.`；当前缓存版本提升到 `stage3-assets-v18 / zh-hints-v11`。完整结果见 `docs/course-quality-audit-2026-07-10.md`。
 - 修复全课程审计列出的确定和高风险内容：集中维护英文覆盖规则，替换 163 个目标题图（149 张按既有儿童绘本风格生成、14 张人工确认复用），重做受影响的默认/男声/女声音频，并将缓存版本提升到 `stage3-assets-v19 / zh-hints-v12`。
 - 修正 101-300 关静态图片的动作表述：打开/合上的书盒、叠好的衣物、手持纸飞机等均改为画面可直接证明的状态；生成脚本会同步刷新英文、生图提示和运行题库，避免下次生成回退。
-- 最终门禁：121 项测试全部通过；4500 道题内容审计 0 问题；4500 对图片审计 0 缺失、0 可疑；13500 个音频文件全部可读，0 绑定/哈希问题。
+- 最终门禁：124 项测试全部通过；4500 道题内容审计 0 问题；4500 对图片审计 0 缺失、0 可疑；13500 个音频文件全部可读，0 绑定/哈希问题。
+- 全课程音色统一为男声/默认 `en-US-AndrewNeural`、女声 `en-US-JennyNeural`；默认仍为男声，语速调节逻辑保持不变；缓存版本提升到 `stage3-assets-v20`。
 
 ## 9. 审计报告
 
@@ -222,5 +223,5 @@ docs/textbook-image-duplicate-audit.json
 可以直接复制下面这段给新的 Codex 对话：
 
 ```text
-请继续维护这个项目。先阅读 HANDOFF.md、AGENTS.md、README.md、README.zh-CN.md、package.json、src/app.mjs、src/game.mjs、src/hints.mjs、docs/course-quality-audit-2026-07-10.md。不要回退未提交改动。当前版本是 stage3-assets-v19 / zh-hints-v12，线上地址是 https://linc.wang/listen-pick/。项目是儿童英语听力选图学习系统，核心要求是英文语法、中文语义、插图逻辑、音频内容必须严格正确，不能伤害儿童认知。每次内容修改后都要重新运行三类全量审计。
+请继续维护这个项目。先阅读 HANDOFF.md、AGENTS.md、README.md、README.zh-CN.md、package.json、src/app.mjs、src/game.mjs、src/hints.mjs、docs/course-quality-audit-2026-07-10.md。不要回退未提交改动。当前版本是 stage3-assets-v20 / zh-hints-v12，线上地址是 https://linc.wang/listen-pick/。项目是儿童英语听力选图学习系统，核心要求是英文语法、中文语义、插图逻辑、音频内容必须严格正确，不能伤害儿童认知。每次内容修改后都要重新运行三类全量审计。
 ```
