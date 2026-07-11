@@ -2,6 +2,8 @@ import test from "node:test";
 import assert from "node:assert/strict";
 
 import { auditCourseContent } from "../scripts/lib/course-content-audit.mjs";
+import { textbookLevels } from "../src/course/textbook-levels-001-300.generated.mjs";
+import { toChineseHint } from "../src/hints.mjs";
 
 function levelWith(...pairs) {
   return [{
@@ -64,4 +66,10 @@ test("course content audit flags reviewed semantic and child-safety problems", (
   assert.equal(byRule.get("implausible-scene")?.severity, "error");
   assert.equal(byRule.get("unnatural-path-action")?.severity, "review");
   assert.equal(byRule.get("unsafe-scene")?.severity, "review");
+});
+
+test("all playable course choices pass the strict child-facing content audit", () => {
+  const findings = auditCourseContent(textbookLevels, { toChineseHint });
+
+  assert.deepEqual(findings, []);
 });

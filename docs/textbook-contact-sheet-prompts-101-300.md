@@ -1901,8 +1901,8 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-1. The boy is reading a book.
-2. The boy is reading a card.
+1. The boy is holding an open book.
+2. The boy is holding a picture card.
 3. The boy is drawing a flower.
 4. The boy is drawing a house.
 5. The boy is eating an apple.
@@ -1920,8 +1920,8 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-11. The girl is reading a book.
-12. The girl is reading a card.
+11. The girl is holding an open book.
+12. The girl is holding a picture card.
 13. The girl is drawing a flower.
 14. The girl is drawing a house.
 15. The girl is eating an apple.
@@ -1939,8 +1939,8 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-21. The child is reading a book.
-22. The child is reading a card.
+21. The child is holding an open book.
+22. The child is holding a picture card.
 23. The child is drawing a flower.
 24. The child is drawing a house.
 25. The child is eating an apple.
@@ -1972,8 +1972,8 @@ Panels:
 6. The boy is holding a toy.
 7. The boy is holding a toy.
 8. The boy is holding a ball.
-9. The boy is opening a box.
-10. The boy is opening a book.
+9. The boy is holding an open box.
+10. The boy is holding an open book.
 ### Part 2｜cells 11-20
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -1991,8 +1991,8 @@ Panels:
 16. The girl is holding a toy.
 17. The girl is holding a toy.
 18. The girl is holding a ball.
-19. The girl is opening a box.
-20. The girl is opening a book.
+19. The girl is holding an open box.
+20. The girl is holding an open book.
 ### Part 3｜cells 21-30
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -2010,8 +2010,8 @@ Panels:
 26. The child is holding a toy.
 27. The child is holding a toy.
 28. The child is holding a ball.
-29. The child is opening a box.
-30. The child is opening a book.
+29. The child is holding an open box.
+30. The child is holding an open book.
 
 
 ## Level 133 - 物品结构
@@ -2031,10 +2031,10 @@ Panels:
 2. The boy is holding a toy.
 3. The boy is holding a toy.
 4. The boy is holding a ball.
-5. The boy is opening a box.
-6. The boy is opening a book.
-7. The boy is closing a book.
-8. The boy is closing a box.
+5. The boy is holding an open box.
+6. The boy is holding an open book.
+7. The boy is holding a closed book.
+8. The boy is holding a closed box.
 9. The boy is kicking a ball.
 10. The boy is kicking a beanbag.
 ### Part 2｜cells 11-20
@@ -2050,10 +2050,10 @@ Panels:
 12. The girl is holding a toy.
 13. The girl is holding a toy.
 14. The girl is holding a ball.
-15. The girl is opening a box.
-16. The girl is opening a book.
-17. The girl is closing a book.
-18. The girl is closing a box.
+15. The girl is holding an open box.
+16. The girl is holding an open book.
+17. The girl is holding a closed book.
+18. The girl is holding a closed box.
 19. The girl is kicking a ball.
 20. The girl is kicking a beanbag.
 ### Part 3｜cells 21-30
@@ -2069,10 +2069,10 @@ Panels:
 22. The child is holding a toy.
 23. The child is holding a toy.
 24. The child is holding a ball.
-25. The child is opening a box.
-26. The child is opening a book.
-27. The child is closing a book.
-28. The child is closing a box.
+25. The child is holding an open box.
+26. The child is holding an open book.
+27. The child is holding a closed book.
+28. The child is holding a closed box.
 29. The child is kicking a ball.
 30. The child is kicking a beanbag.
 
@@ -2090,10 +2090,10 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-1. The boy is opening a box.
-2. The boy is opening a book.
-3. The boy is closing a book.
-4. The boy is closing a box.
+1. The boy is holding an open box.
+2. The boy is holding an open book.
+3. The boy is holding a closed book.
+4. The boy is holding a closed box.
 5. The boy is kicking a ball.
 6. The boy is kicking a beanbag.
 7. The boy is carrying a bag.
@@ -2109,16 +2109,16 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-11. The girl is opening a box.
-12. The girl is opening a book.
-13. The girl is closing a book.
-14. The girl is closing a box.
+11. The girl is holding an open box.
+12. The girl is holding an open book.
+13. The girl is holding a closed book.
+14. The girl is holding a closed box.
 15. The girl is kicking a ball.
 16. The girl is kicking a beanbag.
 17. The girl is carrying a bag.
 18. The girl is carrying a basket.
-19. The girl is flying a kite.
-20. The girl is flying a paper plane.
+19. The girl is holding a kite.
+20. The girl is holding a paper plane.
 ### Part 3｜cells 21-30
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -2128,16 +2128,16 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-21. The child is opening a box.
-22. The child is opening a book.
-23. The child is closing a book.
-24. The child is closing a box.
+21. The child is holding an open box.
+22. The child is holding an open book.
+23. The child is holding a closed book.
+24. The child is holding a closed box.
 25. The child is kicking a ball.
 26. The child is kicking a beanbag.
 27. The child is carrying a bag.
 28. The child is carrying a basket.
-29. The child is flying a kite.
-30. The child is flying a paper plane.
+29. The child is holding a kite.
+30. The child is holding a paper plane.
 
 
 ## Level 135 - 物品结构
@@ -2159,8 +2159,8 @@ Panels:
 4. The boy is carrying a basket.
 5. The boy is flying a kite.
 6. The boy is flying a paper plane.
-7. The boy is folding a towel.
-8. The boy is folding a shirt.
+7. The boy is holding a folded towel.
+8. The boy is holding a folded shirt.
 9. The boy is using a spoon.
 10. The boy is using a cup.
 ### Part 2｜cells 11-20
@@ -2176,10 +2176,10 @@ Panels:
 12. The girl is kicking a beanbag.
 13. The girl is carrying a bag.
 14. The girl is carrying a basket.
-15. The girl is flying a kite.
-16. The girl is flying a paper plane.
-17. The girl is folding a towel.
-18. The girl is folding a shirt.
+15. The girl is holding a kite.
+16. The girl is holding a paper plane.
+17. The girl is holding a folded towel.
+18. The girl is holding a folded shirt.
 19. The girl is using a spoon.
 20. The girl is using a cup.
 ### Part 3｜cells 21-30
@@ -2195,10 +2195,10 @@ Panels:
 22. The child is kicking a beanbag.
 23. The child is carrying a bag.
 24. The child is carrying a basket.
-25. The child is flying a kite.
-26. The child is flying a paper plane.
-27. The child is folding a towel.
-28. The child is folding a shirt.
+25. The child is holding a kite.
+26. The child is holding a paper plane.
+27. The child is holding a folded towel.
+28. The child is holding a folded shirt.
 29. The child is using a spoon.
 30. The child is using a cup.
 
@@ -2218,8 +2218,8 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 1. The boy is flying a kite.
 2. The boy is flying a paper plane.
-3. The boy is folding a towel.
-4. The boy is folding a shirt.
+3. The boy is holding a folded towel.
+4. The boy is holding a folded shirt.
 5. The boy is using a spoon.
 6. The boy is using a cup.
 7. The boy is cleaning a table.
@@ -2235,10 +2235,10 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-11. The girl is flying a kite.
-12. The girl is flying a paper plane.
-13. The girl is folding a towel.
-14. The girl is folding a shirt.
+11. The girl is holding a kite.
+12. The girl is holding a paper plane.
+13. The girl is holding a folded towel.
+14. The girl is holding a folded shirt.
 15. The girl is using a spoon.
 16. The girl is using a cup.
 17. The girl is cleaning a table.
@@ -2254,10 +2254,10 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-21. The child is flying a kite.
-22. The child is flying a paper plane.
-23. The child is folding a towel.
-24. The child is folding a shirt.
+21. The child is holding a kite.
+22. The child is holding a paper plane.
+23. The child is holding a folded towel.
+24. The child is holding a folded shirt.
 25. The child is using a spoon.
 26. The child is using a cup.
 27. The child is cleaning a table.
@@ -2285,8 +2285,8 @@ Panels:
 4. The boy is cleaning a desk.
 5. The boy is watering a plant.
 6. The boy is watering a flower.
-7. The boy is reading a book.
-8. The boy is reading a card.
+7. The boy is holding an open book.
+8. The boy is holding a picture card.
 9. The boy is drawing a flower.
 10. The boy is drawing a house.
 ### Part 2｜cells 11-20
@@ -2304,8 +2304,8 @@ Panels:
 14. The girl is cleaning a desk.
 15. The girl is watering a plant.
 16. The girl is watering a flower.
-17. The girl is reading a book.
-18. The girl is reading a card.
+17. The girl is holding an open book.
+18. The girl is holding a picture card.
 19. The girl is drawing a flower.
 20. The girl is drawing a house.
 ### Part 3｜cells 21-30
@@ -2323,8 +2323,8 @@ Panels:
 24. The child is cleaning a desk.
 25. The child is watering a plant.
 26. The child is watering a flower.
-27. The child is reading a book.
-28. The child is reading a card.
+27. The child is holding an open book.
+28. The child is holding a picture card.
 29. The child is drawing a flower.
 30. The child is drawing a house.
 
@@ -2344,8 +2344,8 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 1. The boy is watering a plant.
 2. The boy is watering a flower.
-3. The boy is reading a book.
-4. The boy is reading a card.
+3. The boy is holding an open book.
+4. The boy is holding a picture card.
 5. The boy is drawing a flower.
 6. The boy is drawing a house.
 7. The boy is eating an apple.
@@ -2363,8 +2363,8 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 11. The girl is watering a plant.
 12. The girl is watering a flower.
-13. The girl is reading a book.
-14. The girl is reading a card.
+13. The girl is holding an open book.
+14. The girl is holding a picture card.
 15. The girl is drawing a flower.
 16. The girl is drawing a house.
 17. The girl is eating an apple.
@@ -2382,8 +2382,8 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 21. The child is watering a plant.
 22. The child is watering a flower.
-23. The child is reading a book.
-24. The child is reading a card.
+23. The child is holding an open book.
+24. The child is holding a picture card.
 25. The child is drawing a flower.
 26. The child is drawing a house.
 27. The child is eating an apple.
@@ -2474,10 +2474,10 @@ Panels:
 4. The boy is holding a toy.
 5. The boy is holding a toy.
 6. The boy is holding a ball.
-7. The boy is opening a box.
-8. The boy is opening a book.
-9. The boy is closing a book.
-10. The boy is closing a box.
+7. The boy is holding an open box.
+8. The boy is holding an open book.
+9. The boy is holding a closed book.
+10. The boy is holding a closed box.
 ### Part 2｜cells 11-20
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -2493,10 +2493,10 @@ Panels:
 14. The girl is holding a toy.
 15. The girl is holding a toy.
 16. The girl is holding a ball.
-17. The girl is opening a box.
-18. The girl is opening a book.
-19. The girl is closing a book.
-20. The girl is closing a box.
+17. The girl is holding an open box.
+18. The girl is holding an open book.
+19. The girl is holding a closed book.
+20. The girl is holding a closed box.
 ### Part 3｜cells 21-30
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -2512,10 +2512,10 @@ Panels:
 24. The child is holding a toy.
 25. The child is holding a toy.
 26. The child is holding a ball.
-27. The child is opening a box.
-28. The child is opening a book.
-29. The child is closing a book.
-30. The child is closing a box.
+27. The child is holding an open box.
+28. The child is holding an open book.
+29. The child is holding a closed book.
+30. The child is holding a closed box.
 
 
 ## Level 141 - 物品结构
@@ -2533,10 +2533,10 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 1. The boy is holding a toy.
 2. The boy is holding a ball.
-3. The boy is opening a box.
-4. The boy is opening a book.
-5. The boy is closing a book.
-6. The boy is closing a box.
+3. The boy is holding an open box.
+4. The boy is holding an open book.
+5. The boy is holding a closed book.
+6. The boy is holding a closed box.
 7. The boy is kicking a ball.
 8. The boy is kicking a beanbag.
 9. The boy is carrying a bag.
@@ -2552,10 +2552,10 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 11. The girl is holding a toy.
 12. The girl is holding a ball.
-13. The girl is opening a box.
-14. The girl is opening a book.
-15. The girl is closing a book.
-16. The girl is closing a box.
+13. The girl is holding an open box.
+14. The girl is holding an open book.
+15. The girl is holding a closed book.
+16. The girl is holding a closed box.
 17. The girl is kicking a ball.
 18. The girl is kicking a beanbag.
 19. The girl is carrying a bag.
@@ -2571,10 +2571,10 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 21. The child is holding a toy.
 22. The child is holding a ball.
-23. The child is opening a box.
-24. The child is opening a book.
-25. The child is closing a book.
-26. The child is closing a box.
+23. The child is holding an open box.
+24. The child is holding an open book.
+25. The child is holding a closed book.
+26. The child is holding a closed box.
 27. The child is kicking a ball.
 28. The child is kicking a beanbag.
 29. The child is carrying a bag.
@@ -2594,16 +2594,16 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-1. The boy is closing a book.
-2. The boy is closing a box.
+1. The boy is holding a closed book.
+2. The boy is holding a closed box.
 3. The boy is kicking a ball.
 4. The boy is kicking a beanbag.
 5. The boy is carrying a bag.
 6. The boy is carrying a basket.
 7. The boy is flying a kite.
 8. The boy is flying a paper plane.
-9. The boy is folding a towel.
-10. The boy is folding a shirt.
+9. The boy is holding a folded towel.
+10. The boy is holding a folded shirt.
 ### Part 2｜cells 11-20
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -2613,16 +2613,16 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-11. The girl is closing a book.
-12. The girl is closing a box.
+11. The girl is holding a closed book.
+12. The girl is holding a closed box.
 13. The girl is kicking a ball.
 14. The girl is kicking a beanbag.
 15. The girl is carrying a bag.
 16. The girl is carrying a basket.
-17. The girl is flying a kite.
-18. The girl is flying a paper plane.
-19. The girl is folding a towel.
-20. The girl is folding a shirt.
+17. The girl is holding a kite.
+18. The girl is holding a paper plane.
+19. The girl is holding a folded towel.
+20. The girl is holding a folded shirt.
 ### Part 3｜cells 21-30
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -2632,16 +2632,16 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-21. The child is closing a book.
-22. The child is closing a box.
+21. The child is holding a closed book.
+22. The child is holding a closed box.
 23. The child is kicking a ball.
 24. The child is kicking a beanbag.
 25. The child is carrying a bag.
 26. The child is carrying a basket.
-27. The child is flying a kite.
-28. The child is flying a paper plane.
-29. The child is folding a towel.
-30. The child is folding a shirt.
+27. The child is holding a kite.
+28. The child is holding a paper plane.
+29. The child is holding a folded towel.
+30. The child is holding a folded shirt.
 
 
 ## Level 143 - 物品结构
@@ -2661,8 +2661,8 @@ Panels:
 2. The boy is carrying a basket.
 3. The boy is flying a kite.
 4. The boy is flying a paper plane.
-5. The boy is folding a towel.
-6. The boy is folding a shirt.
+5. The boy is holding a folded towel.
+6. The boy is holding a folded shirt.
 7. The boy is using a spoon.
 8. The boy is using a cup.
 9. The boy is cleaning a table.
@@ -2678,10 +2678,10 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 11. The girl is carrying a bag.
 12. The girl is carrying a basket.
-13. The girl is flying a kite.
-14. The girl is flying a paper plane.
-15. The girl is folding a towel.
-16. The girl is folding a shirt.
+13. The girl is holding a kite.
+14. The girl is holding a paper plane.
+15. The girl is holding a folded towel.
+16. The girl is holding a folded shirt.
 17. The girl is using a spoon.
 18. The girl is using a cup.
 19. The girl is cleaning a table.
@@ -2697,10 +2697,10 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 21. The child is carrying a bag.
 22. The child is carrying a basket.
-23. The child is flying a kite.
-24. The child is flying a paper plane.
-25. The child is folding a towel.
-26. The child is folding a shirt.
+23. The child is holding a kite.
+24. The child is holding a paper plane.
+25. The child is holding a folded towel.
+26. The child is holding a folded shirt.
 27. The child is using a spoon.
 28. The child is using a cup.
 29. The child is cleaning a table.
@@ -2720,16 +2720,16 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-1. The boy is folding a towel.
-2. The boy is folding a shirt.
+1. The boy is holding a folded towel.
+2. The boy is holding a folded shirt.
 3. The boy is using a spoon.
 4. The boy is using a cup.
 5. The boy is cleaning a table.
 6. The boy is cleaning a desk.
 7. The boy is watering a plant.
 8. The boy is watering a flower.
-9. The boy is reading a book.
-10. The boy is reading a card.
+9. The boy is holding an open book.
+10. The boy is holding a picture card.
 ### Part 2｜cells 11-20
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -2739,16 +2739,16 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-11. The girl is folding a towel.
-12. The girl is folding a shirt.
+11. The girl is holding a folded towel.
+12. The girl is holding a folded shirt.
 13. The girl is using a spoon.
 14. The girl is using a cup.
 15. The girl is cleaning a table.
 16. The girl is cleaning a desk.
 17. The girl is watering a plant.
 18. The girl is watering a flower.
-19. The girl is reading a book.
-20. The girl is reading a card.
+19. The girl is holding an open book.
+20. The girl is holding a picture card.
 ### Part 3｜cells 21-30
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -2758,16 +2758,16 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-21. The child is folding a towel.
-22. The child is folding a shirt.
+21. The child is holding a folded towel.
+22. The child is holding a folded shirt.
 23. The child is using a spoon.
 24. The child is using a cup.
 25. The child is cleaning a table.
 26. The child is cleaning a desk.
 27. The child is watering a plant.
 28. The child is watering a flower.
-29. The child is reading a book.
-30. The child is reading a card.
+29. The child is holding an open book.
+30. The child is holding a picture card.
 
 
 ## Level 145 - 物品结构
@@ -2787,8 +2787,8 @@ Panels:
 2. The boy is cleaning a desk.
 3. The boy is watering a plant.
 4. The boy is watering a flower.
-5. The boy is reading a book.
-6. The boy is reading a card.
+5. The boy is holding an open book.
+6. The boy is holding a picture card.
 7. The boy is drawing a flower.
 8. The boy is drawing a house.
 9. The boy is eating an apple.
@@ -2806,8 +2806,8 @@ Panels:
 12. The girl is cleaning a desk.
 13. The girl is watering a plant.
 14. The girl is watering a flower.
-15. The girl is reading a book.
-16. The girl is reading a card.
+15. The girl is holding an open book.
+16. The girl is holding a picture card.
 17. The girl is drawing a flower.
 18. The girl is drawing a house.
 19. The girl is eating an apple.
@@ -2825,8 +2825,8 @@ Panels:
 22. The child is cleaning a desk.
 23. The child is watering a plant.
 24. The child is watering a flower.
-25. The child is reading a book.
-26. The child is reading a card.
+25. The child is holding an open book.
+26. The child is holding a picture card.
 27. The child is drawing a flower.
 28. The child is drawing a house.
 29. The child is eating an apple.
@@ -2846,8 +2846,8 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-1. The boy is reading a book.
-2. The boy is reading a card.
+1. The boy is holding an open book.
+2. The boy is holding a picture card.
 3. The boy is drawing a flower.
 4. The boy is drawing a house.
 5. The boy is eating an apple.
@@ -2865,8 +2865,8 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-11. The girl is reading a book.
-12. The girl is reading a card.
+11. The girl is holding an open book.
+12. The girl is holding a picture card.
 13. The girl is drawing a flower.
 14. The girl is drawing a house.
 15. The girl is eating an apple.
@@ -2884,8 +2884,8 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-21. The child is reading a book.
-22. The child is reading a card.
+21. The child is holding an open book.
+22. The child is holding a picture card.
 23. The child is drawing a flower.
 24. The child is drawing a house.
 25. The child is eating an apple.
@@ -2917,8 +2917,8 @@ Panels:
 6. The boy is holding a toy.
 7. The boy is holding a toy.
 8. The boy is holding a ball.
-9. The boy is opening a box.
-10. The boy is opening a book.
+9. The boy is holding an open box.
+10. The boy is holding an open book.
 ### Part 2｜cells 11-20
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -2936,8 +2936,8 @@ Panels:
 16. The girl is holding a toy.
 17. The girl is holding a toy.
 18. The girl is holding a ball.
-19. The girl is opening a box.
-20. The girl is opening a book.
+19. The girl is holding an open box.
+20. The girl is holding an open book.
 ### Part 3｜cells 21-30
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -2955,8 +2955,8 @@ Panels:
 26. The child is holding a toy.
 27. The child is holding a toy.
 28. The child is holding a ball.
-29. The child is opening a box.
-30. The child is opening a book.
+29. The child is holding an open box.
+30. The child is holding an open book.
 
 
 ## Level 148 - 物品结构
@@ -2976,10 +2976,10 @@ Panels:
 2. The boy is holding a toy.
 3. The boy is holding a toy.
 4. The boy is holding a ball.
-5. The boy is opening a box.
-6. The boy is opening a book.
-7. The boy is closing a book.
-8. The boy is closing a box.
+5. The boy is holding an open box.
+6. The boy is holding an open book.
+7. The boy is holding a closed book.
+8. The boy is holding a closed box.
 9. The boy is kicking a ball.
 10. The boy is kicking a beanbag.
 ### Part 2｜cells 11-20
@@ -2995,10 +2995,10 @@ Panels:
 12. The girl is holding a toy.
 13. The girl is holding a toy.
 14. The girl is holding a ball.
-15. The girl is opening a box.
-16. The girl is opening a book.
-17. The girl is closing a book.
-18. The girl is closing a box.
+15. The girl is holding an open box.
+16. The girl is holding an open book.
+17. The girl is holding a closed book.
+18. The girl is holding a closed box.
 19. The girl is kicking a ball.
 20. The girl is kicking a beanbag.
 ### Part 3｜cells 21-30
@@ -3014,10 +3014,10 @@ Panels:
 22. The child is holding a toy.
 23. The child is holding a toy.
 24. The child is holding a ball.
-25. The child is opening a box.
-26. The child is opening a book.
-27. The child is closing a book.
-28. The child is closing a box.
+25. The child is holding an open box.
+26. The child is holding an open book.
+27. The child is holding a closed book.
+28. The child is holding a closed box.
 29. The child is kicking a ball.
 30. The child is kicking a beanbag.
 
@@ -3035,10 +3035,10 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-1. The boy is opening a box.
-2. The boy is opening a book.
-3. The boy is closing a book.
-4. The boy is closing a box.
+1. The boy is holding an open box.
+2. The boy is holding an open book.
+3. The boy is holding a closed book.
+4. The boy is holding a closed box.
 5. The boy is kicking a ball.
 6. The boy is kicking a beanbag.
 7. The boy is carrying a bag.
@@ -3054,16 +3054,16 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-11. The girl is opening a box.
-12. The girl is opening a book.
-13. The girl is closing a book.
-14. The girl is closing a box.
+11. The girl is holding an open box.
+12. The girl is holding an open book.
+13. The girl is holding a closed book.
+14. The girl is holding a closed box.
 15. The girl is kicking a ball.
 16. The girl is kicking a beanbag.
 17. The girl is carrying a bag.
 18. The girl is carrying a basket.
-19. The girl is flying a kite.
-20. The girl is flying a paper plane.
+19. The girl is holding a kite.
+20. The girl is holding a paper plane.
 ### Part 3｜cells 21-30
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -3073,16 +3073,16 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-21. The child is opening a box.
-22. The child is opening a book.
-23. The child is closing a book.
-24. The child is closing a box.
+21. The child is holding an open box.
+22. The child is holding an open book.
+23. The child is holding a closed book.
+24. The child is holding a closed box.
 25. The child is kicking a ball.
 26. The child is kicking a beanbag.
 27. The child is carrying a bag.
 28. The child is carrying a basket.
-29. The child is flying a kite.
-30. The child is flying a paper plane.
+29. The child is holding a kite.
+30. The child is holding a paper plane.
 
 
 ## Level 150 - 物品结构
@@ -3104,8 +3104,8 @@ Panels:
 4. The boy is carrying a basket.
 5. The boy is flying a kite.
 6. The boy is flying a paper plane.
-7. The boy is folding a towel.
-8. The boy is folding a shirt.
+7. The boy is holding a folded towel.
+8. The boy is holding a folded shirt.
 9. The boy is using a spoon.
 10. The boy is using a cup.
 ### Part 2｜cells 11-20
@@ -3121,10 +3121,10 @@ Panels:
 12. The girl is kicking a beanbag.
 13. The girl is carrying a bag.
 14. The girl is carrying a basket.
-15. The girl is flying a kite.
-16. The girl is flying a paper plane.
-17. The girl is folding a towel.
-18. The girl is folding a shirt.
+15. The girl is holding a kite.
+16. The girl is holding a paper plane.
+17. The girl is holding a folded towel.
+18. The girl is holding a folded shirt.
 19. The girl is using a spoon.
 20. The girl is using a cup.
 ### Part 3｜cells 21-30
@@ -3140,10 +3140,10 @@ Panels:
 22. The child is kicking a beanbag.
 23. The child is carrying a bag.
 24. The child is carrying a basket.
-25. The child is flying a kite.
-26. The child is flying a paper plane.
-27. The child is folding a towel.
-28. The child is folding a shirt.
+25. The child is holding a kite.
+26. The child is holding a paper plane.
+27. The child is holding a folded towel.
+28. The child is holding a folded shirt.
 29. The child is using a spoon.
 30. The child is using a cup.
 
@@ -3163,8 +3163,8 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 1. The boy is flying a kite.
 2. The boy is flying a paper plane.
-3. The boy is folding a towel.
-4. The boy is folding a shirt.
+3. The boy is holding a folded towel.
+4. The boy is holding a folded shirt.
 5. The boy is using a spoon.
 6. The boy is using a cup.
 7. The boy is cleaning a table.
@@ -3180,10 +3180,10 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-11. The girl is flying a kite.
-12. The girl is flying a paper plane.
-13. The girl is folding a towel.
-14. The girl is folding a shirt.
+11. The girl is holding a kite.
+12. The girl is holding a paper plane.
+13. The girl is holding a folded towel.
+14. The girl is holding a folded shirt.
 15. The girl is using a spoon.
 16. The girl is using a cup.
 17. The girl is cleaning a table.
@@ -3199,10 +3199,10 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-21. The child is flying a kite.
-22. The child is flying a paper plane.
-23. The child is folding a towel.
-24. The child is folding a shirt.
+21. The child is holding a kite.
+22. The child is holding a paper plane.
+23. The child is holding a folded towel.
+24. The child is holding a folded shirt.
 25. The child is using a spoon.
 26. The child is using a cup.
 27. The child is cleaning a table.
@@ -3230,8 +3230,8 @@ Panels:
 4. The boy is cleaning a desk.
 5. The boy is watering a plant.
 6. The boy is watering a flower.
-7. The boy is reading a book.
-8. The boy is reading a card.
+7. The boy is holding an open book.
+8. The boy is holding a picture card.
 9. The boy is drawing a flower.
 10. The boy is drawing a house.
 ### Part 2｜cells 11-20
@@ -3249,8 +3249,8 @@ Panels:
 14. The girl is cleaning a desk.
 15. The girl is watering a plant.
 16. The girl is watering a flower.
-17. The girl is reading a book.
-18. The girl is reading a card.
+17. The girl is holding an open book.
+18. The girl is holding a picture card.
 19. The girl is drawing a flower.
 20. The girl is drawing a house.
 ### Part 3｜cells 21-30
@@ -3268,8 +3268,8 @@ Panels:
 24. The child is cleaning a desk.
 25. The child is watering a plant.
 26. The child is watering a flower.
-27. The child is reading a book.
-28. The child is reading a card.
+27. The child is holding an open book.
+28. The child is holding a picture card.
 29. The child is drawing a flower.
 30. The child is drawing a house.
 
@@ -3289,8 +3289,8 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 1. The boy is watering a plant.
 2. The boy is watering a flower.
-3. The boy is reading a book.
-4. The boy is reading a card.
+3. The boy is holding an open book.
+4. The boy is holding a picture card.
 5. The boy is drawing a flower.
 6. The boy is drawing a house.
 7. The boy is eating an apple.
@@ -3308,8 +3308,8 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 11. The girl is watering a plant.
 12. The girl is watering a flower.
-13. The girl is reading a book.
-14. The girl is reading a card.
+13. The girl is holding an open book.
+14. The girl is holding a picture card.
 15. The girl is drawing a flower.
 16. The girl is drawing a house.
 17. The girl is eating an apple.
@@ -3327,8 +3327,8 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 21. The child is watering a plant.
 22. The child is watering a flower.
-23. The child is reading a book.
-24. The child is reading a card.
+23. The child is holding an open book.
+24. The child is holding a picture card.
 25. The child is drawing a flower.
 26. The child is drawing a house.
 27. The child is eating an apple.
@@ -3419,10 +3419,10 @@ Panels:
 4. The boy is holding a toy.
 5. The boy is holding a toy.
 6. The boy is holding a ball.
-7. The boy is opening a box.
-8. The boy is opening a book.
-9. The boy is closing a book.
-10. The boy is closing a box.
+7. The boy is holding an open box.
+8. The boy is holding an open book.
+9. The boy is holding a closed book.
+10. The boy is holding a closed box.
 ### Part 2｜cells 11-20
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -3438,10 +3438,10 @@ Panels:
 14. The girl is holding a toy.
 15. The girl is holding a toy.
 16. The girl is holding a ball.
-17. The girl is opening a box.
-18. The girl is opening a book.
-19. The girl is closing a book.
-20. The girl is closing a box.
+17. The girl is holding an open box.
+18. The girl is holding an open book.
+19. The girl is holding a closed book.
+20. The girl is holding a closed box.
 ### Part 3｜cells 21-30
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -3457,10 +3457,10 @@ Panels:
 24. The child is holding a toy.
 25. The child is holding a toy.
 26. The child is holding a ball.
-27. The child is opening a box.
-28. The child is opening a book.
-29. The child is closing a book.
-30. The child is closing a box.
+27. The child is holding an open box.
+28. The child is holding an open book.
+29. The child is holding a closed book.
+30. The child is holding a closed box.
 
 
 ## Level 156 - 物品结构
@@ -3478,10 +3478,10 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 1. The boy is holding a toy.
 2. The boy is holding a ball.
-3. The boy is opening a box.
-4. The boy is opening a book.
-5. The boy is closing a book.
-6. The boy is closing a box.
+3. The boy is holding an open box.
+4. The boy is holding an open book.
+5. The boy is holding a closed book.
+6. The boy is holding a closed box.
 7. The boy is kicking a ball.
 8. The boy is kicking a beanbag.
 9. The boy is carrying a bag.
@@ -3497,10 +3497,10 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 11. The girl is holding a toy.
 12. The girl is holding a ball.
-13. The girl is opening a box.
-14. The girl is opening a book.
-15. The girl is closing a book.
-16. The girl is closing a box.
+13. The girl is holding an open box.
+14. The girl is holding an open book.
+15. The girl is holding a closed book.
+16. The girl is holding a closed box.
 17. The girl is kicking a ball.
 18. The girl is kicking a beanbag.
 19. The girl is carrying a bag.
@@ -3516,10 +3516,10 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 21. The child is holding a toy.
 22. The child is holding a ball.
-23. The child is opening a box.
-24. The child is opening a book.
-25. The child is closing a book.
-26. The child is closing a box.
+23. The child is holding an open box.
+24. The child is holding an open book.
+25. The child is holding a closed book.
+26. The child is holding a closed box.
 27. The child is kicking a ball.
 28. The child is kicking a beanbag.
 29. The child is carrying a bag.
@@ -3539,16 +3539,16 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-1. The boy is closing a book.
-2. The boy is closing a box.
+1. The boy is holding a closed book.
+2. The boy is holding a closed box.
 3. The boy is kicking a ball.
 4. The boy is kicking a beanbag.
 5. The boy is carrying a bag.
 6. The boy is carrying a basket.
 7. The boy is flying a kite.
 8. The boy is flying a paper plane.
-9. The boy is folding a towel.
-10. The boy is folding a shirt.
+9. The boy is holding a folded towel.
+10. The boy is holding a folded shirt.
 ### Part 2｜cells 11-20
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -3558,16 +3558,16 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-11. The girl is closing a book.
-12. The girl is closing a box.
+11. The girl is holding a closed book.
+12. The girl is holding a closed box.
 13. The girl is kicking a ball.
 14. The girl is kicking a beanbag.
 15. The girl is carrying a bag.
 16. The girl is carrying a basket.
-17. The girl is flying a kite.
-18. The girl is flying a paper plane.
-19. The girl is folding a towel.
-20. The girl is folding a shirt.
+17. The girl is holding a kite.
+18. The girl is holding a paper plane.
+19. The girl is holding a folded towel.
+20. The girl is holding a folded shirt.
 ### Part 3｜cells 21-30
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -3577,16 +3577,16 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-21. The child is closing a book.
-22. The child is closing a box.
+21. The child is holding a closed book.
+22. The child is holding a closed box.
 23. The child is kicking a ball.
 24. The child is kicking a beanbag.
 25. The child is carrying a bag.
 26. The child is carrying a basket.
-27. The child is flying a kite.
-28. The child is flying a paper plane.
-29. The child is folding a towel.
-30. The child is folding a shirt.
+27. The child is holding a kite.
+28. The child is holding a paper plane.
+29. The child is holding a folded towel.
+30. The child is holding a folded shirt.
 
 
 ## Level 158 - 物品结构
@@ -3606,8 +3606,8 @@ Panels:
 2. The boy is carrying a basket.
 3. The boy is flying a kite.
 4. The boy is flying a paper plane.
-5. The boy is folding a towel.
-6. The boy is folding a shirt.
+5. The boy is holding a folded towel.
+6. The boy is holding a folded shirt.
 7. The boy is using a spoon.
 8. The boy is using a cup.
 9. The boy is cleaning a table.
@@ -3623,10 +3623,10 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 11. The girl is carrying a bag.
 12. The girl is carrying a basket.
-13. The girl is flying a kite.
-14. The girl is flying a paper plane.
-15. The girl is folding a towel.
-16. The girl is folding a shirt.
+13. The girl is holding a kite.
+14. The girl is holding a paper plane.
+15. The girl is holding a folded towel.
+16. The girl is holding a folded shirt.
 17. The girl is using a spoon.
 18. The girl is using a cup.
 19. The girl is cleaning a table.
@@ -3642,10 +3642,10 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 21. The child is carrying a bag.
 22. The child is carrying a basket.
-23. The child is flying a kite.
-24. The child is flying a paper plane.
-25. The child is folding a towel.
-26. The child is folding a shirt.
+23. The child is holding a kite.
+24. The child is holding a paper plane.
+25. The child is holding a folded towel.
+26. The child is holding a folded shirt.
 27. The child is using a spoon.
 28. The child is using a cup.
 29. The child is cleaning a table.
@@ -3665,16 +3665,16 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-1. The boy is folding a towel.
-2. The boy is folding a shirt.
+1. The boy is holding a folded towel.
+2. The boy is holding a folded shirt.
 3. The boy is using a spoon.
 4. The boy is using a cup.
 5. The boy is cleaning a table.
 6. The boy is cleaning a desk.
 7. The boy is watering a plant.
 8. The boy is watering a flower.
-9. The boy is reading a book.
-10. The boy is reading a card.
+9. The boy is holding an open book.
+10. The boy is holding a picture card.
 ### Part 2｜cells 11-20
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -3684,16 +3684,16 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-11. The girl is folding a towel.
-12. The girl is folding a shirt.
+11. The girl is holding a folded towel.
+12. The girl is holding a folded shirt.
 13. The girl is using a spoon.
 14. The girl is using a cup.
 15. The girl is cleaning a table.
 16. The girl is cleaning a desk.
 17. The girl is watering a plant.
 18. The girl is watering a flower.
-19. The girl is reading a book.
-20. The girl is reading a card.
+19. The girl is holding an open book.
+20. The girl is holding a picture card.
 ### Part 3｜cells 21-30
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -3703,16 +3703,16 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-21. The child is folding a towel.
-22. The child is folding a shirt.
+21. The child is holding a folded towel.
+22. The child is holding a folded shirt.
 23. The child is using a spoon.
 24. The child is using a cup.
 25. The child is cleaning a table.
 26. The child is cleaning a desk.
 27. The child is watering a plant.
 28. The child is watering a flower.
-29. The child is reading a book.
-30. The child is reading a card.
+29. The child is holding an open book.
+30. The child is holding a picture card.
 
 
 ## Level 160 - 物品结构
@@ -3732,8 +3732,8 @@ Panels:
 2. The boy is cleaning a desk.
 3. The boy is watering a plant.
 4. The boy is watering a flower.
-5. The boy is reading a book.
-6. The boy is reading a card.
+5. The boy is holding an open book.
+6. The boy is holding a picture card.
 7. The boy is drawing a flower.
 8. The boy is drawing a house.
 9. The boy is eating an apple.
@@ -3751,8 +3751,8 @@ Panels:
 12. The girl is cleaning a desk.
 13. The girl is watering a plant.
 14. The girl is watering a flower.
-15. The girl is reading a book.
-16. The girl is reading a card.
+15. The girl is holding an open book.
+16. The girl is holding a picture card.
 17. The girl is drawing a flower.
 18. The girl is drawing a house.
 19. The girl is eating an apple.
@@ -3770,8 +3770,8 @@ Panels:
 22. The child is cleaning a desk.
 23. The child is watering a plant.
 24. The child is watering a flower.
-25. The child is reading a book.
-26. The child is reading a card.
+25. The child is holding an open book.
+26. The child is holding a picture card.
 27. The child is drawing a flower.
 28. The child is drawing a house.
 29. The child is eating an apple.
@@ -11422,8 +11422,8 @@ Panels:
 6. The boy is holding a toy.
 7. The boy is playing with a toy.
 8. The boy is playing with a ball.
-9. The boy is reading a book.
-10. The boy is reading a card.
+9. The boy is holding an open book.
+10. The boy is holding a picture card.
 ### Part 2｜cells 11-20
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -11441,8 +11441,8 @@ Panels:
 16. The girl is holding a toy.
 17. The girl is playing with a toy.
 18. The girl is playing with a ball.
-19. The girl is reading a book.
-20. The girl is reading a card.
+19. The girl is holding an open book.
+20. The girl is holding a picture card.
 ### Part 3｜cells 21-30
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -11460,8 +11460,8 @@ Panels:
 26. The child is holding a toy.
 27. The child is playing with a toy.
 28. The child is playing with a ball.
-29. The child is reading a book.
-30. The child is reading a card.
+29. The child is holding an open book.
+30. The child is holding a picture card.
 
 
 ## Level 283 - 综合理解
@@ -11544,8 +11544,8 @@ Panels:
 2. The boy is holding a toy.
 3. The boy is playing with a toy.
 4. The boy is playing with a ball.
-5. The boy is reading a book.
-6. The boy is reading a card.
+5. The boy is holding an open book.
+6. The boy is holding a picture card.
 7. The boy is drawing a flower.
 8. The boy is drawing a house.
 9. The boy is eating an apple.
@@ -11563,8 +11563,8 @@ Panels:
 12. The girl is holding a toy.
 13. The girl is playing with a toy.
 14. The girl is playing with a ball.
-15. The girl is reading a book.
-16. The girl is reading a card.
+15. The girl is holding an open book.
+16. The girl is holding a picture card.
 17. The girl is drawing a flower.
 18. The girl is drawing a house.
 19. The girl is eating an apple.
@@ -11582,8 +11582,8 @@ Panels:
 22. The child is holding a toy.
 23. The child is playing with a toy.
 24. The child is playing with a ball.
-25. The child is reading a book.
-26. The child is reading a card.
+25. The child is holding an open book.
+26. The child is holding a picture card.
 27. The child is drawing a flower.
 28. The child is drawing a house.
 29. The child is eating an apple.
@@ -11666,8 +11666,8 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-1. The boy is reading a book.
-2. The boy is reading a card.
+1. The boy is holding an open book.
+2. The boy is holding a picture card.
 3. The boy is drawing a flower.
 4. The boy is drawing a house.
 5. The boy is eating an apple.
@@ -11685,8 +11685,8 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-11. The girl is reading a book.
-12. The girl is reading a card.
+11. The girl is holding an open book.
+12. The girl is holding a picture card.
 13. The girl is drawing a flower.
 14. The girl is drawing a house.
 15. The girl is eating an apple.
@@ -11704,8 +11704,8 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-21. The child is reading a book.
-22. The child is reading a card.
+21. The child is holding an open book.
+22. The child is holding a picture card.
 23. The child is drawing a flower.
 24. The child is drawing a house.
 25. The child is eating an apple.
@@ -11798,8 +11798,8 @@ Panels:
 4. The boy is holding a toy.
 5. The boy is playing with a toy.
 6. The boy is playing with a ball.
-7. The boy is reading a book.
-8. The boy is reading a card.
+7. The boy is holding an open book.
+8. The boy is holding a picture card.
 9. The boy is drawing a flower.
 10. The boy is drawing a house.
 ### Part 2｜cells 11-20
@@ -11817,8 +11817,8 @@ Panels:
 14. The girl is holding a toy.
 15. The girl is playing with a toy.
 16. The girl is playing with a ball.
-17. The girl is reading a book.
-18. The girl is reading a card.
+17. The girl is holding an open book.
+18. The girl is holding a picture card.
 19. The girl is drawing a flower.
 20. The girl is drawing a house.
 ### Part 3｜cells 21-30
@@ -11836,8 +11836,8 @@ Panels:
 24. The child is holding a toy.
 25. The child is playing with a toy.
 26. The child is playing with a ball.
-27. The child is reading a book.
-28. The child is reading a card.
+27. The child is holding an open book.
+28. The child is holding a picture card.
 29. The child is drawing a flower.
 30. The child is drawing a house.
 
@@ -11920,8 +11920,8 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 1. The boy is playing with a toy.
 2. The boy is playing with a ball.
-3. The boy is reading a book.
-4. The boy is reading a card.
+3. The boy is holding an open book.
+4. The boy is holding a picture card.
 5. The boy is drawing a flower.
 6. The boy is drawing a house.
 7. The boy is eating an apple.
@@ -11939,8 +11939,8 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 11. The girl is playing with a toy.
 12. The girl is playing with a ball.
-13. The girl is reading a book.
-14. The girl is reading a card.
+13. The girl is holding an open book.
+14. The girl is holding a picture card.
 15. The girl is drawing a flower.
 16. The girl is drawing a house.
 17. The girl is eating an apple.
@@ -11958,8 +11958,8 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 21. The child is playing with a toy.
 22. The child is playing with a ball.
-23. The child is reading a book.
-24. The child is reading a card.
+23. The child is holding an open book.
+24. The child is holding a picture card.
 25. The child is drawing a flower.
 26. The child is drawing a house.
 27. The child is eating an apple.
@@ -12052,8 +12052,8 @@ Panels:
 6. The boy is holding a toy.
 7. The boy is playing with a toy.
 8. The boy is playing with a ball.
-9. The boy is reading a book.
-10. The boy is reading a card.
+9. The boy is holding an open book.
+10. The boy is holding a picture card.
 ### Part 2｜cells 11-20
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -12071,8 +12071,8 @@ Panels:
 16. The girl is holding a toy.
 17. The girl is playing with a toy.
 18. The girl is playing with a ball.
-19. The girl is reading a book.
-20. The girl is reading a card.
+19. The girl is holding an open book.
+20. The girl is holding a picture card.
 ### Part 3｜cells 21-30
 
 Create one contact sheet with 5 columns and 2 rows, exactly 10 separate panels.
@@ -12090,8 +12090,8 @@ Panels:
 26. The child is holding a toy.
 27. The child is playing with a toy.
 28. The child is playing with a ball.
-29. The child is reading a book.
-30. The child is reading a card.
+29. The child is holding an open book.
+30. The child is holding a picture card.
 
 
 ## Level 293 - 综合理解
@@ -12174,8 +12174,8 @@ Panels:
 2. The boy is holding a toy.
 3. The boy is playing with a toy.
 4. The boy is playing with a ball.
-5. The boy is reading a book.
-6. The boy is reading a card.
+5. The boy is holding an open book.
+6. The boy is holding a picture card.
 7. The boy is drawing a flower.
 8. The boy is drawing a house.
 9. The boy is eating an apple.
@@ -12193,8 +12193,8 @@ Panels:
 12. The girl is holding a toy.
 13. The girl is playing with a toy.
 14. The girl is playing with a ball.
-15. The girl is reading a book.
-16. The girl is reading a card.
+15. The girl is holding an open book.
+16. The girl is holding a picture card.
 17. The girl is drawing a flower.
 18. The girl is drawing a house.
 19. The girl is eating an apple.
@@ -12212,8 +12212,8 @@ Panels:
 22. The child is holding a toy.
 23. The child is playing with a toy.
 24. The child is playing with a ball.
-25. The child is reading a book.
-26. The child is reading a card.
+25. The child is holding an open book.
+26. The child is holding a picture card.
 27. The child is drawing a flower.
 28. The child is drawing a house.
 29. The child is eating an apple.
@@ -12296,8 +12296,8 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-1. The boy is reading a book.
-2. The boy is reading a card.
+1. The boy is holding an open book.
+2. The boy is holding a picture card.
 3. The boy is drawing a flower.
 4. The boy is drawing a house.
 5. The boy is eating an apple.
@@ -12315,8 +12315,8 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-11. The girl is reading a book.
-12. The girl is reading a card.
+11. The girl is holding an open book.
+12. The girl is holding a picture card.
 13. The girl is drawing a flower.
 14. The girl is drawing a house.
 15. The girl is eating an apple.
@@ -12334,8 +12334,8 @@ Quality gate: do not use simplified vector placeholders, stick-figure drawings, 
 Do not include any text, labels, numbers, captions, speech bubbles, logos, or watermarks inside the image.
 
 Panels:
-21. The child is reading a book.
-22. The child is reading a card.
+21. The child is holding an open book.
+22. The child is holding a picture card.
 23. The child is drawing a flower.
 24. The child is drawing a house.
 25. The child is eating an apple.
@@ -12428,8 +12428,8 @@ Panels:
 4. The boy is holding a toy.
 5. The boy is playing with a toy.
 6. The boy is playing with a ball.
-7. The boy is reading a book.
-8. The boy is reading a card.
+7. The boy is holding an open book.
+8. The boy is holding a picture card.
 9. The boy is drawing a flower.
 10. The boy is drawing a house.
 ### Part 2｜cells 11-20
@@ -12447,8 +12447,8 @@ Panels:
 14. The girl is holding a toy.
 15. The girl is playing with a toy.
 16. The girl is playing with a ball.
-17. The girl is reading a book.
-18. The girl is reading a card.
+17. The girl is holding an open book.
+18. The girl is holding a picture card.
 19. The girl is drawing a flower.
 20. The girl is drawing a house.
 ### Part 3｜cells 21-30
@@ -12466,8 +12466,8 @@ Panels:
 24. The child is holding a toy.
 25. The child is playing with a toy.
 26. The child is playing with a ball.
-27. The child is reading a book.
-28. The child is reading a card.
+27. The child is holding an open book.
+28. The child is holding a picture card.
 29. The child is drawing a flower.
 30. The child is drawing a house.
 
@@ -12550,8 +12550,8 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 1. The boy is playing with a toy.
 2. The boy is playing with a ball.
-3. The boy is reading a book.
-4. The boy is reading a card.
+3. The boy is holding an open book.
+4. The boy is holding a picture card.
 5. The boy is drawing a flower.
 6. The boy is drawing a house.
 7. The boy is eating an apple.
@@ -12569,8 +12569,8 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 11. The girl is playing with a toy.
 12. The girl is playing with a ball.
-13. The girl is reading a book.
-14. The girl is reading a card.
+13. The girl is holding an open book.
+14. The girl is holding a picture card.
 15. The girl is drawing a flower.
 16. The girl is drawing a house.
 17. The girl is eating an apple.
@@ -12588,8 +12588,8 @@ Do not include any text, labels, numbers, captions, speech bubbles, logos, or wa
 Panels:
 21. The child is playing with a toy.
 22. The child is playing with a ball.
-23. The child is reading a book.
-24. The child is reading a card.
+23. The child is holding an open book.
+24. The child is holding a picture card.
 25. The child is drawing a flower.
 26. The child is drawing a house.
 27. The child is eating an apple.

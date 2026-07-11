@@ -65,8 +65,8 @@ Cells:
 02. distractor for Q01: The girl is crying.
 03. correct for Q02: The boy is looking up.
 04. distractor for Q02: The boy is looking down.
-05. correct for Q03: The baby is clapping hands.
-06. distractor for Q03: The baby is raising hands.
+05. correct for Q03: The baby is clapping both hands.
+06. distractor for Q03: The baby is raising both hands.
 07. correct for Q04: The child is pointing to an eye.
 08. distractor for Q04: The child is pointing to an ear.
 09. correct for Q05: The child is pointing to a nose.
@@ -107,8 +107,8 @@ Cell order is row-major, left to right, top to bottom. Odd-numbered cells are co
 Within each adjacent pair, keep the two scenes visually similar and change only the one semantic point described.
 
 Cells:
-01. correct for Q01: The child is touching the head.
-02. distractor for Q01: The child is touching the feet.
+01. correct for Q01: The child is touching their head.
+02. distractor for Q01: The child is touching their feet.
 03. correct for Q02: The girl is touching her shoulders.
 04. distractor for Q02: The girl is touching her knees.
 05. correct for Q03: The boy is touching his knees.
@@ -129,10 +129,10 @@ Cells:
 20. distractor for Q10: The girl is holding her head.
 21. correct for Q11: The boy is stretching his arms.
 22. distractor for Q11: The boy is crossing his arms.
-23. correct for Q12: The child is bending the knees.
-24. distractor for Q12: The child is raising the hands.
+23. correct for Q12: The child is bending their knees.
+24. distractor for Q12: The child is raising their arms.
 25. correct for Q13: The baby is sitting with bare feet.
-26. distractor for Q13: The baby is sitting with shoes.
+26. distractor for Q13: The baby is wearing shoes.
 27. correct for Q14: The child is looking in a mirror.
 28. distractor for Q14: The child is looking at a book.
 29. correct for Q15: The child is brushing his teeth.
@@ -181,8 +181,8 @@ Cells:
 26. distractor for Q13: The girl is washing her shoes.
 27. correct for Q14: The boy is drying his hair.
 28. distractor for Q14: The boy is drying his hands.
-29. correct for Q15: The child is smiling with clean teeth.
-30. distractor for Q15: The child is smiling with dirty hands.
+29. correct for Q15: The child has clean teeth.
+30. distractor for Q15: The child has dirty teeth.
 
 Quality target: similar clarity to polished kindergarten English picture-card illustrations; every scene should be understandable at small size.
 
@@ -209,26 +209,26 @@ Cells:
 08. distractor for Q04: The baby is touching a hard ball.
 09. correct for Q05: The child is drying his feet with a towel.
 10. distractor for Q05: The child is drying his hands with a towel.
-11. correct for Q06: The girl is looking at her face.
+11. correct for Q06: The girl is looking at her face in a mirror.
 12. distractor for Q06: The girl is looking at her shoes.
 13. correct for Q07: The boy is putting soap on his hands.
 14. distractor for Q07: The boy is putting soap on his feet.
-15. correct for Q08: The child is opening the mouth for a toothbrush.
-16. distractor for Q08: The child is closing the mouth.
+15. correct for Q08: The child is opening their mouth.
+16. distractor for Q08: The child is closing their mouth.
 17. correct for Q09: The baby is waving both hands.
-18. distractor for Q09: The baby is waving both feet.
-19. correct for Q10: The child is clapping clean hands.
-20. distractor for Q10: The child is clapping dirty hands.
+18. distractor for Q09: The baby is kicking both feet.
+19. correct for Q10: The child is clapping.
+20. distractor for Q10: The child is washing their hands.
 21. correct for Q11: The girl is standing beside a mirror.
 22. distractor for Q11: The girl is sitting beside a mirror.
 23. correct for Q12: The boy is holding a blue toothbrush.
 24. distractor for Q12: The boy is holding a blue spoon.
-25. correct for Q13: The child is touching a knee on the mat.
-26. distractor for Q13: The child is touching a head on the mat.
-27. correct for Q14: The baby is playing with toes.
+25. correct for Q13: The child is touching their knee on the mat.
+26. distractor for Q13: The child is touching their head on the mat.
+27. correct for Q14: The baby is touching their toes.
 28. distractor for Q14: The baby is playing with a cup.
-29. correct for Q15: The child is ready after washing.
-30. distractor for Q15: The child is messy before washing.
+29. correct for Q15: The child is clean after washing.
+30. distractor for Q15: The child is dirty before washing.
 
 Quality target: similar clarity to polished kindergarten English picture-card illustrations; every scene should be understandable at small size.
 
@@ -642,7 +642,7 @@ Cells:
 27. correct for Q14: The board is behind the teacher.
 28. distractor for Q14: The board is beside the teacher.
 29. correct for Q15: The classroom plant is by the window.
-30. distractor for Q15: The classroom plant is on the board.
+30. distractor for Q15: The classroom plant is on the teacher's desk.
 
 Quality target: similar clarity to polished kindergarten English picture-card illustrations; every scene should be understandable at small size.
 
@@ -667,8 +667,8 @@ Cells:
 06. distractor for Q03: The boy is writing with a ruler.
 07. correct for Q04: The student is putting an eraser in the pencil case.
 08. distractor for Q04: The student is putting an eraser under the chair.
-09. correct for Q05: The books are neatly on the shelf.
-10. distractor for Q05: The books are messy on the floor.
+09. correct for Q05: The books are neatly arranged on the shelf.
+10. distractor for Q05: The books are scattered on the floor.
 11. correct for Q06: The schoolbag is open on the chair.
 12. distractor for Q06: The schoolbag is closed under the chair.
 13. correct for Q07: The child is raising a hand in class.
@@ -800,7 +800,7 @@ Cells:
 01. correct for Q01: The girl is helping a friend stand up.
 02. distractor for Q01: The girl is running past a friend.
 03. correct for Q02: The boy is carrying books for a classmate.
-04. distractor for Q02: The boy is dropping books for a classmate.
+04. distractor for Q02: The boy is dropping a book.
 05. correct for Q03: The child is giving water to a friend.
 06. distractor for Q03: The child is drinking water alone.
 07. correct for Q04: The friend is picking up a pencil.
@@ -891,8 +891,8 @@ Within each adjacent pair, keep the two scenes visually similar and change only 
 Cells:
 01. correct for Q01: The girl likes reading with a friend.
 02. distractor for Q01: The girl likes drawing with a friend.
-03. correct for Q02: The boy likes playing ball with a classmate.
-04. distractor for Q02: The boy likes playing blocks with a classmate.
+03. correct for Q02: The boy and his classmate are playing with a ball.
+04. distractor for Q02: The boy and his classmate are playing with blocks.
 05. correct for Q03: The friends are sharing apples.
 06. distractor for Q03: The friends are sharing bananas.
 07. correct for Q04: The classmates are holding blue books.
@@ -1168,7 +1168,7 @@ Cells:
 01. correct for Q01: The child is waking up.
 02. distractor for Q01: The child is sleeping.
 03. correct for Q02: The girl is making the bed.
-04. distractor for Q02: The girl is jumping on the bed.
+04. distractor for Q02: The girl is sitting on the bed.
 05. correct for Q03: The boy is washing his face.
 06. distractor for Q03: The boy is washing his shoes.
 07. correct for Q04: The child is brushing his teeth.
@@ -1189,8 +1189,8 @@ Cells:
 22. distractor for Q11: The child is pouring milk.
 23. correct for Q12: The child is waiting by the door.
 24. distractor for Q12: The child is sitting on the bed.
-25. correct for Q13: The mother is giving a coat.
-26. distractor for Q13: The mother is taking a coat.
+25. correct for Q13: The mother is giving a coat to the child.
+26. distractor for Q13: The mother is taking a coat from the child.
 27. correct for Q14: The father is holding the door open.
 28. distractor for Q14: The father is closing the door.
 29. correct for Q15: The child is ready for school.
@@ -1216,7 +1216,7 @@ Cells:
 03. correct for Q02: The class is opening books.
 04. distractor for Q02: The class is closing books.
 05. correct for Q03: The girl is reading a page.
-06. distractor for Q03: The girl is drawing a page.
+06. distractor for Q03: The girl is drawing a picture.
 07. correct for Q04: The boy is writing in a notebook.
 08. distractor for Q04: The boy is eating at a desk.
 09. correct for Q05: The child is raising a hand.
@@ -1358,7 +1358,7 @@ Cells:
 07. correct for Q04: The class is reading books together.
 08. distractor for Q04: The class is eating snacks together.
 09. correct for Q05: The student is writing with a pencil.
-10. distractor for Q05: The student is drawing with a spoon.
+10. distractor for Q05: The student is drawing with a crayon.
 11. correct for Q06: The child is eating lunch at school.
 12. distractor for Q06: The child is brushing his teeth at school.
 13. correct for Q07: The students are washing their hands before lunch.
@@ -1370,7 +1370,7 @@ Cells:
 19. correct for Q10: The child is carrying books to class.
 20. distractor for Q10: The child is carrying shoes to class.
 21. correct for Q11: The schoolbag is on the chair.
-22. distractor for Q11: The schoolbag is in the sink.
+22. distractor for Q11: The schoolbag is under the chair.
 23. correct for Q12: The teacher is helping a student.
 24. distractor for Q12: The teacher is helping a baby.
 25. correct for Q13: The children are leaving the playground.
@@ -1789,8 +1789,8 @@ Cells:
 24. distractor for Q12: The girl likes drawing stars.
 25. correct for Q13: The boy likes reading animal books.
 26. distractor for Q13: The boy likes reading vehicle books.
-27. correct for Q14: The child likes playing blocks.
-28. distractor for Q14: The child likes playing cards.
+27. correct for Q14: The child likes playing with blocks.
+28. distractor for Q14: The child likes playing a card game.
 29. correct for Q15: The friends like the same game.
 30. distractor for Q15: The friends like different games.
 
@@ -1874,15 +1874,15 @@ Cells:
 17. correct for Q09: The boy is packing a pencil case.
 18. distractor for Q09: The boy is taking out a pencil case.
 19. correct for Q10: The child is checking the schoolbag.
-20. distractor for Q10: The child is kicking the schoolbag.
+20. distractor for Q10: The child is closing the schoolbag.
 21. correct for Q11: The bag is heavy with books.
 22. distractor for Q11: The bag is light with one book.
 23. correct for Q12: The bag is open on the chair.
 24. distractor for Q12: The bag is closed on the chair.
 25. correct for Q13: The child is putting a cap in the bag.
 26. distractor for Q13: The child is putting shoes in the bag.
-27. correct for Q14: The mother is giving a lunch box.
-28. distractor for Q14: The mother is giving a towel.
+27. correct for Q14: The mother is giving a lunch box to the child.
+28. distractor for Q14: The mother is giving a towel to the child.
 29. correct for Q15: The schoolbag is ready by the door.
 30. distractor for Q15: The schoolbag is open on the bed.
 
@@ -1930,7 +1930,7 @@ Cells:
 27. correct for Q14: The student is pointing to the clock.
 28. distractor for Q14: The student is pointing to the plant.
 29. correct for Q15: The teacher is smiling at the class.
-30. distractor for Q15: The teacher is waving at the door.
+30. distractor for Q15: The teacher is waving to the class.
 
 Quality target: similar clarity to polished kindergarten English picture-card illustrations; every scene should be understandable at small size.
 
@@ -1949,8 +1949,8 @@ Within each adjacent pair, keep the two scenes visually similar and change only 
 Cells:
 01. correct for Q01: The girl is putting a hat on her head.
 02. distractor for Q01: The girl is putting a hat in her bag.
-03. correct for Q02: The boy is tying shoes on his feet.
-04. distractor for Q02: The boy is holding shoes in his hands.
+03. correct for Q02: The boy is tying his shoelaces.
+04. distractor for Q02: The boy is holding his shoes.
 05. correct for Q03: The child is washing his hands before putting on a shirt.
 06. distractor for Q03: The child is drying his hands before putting on a shirt.
 07. correct for Q04: The baby has socks on both feet.
@@ -1966,7 +1966,7 @@ Cells:
 17. correct for Q09: The boy is wearing a clean shirt.
 18. distractor for Q09: The boy is wearing a dirty shirt.
 19. correct for Q10: The child is folding a coat with both hands.
-20. distractor for Q10: The child is kicking a coat with both feet.
+20. distractor for Q10: The child is holding a coat with both hands.
 21. correct for Q11: The baby is pulling a sock from one foot.
 22. distractor for Q11: The baby is holding a sock in one hand.
 23. correct for Q12: The girl is looking at shoes in the mirror.
@@ -1974,9 +1974,9 @@ Cells:
 25. correct for Q13: The boy is raising one hand with a glove.
 26. distractor for Q13: The boy is raising one hand without a glove.
 27. correct for Q14: The child is putting a jacket on a chair.
-28. distractor for Q14: The child is putting a jacket in a bowl.
+28. distractor for Q14: The child is putting a jacket on a bed.
 29. correct for Q15: The clothes are ready on the bed.
-30. distractor for Q15: The clothes are ready in the sink.
+30. distractor for Q15: The clothes are scattered on the floor.
 
 Quality target: similar clarity to polished kindergarten English picture-card illustrations; every scene should be understandable at small size.
 
@@ -2008,7 +2008,7 @@ Cells:
 13. correct for Q07: The children are playing ball at break.
 14. distractor for Q07: The children are reading at break.
 15. correct for Q08: The girl is sitting next to her friend.
-16. distractor for Q08: The girl is sitting under her friend.
+16. distractor for Q08: The girl is sitting behind her friend.
 17. correct for Q09: The boy is standing behind a classmate.
 18. distractor for Q09: The boy is standing beside a classmate.
 19. correct for Q10: The friends are cleaning their table.
@@ -2016,7 +2016,7 @@ Cells:
 21. correct for Q11: The classmates are putting books away.
 22. distractor for Q11: The classmates are pulling books out.
 23. correct for Q12: The children are waiting in a line.
-24. distractor for Q12: The children are pushing in a line.
+24. distractor for Q12: The children are walking in a line.
 25. correct for Q13: The girl is giving water to a friend.
 26. distractor for Q13: The girl is drinking water alone.
 27. correct for Q14: The boy is clapping for a classmate.
@@ -2039,8 +2039,8 @@ Cell order is row-major, left to right, top to bottom. Odd-numbered cells are co
 Within each adjacent pair, keep the two scenes visually similar and change only the one semantic point described.
 
 Cells:
-01. correct for Q01: The child is touching a nose in the mirror.
-02. distractor for Q01: The child is touching an ear in the mirror.
+01. correct for Q01: The child is touching their nose in the mirror.
+02. distractor for Q01: The child is touching their ear in the mirror.
 03. correct for Q02: The girl is wearing a purple dress.
 04. distractor for Q02: The girl is wearing a purple coat.
 05. correct for Q03: The boy is putting a book in the schoolbag.
@@ -2099,12 +2099,12 @@ Cells:
 12. distractor for Q06: The boy is taking off a blue shirt.
 13. correct for Q07: The child is eating breakfast at the table.
 14. distractor for Q07: The child is eating lunch at the table.
-15. correct for Q08: The baby is drinking milk in a cup.
-16. distractor for Q08: The baby is drinking water in a cup.
+15. correct for Q08: The baby is drinking milk from a cup.
+16. distractor for Q08: The baby is drinking water from a cup.
 17. correct for Q09: The mother is packing a lunch box.
 18. distractor for Q09: The mother is opening a toy box.
-19. correct for Q10: The father is helping with shoes.
-20. distractor for Q10: The father is helping with a towel.
+19. correct for Q10: The father is helping the child put on shoes.
+20. distractor for Q10: The father is helping the child dry their hands.
 21. correct for Q11: The schoolbag is ready by the door.
 22. distractor for Q11: The schoolbag is open on the floor.
 23. correct for Q12: The child is putting a bottle in the bag.
@@ -2112,7 +2112,7 @@ Cells:
 25. correct for Q13: The coat is on the hook.
 26. distractor for Q13: The coat is under the bed.
 27. correct for Q14: The child is waving goodbye.
-28. distractor for Q14: The child is hiding goodbye.
+28. distractor for Q14: The child is hiding behind a curtain.
 29. correct for Q15: The family is leaving home in the morning.
 30. distractor for Q15: The family is coming home in the evening.
 
@@ -2136,11 +2136,11 @@ Cells:
 03. correct for Q02: The teacher is greeting the class.
 04. distractor for Q02: The teacher is greeting a baby.
 05. correct for Q03: The class is sitting at desks.
-06. distractor for Q03: The class is standing on desks.
+06. distractor for Q03: The class is standing beside the desks.
 07. correct for Q04: The girl is opening her notebook.
 08. distractor for Q04: The girl is closing her notebook.
 09. correct for Q05: The boy is writing with a pencil.
-10. distractor for Q05: The boy is writing with a spoon.
+10. distractor for Q05: The boy is drawing with a crayon.
 11. correct for Q06: The student is raising one hand.
 12. distractor for Q06: The student is raising one foot.
 13. correct for Q07: There is a book on every desk.
@@ -2154,13 +2154,13 @@ Cells:
 21. correct for Q11: The child is erasing the board.
 22. distractor for Q11: The child is washing the board.
 23. correct for Q12: The students are lining up for lunch.
-24. distractor for Q12: The students are lying down for lunch.
+24. distractor for Q12: The students are sitting at the lunch table.
 25. correct for Q13: The children are eating lunch together.
 26. distractor for Q13: The children are eating breakfast together.
 27. correct for Q14: The class is cleaning up after lunch.
 28. distractor for Q14: The class is making a mess after lunch.
 29. correct for Q15: The students are ready for the next lesson.
-30. distractor for Q15: The students are ready for sleep.
+30. distractor for Q15: The students are ready to go home.
 
 Quality target: similar clarity to polished kindergarten English picture-card illustrations; every scene should be understandable at small size.
 
@@ -2232,23 +2232,23 @@ Cells:
 07. correct for Q04: The child is washing his hands after school.
 08. distractor for Q04: The child is washing his shoes after school.
 09. correct for Q05: The schoolbag is on the chair.
-10. distractor for Q05: The schoolbag is in the sink.
+10. distractor for Q05: The schoolbag is under the chair.
 11. correct for Q06: The girl is taking out a notebook.
 12. distractor for Q06: The girl is taking out a spoon.
-13. correct for Q07: The boy is eating an apple snack.
-14. distractor for Q07: The boy is eating a rice lunch.
+13. correct for Q07: The boy is eating an apple.
+14. distractor for Q07: The boy is eating rice.
 15. correct for Q08: The child is drinking water at home.
 16. distractor for Q08: The child is drinking soup at home.
 17. correct for Q09: The mother is reading with the child.
 18. distractor for Q09: The mother is cooking with the child.
-19. correct for Q10: The father is helping with homework.
-20. distractor for Q10: The father is playing football indoors.
+19. correct for Q10: The father is helping the child with homework.
+20. distractor for Q10: The father is reading a newspaper.
 21. correct for Q11: The child is playing with blocks.
-22. distractor for Q11: The child is playing with chopsticks.
+22. distractor for Q11: The child is playing with toy cars.
 23. correct for Q12: The baby is holding a soft toy.
 24. distractor for Q12: The baby is holding a school ruler.
 25. correct for Q13: There is a book on the sofa.
-26. distractor for Q13: There is a book in the bathroom sink.
+26. distractor for Q13: There is a book on the table.
 27. correct for Q14: There are toys in the toy box.
 28. distractor for Q14: There are toys in the lunch box.
 29. correct for Q15: The family is sitting together.

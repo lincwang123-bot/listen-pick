@@ -994,8 +994,8 @@
 
 ## Level 131
 
-01. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+01. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 02. 学习句：The boy is drawing a flower.
     干扰图：The boy is drawing a house.
 03. 学习句：The boy is eating an apple.
@@ -1004,8 +1004,8 @@
     干扰图：The boy is drinking milk.
 05. 学习句：The boy is holding a ball.
     干扰图：The boy is holding a toy.
-06. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+06. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 07. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 08. 学习句：The girl is eating an apple.
@@ -1014,8 +1014,8 @@
     干扰图：The girl is drinking milk.
 10. 学习句：The girl is holding a ball.
     干扰图：The girl is holding a toy.
-11. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+11. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 12. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 13. 学习句：The child is eating an apple.
@@ -1024,7 +1024,6 @@
     干扰图：The child is drinking milk.
 15. 学习句：The child is holding a ball.
     干扰图：The child is holding a toy.
-
 ## Level 132
 
 01. 学习句：The boy is eating an apple.
@@ -1035,8 +1034,8 @@
     干扰图：The boy is holding a toy.
 04. 学习句：The boy is holding a toy.
     干扰图：The boy is holding a ball.
-05. 学习句：The boy is opening a box.
-    干扰图：The boy is opening a book.
+05. 学习句：The boy is holding an open box.
+    干扰图：The boy is holding an open book.
 06. 学习句：The girl is eating an apple.
     干扰图：The girl is eating a banana.
 07. 学习句：The girl is drinking water.
@@ -1045,8 +1044,8 @@
     干扰图：The girl is holding a toy.
 09. 学习句：The girl is holding a toy.
     干扰图：The girl is holding a ball.
-10. 学习句：The girl is opening a box.
-    干扰图：The girl is opening a book.
+10. 学习句：The girl is holding an open box.
+    干扰图：The girl is holding an open book.
 11. 学习句：The child is eating an apple.
     干扰图：The child is eating a banana.
 12. 学习句：The child is drinking water.
@@ -1055,8 +1054,8 @@
     干扰图：The child is holding a toy.
 14. 学习句：The child is holding a toy.
     干扰图：The child is holding a ball.
-15. 学习句：The child is opening a box.
-    干扰图：The child is opening a book.
+15. 学习句：The child is holding an open box.
+    干扰图：The child is holding an open book.
 
 ## Level 133
 
@@ -1064,65 +1063,65 @@
     干扰图：The boy is holding a toy.
 02. 学习句：The boy is holding a toy.
     干扰图：The boy is holding a ball.
-03. 学习句：The boy is opening a box.
-    干扰图：The boy is opening a book.
-04. 学习句：The boy is closing a book.
-    干扰图：The boy is closing a box.
+03. 学习句：The boy is holding an open box.
+    干扰图：The boy is holding an open book.
+04. 学习句：The boy is holding a closed book.
+    干扰图：The boy is holding a closed box.
 05. 学习句：The boy is kicking a ball.
     干扰图：The boy is kicking a beanbag.
 06. 学习句：The girl is holding a ball.
     干扰图：The girl is holding a toy.
 07. 学习句：The girl is holding a toy.
     干扰图：The girl is holding a ball.
-08. 学习句：The girl is opening a box.
-    干扰图：The girl is opening a book.
-09. 学习句：The girl is closing a book.
-    干扰图：The girl is closing a box.
+08. 学习句：The girl is holding an open box.
+    干扰图：The girl is holding an open book.
+09. 学习句：The girl is holding a closed book.
+    干扰图：The girl is holding a closed box.
 10. 学习句：The girl is kicking a ball.
     干扰图：The girl is kicking a beanbag.
 11. 学习句：The child is holding a ball.
     干扰图：The child is holding a toy.
 12. 学习句：The child is holding a toy.
     干扰图：The child is holding a ball.
-13. 学习句：The child is opening a box.
-    干扰图：The child is opening a book.
-14. 学习句：The child is closing a book.
-    干扰图：The child is closing a box.
+13. 学习句：The child is holding an open box.
+    干扰图：The child is holding an open book.
+14. 学习句：The child is holding a closed book.
+    干扰图：The child is holding a closed box.
 15. 学习句：The child is kicking a ball.
     干扰图：The child is kicking a beanbag.
 
 ## Level 134
 
-01. 学习句：The boy is opening a box.
-    干扰图：The boy is opening a book.
-02. 学习句：The boy is closing a book.
-    干扰图：The boy is closing a box.
+01. 学习句：The boy is holding an open box.
+    干扰图：The boy is holding an open book.
+02. 学习句：The boy is holding a closed book.
+    干扰图：The boy is holding a closed box.
 03. 学习句：The boy is kicking a ball.
     干扰图：The boy is kicking a beanbag.
 04. 学习句：The boy is carrying a bag.
     干扰图：The boy is carrying a basket.
 05. 学习句：The boy is flying a kite.
     干扰图：The boy is flying a paper plane.
-06. 学习句：The girl is opening a box.
-    干扰图：The girl is opening a book.
-07. 学习句：The girl is closing a book.
-    干扰图：The girl is closing a box.
+06. 学习句：The girl is holding an open box.
+    干扰图：The girl is holding an open book.
+07. 学习句：The girl is holding a closed book.
+    干扰图：The girl is holding a closed box.
 08. 学习句：The girl is kicking a ball.
     干扰图：The girl is kicking a beanbag.
 09. 学习句：The girl is carrying a bag.
     干扰图：The girl is carrying a basket.
-10. 学习句：The girl is flying a kite.
-    干扰图：The girl is flying a paper plane.
-11. 学习句：The child is opening a box.
-    干扰图：The child is opening a book.
-12. 学习句：The child is closing a book.
-    干扰图：The child is closing a box.
+10. 学习句：The girl is holding a kite.
+    干扰图：The girl is holding a paper plane.
+11. 学习句：The child is holding an open box.
+    干扰图：The child is holding an open book.
+12. 学习句：The child is holding a closed book.
+    干扰图：The child is holding a closed box.
 13. 学习句：The child is kicking a ball.
     干扰图：The child is kicking a beanbag.
 14. 学习句：The child is carrying a bag.
     干扰图：The child is carrying a basket.
-15. 学习句：The child is flying a kite.
-    干扰图：The child is flying a paper plane.
+15. 学习句：The child is holding a kite.
+    干扰图：The child is holding a paper plane.
 
 ## Level 135
 
@@ -1132,28 +1131,28 @@
     干扰图：The boy is carrying a basket.
 03. 学习句：The boy is flying a kite.
     干扰图：The boy is flying a paper plane.
-04. 学习句：The boy is folding a towel.
-    干扰图：The boy is folding a shirt.
+04. 学习句：The boy is holding a folded towel.
+    干扰图：The boy is holding a folded shirt.
 05. 学习句：The boy is using a spoon.
     干扰图：The boy is using a cup.
 06. 学习句：The girl is kicking a ball.
     干扰图：The girl is kicking a beanbag.
 07. 学习句：The girl is carrying a bag.
     干扰图：The girl is carrying a basket.
-08. 学习句：The girl is flying a kite.
-    干扰图：The girl is flying a paper plane.
-09. 学习句：The girl is folding a towel.
-    干扰图：The girl is folding a shirt.
+08. 学习句：The girl is holding a kite.
+    干扰图：The girl is holding a paper plane.
+09. 学习句：The girl is holding a folded towel.
+    干扰图：The girl is holding a folded shirt.
 10. 学习句：The girl is using a spoon.
     干扰图：The girl is using a cup.
 11. 学习句：The child is kicking a ball.
     干扰图：The child is kicking a beanbag.
 12. 学习句：The child is carrying a bag.
     干扰图：The child is carrying a basket.
-13. 学习句：The child is flying a kite.
-    干扰图：The child is flying a paper plane.
-14. 学习句：The child is folding a towel.
-    干扰图：The child is folding a shirt.
+13. 学习句：The child is holding a kite.
+    干扰图：The child is holding a paper plane.
+14. 学习句：The child is holding a folded towel.
+    干扰图：The child is holding a folded shirt.
 15. 学习句：The child is using a spoon.
     干扰图：The child is using a cup.
 
@@ -1161,28 +1160,28 @@
 
 01. 学习句：The boy is flying a kite.
     干扰图：The boy is flying a paper plane.
-02. 学习句：The boy is folding a towel.
-    干扰图：The boy is folding a shirt.
+02. 学习句：The boy is holding a folded towel.
+    干扰图：The boy is holding a folded shirt.
 03. 学习句：The boy is using a spoon.
     干扰图：The boy is using a cup.
 04. 学习句：The boy is cleaning a table.
     干扰图：The boy is cleaning a desk.
 05. 学习句：The boy is watering a plant.
     干扰图：The boy is watering a flower.
-06. 学习句：The girl is flying a kite.
-    干扰图：The girl is flying a paper plane.
-07. 学习句：The girl is folding a towel.
-    干扰图：The girl is folding a shirt.
+06. 学习句：The girl is holding a kite.
+    干扰图：The girl is holding a paper plane.
+07. 学习句：The girl is holding a folded towel.
+    干扰图：The girl is holding a folded shirt.
 08. 学习句：The girl is using a spoon.
     干扰图：The girl is using a cup.
 09. 学习句：The girl is cleaning a table.
     干扰图：The girl is cleaning a desk.
 10. 学习句：The girl is watering a plant.
     干扰图：The girl is watering a flower.
-11. 学习句：The child is flying a kite.
-    干扰图：The child is flying a paper plane.
-12. 学习句：The child is folding a towel.
-    干扰图：The child is folding a shirt.
+11. 学习句：The child is holding a kite.
+    干扰图：The child is holding a paper plane.
+12. 学习句：The child is holding a folded towel.
+    干扰图：The child is holding a folded shirt.
 13. 学习句：The child is using a spoon.
     干扰图：The child is using a cup.
 14. 学习句：The child is cleaning a table.
@@ -1198,8 +1197,8 @@
     干扰图：The boy is cleaning a desk.
 03. 学习句：The boy is watering a plant.
     干扰图：The boy is watering a flower.
-04. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+04. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 05. 学习句：The boy is drawing a flower.
     干扰图：The boy is drawing a house.
 06. 学习句：The girl is using a spoon.
@@ -1208,8 +1207,8 @@
     干扰图：The girl is cleaning a desk.
 08. 学习句：The girl is watering a plant.
     干扰图：The girl is watering a flower.
-09. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+09. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 10. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 11. 学习句：The child is using a spoon.
@@ -1218,8 +1217,8 @@
     干扰图：The child is cleaning a desk.
 13. 学习句：The child is watering a plant.
     干扰图：The child is watering a flower.
-14. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+14. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 15. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 
@@ -1227,8 +1226,8 @@
 
 01. 学习句：The boy is watering a plant.
     干扰图：The boy is watering a flower.
-02. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+02. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 03. 学习句：The boy is drawing a flower.
     干扰图：The boy is drawing a house.
 04. 学习句：The boy is eating an apple.
@@ -1237,8 +1236,8 @@
     干扰图：The boy is drinking milk.
 06. 学习句：The girl is watering a plant.
     干扰图：The girl is watering a flower.
-07. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+07. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 08. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 09. 学习句：The girl is eating an apple.
@@ -1247,8 +1246,8 @@
     干扰图：The girl is drinking milk.
 11. 学习句：The child is watering a plant.
     干扰图：The child is watering a flower.
-12. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+12. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 13. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 14. 学习句：The child is eating an apple.
@@ -1297,59 +1296,59 @@
     干扰图：The boy is holding a toy.
 03. 学习句：The boy is holding a toy.
     干扰图：The boy is holding a ball.
-04. 学习句：The boy is opening a box.
-    干扰图：The boy is opening a book.
-05. 学习句：The boy is closing a book.
-    干扰图：The boy is closing a box.
+04. 学习句：The boy is holding an open box.
+    干扰图：The boy is holding an open book.
+05. 学习句：The boy is holding a closed book.
+    干扰图：The boy is holding a closed box.
 06. 学习句：The girl is drinking water.
     干扰图：The girl is drinking milk.
 07. 学习句：The girl is holding a ball.
     干扰图：The girl is holding a toy.
 08. 学习句：The girl is holding a toy.
     干扰图：The girl is holding a ball.
-09. 学习句：The girl is opening a box.
-    干扰图：The girl is opening a book.
-10. 学习句：The girl is closing a book.
-    干扰图：The girl is closing a box.
+09. 学习句：The girl is holding an open box.
+    干扰图：The girl is holding an open book.
+10. 学习句：The girl is holding a closed book.
+    干扰图：The girl is holding a closed box.
 11. 学习句：The child is drinking water.
     干扰图：The child is drinking milk.
 12. 学习句：The child is holding a ball.
     干扰图：The child is holding a toy.
 13. 学习句：The child is holding a toy.
     干扰图：The child is holding a ball.
-14. 学习句：The child is opening a box.
-    干扰图：The child is opening a book.
-15. 学习句：The child is closing a book.
-    干扰图：The child is closing a box.
+14. 学习句：The child is holding an open box.
+    干扰图：The child is holding an open book.
+15. 学习句：The child is holding a closed book.
+    干扰图：The child is holding a closed box.
 
 ## Level 141
 
 01. 学习句：The boy is holding a toy.
     干扰图：The boy is holding a ball.
-02. 学习句：The boy is opening a box.
-    干扰图：The boy is opening a book.
-03. 学习句：The boy is closing a book.
-    干扰图：The boy is closing a box.
+02. 学习句：The boy is holding an open box.
+    干扰图：The boy is holding an open book.
+03. 学习句：The boy is holding a closed book.
+    干扰图：The boy is holding a closed box.
 04. 学习句：The boy is kicking a ball.
     干扰图：The boy is kicking a beanbag.
 05. 学习句：The boy is carrying a bag.
     干扰图：The boy is carrying a basket.
 06. 学习句：The girl is holding a toy.
     干扰图：The girl is holding a ball.
-07. 学习句：The girl is opening a box.
-    干扰图：The girl is opening a book.
-08. 学习句：The girl is closing a book.
-    干扰图：The girl is closing a box.
+07. 学习句：The girl is holding an open box.
+    干扰图：The girl is holding an open book.
+08. 学习句：The girl is holding a closed book.
+    干扰图：The girl is holding a closed box.
 09. 学习句：The girl is kicking a ball.
     干扰图：The girl is kicking a beanbag.
 10. 学习句：The girl is carrying a bag.
     干扰图：The girl is carrying a basket.
 11. 学习句：The child is holding a toy.
     干扰图：The child is holding a ball.
-12. 学习句：The child is opening a box.
-    干扰图：The child is opening a book.
-13. 学习句：The child is closing a book.
-    干扰图：The child is closing a box.
+12. 学习句：The child is holding an open box.
+    干扰图：The child is holding an open book.
+13. 学习句：The child is holding a closed book.
+    干扰图：The child is holding a closed box.
 14. 学习句：The child is kicking a ball.
     干扰图：The child is kicking a beanbag.
 15. 学习句：The child is carrying a bag.
@@ -1357,36 +1356,36 @@
 
 ## Level 142
 
-01. 学习句：The boy is closing a book.
-    干扰图：The boy is closing a box.
+01. 学习句：The boy is holding a closed book.
+    干扰图：The boy is holding a closed box.
 02. 学习句：The boy is kicking a ball.
     干扰图：The boy is kicking a beanbag.
 03. 学习句：The boy is carrying a bag.
     干扰图：The boy is carrying a basket.
 04. 学习句：The boy is flying a kite.
     干扰图：The boy is flying a paper plane.
-05. 学习句：The boy is folding a towel.
-    干扰图：The boy is folding a shirt.
-06. 学习句：The girl is closing a book.
-    干扰图：The girl is closing a box.
+05. 学习句：The boy is holding a folded towel.
+    干扰图：The boy is holding a folded shirt.
+06. 学习句：The girl is holding a closed book.
+    干扰图：The girl is holding a closed box.
 07. 学习句：The girl is kicking a ball.
     干扰图：The girl is kicking a beanbag.
 08. 学习句：The girl is carrying a bag.
     干扰图：The girl is carrying a basket.
-09. 学习句：The girl is flying a kite.
-    干扰图：The girl is flying a paper plane.
-10. 学习句：The girl is folding a towel.
-    干扰图：The girl is folding a shirt.
-11. 学习句：The child is closing a book.
-    干扰图：The child is closing a box.
+09. 学习句：The girl is holding a kite.
+    干扰图：The girl is holding a paper plane.
+10. 学习句：The girl is holding a folded towel.
+    干扰图：The girl is holding a folded shirt.
+11. 学习句：The child is holding a closed book.
+    干扰图：The child is holding a closed box.
 12. 学习句：The child is kicking a ball.
     干扰图：The child is kicking a beanbag.
 13. 学习句：The child is carrying a bag.
     干扰图：The child is carrying a basket.
-14. 学习句：The child is flying a kite.
-    干扰图：The child is flying a paper plane.
-15. 学习句：The child is folding a towel.
-    干扰图：The child is folding a shirt.
+14. 学习句：The child is holding a kite.
+    干扰图：The child is holding a paper plane.
+15. 学习句：The child is holding a folded towel.
+    干扰图：The child is holding a folded shirt.
 
 ## Level 143
 
@@ -1394,28 +1393,28 @@
     干扰图：The boy is carrying a basket.
 02. 学习句：The boy is flying a kite.
     干扰图：The boy is flying a paper plane.
-03. 学习句：The boy is folding a towel.
-    干扰图：The boy is folding a shirt.
+03. 学习句：The boy is holding a folded towel.
+    干扰图：The boy is holding a folded shirt.
 04. 学习句：The boy is using a spoon.
     干扰图：The boy is using a cup.
 05. 学习句：The boy is cleaning a table.
     干扰图：The boy is cleaning a desk.
 06. 学习句：The girl is carrying a bag.
     干扰图：The girl is carrying a basket.
-07. 学习句：The girl is flying a kite.
-    干扰图：The girl is flying a paper plane.
-08. 学习句：The girl is folding a towel.
-    干扰图：The girl is folding a shirt.
+07. 学习句：The girl is holding a kite.
+    干扰图：The girl is holding a paper plane.
+08. 学习句：The girl is holding a folded towel.
+    干扰图：The girl is holding a folded shirt.
 09. 学习句：The girl is using a spoon.
     干扰图：The girl is using a cup.
 10. 学习句：The girl is cleaning a table.
     干扰图：The girl is cleaning a desk.
 11. 学习句：The child is carrying a bag.
     干扰图：The child is carrying a basket.
-12. 学习句：The child is flying a kite.
-    干扰图：The child is flying a paper plane.
-13. 学习句：The child is folding a towel.
-    干扰图：The child is folding a shirt.
+12. 学习句：The child is holding a kite.
+    干扰图：The child is holding a paper plane.
+13. 学习句：The child is holding a folded towel.
+    干扰图：The child is holding a folded shirt.
 14. 学习句：The child is using a spoon.
     干扰图：The child is using a cup.
 15. 学习句：The child is cleaning a table.
@@ -1423,36 +1422,36 @@
 
 ## Level 144
 
-01. 学习句：The boy is folding a towel.
-    干扰图：The boy is folding a shirt.
+01. 学习句：The boy is holding a folded towel.
+    干扰图：The boy is holding a folded shirt.
 02. 学习句：The boy is using a spoon.
     干扰图：The boy is using a cup.
 03. 学习句：The boy is cleaning a table.
     干扰图：The boy is cleaning a desk.
 04. 学习句：The boy is watering a plant.
     干扰图：The boy is watering a flower.
-05. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
-06. 学习句：The girl is folding a towel.
-    干扰图：The girl is folding a shirt.
+05. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
+06. 学习句：The girl is holding a folded towel.
+    干扰图：The girl is holding a folded shirt.
 07. 学习句：The girl is using a spoon.
     干扰图：The girl is using a cup.
 08. 学习句：The girl is cleaning a table.
     干扰图：The girl is cleaning a desk.
 09. 学习句：The girl is watering a plant.
     干扰图：The girl is watering a flower.
-10. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
-11. 学习句：The child is folding a towel.
-    干扰图：The child is folding a shirt.
+10. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
+11. 学习句：The child is holding a folded towel.
+    干扰图：The child is holding a folded shirt.
 12. 学习句：The child is using a spoon.
     干扰图：The child is using a cup.
 13. 学习句：The child is cleaning a table.
     干扰图：The child is cleaning a desk.
 14. 学习句：The child is watering a plant.
     干扰图：The child is watering a flower.
-15. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+15. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 
 ## Level 145
 
@@ -1460,8 +1459,8 @@
     干扰图：The boy is cleaning a desk.
 02. 学习句：The boy is watering a plant.
     干扰图：The boy is watering a flower.
-03. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+03. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 04. 学习句：The boy is drawing a flower.
     干扰图：The boy is drawing a house.
 05. 学习句：The boy is eating an apple.
@@ -1470,8 +1469,8 @@
     干扰图：The girl is cleaning a desk.
 07. 学习句：The girl is watering a plant.
     干扰图：The girl is watering a flower.
-08. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+08. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 09. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 10. 学习句：The girl is eating an apple.
@@ -1480,8 +1479,8 @@
     干扰图：The child is cleaning a desk.
 12. 学习句：The child is watering a plant.
     干扰图：The child is watering a flower.
-13. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+13. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 14. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 15. 学习句：The child is eating an apple.
@@ -1489,8 +1488,8 @@
 
 ## Level 146
 
-01. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+01. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 02. 学习句：The boy is drawing a flower.
     干扰图：The boy is drawing a house.
 03. 学习句：The boy is eating an apple.
@@ -1499,8 +1498,8 @@
     干扰图：The boy is drinking milk.
 05. 学习句：The boy is holding a ball.
     干扰图：The boy is holding a toy.
-06. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+06. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 07. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 08. 学习句：The girl is eating an apple.
@@ -1509,8 +1508,8 @@
     干扰图：The girl is drinking milk.
 10. 学习句：The girl is holding a ball.
     干扰图：The girl is holding a toy.
-11. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+11. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 12. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 13. 学习句：The child is eating an apple.
@@ -1530,8 +1529,8 @@
     干扰图：The boy is holding a toy.
 04. 学习句：The boy is holding a toy.
     干扰图：The boy is holding a ball.
-05. 学习句：The boy is opening a box.
-    干扰图：The boy is opening a book.
+05. 学习句：The boy is holding an open box.
+    干扰图：The boy is holding an open book.
 06. 学习句：The girl is eating an apple.
     干扰图：The girl is eating a banana.
 07. 学习句：The girl is drinking water.
@@ -1540,8 +1539,8 @@
     干扰图：The girl is holding a toy.
 09. 学习句：The girl is holding a toy.
     干扰图：The girl is holding a ball.
-10. 学习句：The girl is opening a box.
-    干扰图：The girl is opening a book.
+10. 学习句：The girl is holding an open box.
+    干扰图：The girl is holding an open book.
 11. 学习句：The child is eating an apple.
     干扰图：The child is eating a banana.
 12. 学习句：The child is drinking water.
@@ -1550,8 +1549,8 @@
     干扰图：The child is holding a toy.
 14. 学习句：The child is holding a toy.
     干扰图：The child is holding a ball.
-15. 学习句：The child is opening a box.
-    干扰图：The child is opening a book.
+15. 学习句：The child is holding an open box.
+    干扰图：The child is holding an open book.
 
 ## Level 148
 
@@ -1559,65 +1558,65 @@
     干扰图：The boy is holding a toy.
 02. 学习句：The boy is holding a toy.
     干扰图：The boy is holding a ball.
-03. 学习句：The boy is opening a box.
-    干扰图：The boy is opening a book.
-04. 学习句：The boy is closing a book.
-    干扰图：The boy is closing a box.
+03. 学习句：The boy is holding an open box.
+    干扰图：The boy is holding an open book.
+04. 学习句：The boy is holding a closed book.
+    干扰图：The boy is holding a closed box.
 05. 学习句：The boy is kicking a ball.
     干扰图：The boy is kicking a beanbag.
 06. 学习句：The girl is holding a ball.
     干扰图：The girl is holding a toy.
 07. 学习句：The girl is holding a toy.
     干扰图：The girl is holding a ball.
-08. 学习句：The girl is opening a box.
-    干扰图：The girl is opening a book.
-09. 学习句：The girl is closing a book.
-    干扰图：The girl is closing a box.
+08. 学习句：The girl is holding an open box.
+    干扰图：The girl is holding an open book.
+09. 学习句：The girl is holding a closed book.
+    干扰图：The girl is holding a closed box.
 10. 学习句：The girl is kicking a ball.
     干扰图：The girl is kicking a beanbag.
 11. 学习句：The child is holding a ball.
     干扰图：The child is holding a toy.
 12. 学习句：The child is holding a toy.
     干扰图：The child is holding a ball.
-13. 学习句：The child is opening a box.
-    干扰图：The child is opening a book.
-14. 学习句：The child is closing a book.
-    干扰图：The child is closing a box.
+13. 学习句：The child is holding an open box.
+    干扰图：The child is holding an open book.
+14. 学习句：The child is holding a closed book.
+    干扰图：The child is holding a closed box.
 15. 学习句：The child is kicking a ball.
     干扰图：The child is kicking a beanbag.
 
 ## Level 149
 
-01. 学习句：The boy is opening a box.
-    干扰图：The boy is opening a book.
-02. 学习句：The boy is closing a book.
-    干扰图：The boy is closing a box.
+01. 学习句：The boy is holding an open box.
+    干扰图：The boy is holding an open book.
+02. 学习句：The boy is holding a closed book.
+    干扰图：The boy is holding a closed box.
 03. 学习句：The boy is kicking a ball.
     干扰图：The boy is kicking a beanbag.
 04. 学习句：The boy is carrying a bag.
     干扰图：The boy is carrying a basket.
 05. 学习句：The boy is flying a kite.
     干扰图：The boy is flying a paper plane.
-06. 学习句：The girl is opening a box.
-    干扰图：The girl is opening a book.
-07. 学习句：The girl is closing a book.
-    干扰图：The girl is closing a box.
+06. 学习句：The girl is holding an open box.
+    干扰图：The girl is holding an open book.
+07. 学习句：The girl is holding a closed book.
+    干扰图：The girl is holding a closed box.
 08. 学习句：The girl is kicking a ball.
     干扰图：The girl is kicking a beanbag.
 09. 学习句：The girl is carrying a bag.
     干扰图：The girl is carrying a basket.
-10. 学习句：The girl is flying a kite.
-    干扰图：The girl is flying a paper plane.
-11. 学习句：The child is opening a box.
-    干扰图：The child is opening a book.
-12. 学习句：The child is closing a book.
-    干扰图：The child is closing a box.
+10. 学习句：The girl is holding a kite.
+    干扰图：The girl is holding a paper plane.
+11. 学习句：The child is holding an open box.
+    干扰图：The child is holding an open book.
+12. 学习句：The child is holding a closed book.
+    干扰图：The child is holding a closed box.
 13. 学习句：The child is kicking a ball.
     干扰图：The child is kicking a beanbag.
 14. 学习句：The child is carrying a bag.
     干扰图：The child is carrying a basket.
-15. 学习句：The child is flying a kite.
-    干扰图：The child is flying a paper plane.
+15. 学习句：The child is holding a kite.
+    干扰图：The child is holding a paper plane.
 
 ## Level 150
 
@@ -1627,28 +1626,28 @@
     干扰图：The boy is carrying a basket.
 03. 学习句：The boy is flying a kite.
     干扰图：The boy is flying a paper plane.
-04. 学习句：The boy is folding a towel.
-    干扰图：The boy is folding a shirt.
+04. 学习句：The boy is holding a folded towel.
+    干扰图：The boy is holding a folded shirt.
 05. 学习句：The boy is using a spoon.
     干扰图：The boy is using a cup.
 06. 学习句：The girl is kicking a ball.
     干扰图：The girl is kicking a beanbag.
 07. 学习句：The girl is carrying a bag.
     干扰图：The girl is carrying a basket.
-08. 学习句：The girl is flying a kite.
-    干扰图：The girl is flying a paper plane.
-09. 学习句：The girl is folding a towel.
-    干扰图：The girl is folding a shirt.
+08. 学习句：The girl is holding a kite.
+    干扰图：The girl is holding a paper plane.
+09. 学习句：The girl is holding a folded towel.
+    干扰图：The girl is holding a folded shirt.
 10. 学习句：The girl is using a spoon.
     干扰图：The girl is using a cup.
 11. 学习句：The child is kicking a ball.
     干扰图：The child is kicking a beanbag.
 12. 学习句：The child is carrying a bag.
     干扰图：The child is carrying a basket.
-13. 学习句：The child is flying a kite.
-    干扰图：The child is flying a paper plane.
-14. 学习句：The child is folding a towel.
-    干扰图：The child is folding a shirt.
+13. 学习句：The child is holding a kite.
+    干扰图：The child is holding a paper plane.
+14. 学习句：The child is holding a folded towel.
+    干扰图：The child is holding a folded shirt.
 15. 学习句：The child is using a spoon.
     干扰图：The child is using a cup.
 
@@ -1656,28 +1655,28 @@
 
 01. 学习句：The boy is flying a kite.
     干扰图：The boy is flying a paper plane.
-02. 学习句：The boy is folding a towel.
-    干扰图：The boy is folding a shirt.
+02. 学习句：The boy is holding a folded towel.
+    干扰图：The boy is holding a folded shirt.
 03. 学习句：The boy is using a spoon.
     干扰图：The boy is using a cup.
 04. 学习句：The boy is cleaning a table.
     干扰图：The boy is cleaning a desk.
 05. 学习句：The boy is watering a plant.
     干扰图：The boy is watering a flower.
-06. 学习句：The girl is flying a kite.
-    干扰图：The girl is flying a paper plane.
-07. 学习句：The girl is folding a towel.
-    干扰图：The girl is folding a shirt.
+06. 学习句：The girl is holding a kite.
+    干扰图：The girl is holding a paper plane.
+07. 学习句：The girl is holding a folded towel.
+    干扰图：The girl is holding a folded shirt.
 08. 学习句：The girl is using a spoon.
     干扰图：The girl is using a cup.
 09. 学习句：The girl is cleaning a table.
     干扰图：The girl is cleaning a desk.
 10. 学习句：The girl is watering a plant.
     干扰图：The girl is watering a flower.
-11. 学习句：The child is flying a kite.
-    干扰图：The child is flying a paper plane.
-12. 学习句：The child is folding a towel.
-    干扰图：The child is folding a shirt.
+11. 学习句：The child is holding a kite.
+    干扰图：The child is holding a paper plane.
+12. 学习句：The child is holding a folded towel.
+    干扰图：The child is holding a folded shirt.
 13. 学习句：The child is using a spoon.
     干扰图：The child is using a cup.
 14. 学习句：The child is cleaning a table.
@@ -1693,8 +1692,8 @@
     干扰图：The boy is cleaning a desk.
 03. 学习句：The boy is watering a plant.
     干扰图：The boy is watering a flower.
-04. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+04. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 05. 学习句：The boy is drawing a flower.
     干扰图：The boy is drawing a house.
 06. 学习句：The girl is using a spoon.
@@ -1703,8 +1702,8 @@
     干扰图：The girl is cleaning a desk.
 08. 学习句：The girl is watering a plant.
     干扰图：The girl is watering a flower.
-09. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+09. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 10. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 11. 学习句：The child is using a spoon.
@@ -1713,8 +1712,8 @@
     干扰图：The child is cleaning a desk.
 13. 学习句：The child is watering a plant.
     干扰图：The child is watering a flower.
-14. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+14. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 15. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 
@@ -1722,8 +1721,8 @@
 
 01. 学习句：The boy is watering a plant.
     干扰图：The boy is watering a flower.
-02. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+02. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 03. 学习句：The boy is drawing a flower.
     干扰图：The boy is drawing a house.
 04. 学习句：The boy is eating an apple.
@@ -1732,8 +1731,8 @@
     干扰图：The boy is drinking milk.
 06. 学习句：The girl is watering a plant.
     干扰图：The girl is watering a flower.
-07. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+07. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 08. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 09. 学习句：The girl is eating an apple.
@@ -1742,8 +1741,8 @@
     干扰图：The girl is drinking milk.
 11. 学习句：The child is watering a plant.
     干扰图：The child is watering a flower.
-12. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+12. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 13. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 14. 学习句：The child is eating an apple.
@@ -1792,59 +1791,59 @@
     干扰图：The boy is holding a toy.
 03. 学习句：The boy is holding a toy.
     干扰图：The boy is holding a ball.
-04. 学习句：The boy is opening a box.
-    干扰图：The boy is opening a book.
-05. 学习句：The boy is closing a book.
-    干扰图：The boy is closing a box.
+04. 学习句：The boy is holding an open box.
+    干扰图：The boy is holding an open book.
+05. 学习句：The boy is holding a closed book.
+    干扰图：The boy is holding a closed box.
 06. 学习句：The girl is drinking water.
     干扰图：The girl is drinking milk.
 07. 学习句：The girl is holding a ball.
     干扰图：The girl is holding a toy.
 08. 学习句：The girl is holding a toy.
     干扰图：The girl is holding a ball.
-09. 学习句：The girl is opening a box.
-    干扰图：The girl is opening a book.
-10. 学习句：The girl is closing a book.
-    干扰图：The girl is closing a box.
+09. 学习句：The girl is holding an open box.
+    干扰图：The girl is holding an open book.
+10. 学习句：The girl is holding a closed book.
+    干扰图：The girl is holding a closed box.
 11. 学习句：The child is drinking water.
     干扰图：The child is drinking milk.
 12. 学习句：The child is holding a ball.
     干扰图：The child is holding a toy.
 13. 学习句：The child is holding a toy.
     干扰图：The child is holding a ball.
-14. 学习句：The child is opening a box.
-    干扰图：The child is opening a book.
-15. 学习句：The child is closing a book.
-    干扰图：The child is closing a box.
+14. 学习句：The child is holding an open box.
+    干扰图：The child is holding an open book.
+15. 学习句：The child is holding a closed book.
+    干扰图：The child is holding a closed box.
 
 ## Level 156
 
 01. 学习句：The boy is holding a toy.
     干扰图：The boy is holding a ball.
-02. 学习句：The boy is opening a box.
-    干扰图：The boy is opening a book.
-03. 学习句：The boy is closing a book.
-    干扰图：The boy is closing a box.
+02. 学习句：The boy is holding an open box.
+    干扰图：The boy is holding an open book.
+03. 学习句：The boy is holding a closed book.
+    干扰图：The boy is holding a closed box.
 04. 学习句：The boy is kicking a ball.
     干扰图：The boy is kicking a beanbag.
 05. 学习句：The boy is carrying a bag.
     干扰图：The boy is carrying a basket.
 06. 学习句：The girl is holding a toy.
     干扰图：The girl is holding a ball.
-07. 学习句：The girl is opening a box.
-    干扰图：The girl is opening a book.
-08. 学习句：The girl is closing a book.
-    干扰图：The girl is closing a box.
+07. 学习句：The girl is holding an open box.
+    干扰图：The girl is holding an open book.
+08. 学习句：The girl is holding a closed book.
+    干扰图：The girl is holding a closed box.
 09. 学习句：The girl is kicking a ball.
     干扰图：The girl is kicking a beanbag.
 10. 学习句：The girl is carrying a bag.
     干扰图：The girl is carrying a basket.
 11. 学习句：The child is holding a toy.
     干扰图：The child is holding a ball.
-12. 学习句：The child is opening a box.
-    干扰图：The child is opening a book.
-13. 学习句：The child is closing a book.
-    干扰图：The child is closing a box.
+12. 学习句：The child is holding an open box.
+    干扰图：The child is holding an open book.
+13. 学习句：The child is holding a closed book.
+    干扰图：The child is holding a closed box.
 14. 学习句：The child is kicking a ball.
     干扰图：The child is kicking a beanbag.
 15. 学习句：The child is carrying a bag.
@@ -1852,36 +1851,36 @@
 
 ## Level 157
 
-01. 学习句：The boy is closing a book.
-    干扰图：The boy is closing a box.
+01. 学习句：The boy is holding a closed book.
+    干扰图：The boy is holding a closed box.
 02. 学习句：The boy is kicking a ball.
     干扰图：The boy is kicking a beanbag.
 03. 学习句：The boy is carrying a bag.
     干扰图：The boy is carrying a basket.
 04. 学习句：The boy is flying a kite.
     干扰图：The boy is flying a paper plane.
-05. 学习句：The boy is folding a towel.
-    干扰图：The boy is folding a shirt.
-06. 学习句：The girl is closing a book.
-    干扰图：The girl is closing a box.
+05. 学习句：The boy is holding a folded towel.
+    干扰图：The boy is holding a folded shirt.
+06. 学习句：The girl is holding a closed book.
+    干扰图：The girl is holding a closed box.
 07. 学习句：The girl is kicking a ball.
     干扰图：The girl is kicking a beanbag.
 08. 学习句：The girl is carrying a bag.
     干扰图：The girl is carrying a basket.
-09. 学习句：The girl is flying a kite.
-    干扰图：The girl is flying a paper plane.
-10. 学习句：The girl is folding a towel.
-    干扰图：The girl is folding a shirt.
-11. 学习句：The child is closing a book.
-    干扰图：The child is closing a box.
+09. 学习句：The girl is holding a kite.
+    干扰图：The girl is holding a paper plane.
+10. 学习句：The girl is holding a folded towel.
+    干扰图：The girl is holding a folded shirt.
+11. 学习句：The child is holding a closed book.
+    干扰图：The child is holding a closed box.
 12. 学习句：The child is kicking a ball.
     干扰图：The child is kicking a beanbag.
 13. 学习句：The child is carrying a bag.
     干扰图：The child is carrying a basket.
-14. 学习句：The child is flying a kite.
-    干扰图：The child is flying a paper plane.
-15. 学习句：The child is folding a towel.
-    干扰图：The child is folding a shirt.
+14. 学习句：The child is holding a kite.
+    干扰图：The child is holding a paper plane.
+15. 学习句：The child is holding a folded towel.
+    干扰图：The child is holding a folded shirt.
 
 ## Level 158
 
@@ -1889,28 +1888,28 @@
     干扰图：The boy is carrying a basket.
 02. 学习句：The boy is flying a kite.
     干扰图：The boy is flying a paper plane.
-03. 学习句：The boy is folding a towel.
-    干扰图：The boy is folding a shirt.
+03. 学习句：The boy is holding a folded towel.
+    干扰图：The boy is holding a folded shirt.
 04. 学习句：The boy is using a spoon.
     干扰图：The boy is using a cup.
 05. 学习句：The boy is cleaning a table.
     干扰图：The boy is cleaning a desk.
 06. 学习句：The girl is carrying a bag.
     干扰图：The girl is carrying a basket.
-07. 学习句：The girl is flying a kite.
-    干扰图：The girl is flying a paper plane.
-08. 学习句：The girl is folding a towel.
-    干扰图：The girl is folding a shirt.
+07. 学习句：The girl is holding a kite.
+    干扰图：The girl is holding a paper plane.
+08. 学习句：The girl is holding a folded towel.
+    干扰图：The girl is holding a folded shirt.
 09. 学习句：The girl is using a spoon.
     干扰图：The girl is using a cup.
 10. 学习句：The girl is cleaning a table.
     干扰图：The girl is cleaning a desk.
 11. 学习句：The child is carrying a bag.
     干扰图：The child is carrying a basket.
-12. 学习句：The child is flying a kite.
-    干扰图：The child is flying a paper plane.
-13. 学习句：The child is folding a towel.
-    干扰图：The child is folding a shirt.
+12. 学习句：The child is holding a kite.
+    干扰图：The child is holding a paper plane.
+13. 学习句：The child is holding a folded towel.
+    干扰图：The child is holding a folded shirt.
 14. 学习句：The child is using a spoon.
     干扰图：The child is using a cup.
 15. 学习句：The child is cleaning a table.
@@ -1918,36 +1917,36 @@
 
 ## Level 159
 
-01. 学习句：The boy is folding a towel.
-    干扰图：The boy is folding a shirt.
+01. 学习句：The boy is holding a folded towel.
+    干扰图：The boy is holding a folded shirt.
 02. 学习句：The boy is using a spoon.
     干扰图：The boy is using a cup.
 03. 学习句：The boy is cleaning a table.
     干扰图：The boy is cleaning a desk.
 04. 学习句：The boy is watering a plant.
     干扰图：The boy is watering a flower.
-05. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
-06. 学习句：The girl is folding a towel.
-    干扰图：The girl is folding a shirt.
+05. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
+06. 学习句：The girl is holding a folded towel.
+    干扰图：The girl is holding a folded shirt.
 07. 学习句：The girl is using a spoon.
     干扰图：The girl is using a cup.
 08. 学习句：The girl is cleaning a table.
     干扰图：The girl is cleaning a desk.
 09. 学习句：The girl is watering a plant.
     干扰图：The girl is watering a flower.
-10. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
-11. 学习句：The child is folding a towel.
-    干扰图：The child is folding a shirt.
+10. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
+11. 学习句：The child is holding a folded towel.
+    干扰图：The child is holding a folded shirt.
 12. 学习句：The child is using a spoon.
     干扰图：The child is using a cup.
 13. 学习句：The child is cleaning a table.
     干扰图：The child is cleaning a desk.
 14. 学习句：The child is watering a plant.
     干扰图：The child is watering a flower.
-15. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+15. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 
 ## Level 160
 
@@ -1955,8 +1954,8 @@
     干扰图：The boy is cleaning a desk.
 02. 学习句：The boy is watering a plant.
     干扰图：The boy is watering a flower.
-03. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+03. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 04. 学习句：The boy is drawing a flower.
     干扰图：The boy is drawing a house.
 05. 学习句：The boy is eating an apple.
@@ -1965,8 +1964,8 @@
     干扰图：The girl is cleaning a desk.
 07. 学习句：The girl is watering a plant.
     干扰图：The girl is watering a flower.
-08. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+08. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 09. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 10. 学习句：The girl is eating an apple.
@@ -1975,8 +1974,8 @@
     干扰图：The child is cleaning a desk.
 12. 学习句：The child is watering a plant.
     干扰图：The child is watering a flower.
-13. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+13. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 14. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 15. 学习句：The child is eating an apple.
@@ -5985,8 +5984,8 @@
     干扰图：The boy is holding a toy.
 04. 学习句：The boy is playing with a toy.
     干扰图：The boy is playing with a ball.
-05. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+05. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 06. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 07. 学习句：The girl is eating an apple.
@@ -5995,8 +5994,8 @@
     干扰图：The girl is holding a toy.
 09. 学习句：The girl is playing with a toy.
     干扰图：The girl is playing with a ball.
-10. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+10. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 11. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 12. 学习句：The child is eating an apple.
@@ -6005,8 +6004,8 @@
     干扰图：The child is holding a toy.
 14. 学习句：The child is playing with a toy.
     干扰图：The child is playing with a ball.
-15. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+15. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 
 ## Level 283
 
@@ -6047,8 +6046,8 @@
     干扰图：The boy is holding a toy.
 02. 学习句：The boy is playing with a toy.
     干扰图：The boy is playing with a ball.
-03. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+03. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 04. 学习句：The boy is drawing a flower.
     干扰图：The boy is drawing a house.
 05. 学习句：The boy is eating an apple.
@@ -6057,8 +6056,8 @@
     干扰图：The girl is holding a toy.
 07. 学习句：The girl is playing with a toy.
     干扰图：The girl is playing with a ball.
-08. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+08. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 09. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 10. 学习句：The girl is eating an apple.
@@ -6067,8 +6066,8 @@
     干扰图：The child is holding a toy.
 12. 学习句：The child is playing with a toy.
     干扰图：The child is playing with a ball.
-13. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+13. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 14. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 15. 学习句：The child is eating an apple.
@@ -6109,8 +6108,8 @@
 
 ## Level 286
 
-01. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+01. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 02. 学习句：The boy is drawing a flower.
     干扰图：The boy is drawing a house.
 03. 学习句：The boy is eating an apple.
@@ -6119,8 +6118,8 @@
     干扰图：The boy is holding a toy.
 05. 学习句：The boy is playing with a toy.
     干扰图：The boy is playing with a ball.
-06. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+06. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 07. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 08. 学习句：The girl is eating an apple.
@@ -6129,8 +6128,8 @@
     干扰图：The girl is holding a toy.
 10. 学习句：The girl is playing with a toy.
     干扰图：The girl is playing with a ball.
-11. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+11. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 12. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 13. 学习句：The child is eating an apple.
@@ -6181,8 +6180,8 @@
     干扰图：The boy is holding a toy.
 03. 学习句：The boy is playing with a toy.
     干扰图：The boy is playing with a ball.
-04. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+04. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 05. 学习句：The boy is drawing a flower.
     干扰图：The boy is drawing a house.
 06. 学习句：The girl is eating an apple.
@@ -6191,8 +6190,8 @@
     干扰图：The girl is holding a toy.
 08. 学习句：The girl is playing with a toy.
     干扰图：The girl is playing with a ball.
-09. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+09. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 10. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 11. 学习句：The child is eating an apple.
@@ -6201,8 +6200,8 @@
     干扰图：The child is holding a toy.
 13. 学习句：The child is playing with a toy.
     干扰图：The child is playing with a ball.
-14. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+14. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 15. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 
@@ -6243,8 +6242,8 @@
 
 01. 学习句：The boy is playing with a toy.
     干扰图：The boy is playing with a ball.
-02. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+02. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 03. 学习句：The boy is drawing a flower.
     干扰图：The boy is drawing a house.
 04. 学习句：The boy is eating an apple.
@@ -6253,8 +6252,8 @@
     干扰图：The boy is holding a toy.
 06. 学习句：The girl is playing with a toy.
     干扰图：The girl is playing with a ball.
-07. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+07. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 08. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 09. 学习句：The girl is eating an apple.
@@ -6263,8 +6262,8 @@
     干扰图：The girl is holding a toy.
 11. 学习句：The child is playing with a toy.
     干扰图：The child is playing with a ball.
-12. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+12. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 13. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 14. 学习句：The child is eating an apple.
@@ -6315,8 +6314,8 @@
     干扰图：The boy is holding a toy.
 04. 学习句：The boy is playing with a toy.
     干扰图：The boy is playing with a ball.
-05. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+05. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 06. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 07. 学习句：The girl is eating an apple.
@@ -6325,8 +6324,8 @@
     干扰图：The girl is holding a toy.
 09. 学习句：The girl is playing with a toy.
     干扰图：The girl is playing with a ball.
-10. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+10. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 11. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 12. 学习句：The child is eating an apple.
@@ -6335,8 +6334,8 @@
     干扰图：The child is holding a toy.
 14. 学习句：The child is playing with a toy.
     干扰图：The child is playing with a ball.
-15. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+15. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 
 ## Level 293
 
@@ -6377,8 +6376,8 @@
     干扰图：The boy is holding a toy.
 02. 学习句：The boy is playing with a toy.
     干扰图：The boy is playing with a ball.
-03. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+03. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 04. 学习句：The boy is drawing a flower.
     干扰图：The boy is drawing a house.
 05. 学习句：The boy is eating an apple.
@@ -6387,8 +6386,8 @@
     干扰图：The girl is holding a toy.
 07. 学习句：The girl is playing with a toy.
     干扰图：The girl is playing with a ball.
-08. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+08. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 09. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 10. 学习句：The girl is eating an apple.
@@ -6397,8 +6396,8 @@
     干扰图：The child is holding a toy.
 12. 学习句：The child is playing with a toy.
     干扰图：The child is playing with a ball.
-13. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+13. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 14. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 15. 学习句：The child is eating an apple.
@@ -6439,8 +6438,8 @@
 
 ## Level 296
 
-01. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+01. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 02. 学习句：The boy is drawing a flower.
     干扰图：The boy is drawing a house.
 03. 学习句：The boy is eating an apple.
@@ -6449,8 +6448,8 @@
     干扰图：The boy is holding a toy.
 05. 学习句：The boy is playing with a toy.
     干扰图：The boy is playing with a ball.
-06. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+06. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 07. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 08. 学习句：The girl is eating an apple.
@@ -6459,8 +6458,8 @@
     干扰图：The girl is holding a toy.
 10. 学习句：The girl is playing with a toy.
     干扰图：The girl is playing with a ball.
-11. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+11. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 12. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 13. 学习句：The child is eating an apple.
@@ -6511,8 +6510,8 @@
     干扰图：The boy is holding a toy.
 03. 学习句：The boy is playing with a toy.
     干扰图：The boy is playing with a ball.
-04. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+04. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 05. 学习句：The boy is drawing a flower.
     干扰图：The boy is drawing a house.
 06. 学习句：The girl is eating an apple.
@@ -6521,8 +6520,8 @@
     干扰图：The girl is holding a toy.
 08. 学习句：The girl is playing with a toy.
     干扰图：The girl is playing with a ball.
-09. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+09. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 10. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 11. 学习句：The child is eating an apple.
@@ -6531,8 +6530,8 @@
     干扰图：The child is holding a toy.
 13. 学习句：The child is playing with a toy.
     干扰图：The child is playing with a ball.
-14. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+14. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 15. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 
@@ -6573,8 +6572,8 @@
 
 01. 学习句：The boy is playing with a toy.
     干扰图：The boy is playing with a ball.
-02. 学习句：The boy is reading a book.
-    干扰图：The boy is reading a card.
+02. 学习句：The boy is holding an open book.
+    干扰图：The boy is holding a picture card.
 03. 学习句：The boy is drawing a flower.
     干扰图：The boy is drawing a house.
 04. 学习句：The boy is eating an apple.
@@ -6583,8 +6582,8 @@
     干扰图：The boy is holding a toy.
 06. 学习句：The girl is playing with a toy.
     干扰图：The girl is playing with a ball.
-07. 学习句：The girl is reading a book.
-    干扰图：The girl is reading a card.
+07. 学习句：The girl is holding an open book.
+    干扰图：The girl is holding a picture card.
 08. 学习句：The girl is drawing a flower.
     干扰图：The girl is drawing a house.
 09. 学习句：The girl is eating an apple.
@@ -6593,8 +6592,8 @@
     干扰图：The girl is holding a toy.
 11. 学习句：The child is playing with a toy.
     干扰图：The child is playing with a ball.
-12. 学习句：The child is reading a book.
-    干扰图：The child is reading a card.
+12. 学习句：The child is holding an open book.
+    干扰图：The child is holding a picture card.
 13. 学习句：The child is drawing a flower.
     干扰图：The child is drawing a house.
 14. 学习句：The child is eating an apple.

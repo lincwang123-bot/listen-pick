@@ -3,6 +3,9 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { textbookLevels as existingTextbookLevels } from "../src/course/textbook-levels-001-100.generated.mjs";
+import {
+  applyCourseContentOverrides
+} from "./lib/course-content-overrides.mjs";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const outputJsonPath = resolve(root, "docs/child-english-listening-levels-101-300.json");
@@ -125,13 +128,15 @@ for (const stage of stages) {
   }
 }
 
+const correctedLevels = applyCourseContentOverrides(levels);
+
 await mkdir(dirname(outputJsonPath), { recursive: true });
 await mkdir(dirname(outputDataPath), { recursive: true });
-await writeFile(outputJsonPath, `${JSON.stringify({ levels }, null, 2)}\n`, "utf8");
-await writeFile(outputMdPath, renderMarkdown(levels), "utf8");
-await writeTextbookDataFiles(levels);
-await writeContactSheetManifests(levels);
-await writeFile(outputPromptPath, renderContactSheetPrompts(levels), "utf8");
+await writeFile(outputJsonPath, `${JSON.stringify({ levels: correctedLevels }, null, 2)}\n`, "utf8");
+await writeFile(outputMdPath, renderMarkdown(correctedLevels), "utf8");
+await writeTextbookDataFiles(correctedLevels);
+await writeContactSheetManifests(correctedLevels);
+await writeFile(outputPromptPath, renderContactSheetPrompts(correctedLevels), "utf8");
 
 console.log(`Generated ${levels.length} levels and ${levels.length * QUESTIONS_PER_LEVEL} questions.`);
 console.log(outputJsonPath);
@@ -327,8 +332,8 @@ function windowedWithout(items, offset, count, blockedItem) {
 }
 
 async function writeTextbookDataFiles(items) {
-  const stageLevels = items.map(toTextbookLevel);
-  const combinedLevels = [...existingTextbookLevels, ...stageLevels];
+  const stageLevels = applyCourseContentOverrides(items.map(toTextbookLevel));
+  const combinedLevels = [...applyCourseContentOverrides(existingTextbookLevels), ...stageLevels];
 
   await writeFile(
     outputDataPath,

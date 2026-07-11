@@ -1,6 +1,6 @@
 # Listen & Pick 项目交接说明
 
-更新时间：2026-07-10
+更新时间：2026-07-11
 项目路径：本地工作区根目录
 线上地址：`https://linc.wang/listen-pick/`
 
@@ -20,16 +20,16 @@
 - VPS SSH：`ssh linc-vps`
 - VPS 静态目录：`/opt/linc/sites/localpilot/listen-pick/`
 - 当前缓存版本：
-  - `stage3-assets-v18`
-  - `zh-hints-v11`
+  - `stage3-assets-v19`
+  - `zh-hints-v12`
 - 最近验证：
-  - `npm test` 通过，`116/116`
+  - `npm test` 通过，`121/121`
   - 300 关专项路径校验通过：每关 15 题、每题音频/正确图/错误图题号路径一致，错误数 0
   - 音频审计检查 13,500 个文件，缺失/空文件/解码失败/异句哈希复用均为 0
-  - 图片文件审计检查 4500 对题图，缺图 0；分层视觉语义审查已覆盖 300 关并发现多批确认/高疑问题，详见 `docs/course-quality-audit-2026-07-10.md`
+  - 图片文件审计检查 4500 对题图，缺图 0、可疑项 0
   - 进行时中文提示全量审计漏动作数 0
-  - 线上应加载 `src/app.mjs?v=stage3-assets-v18`
-  - 线上 `app.mjs` 应加载 `hints.mjs?v=zh-hints-v11`
+  - 线上应加载 `src/app.mjs?v=stage3-assets-v19`
+  - 线上 `app.mjs` 应加载 `hints.mjs?v=zh-hints-v12`
   - 匿名统计 endpoint：`/listen-pick/__analytics/visit`
   - 匿名统计日志：`/var/log/nginx/listen-pick-analytics.access.log`
 
@@ -185,6 +185,9 @@ rsync -az --include='*/' --include='*.webp' --exclude='*' assets/textbook/images
 - 全量核查 300 关中 623 道含数字题，逐张复核 336 张去重关联图片；修复第 18 关 Q14 小猪图、第 22 关 Q8 兄弟数量、第 29 关 Q7 三个杯子，并修正第 52、93 关两处不自然干扰句；当前缓存版本提升到 `stage3-assets-v16 / zh-hints-v9`。
 - 修复第 22 关 Q9-Q13 家庭关系图片错位：宝宝弟弟、小妹妹、婴儿妹妹、姐姐、兄弟组和姐妹组均重新绑定到对应句子；Q15 的三个宝宝改为 `triplets / 三胞胎`；当前缓存版本提升到 `stage3-assets-v17 / zh-hints-v10`。
 - 完成 300 关英文、中文、音频、图片的分层质量审计：新增课程内容与音频门禁，系统修复中文提示中的家庭称谓、量词、短语动词、位置和缺词问题；第 22 关 Q14 改为自然英文 `We are two brothers.`；当前缓存版本提升到 `stage3-assets-v18 / zh-hints-v11`。完整结果见 `docs/course-quality-audit-2026-07-10.md`。
+- 修复全课程审计列出的确定和高风险内容：集中维护英文覆盖规则，替换 163 个目标题图（149 张按既有儿童绘本风格生成、14 张人工确认复用），重做受影响的默认/男声/女声音频，并将缓存版本提升到 `stage3-assets-v19 / zh-hints-v12`。
+- 修正 101-300 关静态图片的动作表述：打开/合上的书盒、叠好的衣物、手持纸飞机等均改为画面可直接证明的状态；生成脚本会同步刷新英文、生图提示和运行题库，避免下次生成回退。
+- 最终门禁：121 项测试全部通过；4500 道题内容审计 0 问题；4500 对图片审计 0 缺失、0 可疑；13500 个音频文件全部可读，0 绑定/哈希问题。
 
 ## 9. 审计报告
 
@@ -195,11 +198,10 @@ docs/textbook-image-duplicate-audit.md
 docs/textbook-image-duplicate-audit.json
 ```
 
-最近一次文件审计检查了 4500 组题目图片，没有发现缺图。第 11-15 关全部 150 张数量图已经逐图计数通过；家庭、数量/颜色/动物、动作/位置/物体三条视觉语义审查已覆盖运行时 300 关。审查确认了第 18、20、22、30、83、98 等关卡的具体错图，也确认 132-190 关复用的开书、关书、关盒、折叠图片无法表达动作。完整表见 `docs/course-quality-audit-2026-07-10.md`，这些素材仍属于发布阻断项。
+最近一次文件审计检查了 4500 组题目图片，没有发现缺图或可疑项。第 11-15 关全部 150 张数量图已经逐图计数通过；家庭、数量/颜色/动物、动作/位置/物体三条视觉语义审查已覆盖运行时 300 关。历史问题与本次修复方式见 `docs/course-quality-audit-2026-07-10.md`。
 
 ## 10. 当前风险与待办
 
-- 当前审计仍有 39 条确定英文/语义错误、45 条高风险内容，以及家庭关系 9 项确定和 6 项高疑图片问题；修改英文时必须同步重画配图，修改正确句时还要重生三套音频。
 - 101-300 关虽然已经生成，但必须坚持教育启蒙严谨标准，任何语法不自然、中文生硬、图片歧义都要修。
 - 图片生成规则必须保持前 100 关同等品质：
   - 儿童绘本风
@@ -210,8 +212,7 @@ docs/textbook-image-duplicate-audit.json
   - 无水印
   - 正方形或固定比例，移动端显示完整
 - 本地 PNG 母版约 2.4GB，开源或部署时要谨慎处理，避免仓库过大。
-- GitHub 推送和 README 重写曾被提出，但最后用户切换到“写交接文件”，所以还没有继续完成这一项。
-- 当前工作区有大量未提交改动，提交前一定要先检查 `git status` 和具体 diff，不要回退任何已有改动。
+- 课程媒体在 `.gitignore` 中，不进入 GitHub；部署时必须把运行时 WebP 和三套音频单独同步到 VPS。
 - 如果继续开源，需要明确许可策略：用户不希望别人直接商用这套内容。
 - 访问统计为匿名前端信标，不是账号系统；如果清除浏览器数据或换设备，会生成新的匿名 `vid`。
 - 查看当前使用人数可在 VPS 上按最近 heartbeat 去重 `/var/log/nginx/listen-pick-analytics.access.log`。
@@ -221,5 +222,5 @@ docs/textbook-image-duplicate-audit.json
 可以直接复制下面这段给新的 Codex 对话：
 
 ```text
-请继续维护这个项目。先阅读 HANDOFF.md、AGENTS.md、README.md、README.zh-CN.md、package.json、src/app.mjs、src/game.mjs、src/hints.mjs、docs/course-quality-audit-2026-07-10.md。不要回退未提交改动。当前待部署版本是 stage3-assets-v18 / zh-hints-v11，线上地址是 https://linc.wang/listen-pick/。项目是儿童英语听力选图学习系统，核心要求是英文语法、中文语义、插图逻辑、音频内容必须严格正确，不能伤害儿童认知。先处理审计报告中的发布阻断项，再考虑新增功能。
+请继续维护这个项目。先阅读 HANDOFF.md、AGENTS.md、README.md、README.zh-CN.md、package.json、src/app.mjs、src/game.mjs、src/hints.mjs、docs/course-quality-audit-2026-07-10.md。不要回退未提交改动。当前版本是 stage3-assets-v19 / zh-hints-v12，线上地址是 https://linc.wang/listen-pick/。项目是儿童英语听力选图学习系统，核心要求是英文语法、中文语义、插图逻辑、音频内容必须严格正确，不能伤害儿童认知。每次内容修改后都要重新运行三类全量审计。
 ```

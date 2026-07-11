@@ -129,7 +129,10 @@ test("Chinese hints preserve child-facing meaning across audited grammar categor
     ["The children are running a race.", "孩子们正在进行赛跑。"],
     ["The boy is standing at the finish line.", "男孩正站在终点线旁。"],
     ["The girl is erasing a line.", "女孩正在擦掉一条线。"],
-    ["The girl is waiting in line.", "女孩正在排队等待。"]
+    ["The girl is waiting in line.", "女孩正在排队等待。"],
+    ["The baby is drinking milk from a cup.", "宝宝正在用杯子喝牛奶。"],
+    ["The baby is drinking water from a cup.", "宝宝正在用杯子喝水。"],
+    ["The baby is lifting both feet.", "宝宝正在抬起双脚。"]
   ]);
 
   for (const [sentence, expected] of examples) {

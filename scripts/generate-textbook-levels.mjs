@@ -1,6 +1,8 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 
+import { applyCourseContentOverrides } from "./lib/course-content-overrides.mjs";
+
 const sourcePath = process.argv[2] ?? "docs/child-english-listening-levels-001-050.md";
 const dataPath = "src/course/textbook-levels-001-050.generated.mjs";
 const promptPath = "docs/textbook-contact-sheet-prompts.md";
@@ -468,7 +470,7 @@ function buildCellItems(level) {
 }
 
 function writeOutputs(levels) {
-  const generatedLevels = levels.map((level) => {
+  const generatedLevels = applyCourseContentOverrides(levels).map((level) => {
     const questions = level.questions.map((question, index) => {
       const sentence = repairSentence(question.sentence);
       let wrongSentence = makeWrongSentence(sentence);

@@ -6,11 +6,13 @@ import { fileURLToPath } from "node:url";
 import { promisify } from "node:util";
 import { execFile } from "node:child_process";
 
-import { textbookLevels } from "../src/course/textbook-levels-101-300.generated.mjs";
+import { textbookLevels } from "../src/course/textbook-levels-001-300.generated.mjs";
+import { COURSE_CONTENT_OVERRIDES } from "./lib/course-content-overrides.mjs";
 
 const run = promisify(execFile);
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const args = process.argv.slice(2);
+const qualityFixesOnly = args.includes("--quality-fixes");
 const firstLevelArg = readNumberArg(0);
 const secondLevelArg = readNumberArg(1);
 const startLevel = Number(firstLevelArg ?? 101);
@@ -45,7 +47,7 @@ for (const voice of requestedVoices) {
   }
 }
 
-if (!Number.isInteger(startLevel) || !Number.isInteger(endLevel) || startLevel < 101 || endLevel < startLevel) {
+if (!Number.isInteger(startLevel) || !Number.isInteger(endLevel) || startLevel < 1 || endLevel < startLevel) {
   throw new Error(`Invalid level range: ${startLevel}-${endLevel}`);
 }
 
@@ -59,6 +61,7 @@ const synthJobsByKey = new Map();
 
 for (const level of levels) {
   for (const question of level.questions) {
+    if (qualityFixesOnly && !needsQualityFixAudio(question)) continue;
     for (const voice of requestedVoices) {
       const finalM4a = resolve(root, toVoiceAudioPath(question.audioFile, voice));
       if (!force && existsSync(finalM4a)) continue;
@@ -165,6 +168,11 @@ function makeCacheKey(text, voice, edgeVoice, rateValue, pitchValue, volumeValue
     .update(JSON.stringify({ text, voice, edgeVoice, rateValue, pitchValue, volumeValue }))
     .digest("hex")
     .slice(0, 20);
+}
+
+function needsQualityFixAudio(question) {
+  if (COURSE_CONTENT_OVERRIDES.get(question.id)?.sentence) return true;
+  return / is holding (?:an open (?:book|box)|a kite|a closed (?:book|box)|a folded (?:towel|shirt))\.$/.test(question.sentence);
 }
 
 async function runQueue(items, maxConcurrent, worker) {

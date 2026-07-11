@@ -24,7 +24,7 @@
 
 52-01. The girl is smiling.
 52-02. The boy is looking up.
-52-03. The baby is clapping hands.
+52-03. The baby is clapping both hands.
 52-04. The child is pointing to an eye.
 52-05. The child is pointing to a nose.
 52-06. The girl is brushing her hair.
@@ -40,7 +40,7 @@
 
 ## Level 053｜身体综合：head / shoulders / knees / toes
 
-53-01. The child is touching the head.
+53-01. The child is touching their head.
 53-02. The girl is touching her shoulders.
 53-03. The boy is touching his knees.
 53-04. The baby is touching its toes.
@@ -51,7 +51,7 @@
 53-09. The child has a bandage on the knee.
 53-10. The girl is holding her stomach.
 53-11. The boy is stretching his arms.
-53-12. The child is bending the knees.
+53-12. The child is bending their knees.
 53-13. The baby is sitting with bare feet.
 53-14. The child is looking in a mirror.
 53-15. The child is brushing his teeth.
@@ -72,7 +72,7 @@
 54-12. The baby is holding a red comb.
 54-13. The girl is washing her face.
 54-14. The boy is drying his hair.
-54-15. The child is smiling with clean teeth.
+54-15. The child has clean teeth.
 
 ## Level 055｜身体场景复习关
 
@@ -81,16 +81,16 @@
 55-03. The girl is combing her hair.
 55-04. The baby is touching a soft towel.
 55-05. The child is drying his feet with a towel.
-55-06. The girl is looking at her face.
+55-06. The girl is looking at her face in a mirror.
 55-07. The boy is putting soap on his hands.
-55-08. The child is opening the mouth for a toothbrush.
+55-08. The child is opening their mouth.
 55-09. The baby is waving both hands.
-55-10. The child is clapping clean hands.
+55-10. The child is clapping.
 55-11. The girl is standing beside a mirror.
 55-12. The boy is holding a blue toothbrush.
-55-13. The child is touching a knee on the mat.
-55-14. The baby is playing with toes.
-55-15. The child is ready after washing.
+55-13. The child is touching their knee on the mat.
+55-14. The baby is touching their toes.
+55-15. The child is clean after washing.
 
 ## Level 056｜衣物基础：shirt / trousers / skirt / dress
 
@@ -260,7 +260,7 @@
 65-02. The girl is reading at her desk.
 65-03. The boy is writing with a pencil.
 65-04. The student is putting an eraser in the pencil case.
-65-05. The books are neatly on the shelf.
+65-05. The books are neatly arranged on the shelf.
 65-06. The schoolbag is open on the chair.
 65-07. The child is raising a hand in class.
 65-08. The teacher is giving a notebook to a student.
@@ -347,7 +347,7 @@
 ## Level 070｜朋友与喜好复习关
 
 70-01. The girl likes reading with a friend.
-70-02. The boy likes playing ball with a classmate.
+70-02. The boy and his classmate are playing with a ball.
 70-03. The friends are sharing apples.
 70-04. The classmates are holding blue books.
 70-05. The child is giving a toy to a friend.
@@ -466,7 +466,7 @@
 76-10. The boy is eating breakfast.
 76-11. The child is drinking milk.
 76-12. The child is waiting by the door.
-76-13. The mother is giving a coat.
+76-13. The mother is giving a coat to the child.
 76-14. The father is holding the door open.
 76-15. The child is ready for school.
 
@@ -701,7 +701,7 @@
 89-11. The classmate likes the small robot.
 89-12. The girl likes drawing flowers.
 89-13. The boy likes reading animal books.
-89-14. The child likes playing blocks.
+89-14. The child likes playing with blocks.
 89-15. The friends like the same game.
 
 ## Level 090｜状态与喜欢复习关
@@ -737,7 +737,7 @@
 91-11. The bag is heavy with books.
 91-12. The bag is open on the chair.
 91-13. The child is putting a cap in the bag.
-91-14. The mother is giving a lunch box.
+91-14. The mother is giving a lunch box to the child.
 91-15. The schoolbag is ready by the door.
 
 ## Level 092｜教室位置与动作综合
@@ -761,7 +761,7 @@
 ## Level 093｜身体与衣物综合
 
 93-01. The girl is putting a hat on her head.
-93-02. The boy is tying shoes on his feet.
+93-02. The boy is tying his shoelaces.
 93-03. The child is washing his hands before putting on a shirt.
 93-04. The baby has socks on both feet.
 93-05. The girl has a scarf around her neck.
@@ -796,7 +796,7 @@
 
 ## Level 095｜Stage 2 挑战复习关
 
-95-01. The child is touching a nose in the mirror.
+95-01. The child is touching their nose in the mirror.
 95-02. The girl is wearing a purple dress.
 95-03. The boy is putting a book in the schoolbag.
 95-04. There are three pencils in the cup.
@@ -821,9 +821,9 @@
 96-05. The girl is combing her hair by the mirror.
 96-06. The boy is putting on a blue shirt.
 96-07. The child is eating breakfast at the table.
-96-08. The baby is drinking milk in a cup.
+96-08. The baby is drinking milk from a cup.
 96-09. The mother is packing a lunch box.
-96-10. The father is helping with shoes.
+96-10. The father is helping the child put on shoes.
 96-11. The schoolbag is ready by the door.
 96-12. The child is putting a bottle in the bag.
 96-13. The coat is on the hook.
@@ -874,10 +874,10 @@
 99-04. The child is washing his hands after school.
 99-05. The schoolbag is on the chair.
 99-06. The girl is taking out a notebook.
-99-07. The boy is eating an apple snack.
+99-07. The boy is eating an apple.
 99-08. The child is drinking water at home.
 99-09. The mother is reading with the child.
-99-10. The father is helping with homework.
+99-10. The father is helping the child with homework.
 99-11. The child is playing with blocks.
 99-12. The baby is holding a soft toy.
 99-13. There is a book on the sofa.

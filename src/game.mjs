@@ -1,6 +1,6 @@
 import { courseLevels } from "./course/levels-002-030.generated.mjs";
-import { availableTextbookLevels } from "./course/textbook-playable.generated.mjs?v=stage3-assets-v18";
-import { textbookLevels } from "./course/textbook-levels-001-300.generated.mjs?v=stage3-assets-v18";
+import { availableTextbookLevels } from "./course/textbook-playable.generated.mjs?v=stage3-assets-v19";
+import { textbookLevels } from "./course/textbook-levels-001-300.generated.mjs?v=stage3-assets-v19";
 
 const levelQuestions = [
   {

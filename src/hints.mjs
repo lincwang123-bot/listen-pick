@@ -4,6 +4,7 @@ const exactHints = new Map([
   ["a boy is eating an apple", "一个男孩正在吃苹果。"],
   ["a dog is sleeping", "一只狗正在睡觉。"],
   ["the baby is kicking both feet", "宝宝正在踢动双脚。"],
+  ["the baby is lifting both feet", "宝宝正在抬起双脚。"],
   ["the baby is holding a sock in one hand", "宝宝一只手里拿着一只袜子。"],
   ["the three babies are triplets", "三个宝宝是三胞胎。"],
   ["the cat is on the chair", "猫在椅子上。"],
@@ -936,7 +937,13 @@ function translateSpecialHint(normalized) {
     mother: "妈妈"
   };
 
-  let match = normalized.match(/^this is my (mother|father|sister|brother|grandma|grandpa|family|class)$/);
+  let match = normalized.match(/^the (baby|child|boy|girl) is drinking (milk|water|juice) from (?:a|the) cup$/);
+  if (match) {
+    const drink = { milk: "牛奶", water: "水", juice: "果汁" }[match[2]];
+    return `${translateSubject(match[1])}正在用杯子喝${drink}。`;
+  }
+
+  match = normalized.match(/^this is my (mother|father|sister|brother|grandma|grandpa|family|class)$/);
   if (match?.[1] === "family") return "这是我的家人。";
   if (match?.[1] === "class") return "这是我的班级。";
   if (match) return `这是我的${familyRoles[match[1]]}。`;

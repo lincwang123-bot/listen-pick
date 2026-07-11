@@ -1,5 +1,16 @@
 # Course Quality Audit - 2026-07-10
 
+## Remediation Status - 2026-07-11
+
+All confirmed and high-risk findings recorded below have now been remediated. The historical sections remain in this document to preserve what was found and why each repair was necessary.
+
+- English/Chinese content: 4,500 questions and 9,000 choices checked, findings `0`, errors `0`.
+- Pictures: 4,500 correct/wrong pairs checked, missing `0`, suspicious `0`.
+- Audio: 13,500 expected files, 13,500 readable files, findings `0`, errors `0`.
+- Automated suite: 121 tests passed.
+- Visual repairs: 163 targeted assets covered; generated replacements use the existing flat, warm children's picture-book style references.
+- Static scenes that could not prove an ongoing action now use literal visible-state wording, with matching prompts and regenerated audio.
+
 ## Scope
 
 - Runtime course: 300 levels, 4,500 questions, 9,000 picture choices.
@@ -167,4 +178,4 @@ The final 310 unique pictures found five confirmed issues: L59 Q15 orange-cap se
 - `tests/course-audio-audit.test.mjs`
 - `tests/hints-quality-audit.test.mjs`
 
-The layered review has covered the family, quantity/color/animal, and remaining action/position/object partitions across all 300 runtime levels. Those partitions overlap, so their question totals must not be added as unique-question counts. The result is intentionally not a declaration that every visual is correct: confirmed and high-suspicion findings remain release blockers until the assets and paired wording are repaired and visually rechecked.
+The layered review covered the family, quantity/color/animal, and remaining action/position/object partitions across all 300 runtime levels. Those partitions overlap, so their question totals must not be added as unique-question counts. The confirmed and high-suspicion items listed above were repaired and then rechecked through the final zero-finding gates recorded at the top of this document.

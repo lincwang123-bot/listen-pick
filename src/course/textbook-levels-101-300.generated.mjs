@@ -7087,14 +7087,14 @@ export const textbookLevels = [
     "title": "Level 131：物品结构",
     "previewWords": [
       "boy",
-      "reading",
-      "book"
+      "holding",
+      "open"
     ],
     "questions": [
       {
         "id": "L131-Q001",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-131/q001.m4a",
         "correctImage": "assets/textbook/images/level-131/q001-correct.png",
         "wrongImage": "assets/textbook/images/level-131/q001-wrong.png",
@@ -7102,8 +7102,8 @@ export const textbookLevels = [
         "theme": "Level 131：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -7168,8 +7168,8 @@ export const textbookLevels = [
       },
       {
         "id": "L131-Q006",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-131/q006.m4a",
         "correctImage": "assets/textbook/images/level-131/q006-correct.png",
         "wrongImage": "assets/textbook/images/level-131/q006-wrong.png",
@@ -7177,8 +7177,8 @@ export const textbookLevels = [
         "theme": "Level 131：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -7243,8 +7243,8 @@ export const textbookLevels = [
       },
       {
         "id": "L131-Q011",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-131/q011.m4a",
         "correctImage": "assets/textbook/images/level-131/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-131/q011-wrong.png",
@@ -7252,8 +7252,8 @@ export const textbookLevels = [
         "theme": "Level 131：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -7389,8 +7389,8 @@ export const textbookLevels = [
       },
       {
         "id": "L132-Q005",
-        "sentence": "The boy is opening a box.",
-        "wrongSentence": "The boy is opening a book.",
+        "sentence": "The boy is holding an open box.",
+        "wrongSentence": "The boy is holding an open book.",
         "audioFile": "assets/textbook/audio/level-132/q005.m4a",
         "correctImage": "assets/textbook/images/level-132/q005-correct.png",
         "wrongImage": "assets/textbook/images/level-132/q005-wrong.png",
@@ -7398,8 +7398,8 @@ export const textbookLevels = [
         "theme": "Level 132：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -7464,8 +7464,8 @@ export const textbookLevels = [
       },
       {
         "id": "L132-Q010",
-        "sentence": "The girl is opening a box.",
-        "wrongSentence": "The girl is opening a book.",
+        "sentence": "The girl is holding an open box.",
+        "wrongSentence": "The girl is holding an open book.",
         "audioFile": "assets/textbook/audio/level-132/q010.m4a",
         "correctImage": "assets/textbook/images/level-132/q010-correct.png",
         "wrongImage": "assets/textbook/images/level-132/q010-wrong.png",
@@ -7473,8 +7473,8 @@ export const textbookLevels = [
         "theme": "Level 132：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -7539,8 +7539,8 @@ export const textbookLevels = [
       },
       {
         "id": "L132-Q015",
-        "sentence": "The child is opening a box.",
-        "wrongSentence": "The child is opening a book.",
+        "sentence": "The child is holding an open box.",
+        "wrongSentence": "The child is holding an open book.",
         "audioFile": "assets/textbook/audio/level-132/q015.m4a",
         "correctImage": "assets/textbook/images/level-132/q015-correct.png",
         "wrongImage": "assets/textbook/images/level-132/q015-wrong.png",
@@ -7548,8 +7548,8 @@ export const textbookLevels = [
         "theme": "Level 132：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       }
     ]
@@ -7595,8 +7595,8 @@ export const textbookLevels = [
       },
       {
         "id": "L133-Q003",
-        "sentence": "The boy is opening a box.",
-        "wrongSentence": "The boy is opening a book.",
+        "sentence": "The boy is holding an open box.",
+        "wrongSentence": "The boy is holding an open book.",
         "audioFile": "assets/textbook/audio/level-133/q003.m4a",
         "correctImage": "assets/textbook/images/level-133/q003-correct.png",
         "wrongImage": "assets/textbook/images/level-133/q003-wrong.png",
@@ -7604,14 +7604,14 @@ export const textbookLevels = [
         "theme": "Level 133：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L133-Q004",
-        "sentence": "The boy is closing a book.",
-        "wrongSentence": "The boy is closing a box.",
+        "sentence": "The boy is holding a closed book.",
+        "wrongSentence": "The boy is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-133/q004.m4a",
         "correctImage": "assets/textbook/images/level-133/q004-correct.png",
         "wrongImage": "assets/textbook/images/level-133/q004-wrong.png",
@@ -7619,8 +7619,8 @@ export const textbookLevels = [
         "theme": "Level 133：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -7670,8 +7670,8 @@ export const textbookLevels = [
       },
       {
         "id": "L133-Q008",
-        "sentence": "The girl is opening a box.",
-        "wrongSentence": "The girl is opening a book.",
+        "sentence": "The girl is holding an open box.",
+        "wrongSentence": "The girl is holding an open book.",
         "audioFile": "assets/textbook/audio/level-133/q008.m4a",
         "correctImage": "assets/textbook/images/level-133/q008-correct.png",
         "wrongImage": "assets/textbook/images/level-133/q008-wrong.png",
@@ -7679,14 +7679,14 @@ export const textbookLevels = [
         "theme": "Level 133：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L133-Q009",
-        "sentence": "The girl is closing a book.",
-        "wrongSentence": "The girl is closing a box.",
+        "sentence": "The girl is holding a closed book.",
+        "wrongSentence": "The girl is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-133/q009.m4a",
         "correctImage": "assets/textbook/images/level-133/q009-correct.png",
         "wrongImage": "assets/textbook/images/level-133/q009-wrong.png",
@@ -7694,8 +7694,8 @@ export const textbookLevels = [
         "theme": "Level 133：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -7745,8 +7745,8 @@ export const textbookLevels = [
       },
       {
         "id": "L133-Q013",
-        "sentence": "The child is opening a box.",
-        "wrongSentence": "The child is opening a book.",
+        "sentence": "The child is holding an open box.",
+        "wrongSentence": "The child is holding an open book.",
         "audioFile": "assets/textbook/audio/level-133/q013.m4a",
         "correctImage": "assets/textbook/images/level-133/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-133/q013-wrong.png",
@@ -7754,14 +7754,14 @@ export const textbookLevels = [
         "theme": "Level 133：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L133-Q014",
-        "sentence": "The child is closing a book.",
-        "wrongSentence": "The child is closing a box.",
+        "sentence": "The child is holding a closed book.",
+        "wrongSentence": "The child is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-133/q014.m4a",
         "correctImage": "assets/textbook/images/level-133/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-133/q014-wrong.png",
@@ -7769,8 +7769,8 @@ export const textbookLevels = [
         "theme": "Level 133：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -7795,14 +7795,14 @@ export const textbookLevels = [
     "title": "Level 134：物品结构",
     "previewWords": [
       "boy",
-      "opening",
-      "box"
+      "holding",
+      "open"
     ],
     "questions": [
       {
         "id": "L134-Q001",
-        "sentence": "The boy is opening a box.",
-        "wrongSentence": "The boy is opening a book.",
+        "sentence": "The boy is holding an open box.",
+        "wrongSentence": "The boy is holding an open book.",
         "audioFile": "assets/textbook/audio/level-134/q001.m4a",
         "correctImage": "assets/textbook/images/level-134/q001-correct.png",
         "wrongImage": "assets/textbook/images/level-134/q001-wrong.png",
@@ -7810,14 +7810,14 @@ export const textbookLevels = [
         "theme": "Level 134：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L134-Q002",
-        "sentence": "The boy is closing a book.",
-        "wrongSentence": "The boy is closing a box.",
+        "sentence": "The boy is holding a closed book.",
+        "wrongSentence": "The boy is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-134/q002.m4a",
         "correctImage": "assets/textbook/images/level-134/q002-correct.png",
         "wrongImage": "assets/textbook/images/level-134/q002-wrong.png",
@@ -7825,8 +7825,8 @@ export const textbookLevels = [
         "theme": "Level 134：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -7876,8 +7876,8 @@ export const textbookLevels = [
       },
       {
         "id": "L134-Q006",
-        "sentence": "The girl is opening a box.",
-        "wrongSentence": "The girl is opening a book.",
+        "sentence": "The girl is holding an open box.",
+        "wrongSentence": "The girl is holding an open book.",
         "audioFile": "assets/textbook/audio/level-134/q006.m4a",
         "correctImage": "assets/textbook/images/level-134/q006-correct.png",
         "wrongImage": "assets/textbook/images/level-134/q006-wrong.png",
@@ -7885,14 +7885,14 @@ export const textbookLevels = [
         "theme": "Level 134：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L134-Q007",
-        "sentence": "The girl is closing a book.",
-        "wrongSentence": "The girl is closing a box.",
+        "sentence": "The girl is holding a closed book.",
+        "wrongSentence": "The girl is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-134/q007.m4a",
         "correctImage": "assets/textbook/images/level-134/q007-correct.png",
         "wrongImage": "assets/textbook/images/level-134/q007-wrong.png",
@@ -7900,8 +7900,8 @@ export const textbookLevels = [
         "theme": "Level 134：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -7936,8 +7936,8 @@ export const textbookLevels = [
       },
       {
         "id": "L134-Q010",
-        "sentence": "The girl is flying a kite.",
-        "wrongSentence": "The girl is flying a paper plane.",
+        "sentence": "The girl is holding a kite.",
+        "wrongSentence": "The girl is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-134/q010.m4a",
         "correctImage": "assets/textbook/images/level-134/q010-correct.png",
         "wrongImage": "assets/textbook/images/level-134/q010-wrong.png",
@@ -7945,14 +7945,14 @@ export const textbookLevels = [
         "theme": "Level 134：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L134-Q011",
-        "sentence": "The child is opening a box.",
-        "wrongSentence": "The child is opening a book.",
+        "sentence": "The child is holding an open box.",
+        "wrongSentence": "The child is holding an open book.",
         "audioFile": "assets/textbook/audio/level-134/q011.m4a",
         "correctImage": "assets/textbook/images/level-134/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-134/q011-wrong.png",
@@ -7960,14 +7960,14 @@ export const textbookLevels = [
         "theme": "Level 134：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L134-Q012",
-        "sentence": "The child is closing a book.",
-        "wrongSentence": "The child is closing a box.",
+        "sentence": "The child is holding a closed book.",
+        "wrongSentence": "The child is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-134/q012.m4a",
         "correctImage": "assets/textbook/images/level-134/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-134/q012-wrong.png",
@@ -7975,8 +7975,8 @@ export const textbookLevels = [
         "theme": "Level 134：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -8011,8 +8011,8 @@ export const textbookLevels = [
       },
       {
         "id": "L134-Q015",
-        "sentence": "The child is flying a kite.",
-        "wrongSentence": "The child is flying a paper plane.",
+        "sentence": "The child is holding a kite.",
+        "wrongSentence": "The child is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-134/q015.m4a",
         "correctImage": "assets/textbook/images/level-134/q015-correct.png",
         "wrongImage": "assets/textbook/images/level-134/q015-wrong.png",
@@ -8020,8 +8020,8 @@ export const textbookLevels = [
         "theme": "Level 134：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       }
     ]
@@ -8082,8 +8082,8 @@ export const textbookLevels = [
       },
       {
         "id": "L135-Q004",
-        "sentence": "The boy is folding a towel.",
-        "wrongSentence": "The boy is folding a shirt.",
+        "sentence": "The boy is holding a folded towel.",
+        "wrongSentence": "The boy is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-135/q004.m4a",
         "correctImage": "assets/textbook/images/level-135/q004-correct.png",
         "wrongImage": "assets/textbook/images/level-135/q004-wrong.png",
@@ -8091,8 +8091,8 @@ export const textbookLevels = [
         "theme": "Level 135：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -8142,8 +8142,8 @@ export const textbookLevels = [
       },
       {
         "id": "L135-Q008",
-        "sentence": "The girl is flying a kite.",
-        "wrongSentence": "The girl is flying a paper plane.",
+        "sentence": "The girl is holding a kite.",
+        "wrongSentence": "The girl is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-135/q008.m4a",
         "correctImage": "assets/textbook/images/level-135/q008-correct.png",
         "wrongImage": "assets/textbook/images/level-135/q008-wrong.png",
@@ -8151,14 +8151,14 @@ export const textbookLevels = [
         "theme": "Level 135：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L135-Q009",
-        "sentence": "The girl is folding a towel.",
-        "wrongSentence": "The girl is folding a shirt.",
+        "sentence": "The girl is holding a folded towel.",
+        "wrongSentence": "The girl is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-135/q009.m4a",
         "correctImage": "assets/textbook/images/level-135/q009-correct.png",
         "wrongImage": "assets/textbook/images/level-135/q009-wrong.png",
@@ -8166,8 +8166,8 @@ export const textbookLevels = [
         "theme": "Level 135：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -8217,8 +8217,8 @@ export const textbookLevels = [
       },
       {
         "id": "L135-Q013",
-        "sentence": "The child is flying a kite.",
-        "wrongSentence": "The child is flying a paper plane.",
+        "sentence": "The child is holding a kite.",
+        "wrongSentence": "The child is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-135/q013.m4a",
         "correctImage": "assets/textbook/images/level-135/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-135/q013-wrong.png",
@@ -8226,14 +8226,14 @@ export const textbookLevels = [
         "theme": "Level 135：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L135-Q014",
-        "sentence": "The child is folding a towel.",
-        "wrongSentence": "The child is folding a shirt.",
+        "sentence": "The child is holding a folded towel.",
+        "wrongSentence": "The child is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-135/q014.m4a",
         "correctImage": "assets/textbook/images/level-135/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-135/q014-wrong.png",
@@ -8241,8 +8241,8 @@ export const textbookLevels = [
         "theme": "Level 135：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -8288,8 +8288,8 @@ export const textbookLevels = [
       },
       {
         "id": "L136-Q002",
-        "sentence": "The boy is folding a towel.",
-        "wrongSentence": "The boy is folding a shirt.",
+        "sentence": "The boy is holding a folded towel.",
+        "wrongSentence": "The boy is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-136/q002.m4a",
         "correctImage": "assets/textbook/images/level-136/q002-correct.png",
         "wrongImage": "assets/textbook/images/level-136/q002-wrong.png",
@@ -8297,8 +8297,8 @@ export const textbookLevels = [
         "theme": "Level 136：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -8348,8 +8348,8 @@ export const textbookLevels = [
       },
       {
         "id": "L136-Q006",
-        "sentence": "The girl is flying a kite.",
-        "wrongSentence": "The girl is flying a paper plane.",
+        "sentence": "The girl is holding a kite.",
+        "wrongSentence": "The girl is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-136/q006.m4a",
         "correctImage": "assets/textbook/images/level-136/q006-correct.png",
         "wrongImage": "assets/textbook/images/level-136/q006-wrong.png",
@@ -8357,14 +8357,14 @@ export const textbookLevels = [
         "theme": "Level 136：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L136-Q007",
-        "sentence": "The girl is folding a towel.",
-        "wrongSentence": "The girl is folding a shirt.",
+        "sentence": "The girl is holding a folded towel.",
+        "wrongSentence": "The girl is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-136/q007.m4a",
         "correctImage": "assets/textbook/images/level-136/q007-correct.png",
         "wrongImage": "assets/textbook/images/level-136/q007-wrong.png",
@@ -8372,8 +8372,8 @@ export const textbookLevels = [
         "theme": "Level 136：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -8423,8 +8423,8 @@ export const textbookLevels = [
       },
       {
         "id": "L136-Q011",
-        "sentence": "The child is flying a kite.",
-        "wrongSentence": "The child is flying a paper plane.",
+        "sentence": "The child is holding a kite.",
+        "wrongSentence": "The child is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-136/q011.m4a",
         "correctImage": "assets/textbook/images/level-136/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-136/q011-wrong.png",
@@ -8432,14 +8432,14 @@ export const textbookLevels = [
         "theme": "Level 136：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L136-Q012",
-        "sentence": "The child is folding a towel.",
-        "wrongSentence": "The child is folding a shirt.",
+        "sentence": "The child is holding a folded towel.",
+        "wrongSentence": "The child is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-136/q012.m4a",
         "correctImage": "assets/textbook/images/level-136/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-136/q012-wrong.png",
@@ -8447,8 +8447,8 @@ export const textbookLevels = [
         "theme": "Level 136：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -8554,8 +8554,8 @@ export const textbookLevels = [
       },
       {
         "id": "L137-Q004",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-137/q004.m4a",
         "correctImage": "assets/textbook/images/level-137/q004-correct.png",
         "wrongImage": "assets/textbook/images/level-137/q004-wrong.png",
@@ -8563,8 +8563,8 @@ export const textbookLevels = [
         "theme": "Level 137：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -8629,8 +8629,8 @@ export const textbookLevels = [
       },
       {
         "id": "L137-Q009",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-137/q009.m4a",
         "correctImage": "assets/textbook/images/level-137/q009-correct.png",
         "wrongImage": "assets/textbook/images/level-137/q009-wrong.png",
@@ -8638,8 +8638,8 @@ export const textbookLevels = [
         "theme": "Level 137：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -8704,8 +8704,8 @@ export const textbookLevels = [
       },
       {
         "id": "L137-Q014",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-137/q014.m4a",
         "correctImage": "assets/textbook/images/level-137/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-137/q014-wrong.png",
@@ -8713,8 +8713,8 @@ export const textbookLevels = [
         "theme": "Level 137：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -8760,8 +8760,8 @@ export const textbookLevels = [
       },
       {
         "id": "L138-Q002",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-138/q002.m4a",
         "correctImage": "assets/textbook/images/level-138/q002-correct.png",
         "wrongImage": "assets/textbook/images/level-138/q002-wrong.png",
@@ -8769,8 +8769,8 @@ export const textbookLevels = [
         "theme": "Level 138：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -8835,8 +8835,8 @@ export const textbookLevels = [
       },
       {
         "id": "L138-Q007",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-138/q007.m4a",
         "correctImage": "assets/textbook/images/level-138/q007-correct.png",
         "wrongImage": "assets/textbook/images/level-138/q007-wrong.png",
@@ -8844,8 +8844,8 @@ export const textbookLevels = [
         "theme": "Level 138：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -8910,8 +8910,8 @@ export const textbookLevels = [
       },
       {
         "id": "L138-Q012",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-138/q012.m4a",
         "correctImage": "assets/textbook/images/level-138/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-138/q012-wrong.png",
@@ -8919,8 +8919,8 @@ export const textbookLevels = [
         "theme": "Level 138：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -9262,8 +9262,8 @@ export const textbookLevels = [
       },
       {
         "id": "L140-Q004",
-        "sentence": "The boy is opening a box.",
-        "wrongSentence": "The boy is opening a book.",
+        "sentence": "The boy is holding an open box.",
+        "wrongSentence": "The boy is holding an open book.",
         "audioFile": "assets/textbook/audio/level-140/q004.m4a",
         "correctImage": "assets/textbook/images/level-140/q004-correct.png",
         "wrongImage": "assets/textbook/images/level-140/q004-wrong.png",
@@ -9271,14 +9271,14 @@ export const textbookLevels = [
         "theme": "Level 140：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L140-Q005",
-        "sentence": "The boy is closing a book.",
-        "wrongSentence": "The boy is closing a box.",
+        "sentence": "The boy is holding a closed book.",
+        "wrongSentence": "The boy is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-140/q005.m4a",
         "correctImage": "assets/textbook/images/level-140/q005-correct.png",
         "wrongImage": "assets/textbook/images/level-140/q005-wrong.png",
@@ -9286,8 +9286,8 @@ export const textbookLevels = [
         "theme": "Level 140：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -9337,8 +9337,8 @@ export const textbookLevels = [
       },
       {
         "id": "L140-Q009",
-        "sentence": "The girl is opening a box.",
-        "wrongSentence": "The girl is opening a book.",
+        "sentence": "The girl is holding an open box.",
+        "wrongSentence": "The girl is holding an open book.",
         "audioFile": "assets/textbook/audio/level-140/q009.m4a",
         "correctImage": "assets/textbook/images/level-140/q009-correct.png",
         "wrongImage": "assets/textbook/images/level-140/q009-wrong.png",
@@ -9346,14 +9346,14 @@ export const textbookLevels = [
         "theme": "Level 140：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L140-Q010",
-        "sentence": "The girl is closing a book.",
-        "wrongSentence": "The girl is closing a box.",
+        "sentence": "The girl is holding a closed book.",
+        "wrongSentence": "The girl is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-140/q010.m4a",
         "correctImage": "assets/textbook/images/level-140/q010-correct.png",
         "wrongImage": "assets/textbook/images/level-140/q010-wrong.png",
@@ -9361,8 +9361,8 @@ export const textbookLevels = [
         "theme": "Level 140：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -9412,8 +9412,8 @@ export const textbookLevels = [
       },
       {
         "id": "L140-Q014",
-        "sentence": "The child is opening a box.",
-        "wrongSentence": "The child is opening a book.",
+        "sentence": "The child is holding an open box.",
+        "wrongSentence": "The child is holding an open book.",
         "audioFile": "assets/textbook/audio/level-140/q014.m4a",
         "correctImage": "assets/textbook/images/level-140/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-140/q014-wrong.png",
@@ -9421,14 +9421,14 @@ export const textbookLevels = [
         "theme": "Level 140：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L140-Q015",
-        "sentence": "The child is closing a book.",
-        "wrongSentence": "The child is closing a box.",
+        "sentence": "The child is holding a closed book.",
+        "wrongSentence": "The child is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-140/q015.m4a",
         "correctImage": "assets/textbook/images/level-140/q015-correct.png",
         "wrongImage": "assets/textbook/images/level-140/q015-wrong.png",
@@ -9436,8 +9436,8 @@ export const textbookLevels = [
         "theme": "Level 140：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       }
     ]
@@ -9468,8 +9468,8 @@ export const textbookLevels = [
       },
       {
         "id": "L141-Q002",
-        "sentence": "The boy is opening a box.",
-        "wrongSentence": "The boy is opening a book.",
+        "sentence": "The boy is holding an open box.",
+        "wrongSentence": "The boy is holding an open book.",
         "audioFile": "assets/textbook/audio/level-141/q002.m4a",
         "correctImage": "assets/textbook/images/level-141/q002-correct.png",
         "wrongImage": "assets/textbook/images/level-141/q002-wrong.png",
@@ -9477,14 +9477,14 @@ export const textbookLevels = [
         "theme": "Level 141：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L141-Q003",
-        "sentence": "The boy is closing a book.",
-        "wrongSentence": "The boy is closing a box.",
+        "sentence": "The boy is holding a closed book.",
+        "wrongSentence": "The boy is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-141/q003.m4a",
         "correctImage": "assets/textbook/images/level-141/q003-correct.png",
         "wrongImage": "assets/textbook/images/level-141/q003-wrong.png",
@@ -9492,8 +9492,8 @@ export const textbookLevels = [
         "theme": "Level 141：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -9543,8 +9543,8 @@ export const textbookLevels = [
       },
       {
         "id": "L141-Q007",
-        "sentence": "The girl is opening a box.",
-        "wrongSentence": "The girl is opening a book.",
+        "sentence": "The girl is holding an open box.",
+        "wrongSentence": "The girl is holding an open book.",
         "audioFile": "assets/textbook/audio/level-141/q007.m4a",
         "correctImage": "assets/textbook/images/level-141/q007-correct.png",
         "wrongImage": "assets/textbook/images/level-141/q007-wrong.png",
@@ -9552,14 +9552,14 @@ export const textbookLevels = [
         "theme": "Level 141：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L141-Q008",
-        "sentence": "The girl is closing a book.",
-        "wrongSentence": "The girl is closing a box.",
+        "sentence": "The girl is holding a closed book.",
+        "wrongSentence": "The girl is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-141/q008.m4a",
         "correctImage": "assets/textbook/images/level-141/q008-correct.png",
         "wrongImage": "assets/textbook/images/level-141/q008-wrong.png",
@@ -9567,8 +9567,8 @@ export const textbookLevels = [
         "theme": "Level 141：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -9618,8 +9618,8 @@ export const textbookLevels = [
       },
       {
         "id": "L141-Q012",
-        "sentence": "The child is opening a box.",
-        "wrongSentence": "The child is opening a book.",
+        "sentence": "The child is holding an open box.",
+        "wrongSentence": "The child is holding an open book.",
         "audioFile": "assets/textbook/audio/level-141/q012.m4a",
         "correctImage": "assets/textbook/images/level-141/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-141/q012-wrong.png",
@@ -9627,14 +9627,14 @@ export const textbookLevels = [
         "theme": "Level 141：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L141-Q013",
-        "sentence": "The child is closing a book.",
-        "wrongSentence": "The child is closing a box.",
+        "sentence": "The child is holding a closed book.",
+        "wrongSentence": "The child is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-141/q013.m4a",
         "correctImage": "assets/textbook/images/level-141/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-141/q013-wrong.png",
@@ -9642,8 +9642,8 @@ export const textbookLevels = [
         "theme": "Level 141：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -9683,14 +9683,14 @@ export const textbookLevels = [
     "title": "Level 142：物品结构",
     "previewWords": [
       "boy",
-      "closing",
-      "book"
+      "holding",
+      "closed"
     ],
     "questions": [
       {
         "id": "L142-Q001",
-        "sentence": "The boy is closing a book.",
-        "wrongSentence": "The boy is closing a box.",
+        "sentence": "The boy is holding a closed book.",
+        "wrongSentence": "The boy is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-142/q001.m4a",
         "correctImage": "assets/textbook/images/level-142/q001-correct.png",
         "wrongImage": "assets/textbook/images/level-142/q001-wrong.png",
@@ -9698,8 +9698,8 @@ export const textbookLevels = [
         "theme": "Level 142：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -9749,8 +9749,8 @@ export const textbookLevels = [
       },
       {
         "id": "L142-Q005",
-        "sentence": "The boy is folding a towel.",
-        "wrongSentence": "The boy is folding a shirt.",
+        "sentence": "The boy is holding a folded towel.",
+        "wrongSentence": "The boy is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-142/q005.m4a",
         "correctImage": "assets/textbook/images/level-142/q005-correct.png",
         "wrongImage": "assets/textbook/images/level-142/q005-wrong.png",
@@ -9758,14 +9758,14 @@ export const textbookLevels = [
         "theme": "Level 142：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L142-Q006",
-        "sentence": "The girl is closing a book.",
-        "wrongSentence": "The girl is closing a box.",
+        "sentence": "The girl is holding a closed book.",
+        "wrongSentence": "The girl is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-142/q006.m4a",
         "correctImage": "assets/textbook/images/level-142/q006-correct.png",
         "wrongImage": "assets/textbook/images/level-142/q006-wrong.png",
@@ -9773,8 +9773,8 @@ export const textbookLevels = [
         "theme": "Level 142：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -9809,8 +9809,8 @@ export const textbookLevels = [
       },
       {
         "id": "L142-Q009",
-        "sentence": "The girl is flying a kite.",
-        "wrongSentence": "The girl is flying a paper plane.",
+        "sentence": "The girl is holding a kite.",
+        "wrongSentence": "The girl is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-142/q009.m4a",
         "correctImage": "assets/textbook/images/level-142/q009-correct.png",
         "wrongImage": "assets/textbook/images/level-142/q009-wrong.png",
@@ -9818,14 +9818,14 @@ export const textbookLevels = [
         "theme": "Level 142：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L142-Q010",
-        "sentence": "The girl is folding a towel.",
-        "wrongSentence": "The girl is folding a shirt.",
+        "sentence": "The girl is holding a folded towel.",
+        "wrongSentence": "The girl is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-142/q010.m4a",
         "correctImage": "assets/textbook/images/level-142/q010-correct.png",
         "wrongImage": "assets/textbook/images/level-142/q010-wrong.png",
@@ -9833,14 +9833,14 @@ export const textbookLevels = [
         "theme": "Level 142：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L142-Q011",
-        "sentence": "The child is closing a book.",
-        "wrongSentence": "The child is closing a box.",
+        "sentence": "The child is holding a closed book.",
+        "wrongSentence": "The child is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-142/q011.m4a",
         "correctImage": "assets/textbook/images/level-142/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-142/q011-wrong.png",
@@ -9848,8 +9848,8 @@ export const textbookLevels = [
         "theme": "Level 142：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -9884,8 +9884,8 @@ export const textbookLevels = [
       },
       {
         "id": "L142-Q014",
-        "sentence": "The child is flying a kite.",
-        "wrongSentence": "The child is flying a paper plane.",
+        "sentence": "The child is holding a kite.",
+        "wrongSentence": "The child is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-142/q014.m4a",
         "correctImage": "assets/textbook/images/level-142/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-142/q014-wrong.png",
@@ -9893,14 +9893,14 @@ export const textbookLevels = [
         "theme": "Level 142：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L142-Q015",
-        "sentence": "The child is folding a towel.",
-        "wrongSentence": "The child is folding a shirt.",
+        "sentence": "The child is holding a folded towel.",
+        "wrongSentence": "The child is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-142/q015.m4a",
         "correctImage": "assets/textbook/images/level-142/q015-correct.png",
         "wrongImage": "assets/textbook/images/level-142/q015-wrong.png",
@@ -9908,8 +9908,8 @@ export const textbookLevels = [
         "theme": "Level 142：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       }
     ]
@@ -9955,8 +9955,8 @@ export const textbookLevels = [
       },
       {
         "id": "L143-Q003",
-        "sentence": "The boy is folding a towel.",
-        "wrongSentence": "The boy is folding a shirt.",
+        "sentence": "The boy is holding a folded towel.",
+        "wrongSentence": "The boy is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-143/q003.m4a",
         "correctImage": "assets/textbook/images/level-143/q003-correct.png",
         "wrongImage": "assets/textbook/images/level-143/q003-wrong.png",
@@ -9964,8 +9964,8 @@ export const textbookLevels = [
         "theme": "Level 143：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -10015,8 +10015,8 @@ export const textbookLevels = [
       },
       {
         "id": "L143-Q007",
-        "sentence": "The girl is flying a kite.",
-        "wrongSentence": "The girl is flying a paper plane.",
+        "sentence": "The girl is holding a kite.",
+        "wrongSentence": "The girl is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-143/q007.m4a",
         "correctImage": "assets/textbook/images/level-143/q007-correct.png",
         "wrongImage": "assets/textbook/images/level-143/q007-wrong.png",
@@ -10024,14 +10024,14 @@ export const textbookLevels = [
         "theme": "Level 143：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L143-Q008",
-        "sentence": "The girl is folding a towel.",
-        "wrongSentence": "The girl is folding a shirt.",
+        "sentence": "The girl is holding a folded towel.",
+        "wrongSentence": "The girl is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-143/q008.m4a",
         "correctImage": "assets/textbook/images/level-143/q008-correct.png",
         "wrongImage": "assets/textbook/images/level-143/q008-wrong.png",
@@ -10039,8 +10039,8 @@ export const textbookLevels = [
         "theme": "Level 143：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -10090,8 +10090,8 @@ export const textbookLevels = [
       },
       {
         "id": "L143-Q012",
-        "sentence": "The child is flying a kite.",
-        "wrongSentence": "The child is flying a paper plane.",
+        "sentence": "The child is holding a kite.",
+        "wrongSentence": "The child is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-143/q012.m4a",
         "correctImage": "assets/textbook/images/level-143/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-143/q012-wrong.png",
@@ -10099,14 +10099,14 @@ export const textbookLevels = [
         "theme": "Level 143：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L143-Q013",
-        "sentence": "The child is folding a towel.",
-        "wrongSentence": "The child is folding a shirt.",
+        "sentence": "The child is holding a folded towel.",
+        "wrongSentence": "The child is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-143/q013.m4a",
         "correctImage": "assets/textbook/images/level-143/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-143/q013-wrong.png",
@@ -10114,8 +10114,8 @@ export const textbookLevels = [
         "theme": "Level 143：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -10155,14 +10155,14 @@ export const textbookLevels = [
     "title": "Level 144：物品结构",
     "previewWords": [
       "boy",
-      "folding",
-      "towel"
+      "holding",
+      "folded"
     ],
     "questions": [
       {
         "id": "L144-Q001",
-        "sentence": "The boy is folding a towel.",
-        "wrongSentence": "The boy is folding a shirt.",
+        "sentence": "The boy is holding a folded towel.",
+        "wrongSentence": "The boy is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-144/q001.m4a",
         "correctImage": "assets/textbook/images/level-144/q001-correct.png",
         "wrongImage": "assets/textbook/images/level-144/q001-wrong.png",
@@ -10170,8 +10170,8 @@ export const textbookLevels = [
         "theme": "Level 144：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -10221,8 +10221,8 @@ export const textbookLevels = [
       },
       {
         "id": "L144-Q005",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-144/q005.m4a",
         "correctImage": "assets/textbook/images/level-144/q005-correct.png",
         "wrongImage": "assets/textbook/images/level-144/q005-wrong.png",
@@ -10230,14 +10230,14 @@ export const textbookLevels = [
         "theme": "Level 144：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L144-Q006",
-        "sentence": "The girl is folding a towel.",
-        "wrongSentence": "The girl is folding a shirt.",
+        "sentence": "The girl is holding a folded towel.",
+        "wrongSentence": "The girl is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-144/q006.m4a",
         "correctImage": "assets/textbook/images/level-144/q006-correct.png",
         "wrongImage": "assets/textbook/images/level-144/q006-wrong.png",
@@ -10245,8 +10245,8 @@ export const textbookLevels = [
         "theme": "Level 144：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -10296,8 +10296,8 @@ export const textbookLevels = [
       },
       {
         "id": "L144-Q010",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-144/q010.m4a",
         "correctImage": "assets/textbook/images/level-144/q010-correct.png",
         "wrongImage": "assets/textbook/images/level-144/q010-wrong.png",
@@ -10305,14 +10305,14 @@ export const textbookLevels = [
         "theme": "Level 144：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L144-Q011",
-        "sentence": "The child is folding a towel.",
-        "wrongSentence": "The child is folding a shirt.",
+        "sentence": "The child is holding a folded towel.",
+        "wrongSentence": "The child is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-144/q011.m4a",
         "correctImage": "assets/textbook/images/level-144/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-144/q011-wrong.png",
@@ -10320,8 +10320,8 @@ export const textbookLevels = [
         "theme": "Level 144：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -10371,8 +10371,8 @@ export const textbookLevels = [
       },
       {
         "id": "L144-Q015",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-144/q015.m4a",
         "correctImage": "assets/textbook/images/level-144/q015-correct.png",
         "wrongImage": "assets/textbook/images/level-144/q015-wrong.png",
@@ -10380,8 +10380,8 @@ export const textbookLevels = [
         "theme": "Level 144：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       }
     ]
@@ -10427,8 +10427,8 @@ export const textbookLevels = [
       },
       {
         "id": "L145-Q003",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-145/q003.m4a",
         "correctImage": "assets/textbook/images/level-145/q003-correct.png",
         "wrongImage": "assets/textbook/images/level-145/q003-wrong.png",
@@ -10436,8 +10436,8 @@ export const textbookLevels = [
         "theme": "Level 145：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -10502,8 +10502,8 @@ export const textbookLevels = [
       },
       {
         "id": "L145-Q008",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-145/q008.m4a",
         "correctImage": "assets/textbook/images/level-145/q008-correct.png",
         "wrongImage": "assets/textbook/images/level-145/q008-wrong.png",
@@ -10511,8 +10511,8 @@ export const textbookLevels = [
         "theme": "Level 145：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -10577,8 +10577,8 @@ export const textbookLevels = [
       },
       {
         "id": "L145-Q013",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-145/q013.m4a",
         "correctImage": "assets/textbook/images/level-145/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-145/q013-wrong.png",
@@ -10586,8 +10586,8 @@ export const textbookLevels = [
         "theme": "Level 145：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -10627,14 +10627,14 @@ export const textbookLevels = [
     "title": "Level 146：物品结构",
     "previewWords": [
       "boy",
-      "reading",
-      "book"
+      "holding",
+      "open"
     ],
     "questions": [
       {
         "id": "L146-Q001",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-146/q001.m4a",
         "correctImage": "assets/textbook/images/level-146/q001-correct.png",
         "wrongImage": "assets/textbook/images/level-146/q001-wrong.png",
@@ -10642,8 +10642,8 @@ export const textbookLevels = [
         "theme": "Level 146：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -10708,8 +10708,8 @@ export const textbookLevels = [
       },
       {
         "id": "L146-Q006",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-146/q006.m4a",
         "correctImage": "assets/textbook/images/level-146/q006-correct.png",
         "wrongImage": "assets/textbook/images/level-146/q006-wrong.png",
@@ -10717,8 +10717,8 @@ export const textbookLevels = [
         "theme": "Level 146：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -10783,8 +10783,8 @@ export const textbookLevels = [
       },
       {
         "id": "L146-Q011",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-146/q011.m4a",
         "correctImage": "assets/textbook/images/level-146/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-146/q011-wrong.png",
@@ -10792,8 +10792,8 @@ export const textbookLevels = [
         "theme": "Level 146：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -10929,8 +10929,8 @@ export const textbookLevels = [
       },
       {
         "id": "L147-Q005",
-        "sentence": "The boy is opening a box.",
-        "wrongSentence": "The boy is opening a book.",
+        "sentence": "The boy is holding an open box.",
+        "wrongSentence": "The boy is holding an open book.",
         "audioFile": "assets/textbook/audio/level-147/q005.m4a",
         "correctImage": "assets/textbook/images/level-147/q005-correct.png",
         "wrongImage": "assets/textbook/images/level-147/q005-wrong.png",
@@ -10938,8 +10938,8 @@ export const textbookLevels = [
         "theme": "Level 147：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -11004,8 +11004,8 @@ export const textbookLevels = [
       },
       {
         "id": "L147-Q010",
-        "sentence": "The girl is opening a box.",
-        "wrongSentence": "The girl is opening a book.",
+        "sentence": "The girl is holding an open box.",
+        "wrongSentence": "The girl is holding an open book.",
         "audioFile": "assets/textbook/audio/level-147/q010.m4a",
         "correctImage": "assets/textbook/images/level-147/q010-correct.png",
         "wrongImage": "assets/textbook/images/level-147/q010-wrong.png",
@@ -11013,8 +11013,8 @@ export const textbookLevels = [
         "theme": "Level 147：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -11079,8 +11079,8 @@ export const textbookLevels = [
       },
       {
         "id": "L147-Q015",
-        "sentence": "The child is opening a box.",
-        "wrongSentence": "The child is opening a book.",
+        "sentence": "The child is holding an open box.",
+        "wrongSentence": "The child is holding an open book.",
         "audioFile": "assets/textbook/audio/level-147/q015.m4a",
         "correctImage": "assets/textbook/images/level-147/q015-correct.png",
         "wrongImage": "assets/textbook/images/level-147/q015-wrong.png",
@@ -11088,8 +11088,8 @@ export const textbookLevels = [
         "theme": "Level 147：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       }
     ]
@@ -11135,8 +11135,8 @@ export const textbookLevels = [
       },
       {
         "id": "L148-Q003",
-        "sentence": "The boy is opening a box.",
-        "wrongSentence": "The boy is opening a book.",
+        "sentence": "The boy is holding an open box.",
+        "wrongSentence": "The boy is holding an open book.",
         "audioFile": "assets/textbook/audio/level-148/q003.m4a",
         "correctImage": "assets/textbook/images/level-148/q003-correct.png",
         "wrongImage": "assets/textbook/images/level-148/q003-wrong.png",
@@ -11144,14 +11144,14 @@ export const textbookLevels = [
         "theme": "Level 148：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L148-Q004",
-        "sentence": "The boy is closing a book.",
-        "wrongSentence": "The boy is closing a box.",
+        "sentence": "The boy is holding a closed book.",
+        "wrongSentence": "The boy is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-148/q004.m4a",
         "correctImage": "assets/textbook/images/level-148/q004-correct.png",
         "wrongImage": "assets/textbook/images/level-148/q004-wrong.png",
@@ -11159,8 +11159,8 @@ export const textbookLevels = [
         "theme": "Level 148：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -11210,8 +11210,8 @@ export const textbookLevels = [
       },
       {
         "id": "L148-Q008",
-        "sentence": "The girl is opening a box.",
-        "wrongSentence": "The girl is opening a book.",
+        "sentence": "The girl is holding an open box.",
+        "wrongSentence": "The girl is holding an open book.",
         "audioFile": "assets/textbook/audio/level-148/q008.m4a",
         "correctImage": "assets/textbook/images/level-148/q008-correct.png",
         "wrongImage": "assets/textbook/images/level-148/q008-wrong.png",
@@ -11219,14 +11219,14 @@ export const textbookLevels = [
         "theme": "Level 148：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L148-Q009",
-        "sentence": "The girl is closing a book.",
-        "wrongSentence": "The girl is closing a box.",
+        "sentence": "The girl is holding a closed book.",
+        "wrongSentence": "The girl is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-148/q009.m4a",
         "correctImage": "assets/textbook/images/level-148/q009-correct.png",
         "wrongImage": "assets/textbook/images/level-148/q009-wrong.png",
@@ -11234,8 +11234,8 @@ export const textbookLevels = [
         "theme": "Level 148：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -11285,8 +11285,8 @@ export const textbookLevels = [
       },
       {
         "id": "L148-Q013",
-        "sentence": "The child is opening a box.",
-        "wrongSentence": "The child is opening a book.",
+        "sentence": "The child is holding an open box.",
+        "wrongSentence": "The child is holding an open book.",
         "audioFile": "assets/textbook/audio/level-148/q013.m4a",
         "correctImage": "assets/textbook/images/level-148/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-148/q013-wrong.png",
@@ -11294,14 +11294,14 @@ export const textbookLevels = [
         "theme": "Level 148：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L148-Q014",
-        "sentence": "The child is closing a book.",
-        "wrongSentence": "The child is closing a box.",
+        "sentence": "The child is holding a closed book.",
+        "wrongSentence": "The child is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-148/q014.m4a",
         "correctImage": "assets/textbook/images/level-148/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-148/q014-wrong.png",
@@ -11309,8 +11309,8 @@ export const textbookLevels = [
         "theme": "Level 148：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -11335,14 +11335,14 @@ export const textbookLevels = [
     "title": "Level 149：物品结构",
     "previewWords": [
       "boy",
-      "opening",
-      "box"
+      "holding",
+      "open"
     ],
     "questions": [
       {
         "id": "L149-Q001",
-        "sentence": "The boy is opening a box.",
-        "wrongSentence": "The boy is opening a book.",
+        "sentence": "The boy is holding an open box.",
+        "wrongSentence": "The boy is holding an open book.",
         "audioFile": "assets/textbook/audio/level-149/q001.m4a",
         "correctImage": "assets/textbook/images/level-149/q001-correct.png",
         "wrongImage": "assets/textbook/images/level-149/q001-wrong.png",
@@ -11350,14 +11350,14 @@ export const textbookLevels = [
         "theme": "Level 149：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L149-Q002",
-        "sentence": "The boy is closing a book.",
-        "wrongSentence": "The boy is closing a box.",
+        "sentence": "The boy is holding a closed book.",
+        "wrongSentence": "The boy is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-149/q002.m4a",
         "correctImage": "assets/textbook/images/level-149/q002-correct.png",
         "wrongImage": "assets/textbook/images/level-149/q002-wrong.png",
@@ -11365,8 +11365,8 @@ export const textbookLevels = [
         "theme": "Level 149：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -11416,8 +11416,8 @@ export const textbookLevels = [
       },
       {
         "id": "L149-Q006",
-        "sentence": "The girl is opening a box.",
-        "wrongSentence": "The girl is opening a book.",
+        "sentence": "The girl is holding an open box.",
+        "wrongSentence": "The girl is holding an open book.",
         "audioFile": "assets/textbook/audio/level-149/q006.m4a",
         "correctImage": "assets/textbook/images/level-149/q006-correct.png",
         "wrongImage": "assets/textbook/images/level-149/q006-wrong.png",
@@ -11425,14 +11425,14 @@ export const textbookLevels = [
         "theme": "Level 149：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L149-Q007",
-        "sentence": "The girl is closing a book.",
-        "wrongSentence": "The girl is closing a box.",
+        "sentence": "The girl is holding a closed book.",
+        "wrongSentence": "The girl is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-149/q007.m4a",
         "correctImage": "assets/textbook/images/level-149/q007-correct.png",
         "wrongImage": "assets/textbook/images/level-149/q007-wrong.png",
@@ -11440,8 +11440,8 @@ export const textbookLevels = [
         "theme": "Level 149：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -11476,8 +11476,8 @@ export const textbookLevels = [
       },
       {
         "id": "L149-Q010",
-        "sentence": "The girl is flying a kite.",
-        "wrongSentence": "The girl is flying a paper plane.",
+        "sentence": "The girl is holding a kite.",
+        "wrongSentence": "The girl is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-149/q010.m4a",
         "correctImage": "assets/textbook/images/level-149/q010-correct.png",
         "wrongImage": "assets/textbook/images/level-149/q010-wrong.png",
@@ -11485,14 +11485,14 @@ export const textbookLevels = [
         "theme": "Level 149：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L149-Q011",
-        "sentence": "The child is opening a box.",
-        "wrongSentence": "The child is opening a book.",
+        "sentence": "The child is holding an open box.",
+        "wrongSentence": "The child is holding an open book.",
         "audioFile": "assets/textbook/audio/level-149/q011.m4a",
         "correctImage": "assets/textbook/images/level-149/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-149/q011-wrong.png",
@@ -11500,14 +11500,14 @@ export const textbookLevels = [
         "theme": "Level 149：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L149-Q012",
-        "sentence": "The child is closing a book.",
-        "wrongSentence": "The child is closing a box.",
+        "sentence": "The child is holding a closed book.",
+        "wrongSentence": "The child is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-149/q012.m4a",
         "correctImage": "assets/textbook/images/level-149/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-149/q012-wrong.png",
@@ -11515,8 +11515,8 @@ export const textbookLevels = [
         "theme": "Level 149：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -11551,8 +11551,8 @@ export const textbookLevels = [
       },
       {
         "id": "L149-Q015",
-        "sentence": "The child is flying a kite.",
-        "wrongSentence": "The child is flying a paper plane.",
+        "sentence": "The child is holding a kite.",
+        "wrongSentence": "The child is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-149/q015.m4a",
         "correctImage": "assets/textbook/images/level-149/q015-correct.png",
         "wrongImage": "assets/textbook/images/level-149/q015-wrong.png",
@@ -11560,8 +11560,8 @@ export const textbookLevels = [
         "theme": "Level 149：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       }
     ]
@@ -11622,8 +11622,8 @@ export const textbookLevels = [
       },
       {
         "id": "L150-Q004",
-        "sentence": "The boy is folding a towel.",
-        "wrongSentence": "The boy is folding a shirt.",
+        "sentence": "The boy is holding a folded towel.",
+        "wrongSentence": "The boy is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-150/q004.m4a",
         "correctImage": "assets/textbook/images/level-150/q004-correct.png",
         "wrongImage": "assets/textbook/images/level-150/q004-wrong.png",
@@ -11631,8 +11631,8 @@ export const textbookLevels = [
         "theme": "Level 150：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -11682,8 +11682,8 @@ export const textbookLevels = [
       },
       {
         "id": "L150-Q008",
-        "sentence": "The girl is flying a kite.",
-        "wrongSentence": "The girl is flying a paper plane.",
+        "sentence": "The girl is holding a kite.",
+        "wrongSentence": "The girl is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-150/q008.m4a",
         "correctImage": "assets/textbook/images/level-150/q008-correct.png",
         "wrongImage": "assets/textbook/images/level-150/q008-wrong.png",
@@ -11691,14 +11691,14 @@ export const textbookLevels = [
         "theme": "Level 150：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L150-Q009",
-        "sentence": "The girl is folding a towel.",
-        "wrongSentence": "The girl is folding a shirt.",
+        "sentence": "The girl is holding a folded towel.",
+        "wrongSentence": "The girl is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-150/q009.m4a",
         "correctImage": "assets/textbook/images/level-150/q009-correct.png",
         "wrongImage": "assets/textbook/images/level-150/q009-wrong.png",
@@ -11706,8 +11706,8 @@ export const textbookLevels = [
         "theme": "Level 150：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -11757,8 +11757,8 @@ export const textbookLevels = [
       },
       {
         "id": "L150-Q013",
-        "sentence": "The child is flying a kite.",
-        "wrongSentence": "The child is flying a paper plane.",
+        "sentence": "The child is holding a kite.",
+        "wrongSentence": "The child is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-150/q013.m4a",
         "correctImage": "assets/textbook/images/level-150/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-150/q013-wrong.png",
@@ -11766,14 +11766,14 @@ export const textbookLevels = [
         "theme": "Level 150：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L150-Q014",
-        "sentence": "The child is folding a towel.",
-        "wrongSentence": "The child is folding a shirt.",
+        "sentence": "The child is holding a folded towel.",
+        "wrongSentence": "The child is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-150/q014.m4a",
         "correctImage": "assets/textbook/images/level-150/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-150/q014-wrong.png",
@@ -11781,8 +11781,8 @@ export const textbookLevels = [
         "theme": "Level 150：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -11828,8 +11828,8 @@ export const textbookLevels = [
       },
       {
         "id": "L151-Q002",
-        "sentence": "The boy is folding a towel.",
-        "wrongSentence": "The boy is folding a shirt.",
+        "sentence": "The boy is holding a folded towel.",
+        "wrongSentence": "The boy is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-151/q002.m4a",
         "correctImage": "assets/textbook/images/level-151/q002-correct.png",
         "wrongImage": "assets/textbook/images/level-151/q002-wrong.png",
@@ -11837,8 +11837,8 @@ export const textbookLevels = [
         "theme": "Level 151：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -11888,8 +11888,8 @@ export const textbookLevels = [
       },
       {
         "id": "L151-Q006",
-        "sentence": "The girl is flying a kite.",
-        "wrongSentence": "The girl is flying a paper plane.",
+        "sentence": "The girl is holding a kite.",
+        "wrongSentence": "The girl is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-151/q006.m4a",
         "correctImage": "assets/textbook/images/level-151/q006-correct.png",
         "wrongImage": "assets/textbook/images/level-151/q006-wrong.png",
@@ -11897,14 +11897,14 @@ export const textbookLevels = [
         "theme": "Level 151：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L151-Q007",
-        "sentence": "The girl is folding a towel.",
-        "wrongSentence": "The girl is folding a shirt.",
+        "sentence": "The girl is holding a folded towel.",
+        "wrongSentence": "The girl is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-151/q007.m4a",
         "correctImage": "assets/textbook/images/level-151/q007-correct.png",
         "wrongImage": "assets/textbook/images/level-151/q007-wrong.png",
@@ -11912,8 +11912,8 @@ export const textbookLevels = [
         "theme": "Level 151：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -11963,8 +11963,8 @@ export const textbookLevels = [
       },
       {
         "id": "L151-Q011",
-        "sentence": "The child is flying a kite.",
-        "wrongSentence": "The child is flying a paper plane.",
+        "sentence": "The child is holding a kite.",
+        "wrongSentence": "The child is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-151/q011.m4a",
         "correctImage": "assets/textbook/images/level-151/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-151/q011-wrong.png",
@@ -11972,14 +11972,14 @@ export const textbookLevels = [
         "theme": "Level 151：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L151-Q012",
-        "sentence": "The child is folding a towel.",
-        "wrongSentence": "The child is folding a shirt.",
+        "sentence": "The child is holding a folded towel.",
+        "wrongSentence": "The child is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-151/q012.m4a",
         "correctImage": "assets/textbook/images/level-151/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-151/q012-wrong.png",
@@ -11987,8 +11987,8 @@ export const textbookLevels = [
         "theme": "Level 151：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -12094,8 +12094,8 @@ export const textbookLevels = [
       },
       {
         "id": "L152-Q004",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-152/q004.m4a",
         "correctImage": "assets/textbook/images/level-152/q004-correct.png",
         "wrongImage": "assets/textbook/images/level-152/q004-wrong.png",
@@ -12103,8 +12103,8 @@ export const textbookLevels = [
         "theme": "Level 152：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -12169,8 +12169,8 @@ export const textbookLevels = [
       },
       {
         "id": "L152-Q009",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-152/q009.m4a",
         "correctImage": "assets/textbook/images/level-152/q009-correct.png",
         "wrongImage": "assets/textbook/images/level-152/q009-wrong.png",
@@ -12178,8 +12178,8 @@ export const textbookLevels = [
         "theme": "Level 152：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -12244,8 +12244,8 @@ export const textbookLevels = [
       },
       {
         "id": "L152-Q014",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-152/q014.m4a",
         "correctImage": "assets/textbook/images/level-152/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-152/q014-wrong.png",
@@ -12253,8 +12253,8 @@ export const textbookLevels = [
         "theme": "Level 152：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -12300,8 +12300,8 @@ export const textbookLevels = [
       },
       {
         "id": "L153-Q002",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-153/q002.m4a",
         "correctImage": "assets/textbook/images/level-153/q002-correct.png",
         "wrongImage": "assets/textbook/images/level-153/q002-wrong.png",
@@ -12309,8 +12309,8 @@ export const textbookLevels = [
         "theme": "Level 153：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -12375,8 +12375,8 @@ export const textbookLevels = [
       },
       {
         "id": "L153-Q007",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-153/q007.m4a",
         "correctImage": "assets/textbook/images/level-153/q007-correct.png",
         "wrongImage": "assets/textbook/images/level-153/q007-wrong.png",
@@ -12384,8 +12384,8 @@ export const textbookLevels = [
         "theme": "Level 153：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -12450,8 +12450,8 @@ export const textbookLevels = [
       },
       {
         "id": "L153-Q012",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-153/q012.m4a",
         "correctImage": "assets/textbook/images/level-153/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-153/q012-wrong.png",
@@ -12459,8 +12459,8 @@ export const textbookLevels = [
         "theme": "Level 153：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -12802,8 +12802,8 @@ export const textbookLevels = [
       },
       {
         "id": "L155-Q004",
-        "sentence": "The boy is opening a box.",
-        "wrongSentence": "The boy is opening a book.",
+        "sentence": "The boy is holding an open box.",
+        "wrongSentence": "The boy is holding an open book.",
         "audioFile": "assets/textbook/audio/level-155/q004.m4a",
         "correctImage": "assets/textbook/images/level-155/q004-correct.png",
         "wrongImage": "assets/textbook/images/level-155/q004-wrong.png",
@@ -12811,14 +12811,14 @@ export const textbookLevels = [
         "theme": "Level 155：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L155-Q005",
-        "sentence": "The boy is closing a book.",
-        "wrongSentence": "The boy is closing a box.",
+        "sentence": "The boy is holding a closed book.",
+        "wrongSentence": "The boy is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-155/q005.m4a",
         "correctImage": "assets/textbook/images/level-155/q005-correct.png",
         "wrongImage": "assets/textbook/images/level-155/q005-wrong.png",
@@ -12826,8 +12826,8 @@ export const textbookLevels = [
         "theme": "Level 155：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -12877,8 +12877,8 @@ export const textbookLevels = [
       },
       {
         "id": "L155-Q009",
-        "sentence": "The girl is opening a box.",
-        "wrongSentence": "The girl is opening a book.",
+        "sentence": "The girl is holding an open box.",
+        "wrongSentence": "The girl is holding an open book.",
         "audioFile": "assets/textbook/audio/level-155/q009.m4a",
         "correctImage": "assets/textbook/images/level-155/q009-correct.png",
         "wrongImage": "assets/textbook/images/level-155/q009-wrong.png",
@@ -12886,14 +12886,14 @@ export const textbookLevels = [
         "theme": "Level 155：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L155-Q010",
-        "sentence": "The girl is closing a book.",
-        "wrongSentence": "The girl is closing a box.",
+        "sentence": "The girl is holding a closed book.",
+        "wrongSentence": "The girl is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-155/q010.m4a",
         "correctImage": "assets/textbook/images/level-155/q010-correct.png",
         "wrongImage": "assets/textbook/images/level-155/q010-wrong.png",
@@ -12901,8 +12901,8 @@ export const textbookLevels = [
         "theme": "Level 155：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -12952,8 +12952,8 @@ export const textbookLevels = [
       },
       {
         "id": "L155-Q014",
-        "sentence": "The child is opening a box.",
-        "wrongSentence": "The child is opening a book.",
+        "sentence": "The child is holding an open box.",
+        "wrongSentence": "The child is holding an open book.",
         "audioFile": "assets/textbook/audio/level-155/q014.m4a",
         "correctImage": "assets/textbook/images/level-155/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-155/q014-wrong.png",
@@ -12961,14 +12961,14 @@ export const textbookLevels = [
         "theme": "Level 155：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L155-Q015",
-        "sentence": "The child is closing a book.",
-        "wrongSentence": "The child is closing a box.",
+        "sentence": "The child is holding a closed book.",
+        "wrongSentence": "The child is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-155/q015.m4a",
         "correctImage": "assets/textbook/images/level-155/q015-correct.png",
         "wrongImage": "assets/textbook/images/level-155/q015-wrong.png",
@@ -12976,8 +12976,8 @@ export const textbookLevels = [
         "theme": "Level 155：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       }
     ]
@@ -13008,8 +13008,8 @@ export const textbookLevels = [
       },
       {
         "id": "L156-Q002",
-        "sentence": "The boy is opening a box.",
-        "wrongSentence": "The boy is opening a book.",
+        "sentence": "The boy is holding an open box.",
+        "wrongSentence": "The boy is holding an open book.",
         "audioFile": "assets/textbook/audio/level-156/q002.m4a",
         "correctImage": "assets/textbook/images/level-156/q002-correct.png",
         "wrongImage": "assets/textbook/images/level-156/q002-wrong.png",
@@ -13017,14 +13017,14 @@ export const textbookLevels = [
         "theme": "Level 156：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L156-Q003",
-        "sentence": "The boy is closing a book.",
-        "wrongSentence": "The boy is closing a box.",
+        "sentence": "The boy is holding a closed book.",
+        "wrongSentence": "The boy is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-156/q003.m4a",
         "correctImage": "assets/textbook/images/level-156/q003-correct.png",
         "wrongImage": "assets/textbook/images/level-156/q003-wrong.png",
@@ -13032,8 +13032,8 @@ export const textbookLevels = [
         "theme": "Level 156：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -13083,8 +13083,8 @@ export const textbookLevels = [
       },
       {
         "id": "L156-Q007",
-        "sentence": "The girl is opening a box.",
-        "wrongSentence": "The girl is opening a book.",
+        "sentence": "The girl is holding an open box.",
+        "wrongSentence": "The girl is holding an open book.",
         "audioFile": "assets/textbook/audio/level-156/q007.m4a",
         "correctImage": "assets/textbook/images/level-156/q007-correct.png",
         "wrongImage": "assets/textbook/images/level-156/q007-wrong.png",
@@ -13092,14 +13092,14 @@ export const textbookLevels = [
         "theme": "Level 156：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L156-Q008",
-        "sentence": "The girl is closing a book.",
-        "wrongSentence": "The girl is closing a box.",
+        "sentence": "The girl is holding a closed book.",
+        "wrongSentence": "The girl is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-156/q008.m4a",
         "correctImage": "assets/textbook/images/level-156/q008-correct.png",
         "wrongImage": "assets/textbook/images/level-156/q008-wrong.png",
@@ -13107,8 +13107,8 @@ export const textbookLevels = [
         "theme": "Level 156：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -13158,8 +13158,8 @@ export const textbookLevels = [
       },
       {
         "id": "L156-Q012",
-        "sentence": "The child is opening a box.",
-        "wrongSentence": "The child is opening a book.",
+        "sentence": "The child is holding an open box.",
+        "wrongSentence": "The child is holding an open book.",
         "audioFile": "assets/textbook/audio/level-156/q012.m4a",
         "correctImage": "assets/textbook/images/level-156/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-156/q012-wrong.png",
@@ -13167,14 +13167,14 @@ export const textbookLevels = [
         "theme": "Level 156：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a box.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is opening a book.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open box.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L156-Q013",
-        "sentence": "The child is closing a book.",
-        "wrongSentence": "The child is closing a box.",
+        "sentence": "The child is holding a closed book.",
+        "wrongSentence": "The child is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-156/q013.m4a",
         "correctImage": "assets/textbook/images/level-156/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-156/q013-wrong.png",
@@ -13182,8 +13182,8 @@ export const textbookLevels = [
         "theme": "Level 156：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -13223,14 +13223,14 @@ export const textbookLevels = [
     "title": "Level 157：物品结构",
     "previewWords": [
       "boy",
-      "closing",
-      "book"
+      "holding",
+      "closed"
     ],
     "questions": [
       {
         "id": "L157-Q001",
-        "sentence": "The boy is closing a book.",
-        "wrongSentence": "The boy is closing a box.",
+        "sentence": "The boy is holding a closed book.",
+        "wrongSentence": "The boy is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-157/q001.m4a",
         "correctImage": "assets/textbook/images/level-157/q001-correct.png",
         "wrongImage": "assets/textbook/images/level-157/q001-wrong.png",
@@ -13238,8 +13238,8 @@ export const textbookLevels = [
         "theme": "Level 157：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -13289,8 +13289,8 @@ export const textbookLevels = [
       },
       {
         "id": "L157-Q005",
-        "sentence": "The boy is folding a towel.",
-        "wrongSentence": "The boy is folding a shirt.",
+        "sentence": "The boy is holding a folded towel.",
+        "wrongSentence": "The boy is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-157/q005.m4a",
         "correctImage": "assets/textbook/images/level-157/q005-correct.png",
         "wrongImage": "assets/textbook/images/level-157/q005-wrong.png",
@@ -13298,14 +13298,14 @@ export const textbookLevels = [
         "theme": "Level 157：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L157-Q006",
-        "sentence": "The girl is closing a book.",
-        "wrongSentence": "The girl is closing a box.",
+        "sentence": "The girl is holding a closed book.",
+        "wrongSentence": "The girl is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-157/q006.m4a",
         "correctImage": "assets/textbook/images/level-157/q006-correct.png",
         "wrongImage": "assets/textbook/images/level-157/q006-wrong.png",
@@ -13313,8 +13313,8 @@ export const textbookLevels = [
         "theme": "Level 157：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -13349,8 +13349,8 @@ export const textbookLevels = [
       },
       {
         "id": "L157-Q009",
-        "sentence": "The girl is flying a kite.",
-        "wrongSentence": "The girl is flying a paper plane.",
+        "sentence": "The girl is holding a kite.",
+        "wrongSentence": "The girl is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-157/q009.m4a",
         "correctImage": "assets/textbook/images/level-157/q009-correct.png",
         "wrongImage": "assets/textbook/images/level-157/q009-wrong.png",
@@ -13358,14 +13358,14 @@ export const textbookLevels = [
         "theme": "Level 157：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L157-Q010",
-        "sentence": "The girl is folding a towel.",
-        "wrongSentence": "The girl is folding a shirt.",
+        "sentence": "The girl is holding a folded towel.",
+        "wrongSentence": "The girl is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-157/q010.m4a",
         "correctImage": "assets/textbook/images/level-157/q010-correct.png",
         "wrongImage": "assets/textbook/images/level-157/q010-wrong.png",
@@ -13373,14 +13373,14 @@ export const textbookLevels = [
         "theme": "Level 157：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L157-Q011",
-        "sentence": "The child is closing a book.",
-        "wrongSentence": "The child is closing a box.",
+        "sentence": "The child is holding a closed book.",
+        "wrongSentence": "The child is holding a closed box.",
         "audioFile": "assets/textbook/audio/level-157/q011.m4a",
         "correctImage": "assets/textbook/images/level-157/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-157/q011-wrong.png",
@@ -13388,8 +13388,8 @@ export const textbookLevels = [
         "theme": "Level 157：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is closing a box.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a closed box.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -13424,8 +13424,8 @@ export const textbookLevels = [
       },
       {
         "id": "L157-Q014",
-        "sentence": "The child is flying a kite.",
-        "wrongSentence": "The child is flying a paper plane.",
+        "sentence": "The child is holding a kite.",
+        "wrongSentence": "The child is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-157/q014.m4a",
         "correctImage": "assets/textbook/images/level-157/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-157/q014-wrong.png",
@@ -13433,14 +13433,14 @@ export const textbookLevels = [
         "theme": "Level 157：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L157-Q015",
-        "sentence": "The child is folding a towel.",
-        "wrongSentence": "The child is folding a shirt.",
+        "sentence": "The child is holding a folded towel.",
+        "wrongSentence": "The child is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-157/q015.m4a",
         "correctImage": "assets/textbook/images/level-157/q015-correct.png",
         "wrongImage": "assets/textbook/images/level-157/q015-wrong.png",
@@ -13448,8 +13448,8 @@ export const textbookLevels = [
         "theme": "Level 157：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       }
     ]
@@ -13495,8 +13495,8 @@ export const textbookLevels = [
       },
       {
         "id": "L158-Q003",
-        "sentence": "The boy is folding a towel.",
-        "wrongSentence": "The boy is folding a shirt.",
+        "sentence": "The boy is holding a folded towel.",
+        "wrongSentence": "The boy is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-158/q003.m4a",
         "correctImage": "assets/textbook/images/level-158/q003-correct.png",
         "wrongImage": "assets/textbook/images/level-158/q003-wrong.png",
@@ -13504,8 +13504,8 @@ export const textbookLevels = [
         "theme": "Level 158：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -13555,8 +13555,8 @@ export const textbookLevels = [
       },
       {
         "id": "L158-Q007",
-        "sentence": "The girl is flying a kite.",
-        "wrongSentence": "The girl is flying a paper plane.",
+        "sentence": "The girl is holding a kite.",
+        "wrongSentence": "The girl is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-158/q007.m4a",
         "correctImage": "assets/textbook/images/level-158/q007-correct.png",
         "wrongImage": "assets/textbook/images/level-158/q007-wrong.png",
@@ -13564,14 +13564,14 @@ export const textbookLevels = [
         "theme": "Level 158：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L158-Q008",
-        "sentence": "The girl is folding a towel.",
-        "wrongSentence": "The girl is folding a shirt.",
+        "sentence": "The girl is holding a folded towel.",
+        "wrongSentence": "The girl is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-158/q008.m4a",
         "correctImage": "assets/textbook/images/level-158/q008-correct.png",
         "wrongImage": "assets/textbook/images/level-158/q008-wrong.png",
@@ -13579,8 +13579,8 @@ export const textbookLevels = [
         "theme": "Level 158：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -13630,8 +13630,8 @@ export const textbookLevels = [
       },
       {
         "id": "L158-Q012",
-        "sentence": "The child is flying a kite.",
-        "wrongSentence": "The child is flying a paper plane.",
+        "sentence": "The child is holding a kite.",
+        "wrongSentence": "The child is holding a paper plane.",
         "audioFile": "assets/textbook/audio/level-158/q012.m4a",
         "correctImage": "assets/textbook/images/level-158/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-158/q012-wrong.png",
@@ -13639,14 +13639,14 @@ export const textbookLevels = [
         "theme": "Level 158：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a kite.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is flying a paper plane.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a kite.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a paper plane.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L158-Q013",
-        "sentence": "The child is folding a towel.",
-        "wrongSentence": "The child is folding a shirt.",
+        "sentence": "The child is holding a folded towel.",
+        "wrongSentence": "The child is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-158/q013.m4a",
         "correctImage": "assets/textbook/images/level-158/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-158/q013-wrong.png",
@@ -13654,8 +13654,8 @@ export const textbookLevels = [
         "theme": "Level 158：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -13695,14 +13695,14 @@ export const textbookLevels = [
     "title": "Level 159：物品结构",
     "previewWords": [
       "boy",
-      "folding",
-      "towel"
+      "holding",
+      "folded"
     ],
     "questions": [
       {
         "id": "L159-Q001",
-        "sentence": "The boy is folding a towel.",
-        "wrongSentence": "The boy is folding a shirt.",
+        "sentence": "The boy is holding a folded towel.",
+        "wrongSentence": "The boy is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-159/q001.m4a",
         "correctImage": "assets/textbook/images/level-159/q001-correct.png",
         "wrongImage": "assets/textbook/images/level-159/q001-wrong.png",
@@ -13710,8 +13710,8 @@ export const textbookLevels = [
         "theme": "Level 159：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -13761,8 +13761,8 @@ export const textbookLevels = [
       },
       {
         "id": "L159-Q005",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-159/q005.m4a",
         "correctImage": "assets/textbook/images/level-159/q005-correct.png",
         "wrongImage": "assets/textbook/images/level-159/q005-wrong.png",
@@ -13770,14 +13770,14 @@ export const textbookLevels = [
         "theme": "Level 159：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L159-Q006",
-        "sentence": "The girl is folding a towel.",
-        "wrongSentence": "The girl is folding a shirt.",
+        "sentence": "The girl is holding a folded towel.",
+        "wrongSentence": "The girl is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-159/q006.m4a",
         "correctImage": "assets/textbook/images/level-159/q006-correct.png",
         "wrongImage": "assets/textbook/images/level-159/q006-wrong.png",
@@ -13785,8 +13785,8 @@ export const textbookLevels = [
         "theme": "Level 159：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -13836,8 +13836,8 @@ export const textbookLevels = [
       },
       {
         "id": "L159-Q010",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-159/q010.m4a",
         "correctImage": "assets/textbook/images/level-159/q010-correct.png",
         "wrongImage": "assets/textbook/images/level-159/q010-wrong.png",
@@ -13845,14 +13845,14 @@ export const textbookLevels = [
         "theme": "Level 159：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
         "id": "L159-Q011",
-        "sentence": "The child is folding a towel.",
-        "wrongSentence": "The child is folding a shirt.",
+        "sentence": "The child is holding a folded towel.",
+        "wrongSentence": "The child is holding a folded shirt.",
         "audioFile": "assets/textbook/audio/level-159/q011.m4a",
         "correctImage": "assets/textbook/images/level-159/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-159/q011-wrong.png",
@@ -13860,8 +13860,8 @@ export const textbookLevels = [
         "theme": "Level 159：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a towel.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is folding a shirt.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded towel.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a folded shirt.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -13911,8 +13911,8 @@ export const textbookLevels = [
       },
       {
         "id": "L159-Q015",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-159/q015.m4a",
         "correctImage": "assets/textbook/images/level-159/q015-correct.png",
         "wrongImage": "assets/textbook/images/level-159/q015-wrong.png",
@@ -13920,8 +13920,8 @@ export const textbookLevels = [
         "theme": "Level 159：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       }
     ]
@@ -13967,8 +13967,8 @@ export const textbookLevels = [
       },
       {
         "id": "L160-Q003",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-160/q003.m4a",
         "correctImage": "assets/textbook/images/level-160/q003-correct.png",
         "wrongImage": "assets/textbook/images/level-160/q003-wrong.png",
@@ -13976,8 +13976,8 @@ export const textbookLevels = [
         "theme": "Level 160：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -14042,8 +14042,8 @@ export const textbookLevels = [
       },
       {
         "id": "L160-Q008",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-160/q008.m4a",
         "correctImage": "assets/textbook/images/level-160/q008-correct.png",
         "wrongImage": "assets/textbook/images/level-160/q008-wrong.png",
@@ -14051,8 +14051,8 @@ export const textbookLevels = [
         "theme": "Level 160：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -14117,8 +14117,8 @@ export const textbookLevels = [
       },
       {
         "id": "L160-Q013",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-160/q013.m4a",
         "correctImage": "assets/textbook/images/level-160/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-160/q013-wrong.png",
@@ -14126,8 +14126,8 @@ export const textbookLevels = [
         "theme": "Level 160：物品结构",
         "concept": "object",
         "difficulty": 2,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -42789,8 +42789,8 @@ export const textbookLevels = [
       },
       {
         "id": "L282-Q005",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-282/q005.m4a",
         "correctImage": "assets/textbook/images/level-282/q005-correct.png",
         "wrongImage": "assets/textbook/images/level-282/q005-wrong.png",
@@ -42798,8 +42798,8 @@ export const textbookLevels = [
         "theme": "Level 282：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -42864,8 +42864,8 @@ export const textbookLevels = [
       },
       {
         "id": "L282-Q010",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-282/q010.m4a",
         "correctImage": "assets/textbook/images/level-282/q010-correct.png",
         "wrongImage": "assets/textbook/images/level-282/q010-wrong.png",
@@ -42873,8 +42873,8 @@ export const textbookLevels = [
         "theme": "Level 282：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -42939,8 +42939,8 @@ export const textbookLevels = [
       },
       {
         "id": "L282-Q015",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-282/q015.m4a",
         "correctImage": "assets/textbook/images/level-282/q015-correct.png",
         "wrongImage": "assets/textbook/images/level-282/q015-wrong.png",
@@ -42948,8 +42948,8 @@ export const textbookLevels = [
         "theme": "Level 282：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       }
     ]
@@ -43231,8 +43231,8 @@ export const textbookLevels = [
       },
       {
         "id": "L284-Q003",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-284/q003.m4a",
         "correctImage": "assets/textbook/images/level-284/q003-correct.png",
         "wrongImage": "assets/textbook/images/level-284/q003-wrong.png",
@@ -43240,8 +43240,8 @@ export const textbookLevels = [
         "theme": "Level 284：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -43306,8 +43306,8 @@ export const textbookLevels = [
       },
       {
         "id": "L284-Q008",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-284/q008.m4a",
         "correctImage": "assets/textbook/images/level-284/q008-correct.png",
         "wrongImage": "assets/textbook/images/level-284/q008-wrong.png",
@@ -43315,8 +43315,8 @@ export const textbookLevels = [
         "theme": "Level 284：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -43381,8 +43381,8 @@ export const textbookLevels = [
       },
       {
         "id": "L284-Q013",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-284/q013.m4a",
         "correctImage": "assets/textbook/images/level-284/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-284/q013-wrong.png",
@@ -43390,8 +43390,8 @@ export const textbookLevels = [
         "theme": "Level 284：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -43667,14 +43667,14 @@ export const textbookLevels = [
     "title": "Level 286：综合理解",
     "previewWords": [
       "boy",
-      "reading",
-      "book"
+      "holding",
+      "open"
     ],
     "questions": [
       {
         "id": "L286-Q001",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-286/q001.m4a",
         "correctImage": "assets/textbook/images/level-286/q001-correct.png",
         "wrongImage": "assets/textbook/images/level-286/q001-wrong.png",
@@ -43682,8 +43682,8 @@ export const textbookLevels = [
         "theme": "Level 286：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -43748,8 +43748,8 @@ export const textbookLevels = [
       },
       {
         "id": "L286-Q006",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-286/q006.m4a",
         "correctImage": "assets/textbook/images/level-286/q006-correct.png",
         "wrongImage": "assets/textbook/images/level-286/q006-wrong.png",
@@ -43757,8 +43757,8 @@ export const textbookLevels = [
         "theme": "Level 286：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -43823,8 +43823,8 @@ export const textbookLevels = [
       },
       {
         "id": "L286-Q011",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-286/q011.m4a",
         "correctImage": "assets/textbook/images/level-286/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-286/q011-wrong.png",
@@ -43832,8 +43832,8 @@ export const textbookLevels = [
         "theme": "Level 286：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -44190,8 +44190,8 @@ export const textbookLevels = [
       },
       {
         "id": "L288-Q004",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-288/q004.m4a",
         "correctImage": "assets/textbook/images/level-288/q004-correct.png",
         "wrongImage": "assets/textbook/images/level-288/q004-wrong.png",
@@ -44199,8 +44199,8 @@ export const textbookLevels = [
         "theme": "Level 288：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -44265,8 +44265,8 @@ export const textbookLevels = [
       },
       {
         "id": "L288-Q009",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-288/q009.m4a",
         "correctImage": "assets/textbook/images/level-288/q009-correct.png",
         "wrongImage": "assets/textbook/images/level-288/q009-wrong.png",
@@ -44274,8 +44274,8 @@ export const textbookLevels = [
         "theme": "Level 288：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -44340,8 +44340,8 @@ export const textbookLevels = [
       },
       {
         "id": "L288-Q014",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-288/q014.m4a",
         "correctImage": "assets/textbook/images/level-288/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-288/q014-wrong.png",
@@ -44349,8 +44349,8 @@ export const textbookLevels = [
         "theme": "Level 288：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -44632,8 +44632,8 @@ export const textbookLevels = [
       },
       {
         "id": "L290-Q002",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-290/q002.m4a",
         "correctImage": "assets/textbook/images/level-290/q002-correct.png",
         "wrongImage": "assets/textbook/images/level-290/q002-wrong.png",
@@ -44641,8 +44641,8 @@ export const textbookLevels = [
         "theme": "Level 290：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -44707,8 +44707,8 @@ export const textbookLevels = [
       },
       {
         "id": "L290-Q007",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-290/q007.m4a",
         "correctImage": "assets/textbook/images/level-290/q007-correct.png",
         "wrongImage": "assets/textbook/images/level-290/q007-wrong.png",
@@ -44716,8 +44716,8 @@ export const textbookLevels = [
         "theme": "Level 290：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -44782,8 +44782,8 @@ export const textbookLevels = [
       },
       {
         "id": "L290-Q012",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-290/q012.m4a",
         "correctImage": "assets/textbook/images/level-290/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-290/q012-wrong.png",
@@ -44791,8 +44791,8 @@ export const textbookLevels = [
         "theme": "Level 290：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -45149,8 +45149,8 @@ export const textbookLevels = [
       },
       {
         "id": "L292-Q005",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-292/q005.m4a",
         "correctImage": "assets/textbook/images/level-292/q005-correct.png",
         "wrongImage": "assets/textbook/images/level-292/q005-wrong.png",
@@ -45158,8 +45158,8 @@ export const textbookLevels = [
         "theme": "Level 292：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -45224,8 +45224,8 @@ export const textbookLevels = [
       },
       {
         "id": "L292-Q010",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-292/q010.m4a",
         "correctImage": "assets/textbook/images/level-292/q010-correct.png",
         "wrongImage": "assets/textbook/images/level-292/q010-wrong.png",
@@ -45233,8 +45233,8 @@ export const textbookLevels = [
         "theme": "Level 292：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -45299,8 +45299,8 @@ export const textbookLevels = [
       },
       {
         "id": "L292-Q015",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-292/q015.m4a",
         "correctImage": "assets/textbook/images/level-292/q015-correct.png",
         "wrongImage": "assets/textbook/images/level-292/q015-wrong.png",
@@ -45308,8 +45308,8 @@ export const textbookLevels = [
         "theme": "Level 292：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       }
     ]
@@ -45591,8 +45591,8 @@ export const textbookLevels = [
       },
       {
         "id": "L294-Q003",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-294/q003.m4a",
         "correctImage": "assets/textbook/images/level-294/q003-correct.png",
         "wrongImage": "assets/textbook/images/level-294/q003-wrong.png",
@@ -45600,8 +45600,8 @@ export const textbookLevels = [
         "theme": "Level 294：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -45666,8 +45666,8 @@ export const textbookLevels = [
       },
       {
         "id": "L294-Q008",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-294/q008.m4a",
         "correctImage": "assets/textbook/images/level-294/q008-correct.png",
         "wrongImage": "assets/textbook/images/level-294/q008-wrong.png",
@@ -45675,8 +45675,8 @@ export const textbookLevels = [
         "theme": "Level 294：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -45741,8 +45741,8 @@ export const textbookLevels = [
       },
       {
         "id": "L294-Q013",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-294/q013.m4a",
         "correctImage": "assets/textbook/images/level-294/q013-correct.png",
         "wrongImage": "assets/textbook/images/level-294/q013-wrong.png",
@@ -45750,8 +45750,8 @@ export const textbookLevels = [
         "theme": "Level 294：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -46027,14 +46027,14 @@ export const textbookLevels = [
     "title": "Level 296：综合理解",
     "previewWords": [
       "boy",
-      "reading",
-      "book"
+      "holding",
+      "open"
     ],
     "questions": [
       {
         "id": "L296-Q001",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-296/q001.m4a",
         "correctImage": "assets/textbook/images/level-296/q001-correct.png",
         "wrongImage": "assets/textbook/images/level-296/q001-wrong.png",
@@ -46042,8 +46042,8 @@ export const textbookLevels = [
         "theme": "Level 296：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -46108,8 +46108,8 @@ export const textbookLevels = [
       },
       {
         "id": "L296-Q006",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-296/q006.m4a",
         "correctImage": "assets/textbook/images/level-296/q006-correct.png",
         "wrongImage": "assets/textbook/images/level-296/q006-wrong.png",
@@ -46117,8 +46117,8 @@ export const textbookLevels = [
         "theme": "Level 296：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -46183,8 +46183,8 @@ export const textbookLevels = [
       },
       {
         "id": "L296-Q011",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-296/q011.m4a",
         "correctImage": "assets/textbook/images/level-296/q011-correct.png",
         "wrongImage": "assets/textbook/images/level-296/q011-wrong.png",
@@ -46192,8 +46192,8 @@ export const textbookLevels = [
         "theme": "Level 296：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -46550,8 +46550,8 @@ export const textbookLevels = [
       },
       {
         "id": "L298-Q004",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-298/q004.m4a",
         "correctImage": "assets/textbook/images/level-298/q004-correct.png",
         "wrongImage": "assets/textbook/images/level-298/q004-wrong.png",
@@ -46559,8 +46559,8 @@ export const textbookLevels = [
         "theme": "Level 298：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -46625,8 +46625,8 @@ export const textbookLevels = [
       },
       {
         "id": "L298-Q009",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-298/q009.m4a",
         "correctImage": "assets/textbook/images/level-298/q009-correct.png",
         "wrongImage": "assets/textbook/images/level-298/q009-wrong.png",
@@ -46634,8 +46634,8 @@ export const textbookLevels = [
         "theme": "Level 298：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -46700,8 +46700,8 @@ export const textbookLevels = [
       },
       {
         "id": "L298-Q014",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-298/q014.m4a",
         "correctImage": "assets/textbook/images/level-298/q014-correct.png",
         "wrongImage": "assets/textbook/images/level-298/q014-wrong.png",
@@ -46709,8 +46709,8 @@ export const textbookLevels = [
         "theme": "Level 298：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -46992,8 +46992,8 @@ export const textbookLevels = [
       },
       {
         "id": "L300-Q002",
-        "sentence": "The boy is reading a book.",
-        "wrongSentence": "The boy is reading a card.",
+        "sentence": "The boy is holding an open book.",
+        "wrongSentence": "The boy is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-300/q002.m4a",
         "correctImage": "assets/textbook/images/level-300/q002-correct.png",
         "wrongImage": "assets/textbook/images/level-300/q002-wrong.png",
@@ -47001,8 +47001,8 @@ export const textbookLevels = [
         "theme": "Level 300：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The boy is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -47067,8 +47067,8 @@ export const textbookLevels = [
       },
       {
         "id": "L300-Q007",
-        "sentence": "The girl is reading a book.",
-        "wrongSentence": "The girl is reading a card.",
+        "sentence": "The girl is holding an open book.",
+        "wrongSentence": "The girl is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-300/q007.m4a",
         "correctImage": "assets/textbook/images/level-300/q007-correct.png",
         "wrongImage": "assets/textbook/images/level-300/q007-wrong.png",
@@ -47076,8 +47076,8 @@ export const textbookLevels = [
         "theme": "Level 300：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The girl is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {
@@ -47142,8 +47142,8 @@ export const textbookLevels = [
       },
       {
         "id": "L300-Q012",
-        "sentence": "The child is reading a book.",
-        "wrongSentence": "The child is reading a card.",
+        "sentence": "The child is holding an open book.",
+        "wrongSentence": "The child is holding a picture card.",
         "audioFile": "assets/textbook/audio/level-300/q012.m4a",
         "correctImage": "assets/textbook/images/level-300/q012-correct.png",
         "wrongImage": "assets/textbook/images/level-300/q012-wrong.png",
@@ -47151,8 +47151,8 @@ export const textbookLevels = [
         "theme": "Level 300：综合理解",
         "concept": "object",
         "difficulty": 5,
-        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a book.",
-        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is reading a card.",
+        "correctImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding an open book.",
+        "wrongImagePrompt": "polished children's picture book illustration, same finished illustration quality as the Level 1-100 production images, soft pastel colors, clean white background, simple composition, centered subject, warm lighting, rounded cartoon character design, clean outlines, full-body or clearly framed subject, no cropped limbs, not a simplified vector placeholder, no stick-figure or geometric icon style, no text, no watermark, not realistic photo, no complex scene. Scene: The child is holding a picture card.",
         "source": "child-english-listening-levels-101-300.json"
       },
       {

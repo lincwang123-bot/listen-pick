@@ -41,6 +41,7 @@ const motionClarifiedPairs = new Set([
   "96-6"
 ]);
 const visuallyApprovedPairs = new Set([
+  "18-12",
   "29-7",
   "30-5",
   "30-11",
@@ -54,6 +55,7 @@ const visuallyApprovedPairs = new Set([
   "43-13",
   "50-6",
   "53-13",
+  "85-1",
   "87-14",
   "88-12",
   "95-6",

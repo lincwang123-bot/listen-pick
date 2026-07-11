@@ -63,7 +63,8 @@ Recent maintenance:
 - Expanded Chinese hint handling for family relationships, measure words, phrasal verbs, locations, body parts, and missing vocabulary
 - Verified all 13,500 audio files are present and decodable, with no different sentences sharing identical media
 - Manually recounted all 150 picture choices in Levels 11-15; Level 13 now matches every English quantity
-- Documented the latest findings and remaining visual blockers in `docs/course-quality-audit-2026-07-10.md`
+- Repaired every confirmed/high-risk item from the 300-level content review with 163 targeted image replacements, sentence/audio regeneration, and style-matched illustrations
+- Revalidated 4,500 questions: content findings `0`, image findings `0`, and audio findings `0`; the remediation record is in `docs/course-quality-audit-2026-07-10.md`
 
 ## Run Locally
 
