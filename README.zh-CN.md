@@ -1,5 +1,7 @@
 # Listen & Pick 中文说明
 
+> 联系方式：X [@superwang](https://x.com/superwang) · Telegram [@lincwang](https://t.me/lincwang)
+
 [English README](README.md)
 
 Listen & Pick 是一个面向儿童英语启蒙的“听力选图”学习系统原型，采用“源码可查看、禁止商用”的非商业授权方式发布。

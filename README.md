@@ -1,5 +1,7 @@
 # Listen & Pick
 
+> Contact: X [@superwang](https://x.com/superwang) · Telegram [@lincwang](https://t.me/lincwang)
+
 [中文说明](README.zh-CN.md)
 
 Listen & Pick is a source-available, non-commercial prototype for a children's English listening and picture-selection learning system.
